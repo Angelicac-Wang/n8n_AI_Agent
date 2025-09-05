@@ -1,0 +1,62 @@
+{
+  "nodename": "google drive trigger",
+  "summary": "此節點會在 Google Drive 事件發生時啟動工作流程。",
+  "parameters": [
+    {
+      "name": "poll times",
+      "type": "fixedcollection",
+      "description": "時間間隔，用於定期輪詢事件觸發。",
+      "placeholder": "add poll time"
+    },
+    {
+      "name": "mode",
+      "type": "options",
+      "description": "定義觸發事件的頻率。",
+      "default": "everyday"
+    },
+    {
+      "name": "hour",
+      "type": "number",
+      "description": "觸發事件的小時（24小時制）。",
+      "default": 14
+    },
+    {
+      "name": "minute",
+      "type": "number",
+      "description": "觸發事件的分鐘。",
+      "default": 0
+    },
+    {
+      "name": "day of month",
+      "type": "number",
+      "description": "觸發事件的日期。",
+      "default": 1
+    },
+    {
+      "name": "weekday",
+      "type": "options",
+      "description": "觸發事件的星期幾。",
+      "default": "1"
+    },
+    {
+      "name": "cron expression",
+      "type": "string",
+      "description": "自定義的 Cron 表達式。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyDay"
+            }
+          ]
+        },
+        "hour": 14,
+        "minute": 0
+      }
+    }
+  }
+}

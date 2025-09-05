@@ -1,0 +1,48 @@
+{
+  "nodeName": "merge",
+  "summary": "此節點用於合併多個數據流的數據，一旦來自兩個數據流的數據都可用。",
+  "parameters": [
+    {
+      "name": "mode",
+      "type": "options",
+      "description": "決定如何合併分支的數據"
+    },
+    {
+      "name": "join",
+      "type": "options",
+      "description": "如果輸入包含不同數量的項目，則輸出將包含多少項目"
+    },
+    {
+      "name": "propertyname1",
+      "type": "string",
+      "description": "決定要合併輸入 1 的哪些項目的屬性名稱"
+    },
+    {
+      "name": "propertyname2",
+      "type": "string",
+      "description": "決定要合併輸入 2 的哪些項目的屬性名稱"
+    },
+    {
+      "name": "output",
+      "type": "options",
+      "description": "定義數據應該作為節點輸出的哪個輸入"
+    },
+    {
+      "name": "overwrite",
+      "type": "options",
+      "description": "選擇何時用輸入 2 的值覆蓋輸入 1 的值"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "mode": "append",
+        "join": "left",
+        "propertyname1": "id",
+        "propertyname2": "id",
+        "output": "input1",
+        "overwrite": "always"
+      }
+    }
+  }
+}

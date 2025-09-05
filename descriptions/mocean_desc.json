@@ -1,0 +1,52 @@
+{
+  "nodeName": "mocean",
+  "summary": "透過 Mocean 發送簡訊和語音訊息",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要使用的資源類型，可以是簡訊或語音訊息。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作，例如發送簡訊或語音訊息。"
+    },
+    {
+      "name": "from",
+      "type": "string",
+      "description": "要發送訊息的號碼。"
+    },
+    {
+      "name": "to",
+      "type": "string",
+      "description": "接收訊息的號碼。"
+    },
+    {
+      "name": "language",
+      "type": "options",
+      "description": "選擇語音訊息的語言。"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "要發送的訊息內容。"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定，例如傳送報告 URL。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "sms",
+        "operation": "send",
+        "from": "123456789",
+        "to": "987654321",
+        "message": "Hello, this is a test message."
+      }
+    }
+  }
+}

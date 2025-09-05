@@ -1,0 +1,18 @@
+{
+  "nodeName": "pushcut trigger",
+  "summary": "此節點會在 Pushcut 事件發生時啟動工作流程。",
+  "parameters": [
+    {
+      "name": "action name",
+      "type": "string",
+      "description": "選擇您想要的任何名稱。它將顯示為應用程式中的伺服器動作。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "actionName": "my_custom_action"
+      }
+    }
+  }
+}

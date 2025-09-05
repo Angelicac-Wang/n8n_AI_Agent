@@ -1,0 +1,41 @@
+{
+  "nodename": "microsoft to do",
+  "summary": "此節點用於使用 Microsoft To Do API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要操作的資源類型，可以是連結資源、清單或任務。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "要執行的操作類型，如創建、刪除、獲取或更新連結資源。"
+    },
+    {
+      "name": "tasklistnameorid",
+      "type": "options",
+      "description": "任勞清單的名稱或 ID，可以從列表中選擇，或使用表達式指定 ID。"
+    },
+    {
+      "name": "taskid",
+      "type": "string",
+      "description": "任務的 ID，用於創建、刪除、獲取或更新連結資源時使用。"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "連結實體的標題欄位。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "task",
+        "operation": "get",
+        "taskListId": "12345",
+        "taskId": "6789"
+      }
+    }
+  }
+}

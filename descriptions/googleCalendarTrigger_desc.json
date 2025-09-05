@@ -1,0 +1,47 @@
+{
+  "nodename": "google calendar trigger",
+  "summary": "啟動工作流程，當 Google 日曆事件發生時觸發",
+  "parameters": [
+    {
+      "name": "poll times",
+      "type": "fixedcollection",
+      "description": "時間間隔，用於設定觸發頻率",
+    },
+    {
+      "name": "calendar",
+      "type": "resourcelocator",
+      "description": "要操作的 Google 日曆",
+    },
+    {
+      "name": "trigger on",
+      "type": "options",
+      "description": "觸發事件的類型",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "pollTimes": [
+          {
+            "mode": "everyDay",
+            "hour": 14,
+            "minute": 0
+          }
+        ],
+        "calendarId": {
+          "mode": "list",
+          "value": "calendar_id_here"
+        },
+        "triggerOn": "eventCreated",
+        "options": {
+          "matchTerm": "meeting"
+        }
+      }
+    }
+  }
+}

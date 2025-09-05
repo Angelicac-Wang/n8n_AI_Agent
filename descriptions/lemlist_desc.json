@@ -1,0 +1,45 @@
+{
+  "nodeName": "lemlist",
+  "summary": "Consume the Lemlist API to interact with activities, campaigns, leads, teams, and unsubscribes.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with (e.g., activity, campaign, lead, team, unsubscribe).",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Choose the operation to perform on the selected resource (e.g., get all activities, get many campaigns).",
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "Specify whether to return all results or only up to a given limit.",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "Set the maximum number of results to return within the specified limit.",
+    },
+    {
+      "name": "filters",
+      "type": "collection",
+      "description": "Add filters to narrow down the results based on specific criteria (e.g., campaign ID, activity type).",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "activity",
+        "operation": "getAll",
+        "returnAll": false,
+        "limit": 5,
+        "filters": {
+          "campaignId": "",
+          "type": "emailsOpened"
+        }
+      }
+    }
+  }
+}

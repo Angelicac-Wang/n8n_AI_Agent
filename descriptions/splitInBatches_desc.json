@@ -1,0 +1,26 @@
+{
+  "nodename": "split in batches",
+  "summary": "將數據分成批次，並對每個批次進行迭代。",
+  "parameters": [
+    {
+      "name": "batch size",
+      "type": "number",
+      "description": "每次調用返回的項目數量",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "包含進階選項的集合",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "batchSize": 10,
+        "options": {
+          "reset": false
+        }
+      }
+    }
+  }
+}

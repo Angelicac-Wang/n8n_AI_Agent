@@ -1,0 +1,60 @@
+{
+  "nodeName": "timescaledb",
+  "summary": "Add and update data in TimescaleDB.",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "The operation to perform in TimescaleDB, such as executing a query, inserting rows, or updating rows."
+    },
+    {
+      "name": "query",
+      "type": "string",
+      "description": "The SQL query to execute. Supports n8n expressions and query parameters."
+    },
+    {
+      "name": "schema",
+      "type": "string",
+      "description": "Name of the schema the table belongs to for insert or update operations."
+    },
+    {
+      "name": "table",
+      "type": "string",
+      "description": "Name of the table to insert data to or update data in."
+    },
+    {
+      "name": "update key",
+      "type": "string",
+      "description": "Name of the property that decides which rows in the database should be updated."
+    },
+    {
+      "name": "columns",
+      "type": "string",
+      "description": "Comma-separated list of properties to use as columns for new rows or rows to update."
+    },
+    {
+      "name": "return fields",
+      "type": "string",
+      "description": "Comma-separated list of fields that the operation will return."
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "Additional options for sending queries to the database, such as execution mode and query parameters."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "insert",
+        "schema": "public",
+        "table": "product",
+        "columns": "id,name,description",
+        "returnFields": "*",
+        "additionalFields": {
+          "mode": "multiple"
+        }
+      }
+    }
+  }
+}

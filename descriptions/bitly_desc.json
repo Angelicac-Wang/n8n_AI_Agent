@@ -1,0 +1,65 @@
+{
+  "nodeName": "bitly",
+  "summary": "此節點用於消費 Bitly API。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於選擇驗證方式，可以是 Access Token 或 OAuth2。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是 Link 或自訂 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如創建、獲取或更新連結。",
+    },
+    {
+      "name": "longUrl",
+      "type": "string",
+      "description": "要縮短的長網址。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "包含創建連結時的其他字段設定，如域名、群組、標籤和標題。",
+    },
+    {
+      "name": "deeplink",
+      "type": "fixedCollection",
+      "description": "包含深層連結的設定，如應用程式 ID、應用程式 URI 路徑、安裝類型和安裝 URL。",
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "description": "Bitly 連結的 ID，用於獲取或更新連結的操作。",
+    },
+    {
+      "name": "updateFields",
+      "type": "collection",
+      "description": "包含更新連結時的其他字段設定，如是否歸檔、群組、長網址、標籤和標題。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "accessToken",
+        "resource": "link",
+        "operation": "create",
+        "longUrl": "https://example.com",
+        "additionalFields": {
+          "domain": "bit.ly",
+          "group": "",
+          "tags": [],
+          "title": ""
+        },
+        "deeplink": {},
+        "id": "",
+        "updateFields": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "nodeName": "stripe",
+  "summary": "Consume the Stripe API to perform various operations like getting balance, adding or removing customer cards, and more.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with (e.g., Balance, Charge, Customer)."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource (e.g., Get, Add, Remove)."
+    },
+    {
+      "name": "customer id",
+      "type": "string",
+      "description": "ID of the customer to be associated with the card (applicable for 'Add' operation)."
+    },
+    {
+      "name": "card token",
+      "type": "string",
+      "description": "Token representing sensitive card information (applicable for 'Add' operation)."
+    },
+    {
+      "name": "customer id",
+      "type": "string",
+      "description": "ID of the customer whose card to remove (applicable for 'Remove' operation)."
+    },
+    {
+      "name": "card id",
+      "type": "string",
+      "description": "ID of the card to remove (applicable for 'Remove' operation)."
+    },
+    {
+      "name": "customer id",
+      "type": "string",
+      "description": "ID of the customer whose card to retrieve (applicable for 'Get' operation)."
+    },
+    {
+      "name": "source id",
+      "type": "string",
+      "description": "ID of the source to retrieve (applicable for 'Get' operation)."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "customerCard",
+        "operation": "add",
+        "customerId": "cus_123456",
+        "token": "tok_1IMfKdJhRTnqS5TKQVG1LI9o"
+      }
+    }
+  }
+}

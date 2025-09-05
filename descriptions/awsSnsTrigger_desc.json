@@ -1,0 +1,21 @@
+{
+  "nodename": "aws sns trigger",
+  "summary": "透過 Webhooks 處理 AWS SNS 事件。",
+  "parameters": [
+    {
+      "name": "topic",
+      "type": "resourcelocator",
+      "description": "指定要監聽的 AWS SNS 主題。可以從列表中選擇、使用 URL 或輸入主題的 ARN。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "topic": {
+          "mode": "list",
+          "value": ""
+        }
+      }
+    }
+  }
+}

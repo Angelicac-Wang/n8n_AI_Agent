@@ -1,0 +1,56 @@
+{
+  "nodeName": "stackby",
+  "summary": "讀取、寫入和刪除 Stackby 中的數據。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "要執行的操作類型，包括追加、刪除、列出和讀取數據。"
+    },
+    {
+      "name": "stack id",
+      "type": "string",
+      "description": "要訪問的堆棧的 ID。"
+    },
+    {
+      "name": "table",
+      "type": "string",
+      "description": "表格名稱。"
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "description": "要返回的記錄的 ID。",
+    },
+    {
+      "name": "return all",
+      "type": "boolean",
+      "description": "是否返回所有結果或僅返回到指定限制。"
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數量。",
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "其他字段設置，如查看特定視圖的記錄。"
+    },
+    {
+      "name": "columns",
+      "type": "string",
+      "description": "用於新行的列的屬性列表，以逗號分隔。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "append",
+        "stackId": "12345",
+        "table": "Stories",
+        "columns": "id,name,description"
+      }
+    }
+  }
+}

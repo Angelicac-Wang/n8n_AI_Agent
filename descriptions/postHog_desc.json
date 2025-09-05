@@ -1,0 +1,47 @@
+{
+  "nodeName": "posthog",
+  "summary": "此節點用於消費 PostHog API，可用於創建別名（alias）或事件（event）。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是別名（alias）、事件（event）、身份（identity）或追蹤（track）之一。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要對資源執行的操作，例如創建（create）別名。",
+    },
+    {
+      "name": "alias",
+      "type": "string",
+      "description": "別名的名稱。",
+    },
+    {
+      "name": "distinctId",
+      "type": "string",
+      "description": "用戶的唯一識別 ID。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "其他需要提交的欄位，如上下文（context）和時間戳（timestamp）。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "event",
+        "operation": "create",
+        "eventName": "login",
+        "distinctId": "12345",
+        "additionalFields": {
+          "propertiesUi": {
+            "property1": "value1",
+            "property2": "value2"
+          }
+        }
+      }
+    }
+  }
+}

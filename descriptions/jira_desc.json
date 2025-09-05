@@ -1,0 +1,48 @@
+{
+  "nodeName": "jira software",
+  "summary": "Consume Jira Software API to perform various operations like creating, updating, and deleting issues, comments, users, and more.",
+  "parameters": [
+    {
+      "name": "jira version",
+      "type": "options",
+      "description": "Select the version of Jira (Cloud, Server, or Server Pat) to connect to."
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with in Jira (Issue, Issue Attachment, Issue Comment, User, or Custom API Call)."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource (Changelog, Create, Delete, Get, Get Many, Notify, Status, Update, or Custom API Call).",
+    },
+    {
+      "name": "project",
+      "type": "resourcelocator",
+      "description": "Select the project to perform the operation on. Can be selected from a list or by ID.",
+    },
+    {
+      "name": "issue type",
+      "type": "resourcelocator",
+      "description": "Select the type of issue to perform the operation on. Can be selected from a list.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "jiraVersion": "cloud",
+        "resource": "issue",
+        "operation": "create",
+        "project": {
+          "mode": "list",
+          "value": ""
+        },
+        "issueType": {
+          "mode": "list",
+          "value": ""
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "nodeName": "spreadsheet file",
+  "summary": "此節點可讀取和寫入像 CSV、XLS、ODS 等格式的試算表文件中的數據。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定操作類型，可以是從文件讀取數據或將工作流數據寫入文件。",
+    },
+    {
+      "name": "input binary field",
+      "type": "string",
+      "description": "包含要處理的文件數據的輸入字段的名稱。",
+    },
+    {
+      "name": "file format",
+      "type": "options",
+      "description": "要將數據保存為的文件格式。",
+    },
+    {
+      "name": "put output file in field",
+      "type": "string",
+      "description": "將文件放入的輸出二進制字段的名稱。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設置，如分隔符、編碼、是否包含標題行等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "fromFile",
+        "binaryPropertyName": "data",
+        "fileFormat": "xls",
+        "options": {
+          "delimiter": ",",
+          "encoding": "utf-8",
+          "headerRow": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "nodeName": "lingvanex",
+  "summary": "此節點用於使用 LingvaNex API 進行文本翻譯。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作。目前僅支援翻譯操作。",
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "description": "要翻譯的輸入文本。",
+    },
+    {
+      "name": "translate to",
+      "type": "options",
+      "description": "指定用於翻譯輸入文本的語言。",
+    },
+    {
+      "name": "additional options",
+      "type": "collection",
+      "description": "其他翻譯選項，如原始語言、平台和翻譯模式。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "translate",
+        "text": "Hello, world!",
+        "translateTo": "es",
+        "options": {
+          "from": "en",
+          "platform": "api",
+          "translateMode": "html"
+        }
+      }
+    }
+  }
+}

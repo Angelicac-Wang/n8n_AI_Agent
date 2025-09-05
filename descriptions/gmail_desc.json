@@ -1,0 +1,74 @@
+{
+  "nodeName": "gmail",
+  "summary": "此節點用於使用 Gmail API。",
+  "parameters": [
+    {
+      "name": "oldVersionNotice",
+      "type": "notice",
+      "description": "顯示新節點版本的通知信息。"
+    },
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "選擇身份驗證方式。",
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作。",
+    },
+    {
+      "name": "messageId",
+      "type": "string",
+      "description": "草稿的 ID。",
+    },
+    {
+      "name": "subject",
+      "type": "string",
+      "description": "郵件主題。",
+    },
+    {
+      "name": "includeHtml",
+      "type": "boolean",
+      "description": "是否包含 HTML 格式的郵件內容。",
+    },
+    {
+      "name": "htmlMessage",
+      "type": "string",
+      "description": "HTML 格式的郵件內容。",
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "郵件內容。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "其他郵件相關欄位。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "draft",
+        "operation": "create",
+        "messageId": "r-3254521568507167962",
+        "subject": "Hello World!",
+        "includeHtml": false,
+        "htmlMessage": "",
+        "message": "Hello World!",
+        "additionalFields": {
+          "toList": ["info@example.com"],
+          "ccList": []
+        }
+      }
+    }
+  }
+}

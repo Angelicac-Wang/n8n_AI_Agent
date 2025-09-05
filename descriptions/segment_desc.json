@@ -1,0 +1,57 @@
+{
+  "nodename": "segment",
+  "summary": "此節點用於消費 Segment API，可執行與使用者分組、識別、追蹤事件等相關的操作。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如分組、識別、追蹤事件等。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定對資源執行的操作，如新增使用者至群組等。",
+    },
+    {
+      "name": "userId",
+      "type": "string",
+      "description": "用戶的唯一識別符。",
+    },
+    {
+      "name": "groupId",
+      "type": "string",
+      "description": "群組的唯一識別符。",
+    },
+    {
+      "name": "traits",
+      "type": "fixedcollection",
+      "description": "用於添加用戶特徵的集合，包含特徵的鍵值對。",
+    },
+    {
+      "name": "context",
+      "type": "fixedcollection",
+      "description": "用於添加用戶上下文信息的集合，如用戶活動狀態、IP 地址、語言環境等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "identify",
+        "operation": "add",
+        "userId": "123",
+        "groupId": "456",
+        "traits": [
+          {
+            "key": "email",
+            "value": "test@example.com"
+          }
+        ],
+        "context": {
+          "active": true,
+          "ip": "192.168.1.1",
+          "locale": "en-US"
+        }
+      }
+    }
+  }
+}

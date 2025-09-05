@@ -1,0 +1,50 @@
+{
+  "nodename": "getresponse trigger",
+  "summary": "啟動工作流程，當 GetResponse 事件發生時觸發。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於選擇身份驗證方式，可以是 API 金鑰或 OAuth2。"
+    },
+    {
+      "name": "events",
+      "type": "multioptions",
+      "description": "選擇要接收通知的事件類型，如客戶訂閱、取消訂閱、郵件點擊、郵件開啟、提交調查等。",
+      "required": true
+    },
+    {
+      "name": "listids",
+      "type": "multioptions",
+      "description": "選擇列表名稱或 ID，也可以使用表達式指定 ID。",
+      "typeoptions": {
+        "loadoptionsmethod": "getlists"
+      }
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "提供其他選項設定，例如是否刪除當前訂閱。",
+      "options": [
+        {
+          "name": "delete",
+          "type": "boolean",
+          "description": "是否刪除當前訂閱",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "apiKey",
+        "events": ["subscribe", "unsubscribe"],
+        "listids": ["list1", "list2"],
+        "options": {
+          "delete": false
+        }
+      }
+    }
+  }
+}

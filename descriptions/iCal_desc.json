@@ -1,0 +1,48 @@
+{
+  "nodeName": "icalendar",
+  "summary": "創建 iCalendar 文件的節點。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定操作類型。目前僅支持創建事件文件。",
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "事件的標題。",
+    },
+    {
+      "name": "start",
+      "type": "datetime",
+      "description": "事件開始的日期和時間。",
+    },
+    {
+      "name": "end",
+      "type": "datetime",
+      "description": "事件結束的日期和時間。如果未設置，將與開始日期相同。",
+    },
+    {
+      "name": "allDay",
+      "type": "boolean",
+      "description": "指定事件是否持續整天。",
+    },
+    {
+      "name": "binaryPropertyName",
+      "type": "string",
+      "description": "將 iCalendar 文件放入的輸出二進制字段的名稱。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "createEventFile",
+        "title": "New Event",
+        "start": "2022-12-31T23:59:00Z",
+        "end": "2023-01-01T00:01:00Z",
+        "allDay": false,
+        "binaryPropertyName": "data"
+      }
+    }
+  }
+}

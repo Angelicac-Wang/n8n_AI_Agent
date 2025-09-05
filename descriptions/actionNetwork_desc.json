@@ -1,0 +1,42 @@
+{
+  "nodeName": "action network",
+  "summary": "此節點用於消費 Action Network API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要操作的資源類型，如出席、事件、人員等。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "對資源執行的操作，如創建、獲取、獲取多個等。",
+    },
+    {
+      "name": "person id",
+      "type": "string",
+      "description": "要為其創建出席記錄的人員的 ID。",
+    },
+    {
+      "name": "event id",
+      "type": "string",
+      "description": "要為其創建出席記錄的事件的 ID。",
+    },
+    {
+      "name": "simplify",
+      "type": "boolean",
+      "description": "是否返回簡化版本的回應而不是原始數據。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "attendance",
+        "operation": "create",
+        "personId": "123",
+        "eventId": "456",
+        "simple": true
+      }
+    }
+  }
+}

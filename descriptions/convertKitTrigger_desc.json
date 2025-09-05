@@ -1,0 +1,48 @@
+{
+  "nodeName": "convertkit trigger",
+  "summary": "透過 Webhooks 處理 ConvertKit 事件",
+  "parameters": [
+    {
+      "name": "event",
+      "type": "options",
+      "description": "觸發 Webhook 的事件類型及其啟用狀態"
+    },
+    {
+      "name": "form name or id",
+      "type": "options",
+      "description": "從列表中選擇，或使用表達式指定 ID"
+    },
+    {
+      "name": "sequence name or id",
+      "type": "options",
+      "description": "從列表中選擇，或使用表達式指定 ID"
+    },
+    {
+      "name": "initiating link",
+      "type": "string",
+      "description": "啟動連結的 URL"
+    },
+    {
+      "name": "product id",
+      "type": "string",
+      "description": "產品 ID"
+    },
+    {
+      "name": "tag name or id",
+      "type": "options",
+      "description": "從列表中選擇，或使用表達式指定 ID"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "event": "formSubscribe",
+        "formId": "123",
+        "courseId": "456",
+        "link": "https://example.com",
+        "productId": "789",
+        "tagId": "abc"
+      }
+    }
+  }
+}

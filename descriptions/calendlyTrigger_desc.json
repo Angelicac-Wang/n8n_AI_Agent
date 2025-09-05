@@ -1,0 +1,30 @@
+{
+  "nodename": "calendly trigger",
+  "summary": "啟動工作流程，當 Calendly 事件發生時觸發",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於選擇身份驗證方式，建議使用 OAuth2，API Key 將在 2025 年 5 月 31 日停止支援"
+    },
+    {
+      "name": "scope",
+      "type": "options",
+      "description": "指定事件觸發的範圍，可選擇組織或使用者，如果使用 API Key 則忽略此設定"
+    },
+    {
+      "name": "events",
+      "type": "multiOptions",
+      "description": "選擇要接收通知的 Calendly 事件類型，如活動創建或取消"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "oAuth2",
+        "scope": "user",
+        "events": ["invitee.created"]
+      }
+    }
+  }
+}

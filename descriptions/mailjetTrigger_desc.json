@@ -1,0 +1,18 @@
+{
+  "nodename": "mailjet trigger",
+  "summary": "透過 Webhooks 處理 Mailjet 事件",
+  "parameters": [
+    {
+      "name": "event",
+      "type": "options",
+      "description": "確定觸發 Webhook 的資源事件類型，可選擇包括 email.blocked、email.bounce、email.open、email.sent、email.spam、email.unsub。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "event": "open"
+      }
+    }
+  }
+}

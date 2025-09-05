@@ -1,0 +1,62 @@
+{
+  "nodeName": "twilio",
+  "summary": "透過 Twilio 節點，可以發送簡訊、WhatsApp 訊息或進行電話通話。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要使用的 Twilio 資源類型，如通話、簡訊或自訂 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如發送簡訊、WhatsApp 訊息、進行通話或自訂 API 呼叫。"
+    },
+    {
+      "name": "from",
+      "type": "string",
+      "description": "要發送訊息的號碼。"
+    },
+    {
+      "name": "to",
+      "type": "string",
+      "description": "接收訊息的號碼。"
+    },
+    {
+      "name": "toWhatsapp",
+      "type": "boolean",
+      "description": "指定訊息是否要發送到 WhatsApp。"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "要發送的訊息內容。"
+    },
+    {
+      "name": "twiml",
+      "type": "boolean",
+      "description": "是否使用 Twilio Markup Language（TwiML）來設定通話訊息。"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定，如狀態回撥（Status Callback）URL。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "sms",
+        "operation": "send",
+        "from": "+14155238886",
+        "to": "+14155555555",
+        "toWhatsapp": false,
+        "message": "Hello from n8n!",
+        "twiml": false,
+        "options": {
+          "statusCallback": "https://example.com/callback"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "nodeName": "pushcut",
+  "summary": "此節點用於消費 Pushcut API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要對資源執行的操作。",
+    },
+    {
+      "name": "notification name or id",
+      "type": "options",
+      "description": "選擇通知的名稱或 ID。",
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "包含額外的欄位設定。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "notification",
+        "operation": "send",
+        "notificationName": "example_notification",
+        "additionalFields": {
+          "devices": ["device1", "device2"],
+          "input": "input_value",
+          "text": "custom_text",
+          "title": "custom_title"
+        }
+      }
+    }
+  }
+}

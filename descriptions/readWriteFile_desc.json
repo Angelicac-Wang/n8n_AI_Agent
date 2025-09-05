@@ -1,0 +1,50 @@
+{
+  "nodeName": "read/write files from disk",
+  "summary": "This node allows reading or writing files on the computer that runs n8n.",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select whether to read file(s) from disk or write a file to disk."
+    },
+    {
+      "name": "fileselector",
+      "type": "string",
+      "description": "Specify a file's path or path pattern to read multiple files. Always use forward-slashes for path separator even on Windows."
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "Additional options for reading files, such as file extension, file name, mime type, and output field name."
+    },
+    {
+      "name": "filename",
+      "type": "string",
+      "description": "Path and name of the file that should be written. Include the file extension."
+    },
+    {
+      "name": "datapropertyname",
+      "type": "string",
+      "description": "The name of the input binary field containing the file to be written."
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "Additional options for writing files, such as whether to append to an existing file."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "read",
+        "fileselector": "/home/user/Pictures/**/*.png",
+        "options": {
+          "fileExtension": "zip",
+          "fileName": "data.zip",
+          "mimeType": "application/zip",
+          "dataPropertyName": "data"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "nodeName": "n8n form trigger",
+  "summary": "Generate webforms in n8n and pass their responses to the workflow.",
+  "parameters": [
+    {
+      "name": "form path",
+      "type": "string",
+      "description": "The final segment of the form's URL, both for test and production."
+    },
+    {
+      "name": "form title",
+      "type": "string",
+      "description": "Shown at the top of the form."
+    },
+    {
+      "name": "form description",
+      "type": "string",
+      "description": "Shown underneath the Form Title. Can be used to prompt the user on how to complete the form. Accepts HTML."
+    },
+    {
+      "name": "form elements",
+      "type": "fixedcollection",
+      "description": "List of form elements to include in the webform."
+    },
+    {
+      "name": "respond when",
+      "type": "options",
+      "description": "When to respond to the form submission."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "path": "webhook",
+        "formTitle": "Contact us",
+        "formDescription": "We'll get back to you soon",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "What is your name?",
+              "fieldType": "text",
+              "placeholder": "",
+              "fieldName": "",
+              "fieldValue": ""
+            }
+          ]
+        },
+        "responseMode": "onReceived"
+      }
+    }
+  }
+}

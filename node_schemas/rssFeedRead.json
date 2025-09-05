@@ -1,0 +1,31 @@
+{
+  "name": "n8n-nodes-base.rssFeedRead",
+  "displayName": "RSS Read",
+  "description": "Reads data from an RSS Feed",
+  "properties": [
+    {
+      "displayName": "URL",
+      "name": "url",
+      "type": "string",
+      "default": "",
+      "required": true,
+      "description": "URL of the RSS feed"
+    },
+    {
+      "displayName": "Options",
+      "name": "options",
+      "type": "collection",
+      "placeholder": "Add option",
+      "default": {},
+      "options": [
+        {
+          "displayName": "Ignore SSL Issues (Insecure)",
+          "name": "ignoreSSL",
+          "type": "boolean",
+          "default": false,
+          "description": "Whether to ignore SSL/TLS certificate issues or not"
+        }
+      ]
+    }
+  ]
+}

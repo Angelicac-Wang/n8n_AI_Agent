@@ -1,0 +1,51 @@
+{
+  "nodeName": "uplead",
+  "summary": "此節點用於消耗 Uplead API，可查詢公司或個人的相關資料。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要查詢的資源類型，可以是公司或個人。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如豐富公司資料或個人資料。"
+    },
+    {
+      "name": "company",
+      "type": "string",
+      "description": "公司名稱，用於豐富公司資料的操作。"
+    },
+    {
+      "name": "domain",
+      "type": "string",
+      "description": "公司或個人的域名，用於豐富資料的操作。"
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "description": "個人的電子郵件地址，用於豐富個人資料的操作。"
+    },
+    {
+      "name": "firstname",
+      "type": "string",
+      "description": "個人的名字，用於豐富個人資料的操作。"
+    },
+    {
+      "name": "lastname",
+      "type": "string",
+      "description": "個人的姓氏，用於豐富個人資料的操作。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "company",
+        "operation": "enrich",
+        "company": "amazon",
+        "domain": "amazon.com"
+      }
+    }
+  }
+}

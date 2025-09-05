@@ -1,0 +1,58 @@
+{
+  "nodeName": "jwt",
+  "summary": "此節點用於對 JWT（JSON Web Token）進行編碼、解碼和驗證操作。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的 JWT 操作類型，包括編碼、解碼和驗證。"
+    },
+    {
+      "name": "usejson",
+      "type": "boolean",
+      "description": "是否使用 JSON 來構建聲明（claims）。",
+    },
+    {
+      "name": "claims",
+      "type": "collection",
+      "description": "要添加到令牌的聲明列表，如接收者、過期時間、發行者等。",
+    },
+    {
+      "name": "claimsjson",
+      "type": "json",
+      "description": "以 JSON 格式提供要添加到令牌的聲明。",
+    },
+    {
+      "name": "token",
+      "type": "string",
+      "description": "要驗證或解碼的 JWT 令牌。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項，如返回完整解碼的令牌、忽略過期時間等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "sign",
+        "useJson": false,
+        "claims": {
+          "audience": "https://example.com",
+          "expiresIn": 3600,
+          "issuer": "https://example.com"
+        },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        "options": {
+          "complete": true,
+          "ignoreExpiration": false,
+          "ignoreNotBefore": false,
+          "clockTolerance": 0,
+          "kid": "123456",
+          "algorithm": "HS256"
+        }
+      }
+    }
+  }
+}

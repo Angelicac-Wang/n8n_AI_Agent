@@ -1,0 +1,30 @@
+{
+  "nodeName": "mailchimp",
+  "summary": "Consume Mailchimp API to perform operations such as managing members, campaigns, and list groups.",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "Select the type of authentication to use (API Key or OAuth2)."
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Choose the type of resource to perform operations on (Campaign, List Group, Member, Member Tag, or Custom API Call).",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource (e.g., Create, Delete, Get, Update)."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "apiKey",
+        "resource": "member",
+        "operation": "create"
+      }
+    }
+  }
+}

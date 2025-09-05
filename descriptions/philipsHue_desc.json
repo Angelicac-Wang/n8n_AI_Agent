@@ -1,0 +1,65 @@
+{
+  "nodeName": "philips hue",
+  "summary": "此節點用於消費 Philips Hue API，可執行與 Philips Hue 燈具相關的操作，如刪除、獲取、更新燈具資訊。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是燈具或自定義 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如刪除燈具、獲取燈具資訊、更新燈具狀態等。"
+    },
+    {
+      "name": "light id",
+      "type": "string",
+      "description": "要操作的燈具的 ID。"
+    },
+    {
+      "name": "return all",
+      "type": "boolean",
+      "description": "是否返回所有結果或僅返回到指定限制。"
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數量。"
+    },
+    {
+      "name": "light name or id",
+      "type": "options",
+      "description": "選擇燈具名稱或 ID，或使用表達式指定 ID。"
+    },
+    {
+      "name": "on",
+      "type": "boolean",
+      "description": "燈具的開關狀態。"
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "其他可選字段，如亮度、色溫、顏色等。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "light",
+        "operation": "update",
+        "lightId": "1",
+        "on": true,
+        "additionalFields": {
+          "alert": "none",
+          "bri": 100,
+          "ct": 0,
+          "effect": "none",
+          "hue": 0,
+          "sat": 0,
+          "transitiontime": 4
+        }
+      }
+    }
+  }
+}

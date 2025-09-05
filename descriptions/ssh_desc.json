@@ -1,0 +1,62 @@
+{
+  "nodeName": "ssh",
+  "summary": "透過 SSH 執行命令",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "指定身份驗證方式，可以選擇密碼或私鑰"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是命令或檔案"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定操作類型，如執行命令、下載檔案或上傳檔案"
+    },
+    {
+      "name": "command",
+      "type": "string",
+      "description": "要在遠端設備上執行的命令"
+    },
+    {
+      "name": "cwd",
+      "type": "string",
+      "description": "要執行命令的工作目錄"
+    },
+    {
+      "name": "binaryPropertyName",
+      "type": "string",
+      "description": "包含要上傳檔案的二進位資料的輸入欄位名稱"
+    },
+    {
+      "name": "path",
+      "type": "string",
+      "description": "要上傳或下載檔案的目錄或路徑"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定，如覆蓋檔案名稱等"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "password",
+        "resource": "command",
+        "operation": "execute",
+        "command": "ls -l",
+        "cwd": "/home/user",
+        "binaryPropertyName": "data",
+        "path": "/home/user",
+        "options": {
+          "fileName": "example.txt"
+        }
+      }
+    }
+  }
+}

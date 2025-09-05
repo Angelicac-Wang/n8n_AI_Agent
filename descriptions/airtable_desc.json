@@ -1,0 +1,48 @@
+{
+  "nodeName": "airtable",
+  "summary": "此節點可從 Airtable 讀取、更新、寫入和刪除數據。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於驗證的方式，包括 Access Token、OAuth2 和 API Key。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "操作類型，包括追加、刪除、列出、讀取和更新數據。"
+    },
+    {
+      "name": "application",
+      "type": "resourceLocator",
+      "description": "要操作的 Airtable Base，可以通過 URL 或 ID 來指定。"
+    },
+    {
+      "name": "table",
+      "type": "resourceLocator",
+      "description": "要操作的 Airtable 表，可以通過 URL 或 ID 來指定。"
+    },
+    {
+      "name": "addAllFields",
+      "type": "boolean",
+      "description": "是否添加所有字段。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "airtableTokenApi",
+        "operation": "read",
+        "application": {
+          "mode": "url",
+          "value": "https://airtable.com/app12DiScdfes/tblAAAAAAAAAAAAA/viwHdfasdfeieg5p"
+        },
+        "table": {
+          "mode": "url",
+          "value": "https://airtable.com/app12DiScdfes/tblAAAAAAAAAAAAA/viwHdfasdfeieg5p"
+        },
+        "addAllFields": true
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "nodeName": "graphql",
+  "summary": "發送 GraphQL 請求並返回接收到的數據。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於身份驗證的方式。"
+    },
+    {
+      "name": "requestmethod",
+      "type": "options",
+      "description": "要使用的基礎 HTTP 請求方法。"
+    },
+    {
+      "name": "endpoint",
+      "type": "string",
+      "description": "GraphQL 端點。",
+      "required": true
+    },
+    {
+      "name": "allowunauthorizedcerts",
+      "type": "boolean",
+      "description": "是否在 SSL 憑證驗證無法進行時仍要下載響應。"
+    },
+    {
+      "name": "requestformat",
+      "type": "options",
+      "description": "查詢有效載荷的格式。"
+    },
+    {
+      "name": "query",
+      "type": "string",
+      "description": "GraphQL 查詢。",
+      "required": true
+    },
+    {
+      "name": "variables",
+      "type": "json",
+      "description": "作為 JSON 對象的查詢變量。",
+      "show": "requestformat:json, requestmethod:post"
+    },
+    {
+      "name": "operationname",
+      "type": "string",
+      "description": "要執行的操作名稱。",
+      "show": "requestformat:json, requestmethod:post"
+    },
+    {
+      "name": "responseformat",
+      "type": "options",
+      "description": "從 URL 返回數據的格式。"
+    },
+    {
+      "name": "datapropertyname",
+      "type": "string",
+      "description": "要將響應數據寫入的屬性名稱。",
+      "required": true,
+      "show": "responseformat:string"
+    },
+    {
+      "name": "headerparametersui",
+      "type": "fixedcollection",
+      "description": "要發送的標頭。",
+      "options": [
+        {
+          "name": "parameter",
+          "values": [
+            {
+              "name": "name",
+              "type": "string",
+              "description": "標頭的名稱"
+            },
+            {
+              "name": "value",
+              "type": "string",
+              "description": "要設置的標頭值"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "none",
+        "requestmethod": "POST",
+        "endpoint": "http://example.com/graphql",
+        "allowunauthorizedcerts": false,
+        "requestformat": "json",
+        "query": "query { users { id name } }",
+        "variables": { "userId": 123 },
+        "operationname": "getUser",
+        "responseformat": "json",
+        "datapropertyname": "data",
+        "headerparametersui": [
+          {
+            "name": "Authorization",
+            "value": "Bearer token"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "nodeName": "postgres",
+  "summary": "在 Postgres 中獲取、新增和更新數據。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作類型，包括執行 SQL 查詢、插入數據和更新數據。"
+    },
+    {
+      "name": "query",
+      "type": "string",
+      "description": "要執行的 SQL 查詢。可以使用 n8n 表達式或 $1 和 $2 與查詢參數一起使用。"
+    },
+    {
+      "name": "schema",
+      "type": "string",
+      "description": "表所屬的模式名稱。"
+    },
+    {
+      "name": "table",
+      "type": "string",
+      "description": "要插入或更新數據的表名。"
+    },
+    {
+      "name": "columns",
+      "type": "string",
+      "description": "要用作新行列的屬性的逗號分隔列表。可以使用冒號（:）進行類型轉換，如 id:int。"
+    },
+    {
+      "name": "updateKey",
+      "type": "string",
+      "description": "決定應更新數據庫中哪些行的屬性的逗號分隔列表。通常是 \"id\"。"
+    },
+    {
+      "name": "returnFields",
+      "type": "string",
+      "description": "操作將返回的字段列表。"
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "其他可選字段，如執行查詢的模式、大型數字的輸出格式和查詢參數。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "insert",
+        "schema": "public",
+        "table": "products",
+        "columns": "id:int,name:text,description",
+        "returnFields": "*",
+        "additionalFields": {
+          "mode": "multiple",
+          "largeNumbersOutput": "text"
+        }
+      }
+    }
+  }
+}

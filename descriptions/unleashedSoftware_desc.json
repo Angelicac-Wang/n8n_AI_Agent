@@ -1,0 +1,45 @@
+{
+  "nodeName": "unleashed software",
+  "summary": "此節點用於消費 Unleashed Software API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如銷售訂單或庫存狀況。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如獲取多個銷售訂單或獲取庫存狀況。"
+    },
+    {
+      "name": "returnall",
+      "type": "boolean",
+      "description": "指定是否返回所有結果或僅返回到特定限制。"
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "設置要返回的最大結果數量上限。"
+    },
+    {
+      "name": "filters",
+      "type": "collection",
+      "description": "設置篩選條件，如客戶ID、訂單日期等。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "salesOrder",
+        "operation": "getAll",
+        "returnAll": false,
+        "limit": 100,
+        "filters": {
+          "customerId": "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+          "endDate": "2022-12-31T23:59:59Z"
+        }
+      }
+    }
+  }
+}

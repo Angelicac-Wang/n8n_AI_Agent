@@ -1,0 +1,71 @@
+{
+  "nodeName": "ftp",
+  "summary": "透過 FTP 或 SFTP 進行文件傳輸。",
+  "parameters": [
+    {
+      "name": "protocol",
+      "type": "options",
+      "description": "文件傳輸協議，可選擇 FTP 或 SFTP。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如刪除文件、下載文件、列出目錄內容、重命名文件或上傳文件。"
+    },
+    {
+      "name": "path",
+      "type": "string",
+      "description": "要操作的文件路徑，需包含完整路徑。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "進階選項設定，如是否允許刪除目錄、是否遞迴刪除等。",
+    },
+    {
+      "name": "binaryPropertyName",
+      "type": "string",
+      "description": "要將下載的文件放入的二進制字段的名稱。",
+    },
+    {
+      "name": "oldPath",
+      "type": "string",
+      "description": "要重命名或移動的舊文件路徑。",
+    },
+    {
+      "name": "newPath",
+      "type": "string",
+      "description": "重命名或移動文件的新路徑。",
+    },
+    {
+      "name": "createDirectories",
+      "type": "boolean",
+      "description": "當重命名現有文件或目錄時，是否遞迴創建目標目錄。",
+    },
+    {
+      "name": "binaryData",
+      "type": "boolean",
+      "description": "是否上傳二進制文件內容。",
+    },
+    {
+      "name": "fileContent",
+      "type": "string",
+      "description": "要上傳的文件的文本內容。",
+    },
+    {
+      "name": "recursive",
+      "type": "boolean",
+      "description": "是否遞迴返回在 SFTP 伺服器內找到的所有目錄/對象。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "protocol": "ftp",
+        "operation": "download",
+        "path": "/public/documents/file-to-download.txt",
+        "binaryPropertyName": "data"
+      }
+    }
+  }
+}

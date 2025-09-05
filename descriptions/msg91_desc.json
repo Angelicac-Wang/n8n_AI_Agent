@@ -1,0 +1,42 @@
+{
+  "nodeName": "msg91",
+  "summary": "透過 MSG91 發送交易性簡訊",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定資源類型，此節點僅支援 'SMS'。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定操作類型，此節點僅支援 'Send' 操作，用於發送簡訊。"
+    },
+    {
+      "name": "from",
+      "type": "string",
+      "description": "發送簡訊的號碼。"
+    },
+    {
+      "name": "to",
+      "type": "string",
+      "description": "接收簡訊的號碼，需包含國家代碼。"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "要發送的簡訊內容。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "sms",
+        "operation": "send",
+        "from": "4155238886",
+        "to": "+14155238886",
+        "message": "Hello, this is a test message."
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "nodename": "evaluation",
+  "summary": "運行評估操作，可設置輸出、指標、檢查是否正在評估，或自定義 API 呼叫。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作類型，如設置輸出、指標、檢查是否正在評估，或自定義 API 呼叫。"
+    },
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "指定身份驗證方式，可選擇服務帳戶或 OAuth2（建議）。",
+    },
+    {
+      "name": "credentials",
+      "type": "credentials",
+      "description": "指定用於身份驗證的憑據。"
+    },
+    {
+      "name": "documentId",
+      "type": "resourcelocator",
+      "description": "指定包含資料集的文件，可以從列表、URL 或 ID 選擇。僅在操作為設置輸出時顯示。"
+    },
+    {
+      "name": "sheetName",
+      "type": "resourcelocator",
+      "description": "指定包含資料集的工作表，可以從列表、URL 或 ID 選擇。僅在操作為設置輸出時顯示。"
+    },
+    {
+      "name": "outputs",
+      "type": "fixedcollection",
+      "description": "指定輸出的集合，可以添加多個輸出項目。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "setOutputs",
+        "authentication": "oAuth2",
+        "credentials": "myOAuthCredentials",
+        "documentId": {
+          "mode": "list",
+          "value": ""
+        },
+        "sheetName": {
+          "mode": "list",
+          "value": ""
+        },
+        "outputs": {
+          "values": [
+            {
+              "outputName": "output1"
+            },
+            {
+              "outputName": "output2"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

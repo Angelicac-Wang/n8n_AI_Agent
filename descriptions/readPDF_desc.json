@@ -1,0 +1,30 @@
+{
+  "nodeName": "read pdf",
+  "summary": "此節點用於讀取 PDF 檔案並提取其內容。",
+  "parameters": [
+    {
+      "name": "input binary field",
+      "type": "string",
+      "description": "要讀取 PDF 檔案的二進位屬性名稱。",
+    },
+    {
+      "name": "encrypted",
+      "type": "boolean",
+      "description": "指示 PDF 檔案是否加密。",
+    },
+    {
+      "name": "password",
+      "type": "string",
+      "description": "用於解密 PDF 檔案的密碼。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "binaryPropertyName": "data",
+        "encrypted": false,
+        "password": ""
+      }
+    }
+  }
+}

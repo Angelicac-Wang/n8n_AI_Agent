@@ -1,0 +1,44 @@
+{
+  "nodeName": "x (formerly twitter)",
+  "summary": "This node allows you to interact with the Twitter API to perform actions such as creating tweets, sending direct messages, liking tweets, retweeting, and searching for tweets.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource you want to interact with (e.g., Direct Message or Tweet).",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation you want to perform on the chosen resource (e.g., Create, Delete, Like, Retweet, Search).",
+    },
+    {
+      "name": "user id",
+      "type": "string",
+      "description": "The ID of the user who should receive the direct message.",
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "description": "The text of your Direct Message or status update. URL encode as necessary.",
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "Additional fields for the operation, such as attachments or display coordinates.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "tweet",
+        "operation": "create",
+        "text": "Hello, this is a sample tweet!",
+        "additionalFields": {
+          "attachments": "data",
+          "displayCoordinates": false
+        }
+      }
+    }
+  }
+}

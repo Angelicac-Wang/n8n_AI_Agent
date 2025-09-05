@@ -1,0 +1,44 @@
+{
+  "nodeName": "rename keys",
+  "summary": "此節點用於更新項目字段名稱。",
+  "parameters": [
+    {
+      "name": "keys",
+      "type": "fixedcollection",
+      "description": "要重命名的鍵。可以指定當前鍵名和新鍵名，也可以使用點表示法定義深層鍵名。"
+    },
+    {
+      "name": "additional options",
+      "type": "collection",
+      "description": "其他選項，包括使用正則表達式進行替換。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "keys": [
+          {
+            "key": {
+              "currentKey": "oldKey",
+              "newKey": "newKey"
+            }
+          }
+        ],
+        "additionalOptions": {
+          "regexReplacement": [
+            {
+              "replacements": {
+                "searchRegex": "[N-n]ame",
+                "replaceRegex": "replacedName",
+                "options": {
+                  "caseInsensitive": true,
+                  "depth": 2
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

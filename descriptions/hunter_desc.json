@@ -1,0 +1,67 @@
+{
+  "nodeName": "hunter",
+  "summary": "此節點用於使用 Hunter API 來執行不同的操作，如尋找特定域名的郵件地址、生成或檢索最可能的郵件地址，以及驗證郵件地址的可遞送性。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "要執行的操作類型，包括域名搜索、郵件地址查找和郵件地址驗證。"
+    },
+    {
+      "name": "domain",
+      "type": "string",
+      "description": "要查找郵件地址的域名。"
+    },
+    {
+      "name": "onlyEmails",
+      "type": "boolean",
+      "description": "是否僅返回找到的郵件地址。"
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "是否返回所有結果或僅返回到指定限制。"
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數量。"
+    },
+    {
+      "name": "filters",
+      "type": "collection",
+      "description": "可應用的篩選條件，如類型、職位級別和部門。"
+    },
+    {
+      "name": "firstname",
+      "type": "string",
+      "description": "人員的名字。"
+    },
+    {
+      "name": "lastname",
+      "type": "string",
+      "description": "人員的姓氏。"
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "description": "要驗證的郵件地址。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "domainSearch",
+        "domain": "example.com",
+        "onlyEmails": true,
+        "returnAll": false,
+        "limit": 100,
+        "filters": {
+          "type": "personal",
+          "seniority": ["senior"],
+          "department": ["IT"]
+        }
+      }
+    }
+  }
+}

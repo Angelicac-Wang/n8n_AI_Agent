@@ -1,0 +1,63 @@
+{
+  "nodename": "microsoft teams trigger",
+  "summary": "Triggers workflows in n8n based on events from Microsoft Teams, such as new messages or team updates, using specified configurations.",
+  "parameters": [
+    {
+      "name": "trigger on",
+      "type": "options",
+      "description": "Select the event to trigger the workflow"
+    },
+    {
+      "name": "watch all teams",
+      "type": "boolean",
+      "description": "Whether to watch for the event in all the available teams"
+    },
+    {
+      "name": "team",
+      "type": "resourcelocator",
+      "description": "Select a team from the list, enter an ID or a URL"
+    },
+    {
+      "name": "watch all channels",
+      "type": "boolean",
+      "description": "Whether to watch for the event in all the available channels"
+    },
+    {
+      "name": "channel",
+      "type": "resourcelocator",
+      "description": "Select a channel from the list, enter an ID or a URL"
+    },
+    {
+      "name": "watch all chats",
+      "type": "boolean",
+      "description": "Whether to watch for the event in all the available chats"
+    },
+    {
+      "name": "chat",
+      "type": "resourcelocator",
+      "description": "Select a chat from the list, enter an ID or a URL"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "event": "newChannelMessage",
+        "watchAllTeams": false,
+        "teamId": {
+          "mode": "list",
+          "value": "team_id"
+        },
+        "watchAllChannels": false,
+        "channelId": {
+          "mode": "list",
+          "value": "channel_id"
+        },
+        "watchAllChats": false,
+        "chatId": {
+          "mode": "list",
+          "value": "chat_id"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "nodeName": "sentry.io",
+  "summary": "Consume Sentry.io API to manage events, issues, organizations, projects, releases, and teams.",
+  "parameters": [
+    {
+      "name": "sentry version",
+      "type": "options",
+      "description": "Select the Sentry version to connect to (Cloud or Self-Hosted)."
+    },
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "Select the authentication method to use (Access Token or OAuth2)."
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with (Event, Issue, Organization, Project, Release, Team, or make a Custom API Call)."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource (e.g., Get event by ID, Get many events, or make a Custom API Call)."
+    },
+    {
+      "name": "organization slug name or ID",
+      "type": "options",
+      "description": "The slug of the organization the events belong to. Required for fetching events."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "sentryVersion": "cloud",
+        "authentication": "accessToken",
+        "resource": "event",
+        "operation": "get",
+        "organizationSlug": "example-organization",
+        "full": true
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "nodeName": "edit image",
+  "summary": "This node allows you to edit an image by applying operations like blur, resize, adding borders, text, and more.",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the image, such as blur, border, resize, text, etc."
+    },
+    {
+      "name": "dataPropertyName",
+      "type": "string",
+      "description": "Name of the binary property where the image data is stored."
+    },
+    {
+      "name": "operations",
+      "type": "fixedCollection",
+      "description": "Specify multiple operations to perform in a sequence, applicable when 'Operation' is set to 'Multi Step'."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "border",
+        "dataPropertyName": "data",
+        "operations": {
+          "operation": "resize"
+        }
+      }
+    }
+  }
+}

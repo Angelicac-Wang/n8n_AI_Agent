@@ -1,0 +1,57 @@
+{
+  "nodeName": "google contacts",
+  "summary": "此節點用於消費 Google 聯絡人 API，可執行創建、刪除、獲取、更新聯絡人等操作。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是聯絡人或自定義 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如創建、刪除、獲取、更新聯絡人等。",
+    },
+    {
+      "name": "family name",
+      "type": "string",
+      "description": "聯絡人的姓氏。",
+    },
+    {
+      "name": "given name",
+      "type": "string",
+      "description": "聯絡人的名字。",
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "其他聯絡人相關的欄位，如地址、生日、公司等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "contact",
+        "operation": "create",
+        "familyName": "Doe",
+        "givenName": "John",
+        "additionalFields": {
+          "addressesUi": {
+            "addressesValues": [
+              {
+                "streetAddress": "123 Main St",
+                "city": "Anytown",
+                "region": "CA",
+                "countryCode": "US",
+                "postalCode": "12345",
+                "type": "home"
+              }
+            ]
+          },
+          "birthday": "1990-01-01",
+          "companyUi": {}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "nodeName": "vero",
+  "summary": "此節點用於消費 Vero API，可用於管理用戶訂閱狀態和跟蹤客戶事件。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是用戶（User）或事件（Event）。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如添加標籤、刪除用戶等。取決於選擇的資源類型。",
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "description": "客戶的唯一識別符。僅在選擇用戶資源且操作為創建時需要。",
+    },
+    {
+      "name": "jsonParameters",
+      "type": "boolean",
+      "description": "指定是否使用 JSON 參數。僅在選擇用戶資源且操作為創建時需要。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "額外的字段，用於提供更多客戶信息。僅在選擇用戶資源且操作為創建時需要。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "user",
+        "operation": "create",
+        "id": "12345",
+        "jsonParameters": false,
+        "additionalFields": {
+          "email": "name@email.com"
+        }
+      }
+    }
+  }
+}

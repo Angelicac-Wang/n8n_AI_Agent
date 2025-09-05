@@ -1,0 +1,49 @@
+{
+  "nodeName": "disqus",
+  "summary": "此節點用於訪問 Disqus 上的數據。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要訪問的資源類型，目前僅支持論壇（Forum）。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如獲取論壇詳細信息、獲取論壇內所有分類、獲取論壇內所有主題等。",
+    },
+    {
+      "name": "forum name",
+      "type": "string",
+      "description": "要獲取的論壇的短名稱（ID）。",
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "指定要返回的額外字段，如計數器、作者等。",
+    },
+    {
+      "name": "return all",
+      "type": "boolean",
+      "description": "是否返回所有結果，或僅返回限定數量。",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數量，介於 1 到 100 之間。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "forum",
+        "operation": "get",
+        "id": "example_forum",
+        "additionalFields": {
+          "attach": ["counters"],
+          "related": ["author"]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "nodeName": "netscaler adc",
+  "summary": "This node allows you to consume Netscaler ADC API for operations like creating and installing certificates.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to work with (Certificate, File, Custom API Call)."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform (Create, Install, Custom API Call).",
+    },
+    {
+      "name": "certificateFileName",
+      "type": "string",
+      "description": "Name for the generated certificate file.",
+    },
+    {
+      "name": "certificateFormat",
+      "type": "options",
+      "description": "Format in which the certificate is stored on the appliance (PEM, DER).",
+    },
+    {
+      "name": "certificateType",
+      "type": "options",
+      "description": "Type of certificate to create (Root-CA, Intermediate-CA, Server, Client).",
+    },
+    {
+      "name": "certificateRequestFileName",
+      "type": "string",
+      "description": "Name for the certificate-signing request (CSR).",
+    },
+    {
+      "name": "caCertificateFileName",
+      "type": "string",
+      "description": "Name of the CA certificate file that issues and signs the certificates.",
+    },
+    {
+      "name": "caCertificateFileFormat",
+      "type": "options",
+      "description": "Format of the CA certificate file (PEM, DER).",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "certificate",
+        "operation": "create",
+        "certificateFileName": "example_cert.pem",
+        "certificateFormat": "PEM",
+        "certificateType": "ROOT_CERT",
+        "certificateRequestFileName": "example_csr.pem",
+        "caCertificateFileName": "example_ca_cert.pem",
+        "caCertificateFileFormat": "PEM"
+      }
+    }
+  }
+}

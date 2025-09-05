@@ -1,0 +1,18 @@
+{
+  "nodename": "chargebee trigger",
+  "summary": "此節點在發生 Chargebee 事件時啟動工作流程。",
+  "parameters": [
+    {
+      "name": "events",
+      "type": "multiOptions",
+      "description": "要觸發的 Chargebee 事件類型。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "events": ["card_added", "customer_created"]
+      }
+    }
+  }
+}

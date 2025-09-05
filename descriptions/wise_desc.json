@@ -1,0 +1,54 @@
+{
+  "nodename": "wise",
+  "summary": "此節點用於消費 Wise API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要訪問的資源類型，如帳戶、匯率、個人資料等。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "要執行的操作，例如獲取餘額、獲取貨幣等。",
+    },
+    {
+      "name": "profileid",
+      "type": "options",
+      "description": "要檢索餘額的使用者配置文件的 ID。",
+    },
+    {
+      "name": "borderlessaccountid",
+      "type": "options",
+      "description": "要檢索報表的無國界帳戶的 ID。",
+    },
+    {
+      "name": "currency",
+      "type": "string",
+      "description": "要檢索報表的無國界帳戶的貨幣代碼。",
+    },
+    {
+      "name": "format",
+      "type": "options",
+      "description": "要檢索報表的文件格式。",
+    },
+    {
+      "name": "binaryproperty",
+      "type": "string",
+      "description": "將輸出文件放入的二進位字段的名稱。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "account",
+        "operation": "getBalances",
+        "profileId": "12345",
+        "borderlessAccountId": "67890",
+        "currency": "USD",
+        "format": "json",
+        "binaryProperty": "data"
+      }
+    }
+  }
+}

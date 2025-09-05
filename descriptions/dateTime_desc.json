@@ -1,0 +1,72 @@
+{
+  "nodeName": "date & time",
+  "summary": "此節點允許您操作日期和時間值。",
+  "parameters": [
+    {
+      "name": "action",
+      "type": "options",
+      "description": "選擇要執行的操作類型：計算日期或將日期格式化。",
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "description": "要轉換的日期值。",
+    },
+    {
+      "name": "dataPropertyName",
+      "type": "string",
+      "description": "要將轉換後的日期寫入的屬性名稱。",
+    },
+    {
+      "name": "custom",
+      "type": "boolean",
+      "description": "選擇是否使用預定義格式或自訂格式。",
+    },
+    {
+      "name": "toFormat",
+      "type": "string",
+      "description": "要將日期轉換為的格式。",
+    },
+    {
+      "name": "fromFormat",
+      "type": "string",
+      "description": "將值解析為日期的格式。",
+    },
+    {
+      "name": "fromTimezone",
+      "type": "options",
+      "description": "要從中轉換的時區。",
+    },
+    {
+      "name": "toTimezone",
+      "type": "options",
+      "description": "要轉換為的時區。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作：添加或減去時間。",
+    },
+    {
+      "name": "duration",
+      "type": "number",
+      "description": "要添加或減去的時間數量。",
+    },
+    {
+      "name": "timeUnit",
+      "type": "options",
+      "description": "時間數量的單位。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "action": "format",
+        "value": "2022-12-31",
+        "dataPropertyName": "formattedDate",
+        "custom": false,
+        "toFormat": "MM/DD/YYYY"
+      }
+    }
+  }
+}

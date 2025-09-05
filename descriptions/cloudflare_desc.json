@@ -1,0 +1,61 @@
+{
+  "nodeName": "cloudflare",
+  "summary": "此節點用於消耗 Cloudflare API，可執行與 Cloudflare 相關的操作，如管理 SSL 憑證。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型，如區域憑證或自訂 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作，如刪除、獲取、上傳憑證等。"
+    },
+    {
+      "name": "zone name or id",
+      "type": "options",
+      "description": "選擇區域名稱或 ID，或使用表達式指定 ID。僅在上傳、獲取多個、獲取和刪除操作時顯示。"
+    },
+    {
+      "name": "certificate content",
+      "type": "string",
+      "description": "區域的樹葉憑證。僅在上傳操作時顯示。"
+    },
+    {
+      "name": "private key",
+      "type": "string",
+      "description": "私鑰。僅在上傳操作時顯示。"
+    },
+    {
+      "name": "return all",
+      "type": "boolean",
+      "description": "是否返回所有結果或僅返回到指定限制。僅在獲取多個操作時顯示。"
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數。僅在獲取多個操作時顯示。"
+    },
+    {
+      "name": "filters",
+      "type": "collection",
+      "description": "篩選條件，如 SSL 的狀態。僅在獲取多個操作時顯示。"
+    },
+    {
+      "name": "certificate id",
+      "type": "string",
+      "description": "憑證 ID。僅在獲取和刪除操作時顯示。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "zoneCertificate",
+        "operation": "get",
+        "zoneId": "exampleZoneId",
+        "certificateId": "exampleCertificateId"
+      }
+    }
+  }
+}

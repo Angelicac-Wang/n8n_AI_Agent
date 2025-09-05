@@ -1,0 +1,24 @@
+{
+  "nodeName": "jina ai",
+  "summary": "與 Jina AI API 進行互動。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是 Reader、Research 或自訂 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，根據所選資源類型不同，可選的操作有 Read、Search 或 Deep Research。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "reader",
+        "operation": "read"
+      }
+    }
+  }
+}

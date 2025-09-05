@@ -1,0 +1,36 @@
+{
+  "nodeName": "mailchimp trigger",
+  "summary": "透過 Webhooks 處理 Mailchimp 事件。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於指定身份驗證方式，可以選擇使用 API 金鑰或 OAuth2。"
+    },
+    {
+      "name": "list",
+      "type": "options",
+      "description": "指定將觸發事件的清單。可以從清單中選擇，或使用表達式指定 ID。",
+    },
+    {
+      "name": "events",
+      "type": "multiOptions",
+      "description": "指定可以觸發 Webhook 的事件以及它們是否已啟用。",
+    },
+    {
+      "name": "sources",
+      "type": "multiOptions",
+      "description": "指定可以觸發 Webhook 的事件可能來源，以及它們是否已啟用。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "apiKey",
+        "list": "",
+        "events": ["campaign", "cleaned"],
+        "sources": ["user", "admin"]
+      }
+    }
+  }
+}

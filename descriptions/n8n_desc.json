@@ -1,0 +1,39 @@
+{
+  "nodename": "n8n",
+  "summary": "處理事件並執行動作於您的 n8n 實例。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如審核、憑證、執行、工作流或自訂 API 呼叫。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要對資源執行的操作，如生成安全審核、創建憑證等。",
+    },
+    {
+      "name": "additionaloptions",
+      "type": "collection",
+      "description": "提供進一步的選項設定，如風險類別、工作流被視為被遺棄的天數等。",
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "新憑證的名稱。",
+    },
+    {
+      "name": "credentialtypename",
+      "type": "string",
+      "description": "憑證類型的名稱。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "workflow",
+        "operation": "get"
+      }
+    }
+  }
+}

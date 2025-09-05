@@ -1,0 +1,61 @@
+{
+  "nodename": "gmail trigger",
+  "summary": "此節點從 Gmail 中擷取郵件，並在指定的輪詢間隔啟動工作流程。",
+  "parameters": [
+    {
+      "name": "poll times",
+      "type": "fixedcollection",
+      "description": "時間間隔，指定輪詢應該發生的時間",
+    },
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "身份驗證方式選擇",
+    },
+    {
+      "name": "event",
+      "type": "options",
+      "description": "觸發事件選擇",
+    },
+    {
+      "name": "simplify",
+      "type": "boolean",
+      "description": "是否返回簡化版本的回應而不是原始數據",
+    },
+    {
+      "name": "filters",
+      "type": "collection",
+      "description": "篩選器設定，用於過濾郵件",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyDay"
+            }
+          ]
+        },
+        "authentication": "oAuth2",
+        "event": "messageReceived",
+        "simple": true,
+        "filters": {
+          "includeSpamTrash": false,
+          "includeDrafts": false,
+          "labelIds": [],
+          "q": "",
+          "readStatus": "unread",
+          "sender": ""
+        },
+        "options": {}
+      }
+    }
+  }
+}

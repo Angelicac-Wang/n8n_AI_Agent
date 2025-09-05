@@ -1,0 +1,18 @@
+{
+  "nodename": "paypal trigger",
+  "summary": "透過 Webhooks 處理 PayPal 事件。",
+  "parameters": [
+    {
+      "name": "event names or ids",
+      "type": "multioptions",
+      "description": "要監聽的事件。從列表中選擇，或使用 <a href=\"https://docs.n8n.io/code/expressions/\">表達式</a> 指定 ID。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "events": []
+      }
+    }
+  }
+}

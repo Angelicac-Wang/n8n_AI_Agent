@@ -1,0 +1,47 @@
+{
+  "nodeName": "microsoft dynamics crm",
+  "summary": "此節點用於消費 Microsoft Dynamics CRM API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，例如帳戶 (Account)。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如創建 (Create)、刪除 (Delete)、獲取 (Get) 等。",
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "公司或企業名稱。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "其他可選欄位集合，用於指定更多帳戶相關資訊。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "account",
+        "operation": "create",
+        "name": "Example Company",
+        "additionalFields": {
+          "accountcategorycode": "123",
+          "accountratingcode": "456",
+          "addresses": [
+            {
+              "addresstypecode": "789",
+              "line1": "123 Street",
+              "city": "City",
+              "country": "Country"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

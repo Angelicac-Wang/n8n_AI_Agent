@@ -1,0 +1,30 @@
+{
+  "nodeName": "aws textract",
+  "summary": "將數據發送到 Amazon Textract。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "要執行的操作類型。",
+    },
+    {
+      "name": "binarypropertyname",
+      "type": "string",
+      "description": "包含要上傳的二進制文件數據的輸入字段的名稱。支持的文件類型：PNG、JPEG。",
+    },
+    {
+      "name": "simple",
+      "type": "boolean",
+      "description": "是否返回簡化版本的響應而不是原始數據。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "analyzeExpense",
+        "binaryPropertyName": "data",
+        "simple": true
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "nodename": "formstack trigger",
+  "summary": "此節點在 Formstack 表單提交時啟動工作流程。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "要使用的身份驗證方法。",
+    },
+    {
+      "name": "formid",
+      "type": "options",
+      "description": "要監視新提交的 Formstack 表單。",
+    },
+    {
+      "name": "simple",
+      "type": "boolean",
+      "description": "是否返回簡化版本的回應而非原始數據。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "accessToken",
+        "formId": "form123",
+        "simple": true
+      }
+    }
+  }
+}

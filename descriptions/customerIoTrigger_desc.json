@@ -1,0 +1,18 @@
+{
+  "nodeName": "customer.io trigger",
+  "summary": "啟動在 Customer.io 更新時的工作流程 (Beta)。",
+  "parameters": [
+    {
+      "name": "events",
+      "type": "multiOptions",
+      "description": "可以觸發 Webhook 的事件以及它們是否已啟用。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "events": ["customer.subscribed", "email.clicked"]
+      }
+    }
+  }
+}

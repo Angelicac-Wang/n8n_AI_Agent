@@ -1,0 +1,18 @@
+{
+  "nodename": "n8n trigger",
+  "summary": "處理事件並在您的 n8n 實例上執行操作。",
+  "parameters": [
+    {
+      "name": "events",
+      "type": "multioptions",
+      "description": "指定觸發執行的條件:\n- <b>Active Workflow Updated</b>: 當此工作流程被更新時觸發\n- <b>Instance Started</b>: 當此 n8n 實例啟動或重新啟動時觸發\n- <b>Workflow Activated</b>: 當此工作流程被啟用時觸發",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "events": ["update"]
+      }
+    }
+  }
+}

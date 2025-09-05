@@ -1,0 +1,58 @@
+{
+  "nodeName": "uptimerobot",
+  "summary": "此節點用於消費 UptimeRobot API，可執行不同資源的操作，如帳戶、監控器等。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如帳戶、警報聯絡人、維護窗口、監控器等。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，根據所選資源類型不同，可選的操作也會有所不同。"
+    },
+    {
+      "name": "friendlyName",
+      "type": "string",
+      "description": "監控器的友好名稱，僅在創建監控器時需要設定。"
+    },
+    {
+      "name": "type",
+      "type": "options",
+      "description": "監控器的類型，僅在創建監控器時需要設定，如心跳、HTTP(S)、關鍵字、Ping、端口等。"
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "description": "監控器的 URL/IP，僅在創建監控器時需要設定。"
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "description": "監控器的 ID，用於刪除、重置或獲取單個監控器的操作。"
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "是否返回所有結果，僅在獲取多個監控器時有效。"
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "限制返回結果的數量，僅在獲取多個監控器時有效。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "monitor",
+        "operation": "create",
+        "friendlyName": "My Monitor",
+        "type": 1,
+        "url": "https://example.com",
+        "returnAll": false
+      }
+    }
+  }
+}

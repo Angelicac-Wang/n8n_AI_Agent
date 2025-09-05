@@ -1,0 +1,39 @@
+{
+  "nodeName": "openthesaurus",
+  "summary": "使用 OpenThesaurus API 為德文單詞取得同義詞。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作。目前僅支援 'Get Synonyms'。",
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "description": "要取得同義詞的德文單詞。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "進階選項設定。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "getSynonyms",
+        "text": "Haus",
+        "options": {
+          "baseform": false,
+          "similar": false,
+          "startswith": false,
+          "substring": false,
+          "substringFromResults": 0,
+          "substringMaxResults": 10,
+          "subsynsets": false,
+          "supersynsets": false
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "nodeName": "webex by cisco trigger",
+  "summary": "此節點在發生 Cisco Webex 事件時啟動工作流程。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要監聽的 Cisco Webex 資源類型。",
+      "default": "meeting",
+      "required": true
+    },
+    {
+      "name": "event",
+      "type": "options",
+      "description": "選擇要監聽的事件類型。",
+      "default": "",
+      "required": true
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "meeting",
+        "event": "created"
+      }
+    }
+  }
+}

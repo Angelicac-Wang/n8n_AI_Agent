@@ -1,0 +1,24 @@
+{
+  "nodename": "function item",
+  "summary": "執行自定義函數代碼，每個項目執行一次。",
+  "parameters": [
+    {
+      "name": "notice",
+      "type": "notice",
+      "description": "此節點類型的更新版本為 'Code' 節點。"
+    },
+    {
+      "name": "functioncode",
+      "type": "string",
+      "description": "要為每個項目執行的 JavaScript 代碼。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "notice": "",
+        "functionCode": "// Code here will run once per input item.\n// More info and help: https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.functionitem/\n// Tip: You can use luxon for dates and $jmespath for querying JSON structures\n\n// Add a new field called 'myNewField' to the JSON of the item\nitem.myNewField = 1;\n\n// You can write logs to the browser console\nconsole.log('Done!');\n\nreturn item;"
+      }
+    }
+  }
+}

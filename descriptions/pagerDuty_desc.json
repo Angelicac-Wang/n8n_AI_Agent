@@ -1,0 +1,58 @@
+{
+  "nodeName": "pagerduty",
+  "summary": "此節點用於消費 PagerDuty API，可執行創建、獲取、更新事件等操作。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於指定驗證方式，可以選擇使用 API Token 或 OAuth2 進行驗證。",
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如事件、事件備註、日誌等。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如創建事件、獲取事件、更新事件等。",
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "事件的簡要描述，用於創建事件操作。",
+    },
+    {
+      "name": "serviceId",
+      "type": "options",
+      "description": "指定事件將要創建的服務名稱或 ID。",
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "description": "發送請求的帳戶關聯的有效用戶的電子郵件地址。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "其他需要提供的字段，如指定升級策略、事件詳細信息等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "apiToken",
+        "resource": "incident",
+        "operation": "create",
+        "title": "Sample Incident",
+        "serviceId": "12345",
+        "email": "user@example.com",
+        "additionalFields": {
+          "escalationPolicyId": "67890",
+          "details": "Additional details about the incident",
+          "incidentKey": "unique_key"
+        }
+      }
+    }
+  }
+}

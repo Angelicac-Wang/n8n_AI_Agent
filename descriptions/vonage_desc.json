@@ -1,0 +1,56 @@
+{
+  "nodeName": "vonage",
+  "summary": "此節點用於使用 Vonage API 來發送簡訊消息。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要使用的 Vonage 資源類型，目前僅支援簡訊（SMS）。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，例如發送簡訊。",
+    },
+    {
+      "name": "from",
+      "type": "string",
+      "description": "設定簡訊發送者的名稱或號碼。",
+    },
+    {
+      "name": "to",
+      "type": "string",
+      "description": "設定簡訊接收者的號碼，需使用 E.164 格式。",
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "設定要發送的簡訊內容。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "包含一組額外的可選參數，用於更詳細地設定簡訊發送。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "sms",
+        "operation": "send",
+        "from": "MyCompany",
+        "to": "+1234567890",
+        "message": "Hello from n8n!",
+        "additionalFields": {
+          "account-ref": "12345",
+          "callback": "https://example.com/webhook",
+          "client-ref": "ref123",
+          "message-class": 1,
+          "protocol-id": "123",
+          "status-report-req": true,
+          "ttl": 4320
+        }
+      }
+    }
+  }
+}

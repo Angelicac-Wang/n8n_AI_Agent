@@ -1,0 +1,55 @@
+{
+  "nodeName": "grist",
+  "summary": "透過 Grist API 來操作 Grist 文件中的表格資料。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作類型，如創建行、刪除行、讀取多行或更新行。",
+    },
+    {
+      "name": "docId",
+      "type": "string",
+      "description": "文件的 ID，用於識別要操作的文件。",
+    },
+    {
+      "name": "tableId",
+      "type": "string",
+      "description": "要操作的表格的 ID。",
+    },
+    {
+      "name": "rowId",
+      "type": "string",
+      "description": "要刪除的行的 ID，或要刪除的行 ID 的逗號分隔列表。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "getAll",
+        "docId": "document_id",
+        "tableId": "table_id",
+        "returnAll": false,
+        "limit": 50,
+        "additionalOptions": {
+          "filter": {
+            "filterProperties": [
+              {
+                "field": "column_name",
+                "values": "value1, value2"
+              }
+            ]
+          },
+          "sort": {
+            "sortProperties": [
+              {
+                "field": "column_name",
+                "direction": "asc"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

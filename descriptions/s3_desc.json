@@ -1,0 +1,50 @@
+{
+  "nodeName": "s3",
+  "summary": "將數據發送到任何兼容 S3 服務的節點。",
+  "parameters": [
+    {
+      "name": "s3standardnotice",
+      "type": "notice",
+      "description": "此節點適用於使用 S3 標準的服務，例如 Minio 或 Digital Ocean Spaces。對於 AWS S3，請使用 'AWS S3' 節點。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要對存儲桶執行的操作。",
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "存儲桶的簡要描述。",
+    },
+    {
+      "name": "additionalfields",
+      "type": "collection",
+      "description": "其他可選字段，用於進一步配置創建存儲桶的細節。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "bucket",
+        "operation": "create",
+        "name": "my-bucket",
+        "additionalFields": {
+          "acl": "publicRead",
+          "bucketObjectLockEnabled": true,
+          "grantFullControl": false,
+          "grantRead": true,
+          "grantReadAcp": false,
+          "grantWrite": true,
+          "grantWriteAcp": false,
+          "region": "us-east-1"
+        }
+      }
+    }
+  }
+}

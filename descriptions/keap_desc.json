@@ -1,0 +1,56 @@
+{
+  "nodeName": "keap",
+  "summary": "此節點用於與 Keap API 進行互動，可用於創建公司、獲取公司資訊等操作。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如公司、聯絡人、電子郵件等。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要對資源執行的操作，如創建、獲取多個資源等。",
+    },
+    {
+      "name": "companyName",
+      "type": "string",
+      "description": "公司名稱，用於創建新公司時的必填欄位。"
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "額外的欄位資訊，如電子郵件、備註、網站等，用於創建新公司時提供更多資訊。"
+    },
+    {
+      "name": "addressesUi",
+      "type": "fixedCollection",
+      "description": "公司地址資訊，包括國家代碼、地址行、郵遞區號等，用於創建新公司時提供地址資訊。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "company",
+        "operation": "create",
+        "companyName": "ABC Inc.",
+        "additionalFields": {
+          "emailAddress": "info@example.com",
+          "notes": "New client",
+          "optInReason": "Subscription",
+          "website": "https://www.example.com"
+        },
+        "addressesUi": {
+          "addressesValues": [
+            {
+              "countryCode": "USA",
+              "line1": "123 Main St",
+              "postalCode": "12345",
+              "region": "CA"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

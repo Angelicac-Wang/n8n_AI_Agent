@@ -1,0 +1,18 @@
+{
+  "nodename": "help scout trigger",
+  "summary": "此節點在 Help Scout 事件發生時啟動工作流程。",
+  "parameters": [
+    {
+      "name": "events",
+      "type": "multiOptions",
+      "description": "選擇要觸發工作流程的 Help Scout 事件類型。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "events": ["convo.assigned", "convo.created"]
+      }
+    }
+  }
+}

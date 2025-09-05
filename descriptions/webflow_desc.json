@@ -1,0 +1,42 @@
+{
+  "nodeName": "webflow",
+  "summary": "此節點用於使用 Webflow API。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於選擇身份驗證方式，可以是 Access Token 或 OAuth2。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，例如項目（item）。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如創建（create）、刪除（delete）、獲取（get）、獲取多個（getAll）、更新（update）。",
+    },
+    {
+      "name": "site name or id",
+      "type": "options",
+      "description": "指定站點名稱或 ID，用於操作特定站點的項目。",
+    },
+    {
+      "name": "collection name or id",
+      "type": "options",
+      "description": "指定集合名稱或 ID，用於操作特定集合的項目。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "accessToken",
+        "resource": "item",
+        "operation": "get",
+        "siteId": "exampleSiteId",
+        "collectionId": "exampleCollectionId"
+      }
+    }
+  }
+}

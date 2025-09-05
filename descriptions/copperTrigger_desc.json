@@ -1,0 +1,24 @@
+{
+  "nodeName": "copper trigger",
+  "summary": "透過 Webhooks 處理 Copper 事件",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "將觸發事件的資源類型"
+    },
+    {
+      "name": "event",
+      "type": "options",
+      "description": "要監聽的事件類型"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "lead",
+        "event": "new"
+      }
+    }
+  }
+}

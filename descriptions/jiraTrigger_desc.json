@@ -1,0 +1,46 @@
+{
+  "nodename": "jira trigger",
+  "summary": "啟動工作流程時，監聽 Jira 事件的發生。",
+  "parameters": [
+    {
+      "name": "jira version",
+      "type": "options",
+      "description": "Jira 的版本，可選擇 Cloud、Server (Self Hosted) 或 Server (Pat) (Self Hosted)。",
+    },
+    {
+      "name": "authenticate incoming webhook",
+      "type": "boolean",
+      "description": "是否為傳入的 Webhook 啟用身份驗證 (使其更安全)。",
+    },
+    {
+      "name": "authenticate webhook with",
+      "type": "options",
+      "description": "指定 Webhook 的身份驗證方式 (使其更安全)。",
+    },
+    {
+      "name": "events",
+      "type": "multioptions",
+      "description": "要監聽的事件。",
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "其他設定欄位。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "jiraVersion": "cloud",
+        "authenticateWebhook": false,
+        "incomingAuthentication": "none",
+        "events": ["jira:issue_created"],
+        "additionalFields": {
+          "excludeBody": false,
+          "filter": "Project = JRA AND resolution = Fixed",
+          "includeFields": ["issue.id", "project.key"]
+        }
+      }
+    }
+  }
+}

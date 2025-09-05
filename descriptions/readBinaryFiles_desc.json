@@ -1,0 +1,24 @@
+{
+  "nodeName": "read binary files",
+  "summary": "此節點從磁碟讀取二進制文件。",
+  "parameters": [
+    {
+      "name": "file selector",
+      "type": "string",
+      "description": "要讀取的文件模式。"
+    },
+    {
+      "name": "property name",
+      "type": "string",
+      "description": "要將讀取文件的數據寫入的二進制屬性的名稱。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "fileSelector": "*.jpg",
+        "dataPropertyName": "data"
+      }
+    }
+  }
+}

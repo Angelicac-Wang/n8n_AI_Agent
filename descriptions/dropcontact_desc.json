@@ -1,0 +1,60 @@
+{
+  "nodeName": "dropcontact",
+  "summary": "Find B2B emails and enrich contacts using Dropcontact API.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with (Contact or Custom API Call)."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform (Enrich, Fetch Request, or Custom API Call)."
+    },
+    {
+      "name": "request id",
+      "type": "string",
+      "description": "The ID of the request to fetch data for a contact.",
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "description": "The email address of the contact to enrich.",
+    },
+    {
+      "name": "simplify output (faster)",
+      "type": "boolean",
+      "description": "Toggle to simplify the output and return a request ID for later use.",
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "Additional fields to include in the contact enrichment process.",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "Additional options for the contact enrichment process."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "contact",
+        "operation": "enrich",
+        "email": "john.doe@example.com",
+        "simplify": false,
+        "additionalFields": {
+          "company": "Example Company",
+          "country": "USA"
+        },
+        "options": {
+          "waitTime": 45,
+          "siren": false,
+          "language": "en"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "nodename": "gotowebinar",
+  "summary": "此節點用於使用 GoToWebinar API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要操作的資源類型，如參加者、共同組織者、講者等。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "要執行的操作，如獲取參加者、獲取多個參加者、獲取參加者詳細信息等。"
+    },
+    {
+      "name": "webinar key name or id",
+      "type": "options",
+      "description": "參加者參加的研討會的關鍵名稱或 ID。"
+    },
+    {
+      "name": "session key name or id",
+      "type": "options",
+      "description": "參加者參加的研討會的會議關鍵名稱或 ID。"
+    },
+    {
+      "name": "registrant key",
+      "type": "string",
+      "description": "參加者在研討會會議上的登記者關鍵。"
+    },
+    {
+      "name": "details",
+      "type": "options",
+      "description": "要為參加者檢索的詳細信息，如投票、問題、調查答案等。"
+    },
+    {
+      "name": "return all",
+      "type": "boolean",
+      "description": "是否返回所有結果或僅返回到指定限制。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "attendee",
+        "operation": "get",
+        "webinarKey": "webinar123",
+        "sessionKey": "session456",
+        "registrantKey": "registrant789",
+        "details": "questions",
+        "returnAll": false
+      }
+    }
+  }
+}

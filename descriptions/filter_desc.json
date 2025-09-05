@@ -1,0 +1,30 @@
+{
+  "nodeName": "filter",
+  "summary": "Remove items matching a condition.",
+  "parameters": [
+    {
+      "name": "conditions",
+      "type": "fixedCollection",
+      "description": "The type of values to compare."
+    },
+    {
+      "name": "combineConditions",
+      "type": "options",
+      "description": "How to combine the conditions: AND requires all conditions to be true, OR requires at least one condition to be true."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "conditions": [
+          {
+            "value1": "example",
+            "operation": "equal",
+            "value2": "test"
+          }
+        ],
+        "combineConditions": "AND"
+      }
+    }
+  }
+}

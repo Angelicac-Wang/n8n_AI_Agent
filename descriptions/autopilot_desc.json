@@ -1,0 +1,40 @@
+{
+  "nodeName": "autopilot",
+  "summary": "此節點用於消費 Autopilot API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要操作的資源類型，如聯絡人、聯絡人旅程、聯絡人清單或列表。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "要執行的操作，如創建/更新、刪除、獲取單個或多個聯絡人。",
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "description": "聯絡人的電子郵件地址。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "其他可選的聯絡人屬性，如公司、自定義字段、傳真、名字、行業、姓氏、來源、LinkedIn URL 等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "contact",
+        "operation": "upsert",
+        "email": "name@email.com",
+        "additionalFields": {
+          "Company": "ABC Inc.",
+          "FirstName": "John",
+          "LastName": "Doe"
+        }
+      }
+    }
+  }
+}

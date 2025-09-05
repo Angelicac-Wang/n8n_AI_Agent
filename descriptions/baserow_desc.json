@@ -1,0 +1,66 @@
+{
+  "nodename": "baserow",
+  "summary": "Consume the Baserow API to perform operations such as creating, deleting, updating, and retrieving rows in a database table.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to operate on (e.g., Row).",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource (e.g., Create, Delete, Get, Get Many, Update).",
+    },
+    {
+      "name": "database name or id",
+      "type": "options",
+      "description": "Select or specify the ID of the database to operate on.",
+    },
+    {
+      "name": "table name or id",
+      "type": "options",
+      "description": "Select or specify the ID of the table to operate on, dependent on the chosen database.",
+    },
+    {
+      "name": "row id",
+      "type": "string",
+      "description": "Specify the ID of the row to retrieve or update.",
+    },
+    {
+      "name": "data to send",
+      "type": "options",
+      "description": "Choose how to handle input data for creating or updating rows.",
+    },
+    {
+      "name": "inputs to ignore",
+      "type": "string",
+      "description": "Specify input properties to exclude when sending data.",
+    },
+    {
+      "name": "fields to send",
+      "type": "fixedcollection",
+      "description": "Specify the field values to send for creating or updating rows.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "row",
+        "operation": "getAll",
+        "databaseId": "database_id",
+        "tableId": "table_id",
+        "rowId": "row_id",
+        "dataToSend": "defineBelow",
+        "inputsToIgnore": "property1, property2",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "field_id"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

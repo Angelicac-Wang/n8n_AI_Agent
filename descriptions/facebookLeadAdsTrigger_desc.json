@@ -1,0 +1,95 @@
+{
+  "nodename": "facebook lead ads trigger",
+  "summary": "處理 Facebook Lead Ads 事件通過 Webhooks。",
+  "parameters": [
+    {
+      "name": "facebookleadadsnotice",
+      "type": "notice",
+      "description": "由於 Facebook API 限制，每個 Facebook 應用程式只能使用一個 Facebook Lead Ads 觸發器。"
+    },
+    {
+      "name": "event",
+      "type": "options",
+      "description": "要監視的事件類型。",
+      "options": [
+        {
+          "name": "New Lead",
+          "value": "newLead"
+        }
+      ]
+    },
+    {
+      "name": "page",
+      "type": "resourcelocator",
+      "description": "與表單相關聯的頁面，用於檢索新的潛在客戶。",
+      "modes": [
+        {
+          "name": "list",
+          "type": "list",
+          "description": "從列表中選擇頁面。",
+          "typeoptions": {
+            "searchlistmethod": "pageList"
+          }
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "placeholder": "121637951029080",
+          "description": "通過 ID 選擇頁面。"
+        }
+      ]
+    },
+    {
+      "name": "form",
+      "type": "resourcelocator",
+      "description": "提交後用於檢索潛在客戶詳細信息的表單。",
+      "modes": [
+        {
+          "name": "list",
+          "type": "list",
+          "description": "從列表中選擇表單。",
+          "typeoptions": {
+            "searchlistmethod": "formList"
+          }
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "placeholder": "121637951029080",
+          "description": "通過 ID 選擇表單。"
+        }
+      ]
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設置。",
+      "options": [
+        {
+          "name": "simplifyoutput",
+          "type": "boolean",
+          "description": "是否返回簡化版本的 Webhook 事件而不是所有字段。",
+          "default": true
+        }
+      ]
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "event": "newLead",
+        "page": {
+          "mode": "list",
+          "value": ""
+        },
+        "form": {
+          "mode": "list",
+          "value": ""
+        },
+        "options": {
+          "simplifyOutput": true
+        }
+      }
+    }
+  }
+}

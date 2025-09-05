@@ -1,0 +1,54 @@
+{
+  "nodeName": "slack trigger",
+  "summary": "透過 Webhooks 處理 Slack 事件",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "hidden",
+      "description": "用於驗證的訪問權杖"
+    },
+    {
+      "name": "trigger",
+      "type": "multiOptions",
+      "description": "觸發事件的類型",
+    },
+    {
+      "name": "watchworkspace",
+      "type": "boolean",
+      "description": "是否在整個工作區中監視事件，而不是特定頻道",
+    },
+    {
+      "name": "channelid",
+      "type": "resourcelocator",
+      "description": "要監聽事件的 Slack 頻道",
+    },
+    {
+      "name": "downloadfiles",
+      "type": "boolean",
+      "description": "是否下載文件並將其添加到輸出中",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "accessToken",
+        "trigger": ["any_event"],
+        "watchWorkspace": false,
+        "channelId": {
+          "mode": "list",
+          "value": ""
+        },
+        "downloadFiles": false,
+        "options": {
+          "resolveIds": false,
+          "userIds": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "nodeName": "aws rekognition",
+  "summary": "將數據發送到 AWS Rekognition 服務。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要處理的資源類型，可以是圖像或自定義 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，例如分析或自定義 API 呼叫。"
+    },
+    {
+      "name": "type",
+      "type": "options",
+      "description": "指定要分析的圖像類型，如檢測臉部、標籤、文字等。"
+    },
+    {
+      "name": "binaryData",
+      "type": "boolean",
+      "description": "指定是否從二進制字段中提取要分析的圖像。"
+    },
+    {
+      "name": "binaryPropertyName",
+      "type": "string",
+      "description": "指定包含要寫入的文件的輸入二進制字段的名稱。"
+    },
+    {
+      "name": "bucket",
+      "type": "string",
+      "description": "指定 S3 存儲桶的名稱。"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "指定 S3 物件的鍵名。"
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "包含其他可選參數，如版本、文字過濾、標籤數量等。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "image",
+        "operation": "analyze",
+        "type": "detectFaces",
+        "binaryData": false,
+        "bucket": "my-bucket",
+        "name": "my-image.jpg",
+        "additionalFields": {
+          "maxLabels": 5,
+          "minConfidence": 80
+        }
+      }
+    }
+  }
+}

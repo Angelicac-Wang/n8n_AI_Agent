@@ -1,0 +1,64 @@
+{
+  "nodeName": "mailerlite",
+  "summary": "此節點用於使用 Mailer Lite API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要操作的資源類型，目前僅支持訂閱者（subscriber）。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "要執行的操作，如創建、獲取、更新或刪除訂閱者。",
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "description": "新訂閱者的電子郵件。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "其他訂閱者相關的欄位，如確認時間戳、自訂欄位等。",
+    },
+    {
+      "name": "subscriberId",
+      "type": "string",
+      "description": "要執行操作的訂閱者的電子郵件。",
+    },
+    {
+      "name": "updateFields",
+      "type": "collection",
+      "description": "更新訂閱者時的欄位，如名稱、是否重新發送自動回覆等。",
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "是否返回所有結果或僅返回限制數量的結果。",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數量。",
+    },
+    {
+      "name": "filters",
+      "type": "collection",
+      "description": "篩選條件，用於獲取特定類型的訂閱者。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "subscriber",
+        "operation": "create",
+        "email": "example@email.com",
+        "additionalFields": {
+          "name": "John Doe",
+          "resubscribe": true
+        }
+      }
+    }
+  }
+}

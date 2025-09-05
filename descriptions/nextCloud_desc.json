@@ -1,0 +1,36 @@
+{
+  "nodeName": "nextcloud",
+  "summary": "Access data on Nextcloud including files, folders, and users.",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "Choose the authentication method (Access Token or OAuth2)."
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with (File, Folder, User, or Custom API Call)."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Choose the operation to perform on the selected resource.",
+    },
+    {
+      "name": "path",
+      "type": "string",
+      "description": "Specify the path of the file or folder to interact with."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "accessToken",
+        "resource": "file",
+        "operation": "download",
+        "path": "/documents/example.docx"
+      }
+    }
+  }
+}

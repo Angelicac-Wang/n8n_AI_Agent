@@ -1,0 +1,49 @@
+{
+  "nodeName": "switch",
+  "summary": "根據定義的表達式或規則路由項目",
+  "parameters": [
+    {
+      "name": "mode",
+      "type": "options",
+      "description": "資料應如何路由"
+    },
+    {
+      "name": "output",
+      "type": "number",
+      "description": "要將資料發送到的輸出索引"
+    },
+    {
+      "name": "dataType",
+      "type": "options",
+      "description": "要路由的資料類型"
+    },
+    {
+      "name": "value1",
+      "type": "boolean",
+      "description": "與第一個值進行比較"
+    },
+    {
+      "name": "rules",
+      "type": "fixedcollection",
+      "description": "固定集合，包含路由規則"
+    },
+    {
+      "name": "value1",
+      "type": "datetime",
+      "description": "與第二個值進行比較"
+    },
+    {
+      "name": "rules",
+      "type": "fixedcollection",
+      "description": "固定集合，包含日期路由規則"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "mode": "rules",
+        "dataType": "number"
+      }
+    }
+  }
+}

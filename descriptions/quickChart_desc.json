@@ -1,0 +1,79 @@
+{
+  "nodeName": "quickchart",
+  "summary": "透過 QuickChart 創建圖表",
+  "parameters": [
+    {
+      "name": "chart type",
+      "type": "options",
+      "description": "要創建的圖表類型"
+    },
+    {
+      "name": "add labels",
+      "type": "options",
+      "description": "指定如何添加標籤到圖表"
+    },
+    {
+      "name": "labels",
+      "type": "fixedcollection",
+      "description": "用於圖表的標籤"
+    },
+    {
+      "name": "labels array",
+      "type": "string",
+      "description": "要在圖表中使用的標籤陣列"
+    },
+    {
+      "name": "data",
+      "type": "json",
+      "description": "用於數據集的數據"
+    },
+    {
+      "name": "put output in field",
+      "type": "string",
+      "description": "將二進制數據放入的輸出字段"
+    },
+    {
+      "name": "chart options",
+      "type": "collection",
+      "description": "圖表的配置選項"
+    },
+    {
+      "name": "dataset options",
+      "type": "collection",
+      "description": "數據集的配置選項"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "chartType": "bar",
+        "labelsMode": "manually",
+        "labelsUi": [
+          {
+            "label": "Label1"
+          },
+          {
+            "label": "Label2"
+          }
+        ],
+        "data": [60, 10, 12, 20],
+        "output": "data",
+        "chartOptions": {
+          "backgroundColor": "#ffffff",
+          "devicePixelRatio": 2,
+          "format": "png",
+          "height": 300,
+          "horizontal": false,
+          "width": 500
+        },
+        "datasetOptions": {
+          "backgroundColor": "#ffffff",
+          "borderColor": "#000000",
+          "fill": true,
+          "label": "Dataset Label",
+          "pointStyle": "circle"
+        }
+      }
+    }
+  }
+}

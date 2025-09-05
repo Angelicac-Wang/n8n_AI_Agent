@@ -1,0 +1,34 @@
+{
+  "nodeName": "cal.com trigger",
+  "summary": "Handle Cal.com events via webhooks.",
+  "parameters": [
+    {
+      "name": "events",
+      "type": "multiOptions",
+      "description": "Select the Cal.com events to trigger the webhook.",
+    },
+    {
+      "name": "version",
+      "type": "options",
+      "description": "Select the API version to use.",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "Additional options for customization.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "events": ["BOOKING_CANCELLED"],
+        "version": 1,
+        "options": {
+          "appId": "12345",
+          "eventTypeId": "meeting",
+          "payloadTemplate": "Custom payload template"
+        }
+      }
+    }
+  }
+}

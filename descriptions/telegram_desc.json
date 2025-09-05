@@ -1,0 +1,24 @@
+{
+  "nodeName": "telegram",
+  "summary": "此節點用於將數據發送到 Telegram。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如聊天、回調、文件或消息。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，根據所選的資源類型不同，操作選項也會有所不同。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "message",
+        "operation": "sendDocument"
+      }
+    }
+  }
+}

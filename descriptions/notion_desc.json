@@ -1,0 +1,38 @@
+{
+  "nodeName": "notion",
+  "summary": "此節點可用於訪問 Notion API。",
+  "parameters": [
+    {
+      "name": "notionnotice",
+      "type": "notice",
+      "description": "在 Notion 中，確保<a href=\"https://www.notion.so/help/add-and-manage-connections-with-the-api\" target=\"_blank\">添加連接</a>到您想要訪問的頁面。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要訪問的 Notion 資源類型。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作。",
+    },
+    {
+      "name": "blockid",
+      "type": "resourcelocator",
+      "description": "要附加區塊的 Notion 區塊。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "page",
+        "operation": "append",
+        "blockid": {
+          "mode": "url",
+          "value": "https://www.notion.so/My-Page-b4eeb113e118403ba450af65ac25f0b9"
+        }
+      }
+    }
+  }
+}

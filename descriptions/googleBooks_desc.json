@@ -1,0 +1,73 @@
+{
+  "nodeName": "google books",
+  "summary": "從 Google Books 讀取數據。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於選擇身份驗證方式，可以是服務帳戶或 OAuth2。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要訪問的資源類型，如書架、書架中的卷、卷等。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作，如獲取、添加、清除、移動或刪除資源。"
+    },
+    {
+      "name": "myLibrary",
+      "type": "boolean",
+      "description": "指定是否從用戶的個人圖書館中獲取資源。",
+    },
+    {
+      "name": "searchQuery",
+      "type": "string",
+      "description": "全文搜索查詢字符串。",
+    },
+    {
+      "name": "userId",
+      "type": "string",
+      "description": "用戶的 ID。",
+    },
+    {
+      "name": "shelfId",
+      "type": "string",
+      "description": "書架的 ID。",
+    },
+    {
+      "name": "volumeId",
+      "type": "string",
+      "description": "卷的 ID。",
+    },
+    {
+      "name": "volumePosition",
+      "type": "string",
+      "description": "移動項目的書架位置。",
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "指定是否返回所有結果或僅返回到給定限制。",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "resource": "bookshelf",
+        "operation": "get",
+        "myLibrary": false,
+        "userId": "12345",
+        "shelfId": "67890"
+      }
+    }
+  }
+}

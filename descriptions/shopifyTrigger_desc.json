@@ -1,0 +1,24 @@
+{
+  "nodeName": "shopify trigger",
+  "summary": "透過 Webhooks 處理 Shopify 事件。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "指定用於驗證的方式，可以是存取權杖、OAuth2 或 API 金鑰。"
+    },
+    {
+      "name": "topic",
+      "type": "options",
+      "description": "指定要觸發的 Shopify 事件類型，例如訂單創建、產品更新等。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "apiKey",
+        "topic": "orders/create"
+      }
+    }
+  }
+}

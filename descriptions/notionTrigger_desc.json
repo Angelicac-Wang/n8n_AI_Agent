@@ -1,0 +1,49 @@
+{
+  "nodename": "notion trigger",
+  "summary": "啟動工作流程，當 Notion 事件發生時觸發",
+  "parameters": [
+    {
+      "name": "poll times",
+      "type": "fixedcollection",
+      "description": "時間間隔，用於定期觸發節點",
+    },
+    {
+      "name": "event",
+      "type": "options",
+      "description": "要觸發的 Notion 事件類型",
+    },
+    {
+      "name": "notionnotice",
+      "type": "notice",
+      "description": "在 Notion 中確保添加連接到要訪問的頁面",
+    },
+    {
+      "name": "database",
+      "type": "resourcelocator",
+      "description": "要操作的 Notion 數據庫",
+    },
+    {
+      "name": "simplify",
+      "type": "boolean",
+      "description": "是否返回簡化版本的響應而不是原始數據",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "polltimes": [
+          {
+            "mode": "everyday"
+          }
+        ],
+        "event": "pageaddedtodatabase",
+        "notionnotice": "",
+        "databaseid": {
+          "mode": "list",
+          "value": ""
+        },
+        "simple": true
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "nodeName": "pushover",
+  "summary": "此節點用於消費 Pushover API，可用於推送訊息至用戶的設備。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要執行的操作類型，可以是推送訊息或自定義 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如推送訊息或自定義 API 呼叫。"
+    },
+    {
+      "name": "user key",
+      "type": "string",
+      "description": "用戶或群組的金鑰，用於識別接收訊息的對象。"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "要推送的訊息內容。"
+    },
+    {
+      "name": "priority",
+      "type": "options",
+      "description": "設定訊息的優先級，包括低、正常、高和緊急。"
+    },
+    {
+      "name": "retry (seconds)",
+      "type": "number",
+      "description": "設定推送失敗時重試的間隔時間（秒），僅在優先級為緊急時有效。"
+    },
+    {
+      "name": "expire (seconds)",
+      "type": "number",
+      "description": "設定訊息重試的總時間長度（秒），僅在優先級為緊急時有效。"
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "包含其他可選設定，如附件、設備名稱、HTML 格式、聲音、時間戳記、標題、URL 等。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "message",
+        "operation": "push",
+        "userKey": "your_user_key",
+        "message": "Hello from n8n!",
+        "priority": 0,
+        "retry": 30,
+        "expire": 30,
+        "additionalFields": {
+          "device": "your_device",
+          "html": false,
+          "sound": "pushover",
+          "timestamp": "2022-01-01T12:00:00Z",
+          "title": "Notification Title",
+          "url": "https://example.com",
+          "url_title": "Visit Website"
+        }
+      }
+    }
+  }
+}

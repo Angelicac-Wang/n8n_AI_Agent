@@ -1,0 +1,55 @@
+{
+  "nodeName": "aws certificate manager",
+  "summary": "將數據發送到 AWS Certificate Manager。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是證書或自定義 API 調用。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如刪除、獲取、續訂證書等。"
+    },
+    {
+      "name": "certificatearn",
+      "type": "string",
+      "description": "要續訂、獲取、刪除或獲取元數據的 ACM 證書的 ARN 字串。"
+    },
+    {
+      "name": "bucketname",
+      "type": "string",
+      "description": "要刪除的證書存儲的 S3 存儲桶名稱。"
+    },
+    {
+      "name": "certificatekey",
+      "type": "string",
+      "description": "要刪除的證書存儲的 S3 存儲桶中的對應密鑰名稱。"
+    },
+    {
+      "name": "returnall",
+      "type": "boolean",
+      "description": "指定是否返回所有結果或僅返回到指定限制。"
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數量，限制在 1 到 500 之間。"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "進一步選擇證書列表的篩選條件，如狀態、擴展金鑰用途、金鑰類型、金鑰用途等。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "certificate",
+        "operation": "renew",
+        "certificateArn": "arn:aws:acm:region:123456789012:certificate/12345678-1234-1234-1234-123456789012"
+      }
+    }
+  }
+}

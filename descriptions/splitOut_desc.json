@@ -1,0 +1,40 @@
+{
+  "nodeName": "split out",
+  "summary": "將項目內的列表拆分為單獨的項目",
+  "parameters": [
+    {
+      "name": "fields to split out",
+      "type": "string",
+      "description": "要拆分為單獨項目的輸入字段的名稱。使用逗號分隔多個字段名稱。對於二進制數據，使用 $binary。"
+    },
+    {
+      "name": "include",
+      "type": "options",
+      "description": "是否將任何其他字段複製到新項目中",
+    },
+    {
+      "name": "fields to include",
+      "type": "string",
+      "description": "要聚合在一起的輸入項目中的字段",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "fieldToSplitOut": "email, name",
+        "include": "selectedOtherFields",
+        "fieldsToInclude": "email, name",
+        "options": {
+          "disableDotNotation": false,
+          "destinationFieldName": "splitField",
+          "includeBinary": false
+        }
+      }
+    }
+  }
+}

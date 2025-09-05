@@ -1,0 +1,65 @@
+{
+  "nodeName": "marketstack",
+  "summary": "此節點用於消費 Marketstack API，可獲取股市數據。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要訪問的資源類型，如股市收盤數據、交易所或股票代碼。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "執行的操作類型，例如獲取多個 End-of-Day 數據。",
+    },
+    {
+      "name": "symbols",
+      "type": "string",
+      "description": "要檢索的一個或多個股票代碼，以逗號分隔。",
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "是否返回所有結果或僅返回到給定限制。",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數。",
+    },
+    {
+      "name": "filters",
+      "type": "collection",
+      "description": "可應用的過濾器，如交易所、最新數據、排序順序等。",
+    },
+    {
+      "name": "exchange",
+      "type": "string",
+      "description": "要檢索的股票交易所代碼。",
+    },
+    {
+      "name": "symbol",
+      "type": "string",
+      "description": "要檢索的股票代碼。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "endOfDayData",
+        "operation": "getAll",
+        "symbols": "AAPL,MSFT",
+        "returnAll": false,
+        "limit": 50,
+        "filters": {
+          "exchange": "XNAS",
+          "latest": false,
+          "sort": "DESC",
+          "specificDate": "2020-01-01",
+          "dateFrom": "2020-01-01",
+          "dateTo": "2020-05-21"
+        }
+      }
+    }
+  }
+}

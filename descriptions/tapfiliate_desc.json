@@ -1,0 +1,59 @@
+{
+  "nodename": "tapfiliate",
+  "summary": "此節點用於消費 Tapfiliate API，可執行與 Tapfiliate 有關的操作，如創建、刪除、獲取聯盟成員等。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要操作的資源類型，如聯盟成員、聯盟成員元數據、節目聯盟成員等。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "要執行的操作，如創建聯盟成員、刪除聯盟成員、按 ID 獲取聯盟成員、獲取多個聯盟成員等。",
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "description": "聯盟成員的電子郵件。",
+    },
+    {
+      "name": "firstname",
+      "type": "string",
+      "description": "聯盟成員的名字。",
+    },
+    {
+      "name": "lastname",
+      "type": "string",
+      "description": "聯盟成員的姓氏。",
+    },
+    {
+      "name": "additionalfields",
+      "type": "collection",
+      "description": "其他聯盟成員相關的欄位，如地址、公司名稱等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "affiliate",
+        "operation": "create",
+        "email": "name@email.com",
+        "firstname": "John",
+        "lastname": "Doe",
+        "additionalfields": {
+          "addressUi": {
+            "addressValues": {
+              "address": "123 Street",
+              "postal_code": "12345",
+              "city": "City",
+              "state": "State",
+              "country": "US"
+            }
+          },
+          "companyName": "ABC Inc."
+        }
+      }
+    }
+  }
+}

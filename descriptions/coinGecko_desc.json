@@ -1,0 +1,42 @@
+{
+  "nodeName": "coingecko",
+  "summary": "此節點可用於消費 CoinGecko API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型，可以是幣種或事件。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作，如獲取幣種的價格、市場數據等。"
+    },
+    {
+      "name": "searchBy",
+      "type": "options",
+      "description": "指定搜索方式，可以是幣種 ID 或合約地址。"
+    },
+    {
+      "name": "coinId",
+      "type": "options",
+      "description": "指定幣種的名稱或 ID，可以使用表達式指定。"
+    },
+    {
+      "name": "baseCurrency",
+      "type": "options",
+      "description": "指定交易對中的第一個貨幣，可以從列表中選擇或使用表達式指定。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "coin",
+        "operation": "price",
+        "searchBy": "coinId",
+        "coinId": "bitcoin",
+        "baseCurrency": "usd"
+      }
+    }
+  }
+}

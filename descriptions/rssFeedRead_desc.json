@@ -1,0 +1,26 @@
+{
+  "nodeName": "rss read",
+  "summary": "此節點從 RSS Feed 中讀取數據。",
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "description": "RSS feed 的 URL。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "url": "https://example.com/rss-feed",
+        "options": {
+          "ignoreSSL": true
+        }
+      }
+    }
+  }
+}

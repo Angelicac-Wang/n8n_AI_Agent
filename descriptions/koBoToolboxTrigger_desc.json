@@ -1,0 +1,38 @@
+{
+  "nodeName": "kobotoolbox trigger",
+  "summary": "處理 KoBoToolbox 提交的資料。",
+  "parameters": [
+    {
+      "name": "form name or id",
+      "type": "options",
+      "description": "表單 ID（例如 aSAvYreNzVEkrWg5Gdcvg）。從列表中選擇，或使用 <a href=\"https://docs.n8n.io/code/expressions/\">表達式</a> 指定 ID。",
+    },
+    {
+      "name": "trigger on",
+      "type": "options",
+      "description": "觸發事件選項。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "formId": "aSAvYreNzVEkrWg5Gdcvg",
+        "triggerOn": "formSubmission",
+        "formatOptions": {
+          "download": false,
+          "binaryNamingScheme": "sequence",
+          "dataPropertyAttachmentsPrefixName": "attachment_",
+          "version": "download_url",
+          "selectMask": "select_*",
+          "numberMask": "n_*, f_*",
+          "reformat": false
+        }
+      }
+    }
+  }
+}

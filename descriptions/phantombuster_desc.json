@@ -1,0 +1,61 @@
+{
+  "nodename": "phantombuster",
+  "summary": "Consume Phantombuster API to perform various operations like deleting agents, getting agent details, launching agents, and more.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with (e.g., Agent or Custom API Call).",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Choose the operation to perform on the selected resource (e.g., Delete, Get, Get Many, Launch).",
+    },
+    {
+      "name": "agent name or id",
+      "type": "options",
+      "description": "Choose an agent from the list or specify an ID using an expression.",
+    },
+    {
+      "name": "agent id",
+      "type": "string",
+      "description": "Specify the ID of the agent.",
+    },
+    {
+      "name": "return all",
+      "type": "boolean",
+      "description": "Specify whether to return all results or only up to a given limit.",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "Specify the maximum number of results to return.",
+    },
+    {
+      "name": "resolve data",
+      "type": "boolean",
+      "description": "Automatically resolve the output data if activated.",
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "Additional fields to configure for specific operations.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "agent",
+        "operation": "get",
+        "agentId": "12345",
+        "returnAll": false,
+        "limit": 10,
+        "resolveData": true,
+        "additionalFields": {
+          "prevContainerId": "67890"
+        }
+      }
+    }
+  }
+}

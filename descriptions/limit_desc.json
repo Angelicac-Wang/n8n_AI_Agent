@@ -1,0 +1,24 @@
+{
+  "nodename": "limit",
+  "summary": "限制項目數量，根據設定保留或移除項目。",
+  "parameters": [
+    {
+      "name": "max items",
+      "type": "number",
+      "description": "要保留的最大項目數量。如果超過此數量，將移除部分項目。",
+    },
+    {
+      "name": "keep",
+      "type": "options",
+      "description": "在移除項目時，選擇保留開頭或結尾的項目。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "maxItems": 5,
+        "keep": "lastItems"
+      }
+    }
+  }
+}

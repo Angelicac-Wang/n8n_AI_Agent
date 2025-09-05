@@ -1,0 +1,40 @@
+{
+  "nodename": "write binary file",
+  "summary": "此節點將二進制文件寫入磁盤。",
+  "parameters": [
+    {
+      "name": "file name",
+      "type": "string",
+      "description": "要寫入文件的路徑"
+    },
+    {
+      "name": "property name",
+      "type": "string",
+      "description": "包含要寫入文件數據的二進制屬性的名稱"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項",
+      "options": [
+        {
+          "name": "append",
+          "type": "boolean",
+          "description": "是否附加到現有文件",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "fileName": "/data/example.jpg",
+        "dataPropertyName": "data",
+        "options": {
+          "append": false
+        }
+      }
+    }
+  }
+}

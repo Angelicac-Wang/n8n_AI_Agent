@@ -1,0 +1,75 @@
+{
+  "nodeName": "remove duplicates",
+  "summary": "此節點用於刪除具有相同字段值的項目。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作類型，例如刪除重複項目或清除重複歷史記錄。"
+    },
+    {
+      "name": "compare",
+      "type": "options",
+      "description": "指定要比較的輸入項目的字段，以確定它們是否相同。"
+    },
+    {
+      "name": "fields to exclude",
+      "type": "string",
+      "description": "從比較中排除的輸入字段。",
+    },
+    {
+      "name": "fields to compare",
+      "type": "string",
+      "description": "要添加到比較中的輸入字段。",
+    },
+    {
+      "name": "logic",
+      "type": "options",
+      "description": "選擇要刪除的輸入項目，通過與先前處理的關鍵值進行比較。",
+    },
+    {
+      "name": "dedupe value",
+      "type": "string",
+      "description": "用於比較的輸入字段值，應該是唯一的 ID 值。",
+    },
+    {
+      "name": "incremental dedupe value",
+      "type": "number",
+      "description": "用於比較的輸入字段值，應該是增量值。",
+    },
+    {
+      "name": "date dedupe value",
+      "type": "datetime",
+      "description": "用於比較的輸入字段值，應該是 ISO 格式的日期值。",
+    },
+    {
+      "name": "mode",
+      "type": "options",
+      "description": "指定如何修改存儲在數據庫中的關鍵值。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設置，如禁用點表示法、移除其他字段、範圍和歷史記錄大小。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "removeDuplicateInputItems",
+        "compare": "allFields",
+        "fieldsToExclude": "email, name",
+        "fieldsToCompare": "email, name",
+        "logic": "removeItemsWithAlreadySeenKeyValues",
+        "dedupeValue": "ID",
+        "mode": "cleanDatabase",
+        "options": {
+          "disableDotNotation": false,
+          "removeOtherFields": false,
+          "scope": "node",
+          "historySize": 10000
+        }
+      }
+    }
+  }
+}

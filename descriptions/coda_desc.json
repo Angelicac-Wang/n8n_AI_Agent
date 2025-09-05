@@ -1,0 +1,45 @@
+{
+  "nodeName": "coda",
+  "summary": "此節點用於消費 Coda API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的 Coda 資源類型，如控制項、公式、表格或視圖。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要在表格中執行的操作，如創建行、刪除行、獲取所有列等。"
+    },
+    {
+      "name": "doc name or id",
+      "type": "options",
+      "description": "指定要操作的文件的 ID，可從列表中選擇或使用表達式指定。"
+    },
+    {
+      "name": "table name or id",
+      "type": "options",
+      "description": "指定要在其中創建行的表格，可從列表中選擇或使用表達式指定。"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設置，如禁用解析或指定關鍵列。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "table",
+        "operation": "createRow",
+        "docId": "doc_id_here",
+        "tableId": "table_id_here",
+        "options": {
+          "disableParsing": false,
+          "keyColumns": "column_id"
+        }
+      }
+    }
+  }
+}

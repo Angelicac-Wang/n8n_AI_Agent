@@ -1,0 +1,42 @@
+{
+  "nodename": "google calendar",
+  "summary": "此節點用於使用 Google Calendar API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是日曆、事件或自定義 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如檢查日曆中的時間槽是否可用。",
+    },
+    {
+      "name": "calendar",
+      "type": "resourcelocator",
+      "description": "指定要操作的 Google 日曆。",
+    },
+    {
+      "name": "timemin",
+      "type": "datetime",
+      "description": "設定時間間隔的開始時間。",
+    },
+    {
+      "name": "timemax",
+      "type": "datetime",
+      "description": "設定時間間隔的結束時間。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "event",
+        "operation": "availability",
+        "calendar": "myCalendar",
+        "timemin": "={{ $now }}",
+        "timemax": "={{ $now.plus(1, 'hour') }}"
+      }
+    }
+  }
+}

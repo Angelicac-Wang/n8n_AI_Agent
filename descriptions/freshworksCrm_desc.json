@@ -1,0 +1,45 @@
+{
+  "nodeName": "freshworkscrm",
+  "summary": "此節點用於連接並使用 Freshworks CRM API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型，如帳戶、約會、聯絡人等。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作，如創建、刪除、獲取資源等。"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "帳戶的名稱。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "其他可選字段，如地址、年收入、城市等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "account",
+        "operation": "create",
+        "name": "Example Company",
+        "additionalFields": {
+          "address": "123 Street",
+          "annual_revenue": 1000000,
+          "business_type_id": "123",
+          "city": "City",
+          "country": "Country",
+          "facebook": "example",
+          "industry_type_id": "456",
+          "linkedin": "example"
+        }
+      }
+    }
+  }
+}

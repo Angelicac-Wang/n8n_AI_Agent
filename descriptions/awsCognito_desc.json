@@ -1,0 +1,33 @@
+{
+  "nodename": "aws cognito",
+  "summary": "將數據發送到 AWS Cognito。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的 AWS Cognito 資源類型，如群組、用戶、用戶池或自定義 API 調用。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定對所選資源進行的操作，如創建、刪除、獲取詳細信息、獲取多個或更新。",
+    },
+    {
+      "name": "user pool",
+      "type": "resourcelocator",
+      "description": "指定要操作的用戶池的 ID。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "user",
+        "operation": "getAll",
+        "userPool": {
+          "mode": "list",
+          "value": "userPoolId"
+        }
+      }
+    }
+  }
+}

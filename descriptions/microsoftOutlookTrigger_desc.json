@@ -1,0 +1,62 @@
+{
+  "nodename": "microsoft outlook trigger",
+  "summary": "此節點從 Microsoft Outlook 擷取郵件，並在指定的輪詢間隔開始工作流程。",
+  "parameters": [
+    {
+      "name": "poll times",
+      "type": "fixedcollection",
+      "description": "時間間隔，用於指定輪詢發生的時間",
+      "placeholder": "add poll time"
+    },
+    {
+      "name": "mode",
+      "type": "options",
+      "description": "觸發頻率",
+      "default": "everyDay"
+    },
+    {
+      "name": "hour",
+      "type": "number",
+      "description": "觸發的小時（24小時制）",
+      "default": 14
+    },
+    {
+      "name": "minute",
+      "type": "number",
+      "description": "觸發的分鐘",
+      "default": 0
+    },
+    {
+      "name": "day of month",
+      "type": "number",
+      "description": "觸發的月份日期",
+      "default": 1
+    },
+    {
+      "name": "weekday",
+      "type": "options",
+      "description": "觸發的星期幾",
+      "default": "1"
+    },
+    {
+      "name": "cron expression",
+      "type": "string",
+      "description": "自定義的 cron 表達式"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyDay",
+              "hour": 14,
+              "minute": 0
+            }
+          ]
+        }
+      }
+    }
+  }
+}

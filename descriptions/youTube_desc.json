@@ -1,0 +1,51 @@
+{
+  "nodeName": "youtube",
+  "summary": "此節點用於消費 YouTube API，可執行各種操作，如檢索頻道、播放清單、影片等。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的 YouTube 資源類型，如頻道、播放清單、影片等。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要對資源執行的操作，如獲取、更新、上傳橫幅等。",
+    },
+    {
+      "name": "part",
+      "type": "multiOptions",
+      "description": "指定要在 API 響應中包含的頻道資源屬性列表。",
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "指定是否返回所有結果或僅返回至給定限制。",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "指定要返回的最大結果數。",
+    },
+    {
+      "name": "filters",
+      "type": "collection",
+      "description": "包含各種篩選選項，如類別 ID、用戶名等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "channel",
+        "operation": "getAll",
+        "part": ["*"],
+        "returnAll": false,
+        "limit": 25,
+        "filters": {
+          "categoryId": "example_category_id",
+          "forUsername": "example_username"
+        }
+      }
+    }
+  }
+}

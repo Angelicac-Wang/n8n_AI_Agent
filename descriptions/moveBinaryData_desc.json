@@ -1,0 +1,48 @@
+{
+  "nodename": "convert to/from binary data",
+  "summary": "此節點用於在二進制和 JSON 屬性之間移動數據。",
+  "parameters": [
+    {
+      "name": "mode",
+      "type": "options",
+      "description": "From and to where data should be moved"
+    },
+    {
+      "name": "setalldata",
+      "type": "boolean",
+      "description": "Whether all JSON data should be replaced with the data retrieved from binary key. Else the data will be written to a single key."
+    },
+    {
+      "name": "sourcekey",
+      "type": "string",
+      "description": "The name of the binary key to get data from. It is also possible to define deep keys by using dot-notation."
+    },
+    {
+      "name": "destinationkey",
+      "type": "string",
+      "description": "The name the JSON key to copy data to. It is also possible to define deep keys by using dot-notation."
+    },
+    {
+      "name": "convertalldata",
+      "type": "boolean",
+      "description": "Whether all JSON data should be converted to binary. Else only the data of one key will be converted."
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "Additional options for the conversion process."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "mode": "binaryToJson",
+        "setAllData": true,
+        "sourceKey": "data",
+        "destinationKey": "data",
+        "convertAllData": true,
+        "options": {}
+      }
+    }
+  }
+}

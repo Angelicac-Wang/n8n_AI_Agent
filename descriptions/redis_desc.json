@@ -1,0 +1,101 @@
+{
+  "nodeName": "redis",
+  "summary": "此節點可用於在 Redis 中獲取、發送和更新數據。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要在 Redis 中執行的操作類型，如刪除鍵、獲取值、增量操作等。"
+    },
+    {
+      "name": "key",
+      "type": "string",
+      "description": "指定要從 Redis 中刪除的鍵的名稱。"
+    },
+    {
+      "name": "propertyName",
+      "type": "string",
+      "description": "指定要將接收到的數據寫入的屬性名稱。"
+    },
+    {
+      "name": "key",
+      "type": "string",
+      "description": "指定要從 Redis 中獲取的鍵的名稱。"
+    },
+    {
+      "name": "keyType",
+      "type": "options",
+      "description": "指定要獲取的鍵的類型，如自動、哈希、列表、集合或字符串。"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "提供進一步的選項設置，如點表示法。"
+    },
+    {
+      "name": "expire",
+      "type": "boolean",
+      "description": "指定是否在鍵上設置超時。"
+    },
+    {
+      "name": "ttl",
+      "type": "number",
+      "description": "指定鍵過期前的秒數。"
+    },
+    {
+      "name": "keyPattern",
+      "type": "string",
+      "description": "指定要返回的鍵的模式。"
+    },
+    {
+      "name": "getValues",
+      "type": "boolean",
+      "description": "指定是否獲取匹配鍵的值。"
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "description": "指定要在 Redis 中設置的鍵的值。"
+    },
+    {
+      "name": "valueIsJSON",
+      "type": "boolean",
+      "description": "指定值是否為 JSON 或鍵值對。"
+    },
+    {
+      "name": "channel",
+      "type": "string",
+      "description": "指定通道名稱。"
+    },
+    {
+      "name": "messageData",
+      "type": "string",
+      "description": "要發布或推送的數據。"
+    },
+    {
+      "name": "list",
+      "type": "string",
+      "description": "指定 Redis 中的列表名稱。"
+    },
+    {
+      "name": "tail",
+      "type": "boolean",
+      "description": "指定是否從列表末尾推送或彈出數據。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "get",
+        "key": "example_key",
+        "propertyName": "data.person[0].name",
+        "keyType": "string",
+        "options": {
+          "dotNotation": true
+        },
+        "expire": false,
+        "ttl": 60
+      }
+    }
+  }
+}

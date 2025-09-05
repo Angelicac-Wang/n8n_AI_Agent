@@ -1,0 +1,63 @@
+{
+  "nodeName": "onfleet",
+  "summary": "此節點用於與 Onfleet API 進行互動，可執行各種操作如創建、刪除、更新管理員等。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要執行操作的資源類型，如管理員、容器、目的地等。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "要執行的操作類型，如創建、刪除、更新管理員等。"
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "description": "要查找的管理員對象的ID。"
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "是否返回所有結果或僅返回至給定限制。"
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數量。"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "管理員的名稱。"
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "description": "管理員的電子郵件地址。"
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "其他管理員相關的欄位，如電話號碼、是否唯讀等。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "admin",
+        "operation": "getAll",
+        "id": "12345",
+        "returnAll": false,
+        "limit": 10,
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "additionalFields": {
+          "phone": "123-456-7890",
+          "isReadOnly": false
+        }
+      }
+    }
+  }
+}

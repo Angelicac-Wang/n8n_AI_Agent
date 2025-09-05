@@ -1,0 +1,35 @@
+{
+  "nodeName": "code",
+  "summary": "執行自定義 JavaScript 或 Python 代碼。",
+  "parameters": [
+    {
+      "name": "mode",
+      "type": "options",
+      "description": "設定代碼執行模式，可以選擇一次運行所有項目或對每個項目運行一次。"
+    },
+    {
+      "name": "language",
+      "type": "options",
+      "description": "選擇要使用的編程語言，可以是 JavaScript 或 Python。"
+    },
+    {
+      "name": "jsCode",
+      "type": "string",
+      "description": "要執行的 JavaScript 代碼。"
+    },
+    {
+      "name": "pythonCode",
+      "type": "string",
+      "description": "要執行的 Python 代碼。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "language": "javaScript",
+        "jsCode": "console.log('Hello, world!')"
+      }
+    }
+  }
+}

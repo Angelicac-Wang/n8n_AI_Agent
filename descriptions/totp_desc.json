@@ -1,0 +1,43 @@
+{
+  "nodename": "totp",
+  "summary": "Generate a time-based one-time password.",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Specifies the operation to perform. Currently only supports generating a secret.",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "Additional options for generating the time-based one-time password.",
+    },
+    {
+      "name": "algorithm",
+      "type": "options",
+      "description": "HMAC hashing algorithm for generating the TOTP code. Defaults to SHA1.",
+    },
+    {
+      "name": "digits",
+      "type": "number",
+      "description": "Number of digits in the generated TOTP code. Defaults to 6 digits.",
+    },
+    {
+      "name": "period",
+      "type": "number",
+      "description": "How many seconds the generated TOTP code is valid for. Defaults to 30 seconds.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "generateSecret",
+        "options": {
+          "algorithm": "SHA256",
+          "digits": 8,
+          "period": 60
+        }
+      }
+    }
+  }
+}

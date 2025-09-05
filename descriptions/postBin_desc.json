@@ -1,0 +1,58 @@
+{
+  "nodeName": "postbin",
+  "summary": "此節點用於消費 PostBin API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是 Bin 或 Request。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如創建、獲取或刪除 Bin 或 Request。",
+    },
+    {
+      "name": "binId",
+      "type": "string",
+      "description": "每個 Bin 的唯一識別符，在獲取或刪除 Bin 時需要。",
+    },
+    {
+      "name": "binContent",
+      "type": "string",
+      "description": "要發送到 Bin 的內容，在發送 Request 操作時使用。",
+    },
+    {
+      "name": "requestId",
+      "type": "string",
+      "description": "每個 Request 的唯一識別符，在獲取 Request 時需要。",
+    },
+    {
+      "name": "requestOptions",
+      "type": "collection",
+      "description": "包含請求的其他選項，如批處理、忽略 SSL 問題、代理和超時設置。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "bin",
+        "operation": "create",
+        "binId": "12345",
+        "binContent": "Example content",
+        "requestId": "67890",
+        "requestOptions": {
+          "batching": {
+            "batch": {
+              "batchSize": 50,
+              "batchInterval": 1000
+            }
+          },
+          "allowUnauthorizedCerts": false,
+          "proxy": "http://myproxy:3128",
+          "timeout": 10000
+        }
+      }
+    }
+  }
+}

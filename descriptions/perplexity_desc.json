@@ -1,0 +1,53 @@
+{
+  "nodename": "perplexity",
+  "summary": "Interact with the Perplexity API to generate AI responses with citations.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "hidden",
+      "description": "Determines the type of resource to interact with (e.g., 'Chat' or 'Custom API Call').",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Specifies the operation to perform (e.g., 'Message a Model' or 'Custom API Call').",
+    },
+    {
+      "name": "model",
+      "type": "options",
+      "description": "The model which will generate the completion.",
+    },
+    {
+      "name": "messages",
+      "type": "fixedCollection",
+      "description": "Defines the messages to be sent, alternating between user and assistant messages.",
+    },
+    {
+      "name": "simplify",
+      "type": "boolean",
+      "description": "Determines whether to return only essential fields in the output.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "chat",
+        "operation": "complete",
+        "model": "r1-1776",
+        "messages": {
+          "message": [
+            {
+              "role": "user",
+              "content": "Hello"
+            },
+            {
+              "role": "assistant",
+              "content": "Hi there"
+            }
+          ]
+        },
+        "simplify": false
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "nodeName": "amqp sender",
+  "summary": "透過 AMQP 1.0 發送原始訊息，每個項目執行一次",
+  "parameters": [
+    {
+      "name": "queue / topic",
+      "type": "string",
+      "description": "要發佈到的佇列或主題的名稱"
+    },
+    {
+      "name": "headers",
+      "type": "json",
+      "description": "以 JSON 格式表示的標頭參數。作為 AMQP 訊息元資訊中的應用程式屬性發送"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "包含多個選項設定",
+      "options": [
+        {
+          "name": "container id",
+          "type": "string",
+          "description": "將用作傳遞給 RHEA 後端的 container_id"
+        },
+        {
+          "name": "data as object",
+          "type": "boolean",
+          "description": "是否將資料作為物件發送"
+        },
+        {
+          "name": "reconnect",
+          "type": "boolean",
+          "description": "是否在斷開連接時自動重新連接"
+        },
+        {
+          "name": "reconnect limit",
+          "type": "number",
+          "description": "重新連接嘗試的最大次數"
+        },
+        {
+          "name": "send property",
+          "type": "string",
+          "description": "要發送的唯一屬性。如果為空，將發送整個項目"
+        }
+      ]
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "sink": "topic://sourcename.something",
+        "headerParametersJson": "{\"key\": \"value\"}",
+        "options": {
+          "containerId": "123",
+          "dataAsObject": true,
+          "reconnect": true,
+          "reconnectLimit": 50,
+          "sendOnlyProperty": "property"
+        }
+      }
+    }
+  }
+}

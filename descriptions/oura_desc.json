@@ -1,0 +1,45 @@
+{
+  "nodeName": "oura",
+  "summary": "此節點用於消費 Oura API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要訪問的資源類型，如個人檔案、摘要或自定義 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，根據所選資源類型不同，可選擇不同的操作。",
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "決定是否返回所有結果或僅返回一定限制數量的結果。"
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "設定要返回的最大結果數量，僅在不返回所有結果時有效。",
+    },
+    {
+      "name": "filters",
+      "type": "collection",
+      "description": "設定摘要檢索的過濾條件，如開始日期、結束日期等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "summary",
+        "operation": "getSleep",
+        "returnAll": false,
+        "limit": 5,
+        "filters": {
+          "start": "2022-01-01T00:00:00Z",
+          "end": "2022-01-07T23:59:59Z"
+        }
+      }
+    }
+  }
+}

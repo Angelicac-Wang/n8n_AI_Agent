@@ -1,0 +1,42 @@
+{
+  "nodeName": "googlebusinessprofile",
+  "summary": "此節點用於消費 Google Business Profile API，可用於管理帖子、評論等資訊。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如帖子、評論或自定義 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定對資源進行的操作，如創建、刪除、獲取、更新等。",
+    },
+    {
+      "name": "account",
+      "type": "resourceLocator",
+      "description": "指定 Google Business Profile 帳戶，用於執行操作。",
+    },
+    {
+      "name": "location",
+      "type": "resourceLocator",
+      "description": "指定位置資訊，通常與帖子相關聯。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "post",
+        "operation": "create",
+        "account": {
+          "mode": "list",
+          "value": ""
+        },
+        "location": {
+          "mode": "list",
+          "value": ""
+        }
+      }
+    }
+  }
+}

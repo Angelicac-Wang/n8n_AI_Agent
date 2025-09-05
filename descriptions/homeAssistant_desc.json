@@ -1,0 +1,54 @@
+{
+  "nodename": "home assistant",
+  "summary": "這個節點用於消費 Home Assistant API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要訪問的 Home Assistant 資源類型，如相機代理、配置、事件等。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，例如獲取相機截圖、獲取配置、創建事件等。",
+    },
+    {
+      "name": "camera entity name or id",
+      "type": "options",
+      "description": "選擇相機實體的名稱或 ID，或使用表達式指定 ID。",
+    },
+    {
+      "name": "put output file in field",
+      "type": "string",
+      "description": "將輸出文件放入的二進制字段的名稱。",
+    },
+    {
+      "name": "return all",
+      "type": "boolean",
+      "description": "指定是否返回所有結果或僅返回到給定限制。",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數。",
+    },
+    {
+      "name": "event type",
+      "type": "string",
+      "description": "將創建事件的實體 ID。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "cameraProxy",
+        "operation": "getScreenshot",
+        "cameraEntityId": "camera1",
+        "binaryPropertyName": "screenshot",
+        "returnAll": false,
+        "limit": 50,
+        "eventType": "motion_detected"
+      }
+    }
+  }
+}

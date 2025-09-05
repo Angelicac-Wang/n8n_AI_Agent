@@ -1,0 +1,54 @@
+{
+  "nodeName": "raindrop",
+  "summary": "Consume the Raindrop API to perform operations such as creating, updating, deleting bookmarks, and more.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with (e.g., Bookmark, Collection, Tag, User)."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource (e.g., Create, Delete, Get).",
+    },
+    {
+      "name": "collection name or id",
+      "type": "options",
+      "description": "Choose a collection name or ID for the operation. Can be specified using an expression.",
+    },
+    {
+      "name": "link",
+      "type": "string",
+      "description": "Link of the bookmark to be created.",
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "Additional fields for creating a bookmark (e.g., Important, Order, Tags).",
+    },
+    {
+      "name": "bookmark id",
+      "type": "string",
+      "description": "The ID of the bookmark to delete or retrieve.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "bookmark",
+        "operation": "create",
+        "collectionId": "12345",
+        "link": "https://example.com",
+        "additionalFields": {
+          "important": true,
+          "order": 0,
+          "pleaseParse": false,
+          "tags": "tag1, tag2",
+          "title": "Example Title"
+        },
+        "bookmarkId": "54321"
+      }
+    }
+  }
+}

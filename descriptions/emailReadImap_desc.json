@@ -1,0 +1,52 @@
+{
+  "nodeName": "email trigger (imap)",
+  "summary": "當收到新郵件時觸發工作流程。",
+  "parameters": [
+    {
+      "name": "mailbox name",
+      "type": "string",
+      "description": "郵箱名稱，預設為\"INBOX\"。"
+    },
+    {
+      "name": "action",
+      "type": "options",
+      "description": "在收到郵件後要執行的操作。選擇\"nothing\"將導致多次處理。",
+    },
+    {
+      "name": "download attachments",
+      "type": "boolean",
+      "description": "是否下載郵件附件。僅在需要時設置，因為會增加處理時間。",
+    },
+    {
+      "name": "format",
+      "type": "options",
+      "description": "返回郵件的格式。",
+    },
+    {
+      "name": "property prefix name",
+      "type": "string",
+      "description": "用於寫入附件的二進位屬性的前綴名稱。將添加以0開始的索引。"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設置。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "mailbox": "INBOX",
+        "postProcessAction": "read",
+        "downloadAttachments": false,
+        "format": "simple",
+        "dataPropertyAttachmentsPrefixName": "attachment_",
+        "options": {
+          "customEmailConfig": "[\"UNSEEN\"]",
+          "allowUnauthorizedCerts": false,
+          "forceReconnect": 60
+        }
+      }
+    }
+  }
+}

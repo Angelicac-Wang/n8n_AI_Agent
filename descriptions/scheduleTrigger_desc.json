@@ -1,0 +1,182 @@
+{
+  "nodename": "schedule trigger",
+  "summary": "此節點可根據您定義的排程觸發工作流程。",
+  "parameters": [
+    {
+      "name": "notice",
+      "type": "notice",
+      "description": "工作流程將根據您在此定義的排程運行。您也可以手動觸發它，返回畫布並點擊'執行工作流程'進行測試。"
+    },
+    {
+      "name": "rule",
+      "type": "fixedcollection",
+      "description": "觸發規則集合，可設定不同的觸發間隔和條件。",
+      "parameters": [
+        {
+          "name": "interval",
+          "type": "options",
+          "description": "設定觸發間隔的選項，包括秒、分、時、日、週、月和自定義（Cron）。",
+          "default": "days",
+          "options": [
+            {
+              "name": "seconds",
+              "value": "seconds"
+            },
+            {
+              "name": "minutes",
+              "value": "minutes"
+            },
+            {
+              "name": "hours",
+              "value": "hours"
+            },
+            {
+              "name": "days",
+              "value": "days"
+            },
+            {
+              "name": "weeks",
+              "value": "weeks"
+            },
+            {
+              "name": "months",
+              "value": "months"
+            },
+            {
+              "name": "cron expression",
+              "value": "cronExpression"
+            }
+          ]
+        },
+        {
+          "name": "secondsinterval",
+          "type": "number",
+          "description": "每次工作流程觸發之間的秒數間隔",
+          "default": 30
+        },
+        {
+          "name": "minutesinterval",
+          "type": "number",
+          "description": "每次工作流程觸發之間的分鐘間隔",
+          "default": 5
+        },
+        {
+          "name": "hoursinterval",
+          "type": "number",
+          "description": "每次工作流程觸發之間的小時間隔",
+          "default": 1
+        },
+        {
+          "name": "daysinterval",
+          "type": "number",
+          "description": "每次工作流程觸發之間的天數間隔",
+          "default": 1
+        },
+        {
+          "name": "weeksinterval",
+          "type": "number",
+          "description": "除非另有指定，否則每週運行一次",
+          "default": 1
+        },
+        {
+          "name": "monthsinterval",
+          "type": "number",
+          "description": "除非另有指定，否則每月運行一次",
+          "default": 1
+        },
+        {
+          "name": "triggeratdayofmonth",
+          "type": "number",
+          "description": "觸發的月份日期（1-31）",
+          "default": 1,
+          "hint": "如果該月份沒有這一天，節點將不會觸發"
+        },
+        {
+          "name": "triggeratday",
+          "type": "multioptions",
+          "description": "週間觸發的日期",
+          "options": [
+            {
+              "name": "monday",
+              "value": 1
+            },
+            {
+              "name": "tuesday",
+              "value": 2
+            },
+            {
+              "name": "wednesday",
+              "value": 3
+            },
+            {
+              "name": "thursday",
+              "value": 4
+            },
+            {
+              "name": "friday",
+              "value": 5
+            },
+            {
+              "name": "saturday",
+              "value": 6
+            },
+            {
+              "name": "sunday",
+              "value": 0
+            }
+          ],
+          "default": [0]
+        },
+        {
+          "name": "triggerathour",
+          "type": "options",
+          "description": "觸發的小時",
+          "default": 0,
+          "options": [
+            {
+              "name": "midnight",
+              "displayname": "midnight",
+              "value": 0
+            },
+            {
+              "name": "1am",
+              "displayname": "1am",
+              "value": 1
+            },
+            // 其他選項省略
+          ]
+        },
+        {
+          "name": "triggeratminute",
+          "type": "number",
+          "description": "觸發的分鐘數（0-59）",
+          "default": 0
+        },
+        {
+          "name": "notice",
+          "type": "notice",
+          "description": "您可以在此處找到幫助生成您的 Cron 表達式",
+          "default": ""
+        },
+        {
+          "name": "expression",
+          "type": "string",
+          "description": "Cron 表達式",
+          "default": "",
+          "placeholder": "例如 0 15 * 1 sun",
+          "hint": "格式：[秒] [分鐘] [小時] [月份日期] [月份] [星期幾]"
+        }
+      ]
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "rule": {
+          "interval": "days",
+          "daysinterval": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "nodeName": "gitlab trigger",
+  "summary": "此節點在 GitLab 事件發生時啟動工作流程。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於驗證的方法，可以選擇使用存取權杖或 OAuth2。"
+    },
+    {
+      "name": "owner",
+      "type": "string",
+      "description": "存儲庫的所有者。",
+    },
+    {
+      "name": "repository",
+      "type": "string",
+      "description": "存儲庫的名稱。",
+    },
+    {
+      "name": "events",
+      "type": "multiOptions",
+      "description": "要監聽的事件類型，可以選擇多個事件。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "accessToken",
+        "owner": "n8n-io",
+        "repository": "n8n",
+        "events": ["note", "issues"]
+      }
+    }
+  }
+}

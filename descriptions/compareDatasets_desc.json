@@ -1,0 +1,66 @@
+{
+  "nodeName": "compare datasets",
+  "summary": "比較兩個輸入以查看變化",
+  "parameters": [
+    {
+      "name": "infobox",
+      "type": "notice",
+      "description": "提示框，說明如何匹配字段並比較項目是否相同"
+    },
+    {
+      "name": "mergebyfields",
+      "type": "fixedcollection",
+      "description": "要匹配的字段集合，用於比較兩個輸入的項目"
+    },
+    {
+      "name": "resolve",
+      "type": "options",
+      "description": "當兩個輸入有差異時的處理方式選項"
+    },
+    {
+      "name": "fuzzycompare",
+      "type": "boolean",
+      "description": "是否容忍字段比較時的小型類型差異"
+    },
+    {
+      "name": "preferwhenmix",
+      "type": "options",
+      "description": "當選擇混合版本時，優先選擇哪個版本"
+    },
+    {
+      "name": "exceptwhenmix",
+      "type": "string",
+      "description": "除了指定的字段外，混合版本時的例外處理字段"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定，如跳過比較的字段、禁用點表示法、多個匹配時的處理方式等"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "infobox": "",
+        "mergebyfields": {
+          "values": [
+            {
+              "field1": "id",
+              "field2": "id"
+            }
+          ]
+        },
+        "resolve": "preferInput2",
+        "fuzzycompare": false,
+        "preferwhenmix": "input1",
+        "exceptwhenmix": "",
+        "options": {
+          "skipFields": "updated_at, updated_by",
+          "fuzzyCompare": false,
+          "disableDotNotation": false,
+          "multipleMatches": "first"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "nodeName": "demio",
+  "summary": "Consume the Demio API to interact with events and reports.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Choose whether to interact with events or reports.",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on events, such as getting an event or registering someone.",
+    },
+    {
+      "name": "returnall",
+      "type": "boolean",
+      "description": "Specify whether to return all results or only up to a given limit.",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "Set the maximum number of results to return.",
+    },
+    {
+      "name": "filters",
+      "type": "collection",
+      "description": "Add filters to narrow down the results when getting events.",
+    },
+    {
+      "name": "eventid",
+      "type": "string",
+      "description": "Provide the ID of the event to perform operations like getting or registering.",
+    },
+    {
+      "name": "additionalfields",
+      "type": "collection",
+      "description": "Add additional fields like active status or session ID when getting an event.",
+    },
+    {
+      "name": "firstname",
+      "type": "string",
+      "description": "Enter the registrant's first name when registering for an event.",
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "description": "Enter the registrant's email address when registering for an event.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "event",
+        "operation": "get",
+        "eventid": "12345",
+        "additionalfields": {
+          "active": true,
+          "date_id": "6789"
+        }
+      }
+    }
+  }
+}

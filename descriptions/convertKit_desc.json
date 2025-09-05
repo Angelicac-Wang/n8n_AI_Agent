@@ -1,0 +1,60 @@
+{
+  "nodeName": "convertkit",
+  "summary": "Consume ConvertKit API to manage custom fields, forms, sequences, tags, and subscribers.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with (e.g., Custom Field, Form, Sequence, Tag, Tag Subscriber).",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Choose the operation to perform on the selected resource (e.g., Create, Delete, Get Many, Update).",
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "description": "The ID of the custom field. Required for update and delete operations.",
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "description": "The label of the custom field. Required for create and update operations.",
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "Specify whether to return all results or only up to a given limit.",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "Maximum number of results to return. Must be between 1 and 500.",
+    },
+    {
+      "name": "formNameOrId",
+      "type": "options",
+      "description": "Select a form from the list or specify an ID using an expression.",
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "description": "The email address of the subscriber. Required for adding a subscriber.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "form",
+        "operation": "addSubscriber",
+        "id": "form_id",
+        "label": "New Field",
+        "returnAll": false,
+        "limit": 100,
+        "formNameOrId": "form_name",
+        "email": "example@email.com"
+      }
+    }
+  }
+}

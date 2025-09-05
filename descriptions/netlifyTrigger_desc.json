@@ -1,0 +1,36 @@
+{
+  "nodename": "netlify trigger",
+  "summary": "透過 Webhooks 處理 Netlify 事件。",
+  "parameters": [
+    {
+      "name": "site name or id",
+      "type": "options",
+      "description": "選擇網站 ID。從列表中選擇，或使用 <a href=\"https://docs.n8n.io/code/expressions/\">表達式</a> 指定 ID。",
+    },
+    {
+      "name": "event",
+      "type": "options",
+      "description": "選擇要觸發的事件類型。",
+    },
+    {
+      "name": "form name or id",
+      "type": "options",
+      "description": "選擇表單。從列表中選擇，或使用 <a href=\"https://docs.n8n.io/code/expressions/\">表達式</a> 指定 ID。",
+    },
+    {
+      "name": "simplify",
+      "type": "boolean",
+      "description": "是否返回簡化版本的回應而不是原始數據。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "siteid": "example-site-id",
+        "event": "submissionCreated",
+        "formid": "example-form-id",
+        "simple": true
+      }
+    }
+  }
+}

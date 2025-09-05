@@ -1,0 +1,60 @@
+{
+  "nodeName": "zendesk",
+  "summary": "此節點用於連接並使用 Zendesk API。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於選擇身份驗證方式，可以是 API Token 或 OAuth2。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型，如 Ticket、Ticket Field、User、Organization 等。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要對所選資源進行的操作，如 Create、Delete、Get、Update 等。"
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "description": "用於描述創建操作的第一個註釋內容。",
+      "required": true
+    },
+    {
+      "name": "jsonParameters",
+      "type": "boolean",
+      "description": "指定是否使用 JSON 參數來創建操作。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "提供額外的自定義字段，如自定義字段的 ID 和值。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "apiToken",
+        "resource": "ticket",
+        "operation": "create",
+        "description": "This is a new ticket",
+        "jsonParameters": false,
+        "additionalFields": {
+          "customFieldsUi": [
+            {
+              "customFieldsValues": [
+                {
+                  "id": "123",
+                  "value": "Custom Value"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

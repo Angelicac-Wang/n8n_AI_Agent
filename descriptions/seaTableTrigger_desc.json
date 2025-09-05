@@ -1,0 +1,44 @@
+{
+  "nodeName": "seaTable trigger",
+  "summary": "啟動工作流程，當 SeaTable 發生事件時觸發。",
+  "parameters": [
+    {
+      "name": "poll times",
+      "type": "fixedcollection",
+      "description": "時間間隔，指定輪詢發生的時間。",
+    },
+    {
+      "name": "table name or id",
+      "type": "options",
+      "description": "要訪問的 SeaTable 表格的名稱。從列表中選擇，或使用表達式指定 ID。",
+    },
+    {
+      "name": "event",
+      "type": "options",
+      "description": "觸發事件的類型，例如當新行被創建時觸發。",
+    },
+    {
+      "name": "simplify",
+      "type": "boolean",
+      "description": "是否返回簡化版本的響應而不是原始數據。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyDay",
+              "hour": 14,
+              "minute": 0
+            }
+          ]
+        },
+        "tableName": "table_name",
+        "event": "rowCreated",
+        "simple": true
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "nodeName": "intercom",
+  "summary": "此節點用於消耗 Intercom API，可用於管理公司、潛在客戶和用戶資料。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型，如公司、潛在客戶或用戶。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要對所選資源執行的操作，如創建、刪除、獲取數據等。"
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "description": "Intercom 定義的代表潛在客戶的 ID。",
+      "required": true
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "設置為 true 時，將返回所有符合條件的結果。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "user",
+        "operation": "get",
+        "id": "12345",
+        "returnAll": false
+      }
+    }
+  }
+}

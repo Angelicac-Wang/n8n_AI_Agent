@@ -1,0 +1,49 @@
+{
+  "nodeName": "spontit",
+  "summary": "此節點用於消費 Spontit API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要操作的資源類型。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "要執行的操作類型。",
+    },
+    {
+      "name": "content",
+      "type": "string",
+      "description": "要在推送中提供的文字內容。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "其他可選的欄位設定。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "push",
+        "operation": "create",
+        "content": "New message",
+        "additionalFields": {
+          "channelName": "Channel 1",
+          "expirationStamp": "1632931200",
+          "iOSDeepLink": "ios://link",
+          "link": "https://example.com",
+          "openInHomeFeed": false,
+          "openLinkInApp": true,
+          "pushToEmails": "user1@example.com,user2@example.com",
+          "pushToFollowers": "123,456,789",
+          "pushToPhoneNumbers": "1234567890,9876543210",
+          "schedule": "1632931200",
+          "subtitle": "New message",
+          "pushTitle": "Important Update"
+        }
+      }
+    }
+  }
+}

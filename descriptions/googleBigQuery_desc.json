@@ -1,0 +1,85 @@
+{
+  "nodeName": "google bigquery",
+  "summary": "此節點用於消費 Google BigQuery API。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於選擇身份驗證方式，建議使用 OAuth2。",
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，例如記錄（record）。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如創建（create）或檢索多個記錄（getAll）。",
+    },
+    {
+      "name": "project name or id",
+      "type": "options",
+      "description": "要在其中創建記錄的專案名稱或 ID。",
+    },
+    {
+      "name": "dataset name or id",
+      "type": "options",
+      "description": "要在其中創建記錄的資料集名稱或 ID。",
+    },
+    {
+      "name": "table name or id",
+      "type": "options",
+      "description": "要在其中創建記錄的表格名稱或 ID。",
+    },
+    {
+      "name": "columns",
+      "type": "string",
+      "description": "要用作列的項目屬性的逗號分隔列表。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定，如忽略未知值、跳過無效行等。",
+    },
+    {
+      "name": "return all",
+      "type": "boolean",
+      "description": "是否返回所有結果或僅返回到指定限制。",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數。",
+    },
+    {
+      "name": "simplify",
+      "type": "boolean",
+      "description": "是否返回簡化版本的回應而非原始數據。",
+    },
+    {
+      "name": "fields",
+      "type": "string",
+      "description": "要返回的字段子集，支持選擇子字段。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "record",
+        "operation": "create",
+        "projectId": "my-project",
+        "datasetId": "my-dataset",
+        "tableId": "my-table",
+        "columns": "id,name,description",
+        "options": {
+          "ignoreUnknownValues": false,
+          "skipInvalidRows": false,
+          "templateSuffix": "",
+          "traceId": ""
+        }
+      }
+    }
+  }
+}

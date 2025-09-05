@@ -1,0 +1,18 @@
+{
+  "nodeName": "trello trigger",
+  "summary": "此節點在 Trello 事件發生時啟動工作流程。",
+  "parameters": [
+    {
+      "name": "model id",
+      "type": "string",
+      "description": "要訂閱事件的模型的 ID。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "id": "4d5ea62fd76aa1136000000c"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "nodename": "acuity scheduling trigger",
+  "summary": "透過 Webhooks 處理 Acuity Scheduling 事件。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於選擇身份驗證方式，可以是 API 金鑰或 OAuth2。"
+    },
+    {
+      "name": "event",
+      "type": "options",
+      "description": "選擇要觸發的事件類型，如預約取消、預約更改、預約重新安排、預約完成等。"
+    },
+    {
+      "name": "resolvedata",
+      "type": "boolean",
+      "description": "當啟用此選項時，Webhook 數據將自動解析，默認僅包含對象的 ID。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "apiKey",
+        "event": "appointment.canceled",
+        "resolvedata": true
+      }
+    }
+  }
+}

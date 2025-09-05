@@ -1,0 +1,53 @@
+{
+  "nodeName": "hacker news",
+  "summary": "此節點用於消費 Hacker News API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要從 Hacker News API 中檢索的資源類型。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如獲取單個文章或用戶。",
+    },
+    {
+      "name": "article id",
+      "type": "string",
+      "description": "要返回的 Hacker News 文章的 ID。",
+    },
+    {
+      "name": "username",
+      "type": "string",
+      "description": "要返回的 Hacker News 用戶名稱。",
+    },
+    {
+      "name": "return all",
+      "type": "boolean",
+      "description": "指定是否返回所有結果或僅返回到給定限制。",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的結果數量上限。",
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "可選的額外字段，用於進一步定製查詢結果。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "article",
+        "operation": "get",
+        "articleId": "12345",
+        "additionalFields": {
+          "includeComments": true
+        }
+      }
+    }
+  }
+}

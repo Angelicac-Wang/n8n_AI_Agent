@@ -1,0 +1,24 @@
+{
+  "nodeName": "brevo trigger",
+  "summary": "啟動工作流程，當 Brevo 事件發生時觸發",
+  "parameters": [
+    {
+      "name": "type",
+      "type": "options",
+      "description": "指定要觸發的 Brevo 事件類型",
+    },
+    {
+      "name": "events",
+      "type": "multiOptions",
+      "description": "選擇要觸發的具體事件類型",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "type": "transactional",
+        "events": ["blocked", "click"]
+      }
+    }
+  }
+}

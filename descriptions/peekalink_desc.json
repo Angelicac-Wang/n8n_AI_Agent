@@ -1,0 +1,24 @@
+{
+  "nodeName": "peekalink",
+  "summary": "此節點用於消耗 Peekalink API，可檢查給定連結的預覽是否可用，或返回連結的預覽內容。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作類型。可選值包括檢查給定連結的預覽是否可用（isAvailable）或返回連結的預覽內容（preview）。",
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "description": "要處理的連結 URL。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "preview",
+        "url": "https://example.com"
+      }
+    }
+  }
+}

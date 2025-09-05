@@ -1,0 +1,51 @@
+{
+  "nodeName": "google business profile trigger",
+  "summary": "Fetches reviews from Google Business Profile and starts the workflow on specified polling intervals.",
+  "parameters": [
+    {
+      "name": "poll times",
+      "type": "fixedcollection",
+      "description": "Time at which polling should occur"
+    },
+    {
+      "name": "event",
+      "type": "options",
+      "description": "The event that triggers the workflow",
+      "default": "reviewAdded"
+    },
+    {
+      "name": "account",
+      "type": "resourcelocator",
+      "description": "The Google Business Profile account",
+      "required": true
+    },
+    {
+      "name": "location",
+      "type": "resourcelocator",
+      "description": "The specific location or business associated with the account",
+      "required": true
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyDay"
+            }
+          ]
+        },
+        "event": "reviewAdded",
+        "account": {
+          "mode": "list",
+          "value": ""
+        },
+        "location": {
+          "mode": "list",
+          "value": ""
+        }
+      }
+    }
+  }
+}

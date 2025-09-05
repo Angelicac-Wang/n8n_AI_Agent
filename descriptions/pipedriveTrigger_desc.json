@@ -1,0 +1,36 @@
+{
+  "nodeName": "pipedrive trigger",
+  "summary": "啟動工作流程，當 Pipedrive 事件發生時觸發",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於選擇驗證方式，可以是 API Token 或 OAuth2。"
+    },
+    {
+      "name": "incoming authentication",
+      "type": "options",
+      "description": "指定 webhook 的驗證方式，可選擇 Basic Auth 或不使用任何驗證。"
+    },
+    {
+      "name": "action",
+      "type": "options",
+      "description": "設定要接收通知的動作類型，如新增、刪除、合併或更新。"
+    },
+    {
+      "name": "entity",
+      "type": "options",
+      "description": "設定要接收通知的物件類型，如活動、交易、筆記、組織、人員等。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "apiToken",
+        "incomingAuthentication": "none",
+        "action": "*",
+        "entity": "deal"
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "nodeName": "elastic security",
+  "summary": "此節點用於消費 Elastic Security API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如案例、案例評論、案例標籤等。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定對資源進行的操作，如創建案例、刪除案例、獲取案例等。"
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "指定案例的標題。",
+    },
+    {
+      "name": "connectorId",
+      "type": "options",
+      "description": "選擇要將 Elastic Security 案例發送到的其他系統的連接器（僅支持 ServiceNow、Jira 或 IBM Resilient）。"
+    },
+    {
+      "name": "connectorType",
+      "type": "options",
+      "description": "指定連接器的類型，如 IBM Resilient、Jira 或 ServiceNow ITSM。"
+    },
+    {
+      "name": "issueType",
+      "type": "string",
+      "description": "指定要為此案例創建的 Jira 事項類型。"
+    },
+    {
+      "name": "priority",
+      "type": "string",
+      "description": "指定要為此案例創建的 Jira 事項的優先級。"
+    },
+    {
+      "name": "urgency",
+      "type": "options",
+      "description": "指定要為此案例創建的 ServiceNow ITSM 事項的緊急程度。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "case",
+        "operation": "create",
+        "title": "New Case",
+        "connectorId": "123",
+        "connectorType": ".jira",
+        "issueType": "Task",
+        "priority": "High",
+        "urgency": 1
+      }
+    }
+  }
+}

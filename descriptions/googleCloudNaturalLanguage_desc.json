@@ -1,0 +1,51 @@
+{
+  "nodeName": "google cloud natural language",
+  "summary": "此節點用於使用 Google Cloud Natural Language API 進行文本分析。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要使用的資源類型，可以是文件或自定義 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，例如分析情感或自定義 API 呼叫。"
+    },
+    {
+      "name": "source",
+      "type": "options",
+      "description": "指定文件的來源，可以是內容字符串或 Google Cloud Storage URI。"
+    },
+    {
+      "name": "content",
+      "type": "string",
+      "description": "輸入內容的字符串格式。基於用戶數據，免於 Cloud 审计日志记录。"
+    },
+    {
+      "name": "gcscontenturi",
+      "type": "string",
+      "description": "文件內容位於的 Google Cloud Storage URI。URI 必須是 gs://bucket_name/object_name 格式。"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "提供進一步的選項設定，如文件類型、編碼類型和語言。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "document",
+        "operation": "analyzeSentiment",
+        "source": "content",
+        "content": "This is a sample text for sentiment analysis.",
+        "options": {
+          "documentType": "PLAIN_TEXT",
+          "encodingType": "UTF16",
+          "language": "en"
+        }
+      }
+    }
+  }
+}

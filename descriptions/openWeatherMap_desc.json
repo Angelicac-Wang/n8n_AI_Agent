@@ -1,0 +1,62 @@
+{
+  "nodeName": "openweathermap",
+  "summary": "此節點可獲取當前和未來天氣信息。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要返回的天氣資料類型。"
+    },
+    {
+      "name": "format",
+      "type": "options",
+      "description": "指定返回的資料格式。",
+    },
+    {
+      "name": "location selection",
+      "type": "options",
+      "description": "定義要返回天氣資料的位置方式。"
+    },
+    {
+      "name": "city",
+      "type": "string",
+      "description": "要返回天氣資料的城市名稱。"
+    },
+    {
+      "name": "city id",
+      "type": "number",
+      "description": "要返回天氣資料的城市 ID。"
+    },
+    {
+      "name": "latitude",
+      "type": "string",
+      "description": "要返回天氣資料的位置緯度。"
+    },
+    {
+      "name": "longitude",
+      "type": "string",
+      "description": "要返回天氣資料的位置經度。"
+    },
+    {
+      "name": "zip code",
+      "type": "string",
+      "description": "要返回天氣資料的郵政編碼。"
+    },
+    {
+      "name": "language",
+      "type": "string",
+      "description": "輸出資料的語言代碼。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "currentWeather",
+        "format": "metric",
+        "locationSelection": "cityName",
+        "cityName": "berlin,de",
+        "language": "en"
+      }
+    }
+  }
+}

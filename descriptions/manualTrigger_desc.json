@@ -1,0 +1,18 @@
+{
+  "nodename": "manual trigger",
+  "summary": "此節點可在 n8n 中點擊按鈕時觸發工作流程。",
+  "parameters": [
+    {
+      "name": "notice",
+      "type": "notice",
+      "description": "此節點是工作流程執行的起點，當您在畫布上點擊“測試”按鈕時觸發。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "notice": ""
+      }
+    }
+  }
+}

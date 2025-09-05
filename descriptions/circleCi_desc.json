@@ -1,0 +1,62 @@
+{
+  "nodeName": "circleci",
+  "summary": "Consume CircleCI API to interact with pipelines, including getting, triggering, and listing pipelines.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with (e.g., pipeline)."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource (e.g., get, getAll, trigger)."
+    },
+    {
+      "name": "vcs",
+      "type": "options",
+      "description": "Select the version control system provider (e.g., Bitbucket, GitHub)."
+    },
+    {
+      "name": "projectSlug",
+      "type": "string",
+      "description": "Enter the project slug in the format org-name/repo-name."
+    },
+    {
+      "name": "pipelineNumber",
+      "type": "number",
+      "description": "Enter the number of the pipeline to retrieve."
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "Specify whether to return all results or only up to a given limit."
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "Set the maximum number of results to return."
+    },
+    {
+      "name": "filters",
+      "type": "collection",
+      "description": "Add filters to narrow down the results (e.g., branch name)."
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "Add additional fields for triggering a pipeline (e.g., branch, tag)."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "pipeline",
+        "operation": "get",
+        "vcs": "github",
+        "projectSlug": "n8n-io/n8n",
+        "pipelineNumber": 1
+      }
+    }
+  }
+}

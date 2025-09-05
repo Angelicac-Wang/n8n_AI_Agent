@@ -1,0 +1,59 @@
+{
+  "nodeName": "execute sub-workflow",
+  "summary": "執行另一個工作流程。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "hidden",
+      "description": "操作類型，預設為執行子工作流程。"
+    },
+    {
+      "name": "source",
+      "type": "options",
+      "description": "指定從哪裡獲取要執行的工作流程。",
+    },
+    {
+      "name": "workflowId",
+      "type": "string",
+      "description": "要執行的工作流程的 ID，可在工作流程的 URL 中找到。",
+    },
+    {
+      "name": "workflowPath",
+      "type": "string",
+      "description": "要執行的本地 JSON 工作流程文件的路徑。",
+    },
+    {
+      "name": "workflowJson",
+      "type": "json",
+      "description": "要執行的工作流程的 JSON 代碼。",
+    },
+    {
+      "name": "workflowUrl",
+      "type": "string",
+      "description": "從中加載工作流程的 URL。",
+    },
+    {
+      "name": "mode",
+      "type": "options",
+      "description": "指定如何執行子工作流程，一次處理所有項目或為每個項目單獨執行。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設置。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "call_workflow",
+        "source": "database",
+        "workflowId": "12345",
+        "mode": "once",
+        "options": {
+          "waitForSubWorkflow": true
+        }
+      }
+    }
+  }
+}

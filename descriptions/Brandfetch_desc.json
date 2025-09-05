@@ -1,0 +1,42 @@
+{
+  "nodeName": "brandfetch",
+  "summary": "此節點用於消耗 Brandfetch API，可返回公司的顏色、資料、字體、產業、標誌等信息。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作類型，如返回公司的顏色、資料、字體、產業、標誌等。",
+    },
+    {
+      "name": "domain",
+      "type": "string",
+      "description": "公司的域名。",
+    },
+    {
+      "name": "download",
+      "type": "boolean",
+      "description": "是否下載圖像文件。",
+    },
+    {
+      "name": "imageTypes",
+      "type": "multiOptions",
+      "description": "要下載的圖像類型，如圖標或標誌。",
+    },
+    {
+      "name": "imageFormats",
+      "type": "multiOptions",
+      "description": "要下載的圖像格式，如 PNG 或 SVG。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "logo",
+        "domain": "example.com",
+        "download": true,
+        "imageTypes": ["logo"],
+        "imageFormats": ["png"]
+      }
+    }
+  }
+}

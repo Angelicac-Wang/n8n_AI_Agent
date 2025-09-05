@@ -1,0 +1,51 @@
+{
+  "nodeName": "html extract",
+  "summary": "此節點從 HTML 中提取數據。",
+  "parameters": [
+    {
+      "name": "source data",
+      "type": "options",
+      "description": "如果 HTML 應從二進制或 JSON 數據中讀取"
+    },
+    {
+      "name": "input binary field",
+      "type": "string",
+      "description": "包含要提取的文件的輸入二進制字段的名稱",
+    },
+    {
+      "name": "json property",
+      "type": "string",
+      "description": "包含要從中提取數據的 HTML 的 JSON 屬性名稱。屬性可以包含字符串或字符串數組。",
+    },
+    {
+      "name": "extraction values",
+      "type": "fixedcollection",
+      "description": "定義要提取的值，包括鍵、CSS 選擇器、返回值類型等",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "包含額外選項，如是否修剪值的空格和換行符"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "sourceData": "json",
+        "dataPropertyName": "data",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "price",
+              "cssSelector": ".price",
+              "returnValue": "text"
+            }
+          ]
+        },
+        "options": {
+          "trimValues": true
+        }
+      }
+    }
+  }
+}

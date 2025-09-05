@@ -1,0 +1,71 @@
+{
+  "nodename": "evaluation trigger",
+  "summary": "Run a test dataset through your workflow to check performance.",
+  "parameters": [
+    {
+      "name": "credentials",
+      "type": "credentials",
+      "description": "The credentials to authenticate with Google Sheets."
+    },
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "Choose the authentication method: Service Account or OAuth2 (recommended).",
+    },
+    {
+      "name": "documentid",
+      "type": "resourcelocator",
+      "description": "Select the document containing the dataset from Google Sheets.",
+    },
+    {
+      "name": "sheetname",
+      "type": "resourcelocator",
+      "description": "Select the sheet containing the dataset from the chosen document.",
+    },
+    {
+      "name": "limitrows",
+      "type": "boolean",
+      "description": "Whether to limit the number of rows to process.",
+    },
+    {
+      "name": "maxrows",
+      "type": "number",
+      "description": "Maximum number of rows to process.",
+    },
+    {
+      "name": "filtersui",
+      "type": "fixedcollection",
+      "description": "Add filters to specify conditions for processing rows.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "credentials": "myGoogleSheetsCredentials",
+        "authentication": "oAuth2",
+        "documentId": {
+          "mode": "list",
+          "value": ""
+        },
+        "sheetName": {
+          "mode": "list",
+          "value": ""
+        },
+        "limitRows": true,
+        "maxRows": 10,
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "column1",
+              "lookupValue": "value1"
+            },
+            {
+              "lookupColumn": "column2",
+              "lookupValue": "value2"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

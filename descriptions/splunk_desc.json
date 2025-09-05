@@ -1,0 +1,56 @@
+{
+  "nodeName": "splunk",
+  "summary": "此節點用於消費 Splunk Enterprise API。",
+  "parameters": [
+    {
+      "name": "oldversionnotice",
+      "type": "notice",
+      "description": "顯示新節點版本的通知信息。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作。",
+    },
+    {
+      "name": "searchconfigurationid",
+      "type": "string",
+      "description": "要操作的搜尋配置的 ID。",
+    },
+    {
+      "name": "returnall",
+      "type": "boolean",
+      "description": "指定是否返回所有結果或僅返回一定限制內的結果。",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數量。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "searchJob",
+        "operation": "getReport",
+        "searchConfigurationId": "12345",
+        "returnAll": false,
+        "limit": 50,
+        "options": {
+          "add_orphan_field": false,
+          "listDefaultActionArgs": false
+        }
+      }
+    }
+  }
+}

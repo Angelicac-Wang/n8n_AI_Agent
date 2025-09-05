@@ -1,0 +1,77 @@
+{
+  "nodeName": "send email",
+  "summary": "此節點用於發送郵件。",
+  "parameters": [
+    {
+      "name": "from email",
+      "type": "string",
+      "description": "Email address of the sender, optional with name."
+    },
+    {
+      "name": "to email",
+      "type": "string",
+      "description": "Email address of the recipient."
+    },
+    {
+      "name": "cc email",
+      "type": "string",
+      "description": "Email address of CC recipient."
+    },
+    {
+      "name": "bcc email",
+      "type": "string",
+      "description": "Email address of BCC recipient."
+    },
+    {
+      "name": "subject",
+      "type": "string",
+      "description": "Subject line of the email."
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "description": "Plain text message of the email."
+    },
+    {
+      "name": "html",
+      "type": "string",
+      "description": "HTML text message of the email."
+    },
+    {
+      "name": "attachments",
+      "type": "string",
+      "description": "Name of the binary properties that contain data to add to the email as an attachment. Multiple ones can be comma-separated."
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "Additional options for sending the email.",
+      "options": [
+        {
+          "name": "allowunauthorizedcerts",
+          "type": "boolean",
+          "description": "Whether to connect even if SSL certificate validation is not possible."
+        },
+        {
+          "name": "replyto",
+          "type": "string",
+          "description": "The email address to send the reply to."
+        }
+      ]
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "fromEmail": "admin@example.com",
+        "toEmail": "info@example.com",
+        "subject": "Hello from n8n",
+        "text": "This is a test email from n8n.",
+        "options": {
+          "allowUnauthorizedCerts": false,
+          "replyTo": "info@example.com"
+        }
+      }
+    }
+  }
+}

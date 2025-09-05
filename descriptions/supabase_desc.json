@@ -1,0 +1,68 @@
+{
+  "nodename": "supabase",
+  "summary": "Add, get, delete, and update data in a Supabase table.",
+  "parameters": [
+    {
+      "name": "use custom schema",
+      "type": "boolean",
+      "description": "Whether to use a custom database schema."
+    },
+    {
+      "name": "schema",
+      "type": "string",
+      "description": "Name of the database schema to use for the table."
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Choose between operating on a row or making a custom API call.",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the table row.",
+    },
+    {
+      "name": "table name or id",
+      "type": "options",
+      "description": "Select the table to perform the operation on.",
+    },
+    {
+      "name": "select type",
+      "type": "options",
+      "description": "Choose how to build the select conditions for updating a row.",
+    },
+    {
+      "name": "must match",
+      "type": "options",
+      "description": "Select whether all or any select conditions must match for updating a row.",
+    },
+    {
+      "name": "select conditions",
+      "type": "fixedcollection",
+      "description": "Define the conditions to select rows for updating.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "useCustomSchema": false,
+        "schema": "public",
+        "resource": "row",
+        "operation": "create",
+        "tableId": "example_table",
+        "filterType": "manual",
+        "matchType": "anyFilter",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "example_field",
+              "conditionType": "equals",
+              "value": "example_value"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

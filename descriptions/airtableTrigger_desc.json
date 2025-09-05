@@ -1,0 +1,76 @@
+{
+  "nodename": "airtable trigger",
+  "summary": "啟動工作流程，當 Airtable 發生事件時觸發。",
+  "parameters": [
+    {
+      "name": "poll times",
+      "type": "fixedcollection",
+      "description": "時間間隔，用於定期觸發。",
+    },
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "身份驗證方式選擇。",
+    },
+    {
+      "name": "base",
+      "type": "resourcelocator",
+      "description": "操作的 Airtable Base。",
+    },
+    {
+      "name": "table",
+      "type": "resourcelocator",
+      "description": "操作的 Airtable 表格。",
+    },
+    {
+      "name": "trigger field",
+      "type": "string",
+      "description": "用於排序記錄的創建時間或最後修改時間字段。",
+    },
+    {
+      "name": "download attachments",
+      "type": "boolean",
+      "description": "是否下載附件字段中定義的附件。",
+    },
+    {
+      "name": "download fields",
+      "type": "string",
+      "description": "應下載的 '附件' 類型字段的名稱。",
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "要包含在響應中的字段。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "authentication": "airtableApi",
+        "baseId": {
+          "mode": "url",
+          "value": "https://airtable.com/app12DiScdfes/tblAAAAAAAAAAAAA/viwHdfasdfeieg5p"
+        },
+        "tableId": {
+          "mode": "url",
+          "value": "https://airtable.com/app12DiScdfes/tblAAAAAAAAAAAAA/viwHdfasdfeieg5p"
+        },
+        "triggerField": "createdTime",
+        "downloadAttachments": false,
+        "downloadFieldNames": "",
+        "additionalFields": {
+          "fields": "name, id",
+          "formula": "",
+          "viewId": ""
+        }
+      }
+    }
+  }
+}

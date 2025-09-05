@@ -1,0 +1,18 @@
+{
+  "nodename": "error trigger",
+  "summary": "此節點在另一個工作流程出現錯誤時觸發工作流程。",
+  "parameters": [
+    {
+      "name": "notice",
+      "type": "notice",
+      "description": "當另一個工作流程出現錯誤並設置為觸發時，此節點將觸發工作流程。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "notice": ""
+      }
+    }
+  }
+}

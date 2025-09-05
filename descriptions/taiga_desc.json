@@ -1,0 +1,55 @@
+{
+  "nodename": "taiga",
+  "summary": "Consume Taiga API to perform operations on epics, issues, tasks, and user stories.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to perform operations on (epic, issue, task, user story).",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource (create, delete, get, get many, update).",
+    },
+    {
+      "name": "project name or id",
+      "type": "options",
+      "description": "ID of the project to which the epic belongs.",
+    },
+    {
+      "name": "subject",
+      "type": "string",
+      "description": "Subject of the epic to create.",
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "Additional fields for creating an epic.",
+    },
+    {
+      "name": "epic id",
+      "type": "string",
+      "description": "ID of the epic to delete.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "epic",
+        "operation": "create",
+        "projectid": "123",
+        "subject": "New Epic",
+        "additionalfields": {
+          "assigned_to": "456",
+          "blocked_note": "Waiting for approval",
+          "color": "FF0000",
+          "description": "This is a new epic",
+          "is_blocked": true,
+          "tags": ["tag1", "tag2"]
+        },
+        "epicid": "789"
+      }
+    }
+  }
+}

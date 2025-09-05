@@ -1,0 +1,55 @@
+{
+  "nodeName": "seven",
+  "summary": "此節點可用於發送簡訊和進行文字轉語音通話。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要使用的資源類型（簡訊、語音通話或自訂 API 呼叫）。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作（發送簡訊、轉換文字為語音並撥打號碼，或自訂 API 呼叫）。"
+    },
+    {
+      "name": "from",
+      "type": "string",
+      "description": "顯示在接收者顯示器上的來電顯示 ID。最多 16 個數字或 11 個字母數字字符。"
+    },
+    {
+      "name": "to",
+      "type": "string",
+      "description": "接收者的號碼，用逗號分隔。可以是常規號碼或 seven 中的聯絡人/群組。"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "要發送的訊息。最多 1520 個字符。"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定，如延遲發送、自訂外部 ID、閃光訊息等。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "sms",
+        "operation": "send",
+        "from": "+4901234567890",
+        "to": "+49876543210, MyGroup",
+        "message": "Hello from n8n!",
+        "options": {
+          "delay": "2023-12-31T23:59:59",
+          "foreign_id": "MyCustomForeignID",
+          "flash": false,
+          "label": "MyCustomLabel",
+          "performance_tracking": false,
+          "ttl": 2880
+        }
+      }
+    }
+  }
+}

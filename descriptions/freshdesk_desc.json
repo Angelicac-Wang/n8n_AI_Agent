@@ -1,0 +1,48 @@
+{
+  "nodeName": "freshdesk",
+  "summary": "此節點用於消費 Freshdesk API，可執行與 Freshdesk 相關的操作，如創建、刪除、更新票務等。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型，可以是聯絡人（Contact）或票務（Ticket）。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作，如創建、刪除、更新票務等。僅在選擇票務資源時顯示。",
+    },
+    {
+      "name": "requester",
+      "type": "options",
+      "description": "選擇識別請求者的方式，如電子郵件、Facebook ID、電話號碼等。僅在創建票務操作時顯示。",
+    },
+    {
+      "name": "requesterIdentificationValue",
+      "type": "string",
+      "description": "選定識別方式的值，例如電子郵件地址、Facebook ID 等。僅在創建票務操作時顯示。",
+    },
+    {
+      "name": "status",
+      "type": "options",
+      "description": "選擇票務的狀態，如已關閉、開放中、待處理等。僅在創建票務操作時顯示。",
+    },
+    {
+      "name": "priority",
+      "type": "options",
+      "description": "選擇票務的優先級，如低、中、高。僅在創建票務操作時顯示。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "ticket",
+        "operation": "create",
+        "requester": "email",
+        "requesterIdentificationValue": "john.doe@example.com",
+        "status": "open",
+        "priority": "medium"
+      }
+    }
+  }
+}

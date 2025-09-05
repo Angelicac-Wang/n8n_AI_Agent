@@ -1,0 +1,40 @@
+{
+  "nodeName": "medium",
+  "summary": "此節點用於消費 Medium API。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於選擇驗證方式，可以是 Access Token 或 OAuth2。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如文章（Post）、出版物（Publication）或自定義 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如創建文章（Create）或取得多個出版物（Get Many）。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "accessToken",
+        "resource": "post",
+        "operation": "create",
+        "title": "My Open Source Contribution",
+        "contentFormat": "markdown",
+        "content": "My open source contribution",
+        "additionalFields": {
+          "canonicalUrl": "",
+          "license": "all-rights-reserved",
+          "notifyFollowers": false,
+          "publishStatus": "public",
+          "tags": "open-source,mlh,fellowship"
+        }
+      }
+    }
+  }
+}

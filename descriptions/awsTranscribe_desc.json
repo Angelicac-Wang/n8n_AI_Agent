@@ -1,0 +1,42 @@
+{
+  "nodeName": "aws transcribe",
+  "summary": "此節點用於將數據發送到 AWS Transcribe 服務。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是 Transcription Job 或自定義 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如創建、刪除、獲取單個或多個轉錄任務。"
+    },
+    {
+      "name": "transcriptionJobName",
+      "type": "string",
+      "description": "指定轉錄任務的名稱。"
+    },
+    {
+      "name": "mediaFileUri",
+      "type": "string",
+      "description": "指定輸入媒體文件的 S3 對象位置。"
+    },
+    {
+      "name": "detectLanguage",
+      "type": "boolean",
+      "description": "設置為 true 以啟用自動語言識別。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "transcriptionJob",
+        "operation": "create",
+        "transcriptionJobName": "example-job",
+        "mediaFileUri": "s3://bucket/example.mp3",
+        "detectLanguage": true
+      }
+    }
+  }
+}

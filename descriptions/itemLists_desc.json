@@ -1,0 +1,58 @@
+{
+  "nodeName": "item lists",
+  "summary": "Helper for working with lists of items and transforming arrays.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "hidden",
+      "description": "The type of resource being processed."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "The operation to perform on the list of items."
+    },
+    {
+      "name": "field to split out",
+      "type": "string",
+      "description": "The name of the input field to break out into separate items."
+    },
+    {
+      "name": "include",
+      "type": "options",
+      "description": "Whether to copy any other fields into the new items."
+    },
+    {
+      "name": "fields to include",
+      "type": "fixedCollection",
+      "description": "Fields to include in the new items."
+    },
+    {
+      "name": "aggregate",
+      "type": "options",
+      "description": "How to aggregate the items."
+    },
+    {
+      "name": "fields to aggregate",
+      "type": "fixedCollection",
+      "description": "Fields to aggregate in the new item."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "itemList",
+        "operation": "splitOutItems",
+        "fieldToSplitOut": "category",
+        "include": "selectedOtherFields",
+        "fieldsToInclude": {
+          "fields": [
+            {
+              "fieldName": "id"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

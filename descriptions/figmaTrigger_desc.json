@@ -1,0 +1,53 @@
+{
+  "nodename": "figma trigger (beta)",
+  "summary": "此節點在 Figma 事件發生時啟動工作流程。",
+  "parameters": [
+    {
+      "name": "team id",
+      "type": "string",
+      "description": "觸發器將監視此 Figma 團隊的變化。團隊 ID 可在網頁瀏覽器中查看 Figma 團隊頁面的 URL 中找到：figma.com/files/team/{TEAM-ID}/。",
+      "required": true
+    },
+    {
+      "name": "trigger on",
+      "type": "options",
+      "description": "當特定事件發生時觸發工作流程。",
+      "options": [
+        {
+          "name": "file commented",
+          "value": "fileComment",
+          "description": "當有人對文件發表評論時觸發"
+        },
+        {
+          "name": "file deleted",
+          "value": "fileDelete",
+          "description": "當文件被刪除時觸發。不會在文件夾中的所有文件被刪除時觸發。"
+        },
+        {
+          "name": "file updated",
+          "value": "fileUpdate",
+          "description": "當文件保存或刪除時觸發。這發生在文件被關閉或在進行更改後的 30 秒內。"
+        },
+        {
+          "name": "file version updated",
+          "value": "fileVersionUpdate",
+          "description": "當文件的版本歷史中創建了一個命名版本時觸發"
+        },
+        {
+          "name": "library publish",
+          "value": "libraryPublish",
+          "description": "當庫文件被發布時觸發"
+        }
+      ],
+      "required": true
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "teamId": "123456",
+        "triggerOn": "fileComment"
+      }
+    }
+  }
+}

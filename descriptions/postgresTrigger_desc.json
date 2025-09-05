@@ -1,0 +1,68 @@
+{
+  "nodeName": "postgres trigger",
+  "summary": "此節點用於監聽 Postgres 資料庫的訊息。",
+  "parameters": [
+    {
+      "name": "trigger mode",
+      "type": "options",
+      "description": "設定要監聽的事件類型，是表格行更改事件還是進階設定。"
+    },
+    {
+      "name": "schema name",
+      "type": "resourceLocator",
+      "description": "設定要監聽的資料庫 schema 名稱。",
+    },
+    {
+      "name": "table name",
+      "type": "resourceLocator",
+      "description": "設定要監聽的資料表名稱。",
+    },
+    {
+      "name": "channel name",
+      "type": "string",
+      "description": "設定要監聽的 Postgres 頻道名稱。",
+    },
+    {
+      "name": "fires on",
+      "type": "options",
+      "description": "設定要監聽的事件類型，如插入、更新或刪除。",
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "設定進一步的觸發器設定，如頻道名稱、函數名稱、是否替換現有觸發器等。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "設定其他選項，如連線逾時時間和延遲關閉閒置連線時間。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "triggerMode": "createTrigger",
+        "schema": {
+          "mode": "list",
+          "value": "public"
+        },
+        "tableName": {
+          "mode": "list",
+          "value": "table_name"
+        },
+        "channelName": "n8n_channel",
+        "firesOn": "INSERT",
+        "additionalFields": {
+          "channelName": "n8n_channel",
+          "functionName": "n8n_trigger_function()",
+          "replaceIfExists": false,
+          "triggerName": "n8n_trigger"
+        },
+        "options": {
+          "connectionTimeout": 30,
+          "delayClosingIdleConnection": 0
+        }
+      }
+    }
+  }
+}

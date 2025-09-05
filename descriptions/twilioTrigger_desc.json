@@ -1,0 +1,25 @@
+{
+  "nodename": "twilio trigger",
+  "summary": "此節點會在 Twilio 更新時啟動工作流程。",
+  "parameters": [
+    {
+      "name": "trigger on",
+      "type": "multioptions",
+      "description": "選擇要觸發的事件類型。",
+    },
+    {
+      "name": "the 'new call' event may take up to thirty minutes to be triggered",
+      "type": "notice",
+      "description": "注意：'新通話' 事件可能需要最多三十分鐘才會觸發。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "updates": [
+          "com.twilio.messaging.inbound-message.received"
+        ]
+      }
+    }
+  }
+}

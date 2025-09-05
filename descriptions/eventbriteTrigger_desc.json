@@ -1,0 +1,43 @@
+{
+  "nodename": "eventbrite trigger",
+  "summary": "透過 Webhooks 處理 Eventbrite 事件。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於驗證的方法，可以選擇使用私鑰或 OAuth2。"
+    },
+    {
+      "name": "organization",
+      "type": "options",
+      "description": "要操作的 Eventbrite 組織名稱或 ID。可以從列表中選擇，或使用表達式指定 ID。"
+    },
+    {
+      "name": "event",
+      "type": "options",
+      "description": "限制觸發器僅針對此事件。可以從列表中選擇，或使用表達式指定 ID。"
+    },
+    {
+      "name": "actions",
+      "type": "multioptions",
+      "description": "訂閱一個或多個操作。",
+      "required": true
+    },
+    {
+      "name": "resolvedata",
+      "type": "boolean",
+      "description": "默認情況下，webhook 數據僅包含手動接收對象數據的 URL。啟用此選項將自動解析數據。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "privateKey",
+        "organization": "exampleOrg",
+        "event": "exampleEvent",
+        "actions": ["attendee.checked_in", "event.created"],
+        "resolveData": true
+      }
+    }
+  }
+}

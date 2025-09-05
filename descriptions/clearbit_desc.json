@@ -1,0 +1,54 @@
+{
+  "nodeName": "clearbit",
+  "summary": "Consume Clearbit API to retrieve company or person information based on domain or email.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select whether to retrieve information about a company or a person."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the specific operation to perform, such as autocomplete or enrich."
+    },
+    {
+      "name": "domain",
+      "type": "string",
+      "description": "The domain of the company to look up.",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "Additional fields to include in the company information retrieval.",
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "The partial name of the company for autocomplete operation."
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "description": "The email address of the person to look up."
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "Additional fields to include in the person information retrieval."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "company",
+        "operation": "enrich",
+        "domain": "example.com",
+        "additionalFields": {
+          "companyName": "Example Company",
+          "twitter": "@example"
+        }
+      }
+    }
+  }
+}

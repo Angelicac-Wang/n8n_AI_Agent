@@ -1,0 +1,36 @@
+{
+  "nodeName": "slack",
+  "summary": "This node allows you to interact with the Slack API to perform various operations such as sending messages, archiving channels, inviting users, and more.",
+  "parameters": [
+    {
+      "name": "oldVersionNotice",
+      "type": "notice",
+      "description": "Notification about a new node version available."
+    },
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "Select the authentication method to use (Access Token or OAuth2).",
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with (e.g., Channel, File, Message).",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the selected resource (e.g., Create, Get, Archive).",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "oldVersionNotice": "",
+        "authentication": "accessToken",
+        "resource": "message",
+        "operation": "create"
+      }
+    }
+  }
+}

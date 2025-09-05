@@ -1,0 +1,79 @@
+{
+  "nodeName": "microsoft graph security",
+  "summary": "Consume the Microsoft Graph Security API to retrieve secure scores and control profiles.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to retrieve data for (e.g., Secure Score, Secure Score Control Profile)."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Choose the operation to perform on the selected resource (e.g., Get, Get Many, Update)."
+    },
+    {
+      "name": "secure score id",
+      "type": "string",
+      "description": "ID of the secure score to retrieve.",
+      "required": true
+    },
+    {
+      "name": "return all",
+      "type": "boolean",
+      "description": "Specify whether to return all results or only up to a given limit."
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "Maximum number of results to return.",
+      "typeOptions": {
+        "minValue": 1,
+        "maxValue": 1000
+      }
+    },
+    {
+      "name": "filters",
+      "type": "collection",
+      "description": "Add filters to refine the results (e.g., Filter Query Parameter, Include Control Scores)."
+    },
+    {
+      "name": "secure score control profile id",
+      "type": "string",
+      "description": "ID of the secure score control profile to retrieve or update.",
+      "required": true
+    },
+    {
+      "name": "provider",
+      "type": "string",
+      "description": "Name of the provider of the security product or service.",
+      "required": true
+    },
+    {
+      "name": "vendor",
+      "type": "string",
+      "description": "Name of the vendor of the security product or service.",
+      "required": true
+    },
+    {
+      "name": "update fields",
+      "type": "collection",
+      "description": "Add fields to update the secure score control profile (e.g., State)."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "secureScore",
+        "operation": "get",
+        "secureScoreId": "12345",
+        "returnAll": false,
+        "limit": 50,
+        "filters": {
+          "filter": "currentScore eq 13",
+          "includeControlScores": false
+        }
+      }
+    }
+  }
+}

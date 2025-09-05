@@ -1,0 +1,64 @@
+{
+  "nodeName": "mistral ai",
+  "summary": "此節點用於使用 Mistral AI API 進行文檔處理，包括文字提取和自定義 API 調用。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要處理的資源類型，可以是文檔或自定義 API 調用。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如提取文本或自定義 API 調用。僅在資源為文檔時顯示。",
+    },
+    {
+      "name": "model",
+      "type": "options",
+      "description": "選擇要使用的 OCR 模型。",
+    },
+    {
+      "name": "documentType",
+      "type": "options",
+      "description": "指定要處理的文檔類型，可以是文檔 URL 或圖片 URL。",
+    },
+    {
+      "name": "inputType",
+      "type": "options",
+      "description": "指定提供文檔的方式，可以是二進制數據或 URL。",
+    },
+    {
+      "name": "binaryProperty",
+      "type": "string",
+      "description": "指定包含要處理文件的輸入二進制字段的名稱。",
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "description": "指定要處理的文檔或圖片的 URL。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "提供進階選項設置，如啟用批處理、批處理大小和處理後刪除文件。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "document",
+        "operation": "extractText",
+        "model": "mistral-ocr-latest",
+        "documentType": "document_url",
+        "inputType": "binary",
+        "binaryProperty": "data",
+        "url": "",
+        "options": {
+          "batch": false,
+          "batchSize": 50,
+          "deleteFiles": true
+        }
+      }
+    }
+  }
+}

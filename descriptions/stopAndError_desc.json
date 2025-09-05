@@ -1,0 +1,29 @@
+{
+  "nodeName": "stop and error",
+  "summary": "Throw an error in the workflow.",
+  "parameters": [
+    {
+      "name": "error type",
+      "type": "options",
+      "description": "Type of error to throw.",
+    },
+    {
+      "name": "error message",
+      "type": "string",
+      "description": "The error message to display.",
+    },
+    {
+      "name": "error object",
+      "type": "json",
+      "description": "Object containing error properties.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "errorType": "errorMessage",
+        "errorMessage": "An error occurred!"
+      }
+    }
+  }
+}

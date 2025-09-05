@@ -1,0 +1,54 @@
+{
+  "nodeName": "securityscorecard",
+  "summary": "Consume SecurityScorecard API to retrieve company security information and scores.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to retrieve data for (e.g., company, industry, report).",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource (e.g., get factor scores, get historical scores).",
+    },
+    {
+      "name": "scorecard identifier",
+      "type": "string",
+      "description": "Primary identifier of a company or scorecard, such as domain.",
+    },
+    {
+      "name": "score",
+      "type": "number",
+      "description": "Specify the target score for a company's score improvement plan.",
+    },
+    {
+      "name": "return all",
+      "type": "boolean",
+      "description": "Specify whether to return all results or only up to a given limit.",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "Specify the maximum number of results to return.",
+    },
+    {
+      "name": "simplify",
+      "type": "boolean",
+      "description": "Specify whether to return a simplified version of the response instead of the raw data.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "company",
+        "operation": "getFactor",
+        "scorecardIdentifier": "example.com",
+        "score": 80,
+        "returnAll": false,
+        "limit": 50,
+        "simplify": true
+      }
+    }
+  }
+}

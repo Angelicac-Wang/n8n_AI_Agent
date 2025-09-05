@@ -1,0 +1,30 @@
+{
+  "nodeName": "paypal",
+  "summary": "此節點用於消費 PayPal API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的 PayPal 資源類型，如 Payout 或 Payout Item。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要對所選資源執行的操作，如 Create 或 Get。",
+    },
+    {
+      "name": "sender batch id",
+      "type": "string",
+      "description": "用於追蹤支付的寄件者指定的 ID 號碼。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "payout",
+        "operation": "create",
+        "senderBatchId": "batch123"
+      }
+    }
+  }
+}

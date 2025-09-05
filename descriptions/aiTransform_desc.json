@@ -1,0 +1,29 @@
+{
+  "nodename": "ai transform",
+  "summary": "Modify data based on instructions written in plain English.",
+  "parameters": [
+    {
+      "name": "instructions",
+      "type": "button",
+      "description": "Provide instructions on how you want to transform the data. Use dot notation to refer to nested fields. Click 'Generate code' to generate JavaScript code based on the instructions."
+    },
+    {
+      "name": "code generated for prompt",
+      "type": "hidden",
+      "description": "Hidden parameter that stores the generated code for the prompt."
+    },
+    {
+      "name": "generated javascript",
+      "type": "string",
+      "description": "Read-only field displaying the generated JavaScript code. To edit, adjust the instructions or copy and paste it into a Code node."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "instructions": "Merge 'firstname' and 'lastname' into a field 'details.name' and sort by 'email'",
+        "jscode": ""
+      }
+    }
+  }
+}

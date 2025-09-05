@@ -1,0 +1,96 @@
+{
+  "nodeName": "git",
+  "summary": "Control git by performing various operations like cloning repositories, committing files, pushing changes, and more.",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "The way to authenticate. Choose between using Git password or no authentication."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform such as adding files, committing changes, cloning repositories, pushing changes, and more."
+    },
+    {
+      "name": "repository path",
+      "type": "string",
+      "description": "Local path of the git repository to operate on. Required for most operations except cloning."
+    },
+    {
+      "name": "new repository path",
+      "type": "string",
+      "description": "Local path to which the git repository should be cloned into. Required for the 'clone' operation."
+    },
+    {
+      "name": "paths to add",
+      "type": "string",
+      "description": "Comma-separated list of paths of files or folders to add. Required for the 'add' operation."
+    },
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Name of the key to set. Required for the 'addConfig' operation."
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "description": "Value of the key to set. Required for the 'addConfig' operation."
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "Additional options for the 'addConfig' operation like setting mode to append or set."
+    },
+    {
+      "name": "source repository",
+      "type": "string",
+      "description": "The URL or path of the repository to clone. Required for the 'clone' operation."
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "The commit message to use. Required for the 'commit' operation."
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "Additional options for the 'commit' operation like specifying paths to commit."
+    },
+    {
+      "name": "return all",
+      "type": "boolean",
+      "description": "Whether to return all results or only up to a given limit. Required for the 'log' operation."
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "Max number of results to return. Required for the 'log' operation if 'return all' is set to false."
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "Additional options for the 'log' operation like specifying the file to get the history of."
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "Additional options for the 'push' operation like specifying the target repository to push to."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "The name of the tag to create. Required for the 'tag' operation."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "gitPassword",
+        "operation": "commit",
+        "repositoryPath": "/path/to/repository",
+        "message": "Added new feature"
+      }
+    }
+  }
+}

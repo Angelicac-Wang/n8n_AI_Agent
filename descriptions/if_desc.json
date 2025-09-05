@@ -1,0 +1,32 @@
+{
+  "nodeName": "if",
+  "summary": "此節點可根據條件將項目路由到不同的分支（true/false）。",
+  "parameters": [
+    {
+      "name": "conditions",
+      "type": "fixedcollection",
+      "description": "定義要比較的值類型及操作，用於判斷路由的條件。"
+    },
+    {
+      "name": "combineoperation",
+      "type": "options",
+      "description": "當設定了多個規則時，此設置決定是否只要任何一個條件符合就進入“true”分支，或者需要所有條件都符合才進入“true”分支。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": true,
+              "operation": "equal",
+              "value2": false
+            }
+          ]
+        },
+        "combineOperation": "all"
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "nodeName": "kafka",
+  "summary": "將訊息發送到 Kafka 主題",
+  "parameters": [
+    {
+      "name": "topic",
+      "type": "string",
+      "description": "要發布到的 Kafka 主題的名稱"
+    },
+    {
+      "name": "sendInputData",
+      "type": "boolean",
+      "description": "是否將節點接收到的資料作為 JSON 發送到 Kafka"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "要發送的訊息",
+    },
+    {
+      "name": "useSchemaRegistry",
+      "type": "boolean",
+      "description": "是否使用 Confluent Schema Registry"
+    },
+    {
+      "name": "schemaRegistryUrl",
+      "type": "string",
+      "description": "模式註冊表的 URL",
+    },
+    {
+      "name": "useKey",
+      "type": "boolean",
+      "description": "是否使用訊息鍵"
+    },
+    {
+      "name": "key",
+      "type": "string",
+      "description": "訊息鍵"
+    },
+    {
+      "name": "eventName",
+      "type": "string",
+      "description": "模式註冊表中模式的命名空間和名稱 (namespace.name)"
+    },
+    {
+      "name": "headersUi",
+      "type": "fixedCollection",
+      "description": "標頭參數的集合",
+    },
+    {
+      "name": "headerParametersJson",
+      "type": "json",
+      "description": "標頭參數的 JSON 格式 (扁平對象)"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項的集合"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "topic": "topic-name",
+        "sendInputData": true,
+        "message": "Hello, Kafka!",
+        "useSchemaRegistry": false,
+        "schemaRegistryUrl": "https://schema-registry-domain:8081",
+        "useKey": false,
+        "key": "",
+        "eventName": "namespace.name",
+        "headersUi": {},
+        "headerParametersJson": "",
+        "options": {
+          "acks": false,
+          "compression": false,
+          "timeout": 30000
+        }
+      }
+    }
+  }
+}

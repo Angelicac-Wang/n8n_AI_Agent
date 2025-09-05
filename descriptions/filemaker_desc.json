@@ -1,0 +1,91 @@
+{
+  "nodename": "filemaker",
+  "summary": "Retrieve data from the FileMaker data API.",
+  "parameters": [
+    {
+      "name": "action",
+      "type": "options",
+      "description": "Specify the action to perform on the FileMaker data such as creating, deleting, editing records, etc."
+    },
+    {
+      "name": "layout",
+      "type": "options",
+      "description": "Select the FileMaker layout name or ID to retrieve data from.",
+      "required": true
+    },
+    {
+      "name": "recid",
+      "type": "number",
+      "description": "Internal Record ID used for actions like editing, deleting, or duplicating records."
+    },
+    {
+      "name": "offset",
+      "type": "number",
+      "description": "Specify the record number of the first record in the range of records to retrieve.",
+      "default": 1
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "Set the maximum number of results to return.",
+      "default": 100,
+      "typeOptions": {
+        "minValue": 1
+      }
+    },
+    {
+      "name": "getPortals",
+      "type": "boolean",
+      "description": "Toggle to include portal data in the response."
+    },
+    {
+      "name": "portals",
+      "type": "options",
+      "description": "Select the portal result set to return along with the main data.",
+      "displayOptions": {
+        "show": {
+          "getPortals": [
+            true
+          ]
+        }
+      }
+    },
+    {
+      "name": "responseLayout",
+      "type": "options",
+      "description": "Select the layout name or ID for the response data.",
+      "displayOptions": {
+        "show": {
+          "action": [
+            "find"
+          ]
+        }
+      }
+    },
+    {
+      "name": "queries",
+      "type": "fixedcollection",
+      "description": "Add multiple queries to filter the data when finding records."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "action": "record",
+        "layout": "Customers",
+        "recid": 123,
+        "offset": 0,
+        "limit": 50,
+        "getPortals": true,
+        "portals": ["Orders"],
+        "responseLayout": "Orders",
+        "queries": [
+          {
+            "fields": ["Name", "Email"],
+            "criteria": "Name = 'John Doe'"
+          }
+        ]
+      }
+    }
+  }
+}

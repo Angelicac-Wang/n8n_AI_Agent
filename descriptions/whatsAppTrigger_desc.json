@@ -1,0 +1,41 @@
+{
+  "nodeName": "whatsapp trigger",
+  "summary": "This node handles WhatsApp events via webhooks.",
+  "parameters": [
+    {
+      "name": "whatsappnotice",
+      "type": "notice",
+      "description": "A notice about the limitation of using just one WhatsApp trigger for each Facebook App."
+    },
+    {
+      "name": "updates",
+      "type": "multioptions",
+      "description": "Select the type of WhatsApp events to trigger on.",
+      "required": true
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "Additional options for the WhatsApp trigger.",
+      "options": [
+        {
+          "name": "messagestatusupdates",
+          "type": "multioptions",
+          "description": "Set the trigger to execute only on selected message status updates.",
+          "default": ["all"]
+        }
+      ]
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "whatsappnotice": "",
+        "updates": ["messages"],
+        "options": {
+          "messagestatusupdates": ["all"]
+        }
+      }
+    }
+  }
+}

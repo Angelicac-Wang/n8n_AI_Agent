@@ -1,0 +1,65 @@
+{
+  "nodeName": "respond to webhook",
+  "summary": "此節點用於回應 Webhook，根據設定回傳不同類型的數據。",
+  "parameters": [
+    {
+      "name": "enable response output branch",
+      "type": "boolean",
+      "description": "是否提供一個額外的輸出分支，將回應發送到 Webhook。"
+    },
+    {
+      "name": "respond with",
+      "type": "options",
+      "description": "應該返回的數據類型。",
+    },
+    {
+      "name": "credentials",
+      "type": "credentials",
+      "description": "當選擇回應 JWT 標記時，需要提供憑證。"
+    },
+    {
+      "name": "redirect url",
+      "type": "string",
+      "description": "重定向到的 URL。",
+    },
+    {
+      "name": "response body",
+      "type": "json",
+      "description": "HTTP 回應 JSON 數據。",
+    },
+    {
+      "name": "payload",
+      "type": "json",
+      "description": "包含在 JWT 標記中的有效載荷。",
+    },
+    {
+      "name": "response body",
+      "type": "string",
+      "description": "HTTP 回應文本數據。",
+    },
+    {
+      "name": "response data source",
+      "type": "options",
+      "description": "指定二進制數據的來源。",
+    },
+    {
+      "name": "input field name",
+      "type": "string",
+      "description": "包含二進制數據的節點輸入字段的名稱。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設置，如回應代碼、回應標頭等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "enableResponseOutput": true,
+        "respondWith": "json",
+        "responseBody": "{\n  \"myField\": \"value\"\n}"
+      }
+    }
+  }
+}

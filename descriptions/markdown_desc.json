@@ -1,0 +1,47 @@
+{
+  "nodeName": "markdown",
+  "summary": "將數據在 Markdown 和 HTML 之間進行轉換。",
+  "parameters": [
+    {
+      "name": "mode",
+      "type": "options",
+      "description": "指定轉換模式：從 Markdown 到 HTML 或從 HTML 到 Markdown。"
+    },
+    {
+      "name": "html",
+      "type": "string",
+      "description": "要轉換為 Markdown 的 HTML 內容。",
+    },
+    {
+      "name": "markdown",
+      "type": "string",
+      "description": "要轉換為 HTML 的 Markdown 內容。",
+    },
+    {
+      "name": "destinationKey",
+      "type": "string",
+      "description": "將輸出放入的字段。使用點來指定嵌套字段，例如\"level1.level2.newKey\"。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設置，如指定符號、代碼塊邊界、強調符號等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "mode": "htmlToMarkdown",
+        "html": "<h1>Hello World</h1>",
+        "destinationKey": "convertedMarkdown",
+        "options": {
+          "bulletMarker": "-",
+          "codeFence": "```",
+          "emDelimiter": "*",
+          "ignore": "h1, p",
+          "keepDataImages": true
+        }
+      }
+    }
+  }
+}

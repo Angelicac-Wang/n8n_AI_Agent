@@ -1,0 +1,45 @@
+{
+  "nodename": "wait",
+  "summary": "等待節點可讓工作流在執行過程中暫停一段時間，再繼續執行。",
+  "parameters": [
+    {
+      "name": "resume",
+      "type": "options",
+      "description": "決定在工作流繼續之前使用的等待模式。"
+    },
+    {
+      "name": "incomingauthentication",
+      "type": "options",
+      "description": "指定如何對 $execution.resumeFormUrl 的傳入繼續 webhook 請求進行身份驗證，以提供額外的安全性。",
+    },
+    {
+      "name": "incomingauthentication",
+      "type": "options",
+      "description": "指定如何對 $execution.resumeUrl 的傳入繼續 webhook 請求進行身份驗證，以提供額外的安全性。",
+    },
+    {
+      "name": "datetime",
+      "type": "datetime",
+      "description": "在繼續之前等待的日期和時間。",
+    },
+    {
+      "name": "amount",
+      "type": "number",
+      "description": "等待的時間長度。",
+    },
+    {
+      "name": "unit",
+      "type": "options",
+      "description": "Wait Amount 值的時間單位。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resume": "timeInterval",
+        "amount": 1,
+        "unit": "hours"
+      }
+    }
+  }
+}

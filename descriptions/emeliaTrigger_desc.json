@@ -1,0 +1,24 @@
+{
+  "nodeName": "emelia trigger",
+  "summary": "透過 Webhooks 處理 Emelia 活動事件",
+  "parameters": [
+    {
+      "name": "campaign name or id",
+      "type": "options",
+      "description": "從列表中選擇，或使用 <a href=\"https://docs.n8n.io/code/expressions/\">表達式</a> 指定 ID",
+    },
+    {
+      "name": "events",
+      "type": "multiOptions",
+      "description": "選擇要觸發的活動事件",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "campaignId": "123",
+        "events": ["opened", "clicked"]
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "nodename": "local file trigger",
+  "summary": "此節點可在檔案系統變更時觸發工作流程。",
+  "parameters": [
+    {
+      "name": "trigger on",
+      "type": "options",
+      "description": "要觸發的事件類型，可以是特定檔案的變更或特定資料夾的變更。"
+    },
+    {
+      "name": "file to watch",
+      "type": "string",
+      "description": "要監視的特定檔案路徑。",
+    },
+    {
+      "name": "folder to watch",
+      "type": "string",
+      "description": "要監視的特定資料夾路徑。",
+    },
+    {
+      "name": "watch for",
+      "type": "multioptions",
+      "description": "要監聽的事件類型，如新增檔案、變更檔案、刪除檔案等。"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定，如等待寫入完成、包含連結檔案/資料夾、忽略設定等。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "triggerOn": "file",
+        "path": "/data/invoices/1.pdf",
+        "options": {
+          "awaitWriteFinish": false,
+          "followSymlinks": true,
+          "ignored": "**/*.txt",
+          "ignoreInitial": true,
+          "depth": -1,
+          "usePolling": false,
+          "ignoreMode": "match"
+        }
+      }
+    }
+  }
+}

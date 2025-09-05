@@ -1,0 +1,76 @@
+{
+  "nodeName": "lonescale",
+  "summary": "此節點用於創建列表，添加/刪除項目。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "創建一個新列表。選項包括操作列表、操作項目或自定義 API 調用。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "用於操作列表的選項，如創建列表。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "用於操作項目的選項，如創建項目。",
+    },
+    {
+      "name": "type",
+      "type": "options",
+      "description": "列表的類型，如公司或聯絡人。",
+    },
+    {
+      "name": "list",
+      "type": "options",
+      "description": "從列表中選擇，或使用表達式指定 ID。",
+    },
+    {
+      "name": "first_name",
+      "type": "string",
+      "description": "聯絡人的名字。",
+    },
+    {
+      "name": "last_name",
+      "type": "string",
+      "description": "聯絡人的姓氏。",
+    },
+    {
+      "name": "company_name",
+      "type": "string",
+      "description": "聯絡人的公司名稱。",
+    },
+    {
+      "name": "peopleAdditionalFields",
+      "type": "collection",
+      "description": "聯絡人的其他字段。",
+    },
+    {
+      "name": "companyAdditionalFields",
+      "type": "collection",
+      "description": "公司的其他字段。",
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "列表的名稱。",
+    },
+    {
+      "name": "type",
+      "type": "options",
+      "description": "列表的類型，如公司或聯絡人。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "list",
+        "operation": "create",
+        "type": "COMPANY",
+        "name": "My Company List"
+      }
+    }
+  }
+}

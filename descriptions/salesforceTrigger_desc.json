@@ -1,0 +1,39 @@
+{
+  "nodeName": "salesforce trigger",
+  "summary": "此節點從 Salesforce 擷取數據並在指定的輪詢間隔開始工作流程。",
+  "parameters": [
+    {
+      "name": "poll times",
+      "type": "fixedcollection",
+      "description": "時間點，應該發生輪詢",
+      "placeholder": "Add Poll Time"
+    },
+    {
+      "name": "trigger on",
+      "type": "options",
+      "description": "應該觸發節點的 Salesforce 事件"
+    },
+    {
+      "name": "custom object name or id",
+      "type": "options",
+      "description": "自訂對象的名稱或 ID。從列表中選擇，或使用表達式指定 ID。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyDay",
+              "hour": 14,
+              "minute": 0
+            }
+          ]
+        },
+        "triggerOn": "accountCreated",
+        "customObject": "customObjectCreated"
+      }
+    }
+  }
+}

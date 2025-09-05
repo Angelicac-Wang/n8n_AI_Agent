@@ -1,0 +1,61 @@
+{
+  "nodeName": "monday.com",
+  "summary": "This node allows you to interact with the Monday.com API to perform operations such as creating, getting, and archiving boards.",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "The type of authentication to use (Access Token or OAuth2)."
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "The type of resource to interact with (Board, Board Column, Board Group, Board Item, Custom API Call)."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "The operation to perform on the selected resource (Archive, Create, Get, Get Many, Custom API Call)."
+    },
+    {
+      "name": "boardId",
+      "type": "options",
+      "description": "Board unique identifiers. Required for certain operations like archiving or getting a specific board."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "The name of the board to create."
+    },
+    {
+      "name": "kind",
+      "type": "options",
+      "description": "The kind of board to create (Share, Public, Private)."
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "Additional fields for creating a board, such as template ID."
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "Whether to return all items when getting many boards."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "accessToken",
+        "resource": "board",
+        "operation": "create",
+        "name": "New Board",
+        "kind": "private",
+        "additionalFields": {
+          "templateId": 123
+        },
+        "returnAll": true
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "nodeName": "aws lambda",
+  "summary": "調用 AWS Lambda 上的函數。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作類型，可以是調用函數或自定義 API 請求。"
+    },
+    {
+      "name": "function",
+      "type": "options",
+      "description": "要調用的函數名稱或 ID。可以從列表中選擇，或使用表達式指定 ID。",
+    },
+    {
+      "name": "qualifier",
+      "type": "string",
+      "description": "指定要調用的函數的版本或別名。",
+    },
+    {
+      "name": "invocation type",
+      "type": "options",
+      "description": "指定工作流是否應等待函數返回結果。",
+    },
+    {
+      "name": "json input",
+      "type": "string",
+      "description": "要提供給 Lambda 函數作為輸入的 JSON 數據。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "invoke",
+        "function": "myFunction",
+        "qualifier": "$LATEST",
+        "invocationType": "RequestResponse",
+        "payload": "{\"key\": \"value\"}"
+      }
+    }
+  }
+}

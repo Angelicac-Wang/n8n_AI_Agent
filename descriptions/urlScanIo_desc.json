@@ -1,0 +1,59 @@
+{
+  "nodeName": "urlscan.io",
+  "summary": "提供各種用於監控網站的工具，如健康檢查或截圖。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要執行的操作類型，如掃描或自定義 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如獲取掃描結果或執行掃描。"
+    },
+    {
+      "name": "scanId",
+      "type": "string",
+      "description": "要檢索的掃描 ID。",
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "是否返回所有結果或僅返回到指定限制。",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數。",
+    },
+    {
+      "name": "filters",
+      "type": "collection",
+      "description": "設置篩選條件以獲取特定的掃描結果。",
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "description": "要掃描的 URL。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "設置額外的字段，如自定義代理、禁用安全性覆蓋等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "scan",
+        "operation": "perform",
+        "url": "https://n8n.io",
+        "additionalFields": {
+          "customAgent": "n8n",
+          "visibility": "private"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "nodeName": "cron",
+  "summary": "在特定時間觸發工作流程",
+  "parameters": [
+    {
+      "name": "trigger times",
+      "type": "fixedcollection",
+      "description": "觸發工作流程的時間設定",
+      "parameters": [
+        {
+          "name": "mode",
+          "type": "options",
+          "description": "觸發頻率設定"
+        },
+        {
+          "name": "hour",
+          "type": "number",
+          "description": "觸發的小時（24小時制）"
+        },
+        {
+          "name": "minute",
+          "type": "number",
+          "description": "觸發的分鐘"
+        },
+        {
+          "name": "day of month",
+          "type": "number",
+          "description": "觸發的日期"
+        },
+        {
+          "name": "weekday",
+          "type": "options",
+          "description": "觸發的星期幾"
+        },
+        {
+          "name": "cron expression",
+          "type": "string",
+          "description": "使用自定義的 cron 表達式"
+        },
+        {
+          "name": "value",
+          "type": "number",
+          "description": "每隔多少時間觸發"
+        },
+        {
+          "name": "unit",
+          "type": "options",
+          "description": "指定觸發間隔的單位"
+        }
+      ]
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "triggerTimes": [
+          {
+            "mode": "everyDay",
+            "hour": 14,
+            "minute": 0
+          }
+        ]
+      }
+    }
+  }
+}

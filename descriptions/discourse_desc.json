@@ -1,0 +1,64 @@
+{
+  "nodeName": "discourse",
+  "summary": "此節點用於消費 Discourse API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型，如分類、群組、帖子、用戶等。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作，如創建、獲取多個、更新等。",
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "分類的名稱。",
+    },
+    {
+      "name": "color",
+      "type": "color",
+      "description": "分類的顏色。",
+    },
+    {
+      "name": "textColor",
+      "type": "color",
+      "description": "分類的文字顏色。",
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "是否返回所有結果或僅返回到指定限制。",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數。",
+    },
+    {
+      "name": "categoryId",
+      "type": "string",
+      "description": "分類的 ID。",
+    },
+    {
+      "name": "updateFields",
+      "type": "collection",
+      "description": "更新分類的字段，如顏色等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "category",
+        "operation": "create",
+        "name": "New Category",
+        "color": "FF0000",
+        "textColor": "FFFFFF",
+        "returnAll": false,
+        "limit": 50
+      }
+    }
+  }
+}

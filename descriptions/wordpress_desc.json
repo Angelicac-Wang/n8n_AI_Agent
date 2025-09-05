@@ -1,0 +1,44 @@
+{
+  "nodeName": "wordpress",
+  "summary": "此節點用於消費 Wordpress API，可用於管理文章、頁面和使用者等資源。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如文章、頁面或使用者。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如創建、獲取或更新文章。"
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "文章的標題。"
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "包含其他需要設定的欄位，如作者、內容、狀態等。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "post",
+        "operation": "create",
+        "title": "Sample Title",
+        "additionalFields": {
+          "authorId": "1",
+          "content": "Sample content",
+          "slug": "sample-post",
+          "password": "securepassword",
+          "status": "draft",
+          "commentStatus": "open",
+          "pingStatus": "open"
+        }
+      }
+    }
+  }
+}

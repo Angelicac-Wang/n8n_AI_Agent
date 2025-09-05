@@ -1,0 +1,30 @@
+{
+  "nodeName": "postmark trigger",
+  "summary": "啟動工作流程，當發生 Postmark 事件時觸發。",
+  "parameters": [
+    {
+      "name": "events",
+      "type": "multiOptions",
+      "description": "啟用該端點的 Webhook 事件",
+    },
+    {
+      "name": "firstOpen",
+      "type": "boolean",
+      "description": "僅在事件\"Open\"的第一次開啟時觸發",
+    },
+    {
+      "name": "includeContent",
+      "type": "boolean",
+      "description": "是否在事件\"Bounce\"和\"Spam Complaint\"中包含郵件內容",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "events": ["bounce", "click"],
+        "firstOpen": true,
+        "includeContent": false
+      }
+    }
+  }
+}

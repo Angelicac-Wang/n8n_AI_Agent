@@ -1,0 +1,30 @@
+{
+  "nodeName": "pipedrive",
+  "summary": "Create and edit data in Pipedrive CRM system.",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "Select the type of authentication to use (API Token or OAuth2)."
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with in Pipedrive (e.g., Deal, Person, Organization)."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource (e.g., Create, Update, Delete)."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "apiToken",
+        "resource": "deal",
+        "operation": "create"
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "nodeName": "airtop",
+  "summary": "Scrape and control any site with Airtop.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with (extraction, file, interaction, session, window).",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Choose the operation to perform on the selected resource.",
+    },
+    {
+      "name": "profile name",
+      "type": "string",
+      "description": "The name of the Airtop profile to load or create.",
+    },
+    {
+      "name": "save profile on termination",
+      "type": "boolean",
+      "description": "Whether to automatically save the Airtop profile for this session upon termination.",
+    },
+    {
+      "name": "idle timeout",
+      "type": "number",
+      "description": "Minutes to wait before the session is terminated due to inactivity.",
+    },
+    {
+      "name": "proxy",
+      "type": "options",
+      "description": "Choose how to configure the proxy for this session.",
+    },
+    {
+      "name": "proxy configuration",
+      "type": "collection",
+      "description": "The Airtop-provided configuration to use for the proxy.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "session",
+        "operation": "create",
+        "profileName": "my-x-profile",
+        "saveProfileOnTermination": true,
+        "timeoutMinutes": 10,
+        "proxy": "integrated",
+        "proxyConfig": {
+          "country": "US",
+          "sticky": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "nodeName": "execute command",
+  "summary": "此節點用於在主機上執行命令。",
+  "parameters": [
+    {
+      "name": "execute once",
+      "type": "boolean",
+      "description": "是否僅執行一次，而不是針對每個輸入項目都執行。"
+    },
+    {
+      "name": "command",
+      "type": "string",
+      "description": "要執行的命令。",
+      "placeholder": "echo \"test\"",
+      "required": true
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "executeOnce": true,
+        "command": "echo \"test\""
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "nodeName": "brevo",
+  "summary": "此節點用於使用 Brevo API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如聯絡人、聯絡人屬性、郵件等。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如創建、更新、刪除、獲取多個等。",
+    },
+    {
+      "name": "attributeCategory",
+      "type": "options",
+      "description": "屬性的類別，如計算、全域、一般等。",
+    },
+    {
+      "name": "attributeName",
+      "type": "string",
+      "description": "屬性的名稱。",
+    },
+    {
+      "name": "attributeType",
+      "type": "string",
+      "description": "屬性的類型。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "email",
+        "operation": "create",
+        "attributeCategory": "normal",
+        "attributeName": "example_attribute",
+        "attributeType": "text"
+      }
+    }
+  }
+}

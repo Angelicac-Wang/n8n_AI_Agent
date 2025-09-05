@@ -1,0 +1,18 @@
+{
+  "nodename": "affinity trigger",
+  "summary": "此節點可透過 Webhook 處理 Affinity 事件。",
+  "parameters": [
+    {
+      "name": "events",
+      "type": "multiOptions",
+      "description": "Webhook 事件，將啟用該端點的事件。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "events": ["field_value.created", "field_value.deleted"]
+      }
+    }
+  }
+}

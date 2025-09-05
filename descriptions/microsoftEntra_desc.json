@@ -1,0 +1,42 @@
+{
+  "nodename": "microsoft entra id",
+  "summary": "此節點可與 Microsoft Entra ID API 進行互動，用於管理群組和使用者資訊。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是群組或使用者。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如創建、刪除、獲取資料等。",
+    },
+    {
+      "name": "group type",
+      "type": "options",
+      "description": "指定群組的類型，如 Microsoft 365 或 Security。",
+    },
+    {
+      "name": "group name",
+      "type": "string",
+      "description": "在通訊錄中顯示的群組名稱。",
+    },
+    {
+      "name": "group email address",
+      "type": "string",
+      "description": "群組的電子郵件地址。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "group",
+        "operation": "create",
+        "groupType": "Unified",
+        "displayName": "Marketing Team",
+        "mailNickname": "marketing"
+      }
+    }
+  }
+}
