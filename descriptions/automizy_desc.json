@@ -1,0 +1,59 @@
+{
+  "nodeName": "automizy",
+  "summary": "Consume Automizy API to manage contacts and lists.",
+  "parameters": [
+    {
+      "name": "deprecated",
+      "type": "notice",
+      "description": "Indicates if the service is deprecated and will be removed in a future release."
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with (Contact or List).",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource.",
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "description": "The email address of the contact.",
+    },
+    {
+      "name": "listId",
+      "type": "options",
+      "description": "Choose the list or specify an ID using an expression.",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "Additional fields for creating a contact.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "contact",
+        "operation": "create",
+        "email": "name@email.com",
+        "listId": "list_id",
+        "additionalFields": {
+          "customFieldsUi": [
+            {
+              "customFieldsValues": [
+                {
+                  "key": "custom_field_key",
+                  "value": "custom_field_value"
+                }
+              ]
+            }
+          ],
+          "status": "ACTIVE"
+        }
+      }
+    }
+  }
+}

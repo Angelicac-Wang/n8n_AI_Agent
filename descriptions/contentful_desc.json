@@ -1,0 +1,50 @@
+{
+  "nodeName": "contentful",
+  "summary": "此節點用於消費 Contentful API。",
+  "parameters": [
+    {
+      "name": "source",
+      "type": "options",
+      "description": "選擇數據來源，可以是交付或預覽 API。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型，如資產、內容類型、條目、語言環境或空間。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如獲取單個資源或多個資源。",
+    },
+    {
+      "name": "environment id",
+      "type": "string",
+      "description": "Contentful 環境的 ID，用於指定環境（例如 master、staging 等）。",
+    },
+    {
+      "name": "content type id",
+      "type": "string",
+      "description": "內容類型的 ID，用於指定要獲取的內容類型。",
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "額外的字段設置，例如是否返回原始數據而不是解析後的數據。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "source": "deliveryApi",
+        "resource": "entry",
+        "operation": "get",
+        "environmentId": "master",
+        "contentTypeId": "exampleContentTypeId",
+        "additionalFields": {
+          "rawData": false
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "nodeName": "microsoft sharepoint",
+  "summary": "此節點可與 Microsoft SharePoint API 進行互動，包括下載、更新和上傳文件等操作。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型（文件、項目、清單）。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作（下載、更新、上傳文件等）。",
+    },
+    {
+      "name": "site",
+      "type": "resourceLocator",
+      "description": "選擇要從中檢索文件夾的站點。",
+    },
+    {
+      "name": "folder",
+      "type": "resourceLocator",
+      "description": "選擇要從中下載文件的文件夾。",
+    },
+    {
+      "name": "file",
+      "type": "resourceLocator",
+      "description": "選擇要下載的文件。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "file",
+        "operation": "download",
+        "site": "exampleSite",
+        "folder": "exampleFolder",
+        "file": "exampleFile.pdf"
+      }
+    }
+  }
+}

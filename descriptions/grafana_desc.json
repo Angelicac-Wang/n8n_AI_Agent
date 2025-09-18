@@ -1,0 +1,53 @@
+{
+  "nodeName": "grafana",
+  "summary": "Consume the Grafana API to perform operations like creating, deleting, updating, and retrieving dashboards.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with (Dashboard, Team, Team Member, User, Custom API Call).",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource (Create, Delete, Get, Get Many, Update, Custom API Call).",
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "Title of the dashboard to create.",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "Additional fields for creating a dashboard like Folder Name or ID.",
+    },
+    {
+      "name": "dashboardUidOrUrl",
+      "type": "string",
+      "description": "Unique alphabetic identifier or URL of the dashboard to delete or retrieve.",
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "Whether to return all results or only up to a given limit.",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "Max number of results to return (1 to 100).",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "dashboard",
+        "operation": "create",
+        "title": "Example Dashboard",
+        "additionalFields": {
+          "folderId": "General"
+        }
+      }
+    }
+  }
+}

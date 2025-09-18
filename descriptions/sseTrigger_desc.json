@@ -1,0 +1,19 @@
+{
+  "nodeName": "sse trigger",
+  "summary": "此節點在發生 Server-Sent Events 時觸發工作流程。",
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "description": "接收 Server-Sent Events 的 URL。",
+      "required": true
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "url": "http://example.com"
+      }
+    }
+  }
+}

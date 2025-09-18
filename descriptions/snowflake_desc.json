@@ -1,0 +1,40 @@
+{
+  "nodeName": "snowflake",
+  "summary": "Get, add, and update data in Snowflake.",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "The operation to perform in Snowflake (Execute Query, Insert, Update)."
+    },
+    {
+      "name": "query",
+      "type": "string",
+      "description": "The SQL query to execute.",
+    },
+    {
+      "name": "table",
+      "type": "string",
+      "description": "Name of the table in which to insert or update data.",
+    },
+    {
+      "name": "columns",
+      "type": "string",
+      "description": "Comma-separated list of properties to use as columns for new rows (Insert) or rows to update (Update).",
+    },
+    {
+      "name": "update key",
+      "type": "string",
+      "description": "Name of the property that decides which rows in the database should be updated (e.g., 'id').",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "insert",
+        "table": "products",
+        "columns": "id,name,description"
+      }
+    }
+  }
+}

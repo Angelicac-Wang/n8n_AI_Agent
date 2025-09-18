@@ -1,0 +1,77 @@
+{
+  "nodeName": "thehive",
+  "summary": "此節點用於消耗 TheHive API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要操作的資源類型，如警報、案例、日誌等。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "操作名稱或 ID，選擇列表中的項目或使用表達式指定 ID。",
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "是否返回所有結果或僅返回到指定限制。",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數。",
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "description": "警報的 ID。",
+    },
+    {
+      "name": "caseId",
+      "type": "string",
+      "description": "案例的 ID。",
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "警報的標題。",
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "description": "警報的描述。",
+    },
+    {
+      "name": "severity",
+      "type": "options",
+      "description": "警報的嚴重性。",
+    },
+    {
+      "name": "date",
+      "type": "dateTime",
+      "description": "警報生成的日期和時間。",
+    },
+    {
+      "name": "tags",
+      "type": "string",
+      "description": "警報的標籤。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "alert",
+        "operation": "create",
+        "returnAll": false,
+        "limit": 100,
+        "id": "12345",
+        "title": "Alert Title",
+        "description": "Alert Description",
+        "severity": 2,
+        "date": "2022-01-01T12:00:00Z",
+        "tags": "tag1,tag2"
+      }
+    }
+  }
+}

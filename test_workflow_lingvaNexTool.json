@@ -1,0 +1,61 @@
+{
+  "name": "LingvaNex Tool Test Workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "bc8b8a92-2be6-4b9b-98c8-ccb7c49d8c82",
+      "name": "When clicking \"Test workflow\"",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [820, 380]
+    },
+    {
+      "parameters": {
+        "descriptionType": "manual",
+        "toolDescription": "Translate text using LingvaNex API service for multilingual communication",
+        "operation": "translate",
+        "text": "Hello, how are you today?",
+        "translateTo": "fr",
+        "options": {
+          "from": "en",
+          "platform": "api",
+          "translateMode": ""
+        }
+      },
+      "id": "f47ac10b-58cc-4372-a567-0e02b2c3d480",
+      "name": "LingvaNex Tool",
+      "type": "n8n-nodes-base.lingvaNexTool",
+      "typeVersion": 1,
+      "position": [1040, 380],
+      "credentials": {
+        "lingvaNexApi": {
+          "id": "1",
+          "name": "LingvaNex account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "When clicking \"Test workflow\"": {
+      "main": [
+        [
+          {
+            "node": "LingvaNex Tool",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "e2b72c65-f4fb-4b41-8765-7e1b8e9b2db7",
+  "id": "test-lingvanex-tool-workflow",
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "tags": []
+}

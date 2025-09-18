@@ -1,0 +1,40 @@
+{
+  "nodename": "bitbucket trigger",
+  "summary": "透過 Webhooks 處理 Bitbucket 事件。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要監聽的資源類型，可以是存儲庫（Repository）或工作區（Workspace）。"
+    },
+    {
+      "name": "workspace",
+      "type": "options",
+      "description": "要監聽事件的工作區名稱或 ID。"
+    },
+    {
+      "name": "events",
+      "type": "multioptions",
+      "description": "要監聽的事件名稱或 ID 列表。"
+    },
+    {
+      "name": "repository",
+      "type": "options",
+      "description": "要監聽事件的存儲庫名稱或 ID。"
+    },
+    {
+      "name": "events",
+      "type": "multioptions",
+      "description": "要監聽的事件名稱或 ID 列表。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "workspace",
+        "workspace": "workspace_id",
+        "events": ["push", "pull_request"]
+      }
+    }
+  }
+}

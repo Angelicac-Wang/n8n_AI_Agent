@@ -1,0 +1,45 @@
+{
+  "nodeName": "thehive 5 trigger",
+  "summary": "啟動工作流程，當 TheHive 事件發生時觸發",
+  "parameters": [
+    {
+      "name": "notice",
+      "type": "notice",
+      "description": "在 TheHive 設置 Webhook 後觸發的提示訊息"
+    },
+    {
+      "name": "events",
+      "type": "multiOptions",
+      "description": "事件類型，選擇要觸發的事件類型",
+    },
+    {
+      "name": "filters",
+      "type": "fixedCollection",
+      "description": "根據字段篩選任何傳入事件",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "設定額外選項，例如是否僅輸出資料而省略標頭"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "events": ["alert_create"],
+        "filters": {
+          "values": [
+            {
+              "field": "context.severity",
+              "operator": "equal",
+              "value": "high"
+            }
+          ]
+        },
+        "options": {
+          "outputOnlyData": true
+        }
+      }
+    }
+  }
+}

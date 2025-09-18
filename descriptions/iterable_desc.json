@@ -1,0 +1,53 @@
+{
+  "nodeName": "iterable",
+  "summary": "此節點用於消費 Iterable API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如事件、使用者、使用者清單或自訂 API 呼叫。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定對資源進行的操作，如追蹤事件、自訂 API 呼叫、創建或更新使用者、刪除使用者等。",
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "要追蹤的事件名稱。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "包含追蹤事件時的其他相關欄位，如活動 ID、建立時間、數據字段、電子郵件、事件 ID、模板 ID、使用者 ID 等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "event",
+        "operation": "track",
+        "name": "login",
+        "additionalFields": {
+          "campaignId": "123",
+          "createdAt": "2022-01-01T12:00:00Z",
+          "dataFieldsUi": [
+            {
+              "key": "key1",
+              "value": "value1"
+            },
+            {
+              "key": "key2",
+              "value": "value2"
+            }
+          ],
+          "email": "example@email.com",
+          "id": "456",
+          "templateId": "789",
+          "userId": "789"
+        }
+      }
+    }
+  }
+}

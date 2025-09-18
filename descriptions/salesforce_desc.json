@@ -1,0 +1,36 @@
+{
+  "nodeName": "salesforce",
+  "summary": "此節點用於連接並使用 Salesforce API。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於選擇身份驗證方式，可以是 OAuth2 或 OAuth2 JWT。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型，如帳戶、附件、案例等。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作，如新增、更新、刪除、查詢等。"
+    },
+    {
+      "name": "externalId",
+      "type": "options",
+      "description": "選擇要用來比對的外部 ID 欄位，根據不同的資源類型動態載入選項。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "lead",
+        "operation": "create",
+        "externalId": "Id"
+      }
+    }
+  }
+}

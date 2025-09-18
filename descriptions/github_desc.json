@@ -1,0 +1,30 @@
+{
+  "nodeName": "github",
+  "summary": "此節點用於消費 GitHub API。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於選擇身份驗證方式，可以是 Access Token 或 OAuth2。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，例如文件、問題、組織等。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，根據所選資源不同，可選操作也會有所不同。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "accessToken",
+        "resource": "issue",
+        "operation": "create"
+      }
+    }
+  }
+}

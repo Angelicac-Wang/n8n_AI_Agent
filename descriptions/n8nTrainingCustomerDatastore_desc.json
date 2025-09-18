@@ -1,0 +1,30 @@
+{
+  "nodeName": "customer datastore (n8n training)",
+  "summary": "This node is used for n8n training purposes and allows you to retrieve data about people from a dummy datastore.",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "The operation to perform, either to get one person or get all people.",
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "Whether to return all results or only up to a given limit. This parameter is only applicable when the operation is set to 'Get All People'.",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "The maximum number of results to return when the operation is set to 'Get All People' and 'Return All' is set to false. Must be between 1 and 10.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "getOnePerson",
+        "returnAll": false,
+        "limit": 5
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "nodename": "webex by cisco",
+  "summary": "此節點可用於使用 Cisco Webex API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型，如會議或訊息。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作，如創建、刪除、獲取會議等。"
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "會議標題，最多 128 個字符長。僅在創建會議時需要。"
+    },
+    {
+      "name": "start",
+      "type": "datetime",
+      "description": "會議開始的日期和時間。需要符合特定格式。僅在創建會議時需要。"
+    },
+    {
+      "name": "end",
+      "type": "datetime",
+      "description": "會議結束的日期和時間。需要符合特定格式。僅在創建會議時需要。"
+    },
+    {
+      "name": "additionalfields",
+      "type": "collection",
+      "description": "其他會議相關的設定，如議程、允許任何使用者成為共同主持人等。僅在創建會議時需要。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "meeting",
+        "operation": "create",
+        "title": "Team Meeting",
+        "start": "2022-12-31T08:00:00Z",
+        "end": "2022-12-31T09:00:00Z",
+        "additionalFields": {
+          "agenda": "Discuss project updates",
+          "allowAnyUserToBeCoHost": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "nodeName": "facebook graph api",
+  "summary": "此節點與 Facebook 互動，使用 Graph API。",
+  "parameters": [
+    {
+      "name": "host url",
+      "type": "options",
+      "description": "The Host URL of the request. Choose between Default or Video Uploads."
+    },
+    {
+      "name": "http request method",
+      "type": "options",
+      "description": "The HTTP Method to be used for the request. Choose between GET, POST, or DELETE."
+    },
+    {
+      "name": "graph api version",
+      "type": "options",
+      "description": "The version of the Graph API to be used in the request."
+    },
+    {
+      "name": "node",
+      "type": "string",
+      "description": "The node on which to operate. A unique object with a unique ID."
+    },
+    {
+      "name": "edge",
+      "type": "string",
+      "description": "Edge of the node on which to operate. Represents collections of objects attached to the node."
+    },
+    {
+      "name": "ignore ssl issues (insecure)",
+      "type": "boolean",
+      "description": "Whether to connect even if SSL certificate validation is not possible."
+    },
+    {
+      "name": "send binary file",
+      "type": "boolean",
+      "description": "Whether binary data should be sent as body. Only shown for POST and PUT requests."
+    },
+    {
+      "name": "input binary field",
+      "type": "string",
+      "description": "The name of the input binary field containing the file to be uploaded. Only shown if 'send binary file' is true."
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "Additional options for the request.",
+      "parameters": [
+        {
+          "name": "fields",
+          "type": "fixedcollection",
+          "description": "The list of fields to request in the GET request."
+        },
+        {
+          "name": "query parameters",
+          "type": "fixedcollection",
+          "description": "The query parameters to send."
+        },
+        {
+          "name": "query parameters json",
+          "type": "json",
+          "description": "The query parameters to send, defined as a JSON object."
+        }
+      ]
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "hostUrl": "graph.facebook.com",
+        "httpRequestMethod": "GET",
+        "graphApiVersion": "v22.0",
+        "node": "me",
+        "edge": "videos",
+        "allowUnauthorizedCerts": false,
+        "sendBinaryData": false,
+        "binaryPropertyName": "",
+        "options": {
+          "fields": {
+            "field": {
+              "name": "name"
+            }
+          },
+          "queryParameters": {},
+          "queryParametersJson": "{}"
+        }
+      }
+    }
+  }
+}

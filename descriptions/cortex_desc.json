@@ -1,0 +1,62 @@
+{
+  "nodename": "cortex",
+  "summary": "將 Cortex 分析器/回應器應用於給定的實體。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇一個資源。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇一個操作。",
+    },
+    {
+      "name": "analyzer",
+      "type": "options",
+      "description": "選擇分析器。",
+    },
+    {
+      "name": "observableType",
+      "type": "options",
+      "description": "選擇可觀察類型。",
+    },
+    {
+      "name": "observableValue",
+      "type": "string",
+      "description": "輸入可觀察值。",
+    },
+    {
+      "name": "binaryPropertyName",
+      "type": "string",
+      "description": "要將輸出二進位文件放入的字段名。",
+    },
+    {
+      "name": "tlp",
+      "type": "options",
+      "description": "分析可觀察對象的TLP。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "其他字段。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "analyzer",
+        "operation": "execute",
+        "analyzer": "analyzer_id",
+        "observableType": "type_id",
+        "observableValue": "example_value",
+        "binaryPropertyName": "data",
+        "tlp": 2,
+        "additionalFields": {
+          "force": false
+        }
+      }
+    }
+  }
+}

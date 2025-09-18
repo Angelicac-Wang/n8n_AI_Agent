@@ -1,0 +1,53 @@
+{
+  "nodeName": "invoice ninja",
+  "summary": "此節點用於消費 Invoice Ninja API，可執行不同資源的操作，如客戶管理、發票處理等。",
+  "parameters": [
+    {
+      "name": "api version",
+      "type": "options",
+      "description": "選擇要使用的 Invoice Ninja API 版本。",
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型，如客戶、發票、付款等。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要對所選資源執行的操作，如創建、刪除、獲取資料等。",
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "提供額外的客戶資訊字段，僅在創建客戶操作時可見。",
+    },
+    {
+      "name": "billing address",
+      "type": "fixedcollection",
+      "description": "提供客戶的帳單地址，僅在創建客戶操作時可見。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "apiVersion": "v5",
+        "resource": "client",
+        "operation": "create",
+        "additionalFields": {
+          "clientName": "John Doe",
+          "idNumber": "12345",
+          "privateNotes": "Important client",
+          "vatNumber": "VAT123",
+          "workPhone": "123-456-7890",
+          "website": "https://example.com"
+        },
+        "billingAddressUi": {
+          "billingAddressValue": {
+            "streetAddress": "123 Main St"
+          }
+        }
+      }
+    }
+  }
+}

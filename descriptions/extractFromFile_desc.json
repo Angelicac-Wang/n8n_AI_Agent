@@ -1,0 +1,33 @@
+{
+  "nodeName": "extract from file",
+  "summary": "Convert binary data to JSON by extracting content from various file formats such as CSV, HTML, PDF, etc.",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the type of operation to perform, such as extracting from CSV, HTML, PDF, etc."
+    },
+    {
+      "name": "binaryPropertyName",
+      "type": "string",
+      "description": "The name of the input field containing the file data to be processed."
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "Additional options for processing the file data, such as delimiter and encoding."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "csv",
+        "binaryPropertyName": "data",
+        "options": {
+          "delimiter": ",",
+          "encoding": "utf-8"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "nodeName": "zammad",
+  "summary": "Consume the Zammad API to interact with groups, organizations, tickets, and users.",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "Select the type of authentication to use (Basic Auth or Token Auth)."
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Choose the Zammad resource to interact with (Group, Organization, Ticket, or User)."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource (Create, Delete, Get, Get Many, Update)."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "Name of the group to create. Required for the 'Create' operation on the 'Group' resource."
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "description": "ID of the group to update, delete, or retrieve. Specify using an expression. Required for respective operations on the 'Group' resource."
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "Additional fields for creating a group, including 'Active' status and custom fields."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "tokenAuth",
+        "resource": "group",
+        "operation": "create",
+        "name": "New Group",
+        "additionalFields": {
+          "active": true,
+          "customFieldsUi": {
+            "customFieldPairs": [
+              {
+                "name": "Field Name",
+                "value": "Field Value"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "nodeName": "google sheets",
+  "summary": "This node allows you to read, update, and write data to Google Sheets.",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "Select the authentication method to use, either Service Account or OAuth2."
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Choose the type of resource to work with, either Spreadsheet or Sheet."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the Google Sheet, such as Append, Clear, Create, Delete, Lookup, Read, Remove, or Update."
+    },
+    {
+      "name": "sheetId",
+      "type": "string",
+      "description": "The ID of the Google Spreadsheet where the operation will be performed."
+    },
+    {
+      "name": "range",
+      "type": "string",
+      "description": "The table range to read from or to append data to in the Google Sheet."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "resource": "sheet",
+        "operation": "read",
+        "sheetId": "your_sheet_id",
+        "range": "Sheet1!A:F"
+      }
+    }
+  }
+}

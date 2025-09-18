@@ -1,0 +1,24 @@
+{
+  "nodename": "thehive trigger",
+  "summary": "啟動工作流程，當 TheHive 事件發生時觸發",
+  "parameters": [
+    {
+      "name": "notice",
+      "type": "notice",
+      "description": "在 TheHive 設置 webhook 後必須設置 — 請參考說明連結"
+    },
+    {
+      "name": "events",
+      "type": "multioptions",
+      "description": "事件類型",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "notice": "",
+        "events": ["alert_create", "case_create"]
+      }
+    }
+  }
+}

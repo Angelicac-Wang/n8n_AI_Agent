@@ -1,0 +1,65 @@
+{
+  "nodeName": "gotify",
+  "summary": "此節點用於消費 Gotify API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要對資源執行的操作。"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "要發送的訊息內容。"
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "其他訊息相關的欄位，如優先級和標題。"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "訊息的選項，如內容類型。"
+    },
+    {
+      "name": "messageId",
+      "type": "string",
+      "description": "要刪除的訊息的 ID。"
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "是否返回所有結果或僅返回限定數量的結果。"
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數量。",
+      "typeOptions": {
+        "minValue": 1
+      }
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "message",
+        "operation": "create",
+        "message": "Hello, world!",
+        "additionalFields": {
+          "priority": 1,
+          "title": "Important"
+        },
+        "options": {
+          "contentType": "text/plain"
+        }
+      }
+    }
+  }
+}

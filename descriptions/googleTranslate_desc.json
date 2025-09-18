@@ -1,0 +1,43 @@
+{
+  "nodeName": "google translate",
+  "summary": "使用 Google 翻譯來翻譯數據。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於選擇身份驗證方式。可選擇使用服務帳戶或 OAuth2 進行身份驗證。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "用於選擇資源類型。可選擇語言或自定義 API 調用。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "用於選擇操作類型。可選擇翻譯數據或自定義 API 調用。"
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "description": "要翻譯的輸入文本。",
+      "required": true
+    },
+    {
+      "name": "translate to",
+      "type": "options",
+      "description": "用於指定要將輸入文本翻譯為的語言。必須選擇支持的語言代碼。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "resource": "language",
+        "operation": "translate",
+        "text": "Hello, world!",
+        "translateTo": "es"
+      }
+    }
+  }
+}

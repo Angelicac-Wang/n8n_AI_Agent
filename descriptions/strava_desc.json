@@ -1,0 +1,42 @@
+{
+  "nodeName": "strava",
+  "summary": "此節點用於消費 Strava API，可執行與 Strava 相關的操作，如創建、獲取活動等。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型，可以是活動（Activity）或自定義 API 調用（Custom API Call）。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作，如創建、獲取活動評論、獲取活動 kudos 等。",
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "活動的名稱，在創建活動時為必填項。",
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "description": "活動的類型，例如跑步、騎行等，在創建活動時為必填項。",
+    },
+    {
+      "name": "sport_type",
+      "type": "options",
+      "description": "活動的運動類型，如高山滑雪、籃球、高強度間歇訓練等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "activity",
+        "operation": "create",
+        "name": "Morning Run",
+        "type": "Run",
+        "sport_type": "Run"
+      }
+    }
+  }
+}

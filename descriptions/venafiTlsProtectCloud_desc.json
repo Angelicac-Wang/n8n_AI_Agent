@@ -1,0 +1,66 @@
+{
+  "nodeName": "venafi tls protect cloud",
+  "summary": "此節點用於使用 Venafi TLS Protect Cloud API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如憑證、憑證請求或自訂 API 呼叫。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如刪除、下載、取得、續訂等。",
+    },
+    {
+      "name": "certificateId",
+      "type": "string",
+      "description": "憑證的識別碼。",
+    },
+    {
+      "name": "downloadItem",
+      "type": "options",
+      "description": "指定要下載的項目類型，如憑證或金鑰庫。",
+    },
+    {
+      "name": "keystoreType",
+      "type": "options",
+      "description": "金鑰庫的類型，如 JKS、PKCS12 或 PEM。",
+    },
+    {
+      "name": "certificateLabel",
+      "type": "string",
+      "description": "憑證的標籤。",
+    },
+    {
+      "name": "privateKeyPassphrase",
+      "type": "string",
+      "description": "私鑰的密碼。",
+    },
+    {
+      "name": "keystorePassphrase",
+      "type": "string",
+      "description": "金鑰庫的密碼。",
+    },
+    {
+      "name": "binaryProperty",
+      "type": "string",
+      "description": "輸入資料的二進位屬性名稱。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "certificate",
+        "operation": "download",
+        "certificateId": "12345",
+        "downloadItem": "certificate",
+        "keystoreType": "JKS",
+        "certificateLabel": "example_cert",
+        "privateKeyPassphrase": "password123",
+        "keystorePassphrase": "keystorepass",
+        "binaryProperty": "data"
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "nodeName": "whatsapp business cloud",
+  "summary": "Access WhatsApp API to send messages, media, or make custom API calls.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with (message, media, custom API call)."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform (send message, send and wait for response, send template, custom API call)."
+    },
+    {
+      "name": "phone number id",
+      "type": "options",
+      "description": "The ID of the business account's phone number from which the message will be sent."
+    },
+    {
+      "name": "recipient's phone number",
+      "type": "string",
+      "description": "Phone number of the recipient of the message. Include the country code."
+    },
+    {
+      "name": "message type",
+      "type": "options",
+      "description": "Select the type of message to send (audio, contacts, document, image, location, text, video)."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "message",
+        "operation": "sendTemplate",
+        "phoneNumberId": "12345",
+        "recipientPhoneNumber": "+1234567890",
+        "messageType": "text"
+      }
+    }
+  }
+}

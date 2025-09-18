@@ -1,0 +1,101 @@
+{
+  "nodeName": "pushbullet",
+  "summary": "此節點用於消費 Pushbullet API，可用於發送推送通知至不同裝置或用戶。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是推送（push）或自定義 API 呼叫（Custom API Call）。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要對資源進行的操作，如創建推送、刪除推送、獲取多個推送等。"
+    },
+    {
+      "name": "type",
+      "type": "options",
+      "description": "指定推送的類型，可以是文件（file）、連結（link）或註釋（note）。"
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "推送的標題。"
+    },
+    {
+      "name": "body",
+      "type": "string",
+      "description": "推送的內容。"
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "description": "推送的連結 URL。"
+    },
+    {
+      "name": "binaryPropertyName",
+      "type": "string",
+      "description": "包含要寫入的文件的輸入二進制字段的名稱。"
+    },
+    {
+      "name": "target",
+      "type": "options",
+      "description": "定義用於發送推送的媒介，如頻道標籤（Channel Tag）、默認（Default）、設備 ID（Device ID）、電子郵件（Email）。"
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "description": "根據所選目標設置的值。"
+    },
+    {
+      "name": "value",
+      "type": "options",
+      "description": "從列表中選擇，或使用表達式指定 ID。"
+    },
+    {
+      "name": "pushId",
+      "type": "string",
+      "description": "要刪除或更新的推送的 ID。"
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "是否返回所有結果或僅返回到指定限制。"
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數。"
+    },
+    {
+      "name": "filters",
+      "type": "collection",
+      "description": "過濾條件，如是否活動、修改時間等。"
+    },
+    {
+      "name": "dismissed",
+      "type": "boolean",
+      "description": "是否將推送標記為已被用戶解除，如果可能，將隱藏推送的任何通知。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "push",
+        "operation": "create",
+        "type": "note",
+        "title": "New Notification",
+        "body": "This is a test notification",
+        "target": "default",
+        "value": "",
+        "returnAll": false,
+        "limit": 100,
+        "filters": {
+          "active": false,
+          "modified_after": ""
+        },
+        "dismissed": false
+      }
+    }
+  }
+}

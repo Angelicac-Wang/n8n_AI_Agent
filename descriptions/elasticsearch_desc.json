@@ -1,0 +1,64 @@
+{
+  "nodeName": "elasticsearch",
+  "summary": "此節點用於消費 Elasticsearch API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型（文件、索引或自訂 API 呼叫）。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作類型（創建、刪除、獲取等）。",
+    },
+    {
+      "name": "index id",
+      "type": "string",
+      "description": "包含要刪除的文件的索引的 ID。",
+    },
+    {
+      "name": "document id",
+      "type": "string",
+      "description": "要刪除的文件的 ID。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "進一步的選項設定，如是否使用批量操作刪除文件。",
+    },
+    {
+      "name": "simplify",
+      "type": "boolean",
+      "description": "是否返回簡化版本的響應而非原始數據。",
+    },
+    {
+      "name": "source excludes",
+      "type": "string",
+      "description": "要從響應中排除的源字段列表（逗號分隔）。",
+    },
+    {
+      "name": "source includes",
+      "type": "string",
+      "description": "要包含在響應中的源字段列表（逗號分隔）。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "document",
+        "operation": "get",
+        "indexId": "index123",
+        "documentId": "doc456",
+        "options": {
+          "bulkOperation": false
+        },
+        "simple": true,
+        "options": {
+          "_source_excludes": "field1,field2",
+          "_source_includes": "field3,field4"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "nodeName": "rabbitmq trigger",
+  "summary": "此節點用於監聽 RabbitMQ 訊息。",
+  "parameters": [
+    {
+      "name": "queue / topic",
+      "type": "string",
+      "description": "要從中讀取的佇列名稱"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "包含各種選項設定",
+    },
+    {
+      "name": "assert exchange",
+      "type": "boolean",
+      "description": "在發送之前是否要斷言交換存在"
+    },
+    {
+      "name": "assert queue",
+      "type": "boolean",
+      "description": "在發送之前是否要斷言佇列存在"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "queue": "queue-name",
+        "options": {
+          "assertExchange": true,
+          "assertQueue": true
+        }
+      }
+    }
+  }
+}

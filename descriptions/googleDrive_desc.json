@@ -1,0 +1,39 @@
+{
+  "nodeName": "google drive",
+  "summary": "Access data on Google Drive including operations like copying, deleting, downloading, listing, sharing, updating, and uploading files or creating, deleting, and sharing folders.",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "Choose the authentication method (Service Account or OAuth2) to access Google Drive."
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to work with (Drive, File, or Folder)."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Choose the operation to perform on the selected resource (e.g., Copy, Delete, Download, List, Share, Update, Upload for files or Create, Delete, Share for folders)."
+    },
+    {
+      "name": "fileId",
+      "type": "resourceLocator",
+      "description": "Specify the file by either selecting from a list or providing a Google Drive file URL."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "file",
+        "operation": "upload",
+        "fileId": {
+          "mode": "list",
+          "value": ""
+        }
+      }
+    }
+  }
+}

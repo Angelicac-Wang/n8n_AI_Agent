@@ -1,0 +1,77 @@
+{
+  "nodeName": "jenkins",
+  "summary": "此節點用於消費 Jenkins API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的 Jenkins 資源類型，如建置、實例或工作。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要對資源執行的操作，如複製、建立、觸發等。",
+    },
+    {
+      "name": "job",
+      "type": "options",
+      "description": "指定要操作的 Jenkins 工作的名稱或 ID。",
+    },
+    {
+      "name": "param",
+      "type": "fixedCollection",
+      "description": "設定 Jenkins 工作所需的參數。",
+    },
+    {
+      "name": "newJob",
+      "type": "string",
+      "description": "新建 Jenkins 工作的名稱。",
+    },
+    {
+      "name": "xml",
+      "type": "string",
+      "description": "Jenkins 組態的 XML 內容。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要對 Jenkins 實例執行的操作，如取消安靜模式、重啟等。",
+    },
+    {
+      "name": "reason",
+      "type": "string",
+      "description": "設定進入安靜模式的原因。",
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "是否返回所有結果或僅返回到指定限制。",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數量。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "job",
+        "operation": "trigger",
+        "job": "MyJob",
+        "param": {
+          "params": [
+            {
+              "name": "param1",
+              "value": "value1"
+            },
+            {
+              "name": "param2",
+              "value": "value2"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

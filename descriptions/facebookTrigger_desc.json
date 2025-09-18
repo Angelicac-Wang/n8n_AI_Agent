@@ -1,0 +1,38 @@
+{
+  "nodeName": "facebook trigger",
+  "summary": "此節點可在 Facebook 事件發生時啟動工作流程。",
+  "parameters": [
+    {
+      "name": "app id",
+      "type": "string",
+      "description": "Facebook應用程式的ID。",
+    },
+    {
+      "name": "object",
+      "type": "options",
+      "description": "要訂閱的物件類型。",
+    },
+    {
+      "name": "field names or ids",
+      "type": "multioptions",
+      "description": "訂閱的物件中的字段集。從列表中選擇，或使用表達式指定ID。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "appId": "1234567890",
+        "object": "user",
+        "fields": ["name", "email"],
+        "options": {
+          "includeValues": true
+        }
+      }
+    }
+  }
+}

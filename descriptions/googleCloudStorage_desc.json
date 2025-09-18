@@ -1,0 +1,48 @@
+{
+  "nodeName": "google cloud storage",
+  "summary": "使用 Google Cloud Storage API 進行操作。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是 Bucket、Object 或自訂 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如創建、刪除、獲取資料等。",
+    },
+    {
+      "name": "project id",
+      "type": "string",
+      "description": "Google Cloud 專案的 ID。",
+    },
+    {
+      "name": "bucket name",
+      "type": "string",
+      "description": "指定要操作的 Bucket 名稱。",
+    },
+    {
+      "name": "prefix",
+      "type": "string",
+      "description": "用於過濾 Bucket 名稱的前綴。",
+    },
+    {
+      "name": "projection",
+      "type": "options",
+      "description": "指定要檢索的 Bucket 資料的投影方式。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "bucket",
+        "operation": "getAll",
+        "projectId": "my-project-id",
+        "bucketName": "my-bucket",
+        "prefix": "images/",
+        "projection": "full"
+      }
+    }
+  }
+}

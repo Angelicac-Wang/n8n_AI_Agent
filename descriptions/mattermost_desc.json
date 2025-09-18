@@ -1,0 +1,53 @@
+{
+  "nodeName": "mattermost",
+  "summary": "此節點用於將數據發送到 Mattermost。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的 Mattermost 資源類型，如頻道、消息、反應、用戶或自定義 API 調用。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要對選定的資源執行的操作，如添加用戶、創建、刪除、恢復、搜索或獲取統計信息。"
+    },
+    {
+      "name": "team name or id",
+      "type": "options",
+      "description": "指定 Mattermost 團隊的名稱或 ID，用於創建頻道。"
+    },
+    {
+      "name": "display name",
+      "type": "string",
+      "description": "指定頻道的非唯一 UI 名稱，用於創建頻道。"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "指定頻道的唯一標識符，將出現在頻道 URL 中，用於創建頻道。"
+    },
+    {
+      "name": "type",
+      "type": "options",
+      "description": "指定要創建的頻道類型，可以是私有或公共頻道。"
+    },
+    {
+      "name": "channel name or id",
+      "type": "options",
+      "description": "指定要軟刪除的頻道的 ID，用於刪除操作。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "channel",
+        "operation": "create",
+        "teamId": "exampleTeam",
+        "displayName": "Announcements",
+        "channel": "announcements",
+        "type": "public"
+      }
+    }
+  }
+}

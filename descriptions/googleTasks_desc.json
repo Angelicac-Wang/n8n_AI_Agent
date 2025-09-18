@@ -1,0 +1,46 @@
+{
+  "nodename": "google tasks",
+  "summary": "此節點用於使用 Google Tasks API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型，可以是任務（Task）或自定義 API 呼叫（Custom API Call）。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作，如創建、刪除、獲取任務等。",
+    },
+    {
+      "name": "task",
+      "type": "options",
+      "description": "選擇任務清單的名稱或 ID，或使用表達式指定 ID。",
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "任務的標題。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "其他任務相關的欄位。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "task",
+        "operation": "create",
+        "task": "My Task List",
+        "title": "Complete Project",
+        "additionalFields": {
+          "dueDate": "2022-12-31T23:59:59Z",
+          "notes": "Remember to include all files",
+          "status": "needsAction"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "nodename": "gumroad trigger",
+  "summary": "透過 Webhooks 處理 Gumroad 事件。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要觸發事件的資源類型，如取消訂閱、爭議、贏得爭議、退款或銷售。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "sale"
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "nodeName": "rocketchat",
+  "summary": "此節點用於消費 RocketChat API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是聊天或自定義 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如發送訊息或自定義 API 呼叫。"
+    },
+    {
+      "name": "channel",
+      "type": "string",
+      "description": "要發送訊息的頻道名稱。",
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "description": "要發送的訊息內容。",
+    },
+    {
+      "name": "jsonParameters",
+      "type": "boolean",
+      "description": "指定是否使用 JSON 參數來發送訊息。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "設定訊息的附加選項，如別名、頭像、表情等。",
+    },
+    {
+      "name": "attachments",
+      "type": "collection",
+      "description": "設定訊息的附件，如顏色、文字、圖片等。",
+    },
+    {
+      "name": "attachmentsJson",
+      "type": "json",
+      "description": "以 JSON 格式提供訊息的附件資訊。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "chat",
+        "operation": "postMessage",
+        "channel": "general",
+        "text": "Hello from n8n!",
+        "jsonParameters": false,
+        "options": {
+          "alias": "n8n-bot",
+          "avatar": "https://example.com/avatar.png",
+          "emoji": ":smile:"
+        },
+        "attachments": [
+          {
+            "color": "#ff0000",
+            "text": "This is an attachment",
+            "ts": "2022-01-01T12:00:00Z",
+            "thumbUrl": "https://example.com/thumb.png"
+          }
+        ]
+      }
+    }
+  }
+}

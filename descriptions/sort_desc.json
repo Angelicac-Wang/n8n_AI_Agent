@@ -1,0 +1,44 @@
+{
+  "nodeName": "sort",
+  "summary": "此節點用於改變項目的排序順序。",
+  "parameters": [
+    {
+      "name": "type",
+      "type": "options",
+      "description": "要執行的排序類型。可以是簡單排序、隨機排序或自定義排序。"
+    },
+    {
+      "name": "sortfieldsui",
+      "type": "fixedcollection",
+      "description": "要按照哪些字段進行排序的設定。每個字段包括字段名和排序方式。",
+    },
+    {
+      "name": "code",
+      "type": "string",
+      "description": "用於確定任意兩個項目順序的 JavaScript 代碼。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定，例如是否禁用點表示法來引用子字段。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "type": "simple",
+        "sortFieldsUi": [
+          {
+            "sortField": {
+              "fieldName": "id",
+              "order": "ascending"
+            }
+          }
+        ],
+        "options": {
+          "disableDotNotation": false
+        }
+      }
+    }
+  }
+}

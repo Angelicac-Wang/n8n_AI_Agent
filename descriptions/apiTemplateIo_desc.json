@@ -1,0 +1,82 @@
+{
+  "nodeName": "apitemplate.io",
+  "summary": "此節點用於消費 APITemplate.io API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如帳戶、圖片、PDF 或自定義 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如創建、獲取或自定義 API 呼叫。"
+    },
+    {
+      "name": "imageTemplateId",
+      "type": "options",
+      "description": "指定要使用的圖片模板的 ID。"
+    },
+    {
+      "name": "pdfTemplateId",
+      "type": "options",
+      "description": "指定要使用的 PDF 模板的 ID。"
+    },
+    {
+      "name": "jsonParameters",
+      "type": "boolean",
+      "description": "指定是否使用 JSON 參數。"
+    },
+    {
+      "name": "download",
+      "type": "boolean",
+      "description": "指定是否下載檔案。"
+    },
+    {
+      "name": "binaryProperty",
+      "type": "string",
+      "description": "指定要將下載的檔案寫入的二進位屬性名稱。"
+    },
+    {
+      "name": "overridesJson",
+      "type": "json",
+      "description": "指定要覆蓋的 JSON 參數。"
+    },
+    {
+      "name": "propertiesJson",
+      "type": "json",
+      "description": "指定的屬性 JSON。"
+    },
+    {
+      "name": "overridesUi",
+      "type": "fixedCollection",
+      "description": "指定要覆蓋的 UI 屬性集合。"
+    },
+    {
+      "name": "propertiesUi",
+      "type": "fixedCollection",
+      "description": "指定的屬性 UI 集合。"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定，如下載的檔案名稱。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "image",
+        "operation": "create",
+        "imageTemplateId": "123",
+        "jsonParameters": true,
+        "download": true,
+        "binaryProperty": "data",
+        "overridesJson": "[{\"name\": \"text_1\", \"text\": \"hello world\", \"textBackgroundColor\": \"rgba(246, 243, 243, 0)\" }]",
+        "options": {
+          "fileName": "image.jpg"
+        }
+      }
+    }
+  }
+}

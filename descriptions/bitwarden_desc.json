@@ -1,0 +1,51 @@
+{
+  "nodeName": "bitwarden",
+  "summary": "此節點用於使用 Bitwarden API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要操作的資源類型，如集合、事件、群組等。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "要執行的操作，如刪除、獲取、更新等。",
+    },
+    {
+      "name": "collection id",
+      "type": "string",
+      "description": "集合的識別符。",
+    },
+    {
+      "name": "return all",
+      "type": "boolean",
+      "description": "是否返回所有結果或僅返回到指定限制。",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數。",
+    },
+    {
+      "name": "update fields",
+      "type": "collection",
+      "description": "要更新的字段，如群組名稱、外部識別符等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "collection",
+        "operation": "get",
+        "collectionId": "5e59c8c7-e05a-4d17-8e85-acc301343926",
+        "returnAll": false,
+        "limit": 10,
+        "updateFields": {
+          "groups": [],
+          "externalId": ""
+        }
+      }
+    }
+  }
+}

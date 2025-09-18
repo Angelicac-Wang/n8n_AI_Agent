@@ -1,0 +1,45 @@
+{
+  "nodeName": "gong",
+  "summary": "Interact with Gong API to retrieve call data and user information.",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "Select the authentication method to use (Access Token or OAuth2)."
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Choose the type of resource to interact with (Call, User, or Custom API Call)."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource (e.g., Get, Get Many).",
+    },
+    {
+      "name": "call",
+      "type": "resourceLocator",
+      "description": "Specify the Gong call to retrieve data for, either by ID or URL.",
+    },
+    {
+      "name": "options",
+      "type": "object",
+      "description": "Additional options for retrieving call data, such as specific properties to include."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "accessToken",
+        "resource": "call",
+        "operation": "getAll",
+        "call": {
+          "mode": "list",
+          "value": ""
+        },
+        "options": {}
+      }
+    }
+  }
+}

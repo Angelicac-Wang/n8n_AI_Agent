@@ -1,0 +1,55 @@
+{
+  "nodeName": "copper",
+  "summary": "此節點用於使用 Copper API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如公司、客戶來源、潛在客戶等。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要對資源執行的操作，如創建、刪除、獲取等。",
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "要創建的公司的名稱。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "其他要創建公司時需要提供的欄位，如地址、描述、電子郵件域等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "company",
+        "operation": "create",
+        "name": "Example Company",
+        "additionalFields": {
+          "address": {
+            "addressFields": {
+              "street": "123 Main St",
+              "city": "Cityville",
+              "state": "State",
+              "postal_code": "12345",
+              "country": "US"
+            }
+          },
+          "details": "This is an example company",
+          "email_domain": "example.com",
+          "phone_numbers": {
+            "phoneFields": [
+              {
+                "number": "123-456-7890"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

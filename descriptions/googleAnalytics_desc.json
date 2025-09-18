@@ -1,0 +1,75 @@
+{
+  "nodeName": "google analytics",
+  "summary": "使用 Google Analytics API 來取得報告或使用者活動數據。",
+  "parameters": [
+    {
+      "name": "oldVersionNotice",
+      "type": "notice",
+      "description": "顯示新節點版本的通知，提醒使用者更新。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要訪問的資源類型。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作。",
+    },
+    {
+      "name": "viewId",
+      "type": "options",
+      "description": "選擇或指定 Google Analytics 的檢視 ID。",
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "決定是否返回所有結果或僅返回一定限制數量。",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "設定要返回的最大結果數量。",
+    },
+    {
+      "name": "simple",
+      "type": "boolean",
+      "description": "指定是否返回簡化版本的回應。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "包含進一步的請求參數。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "report",
+        "operation": "get",
+        "viewId": "123456",
+        "returnAll": false,
+        "limit": 1000,
+        "simple": true,
+        "additionalFields": {
+          "dateRangesUi": {
+            "dateRanges": [
+              {
+                "startDate": "2022-01-01T00:00:00Z",
+                "endDate": "2022-01-31T23:59:59Z"
+              }
+            ]
+          },
+          "dimensionUi": {
+            "dimensionValues": [
+              {
+                "name": "ga:city"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

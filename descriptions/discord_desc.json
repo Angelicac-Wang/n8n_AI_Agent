@@ -1,0 +1,33 @@
+{
+  "nodeName": "discord",
+  "summary": "將數據發送到 Discord。",
+  "parameters": [
+    {
+      "name": "webhookUri",
+      "type": "string",
+      "description": "Discord 的 Webhook URL。",
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "description": "要發送到 Discord 的內容，最多 2000 個字符。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他可選的設定項目。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "webhookUri": "https://discord.com/api/webhooks/ID/TOKEN",
+        "text": "Hello World!",
+        "options": {
+          "username": "User",
+          "tts": false
+        }
+      }
+    }
+  }
+}

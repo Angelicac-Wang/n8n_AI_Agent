@@ -1,0 +1,42 @@
+{
+  "nodename": "n8n form",
+  "summary": "生成 n8n 中的 web 表單並將其回應傳遞到工作流程。",
+  "parameters": [
+    {
+      "name": "triggernotice",
+      "type": "notice",
+      "description": "n8n 表單觸發器節點必須在此節點之前設置。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "頁面類型。",
+    },
+    {
+      "name": "defineform",
+      "type": "options",
+      "description": "定義表單的方式。",
+    },
+    {
+      "name": "jsonoutput",
+      "type": "json",
+      "description": "表單字段的 JSON 輸出。",
+    },
+    {
+      "name": "formfields",
+      "type": "fixedcollection",
+      "description": "表單元素的集合。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "triggernotice": "",
+        "operation": "page",
+        "defineform": "fields",
+        "jsonoutput": "[\n   {\n      \"fieldLabel\":\"Name\",\n      \"placeholder\":\"enter you name\",\n      \"requiredField\":true\n   },\n   {\n      \"fieldLabel\":\"Age\",\n      \"fieldType\":\"number\",\n      \"placeholder\":\"enter your age\"\n   },\n   {\n      \"fieldLabel\":\"Email\",\n      \"fieldType\":\"email\",\n      \"requiredField\":true\n   }\n]",
+        "formfields": {}
+      }
+    }
+  }
+}

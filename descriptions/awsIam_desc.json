@@ -1,0 +1,24 @@
+{
+  "nodename": "aws iam",
+  "summary": "與 Amazon IAM 進行互動，可執行用戶、群組等資源的管理操作。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要操作的資源類型，可以是用戶、群組或自定義 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定對資源執行的操作，如新增用戶、刪除用戶、獲取用戶等。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "user",
+        "operation": "getAll"
+      }
+    }
+  }
+}

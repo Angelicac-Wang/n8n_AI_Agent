@@ -1,0 +1,69 @@
+{
+  "nodeName": "linear",
+  "summary": "此節點用於與 Linear API 進行互動，可執行各種操作如新增評論、新增連結、創建問題等。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "指定用於驗證的方法，可以選擇 API Token 或 OAuth2。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型，如評論、問題或自訂 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，根據所選資源類型不同，可選擇新增評論、新增連結、創建問題等。"
+    },
+    {
+      "name": "issueId",
+      "type": "string",
+      "description": "要操作的問題的 ID。",
+      "required": true
+    },
+    {
+      "name": "comment",
+      "type": "string",
+      "description": "要新增的評論內容。",
+      "required": true
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "額外的欄位設定，如父評論 ID。",
+      "options": [
+        {
+          "displayName": "Parent Comment ID",
+          "name": "parentId",
+          "type": "string",
+          "description": "如果這是回覆，則為父評論的 ID。"
+        }
+      ]
+    },
+    {
+      "name": "teamId",
+      "type": "options",
+      "description": "指定團隊的名稱或 ID，用於創建問題。",
+      "required": true
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "問題的標題。",
+      "required": true
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "apiToken",
+        "resource": "issue",
+        "operation": "create",
+        "teamId": "engineering",
+        "title": "New Feature Request"
+      }
+    }
+  }
+}

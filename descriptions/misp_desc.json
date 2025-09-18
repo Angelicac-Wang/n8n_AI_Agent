@@ -1,0 +1,50 @@
+{
+  "nodeName": "misp",
+  "summary": "Consume the MISP API to interact with various resources like attributes, events, tags, and more.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with (e.g., Attribute, Event, Tag).",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource (e.g., Create, Delete, Get).",
+    },
+    {
+      "name": "eventId",
+      "type": "string",
+      "description": "UUID of the event to attach the attribute to.",
+    },
+    {
+      "name": "type",
+      "type": "options",
+      "description": "Select the type of the attribute (e.g., Text, URL, Comment).",
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "description": "Value of the attribute to be created.",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "Additional fields for creating an attribute.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "attribute",
+        "operation": "create",
+        "eventId": "123456",
+        "type": "text",
+        "value": "example value",
+        "additionalFields": {
+          "distribution": 3
+        }
+      }
+    }
+  }
+}

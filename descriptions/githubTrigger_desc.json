@@ -1,0 +1,47 @@
+{
+  "nodename": "github trigger",
+  "summary": "此節點在 Github 事件發生時啟動工作流程。",
+  "parameters": [
+    {
+      "name": "notice",
+      "type": "notice",
+      "description": "只有組織的擁有者或存儲庫的管理員才能設置此節點所需的 Webhooks。"
+    },
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於身份驗證的方法。",
+    },
+    {
+      "name": "owner",
+      "type": "resourcelocator",
+      "description": "存儲庫所有者的識別方式。",
+    },
+    {
+      "name": "repository",
+      "type": "resourcelocator",
+      "description": "存儲庫名稱的識別方式。",
+    },
+    {
+      "name": "events",
+      "type": "multioptions",
+      "description": "要監聽的 Github 事件類型。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "accessToken",
+        "owner": {
+          "mode": "list",
+          "value": ""
+        },
+        "repository": {
+          "mode": "list",
+          "value": ""
+        },
+        "events": ["*"]
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "nodename": "clockify trigger",
+  "summary": "此節點用於監聽 Clockify 事件。",
+  "parameters": [
+    {
+      "name": "poll times",
+      "type": "fixedcollection",
+      "description": "時間間隔，用於指定觸發事件的頻率。可以設定每分鐘、每小時、每天等。",
+    },
+    {
+      "name": "workspace name or id",
+      "type": "options",
+      "description": "選擇工作區名稱或 ID，或使用表達式指定 ID。",
+    },
+    {
+      "name": "trigger",
+      "type": "options",
+      "description": "選擇要觸發的事件類型，例如新的時間記錄。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "polltimes": {
+          "item": [
+            {
+              "mode": "everyday"
+            }
+          ]
+        },
+        "workspaceid": "workspace123",
+        "watchfield": 0
+      }
+    }
+  }
+}

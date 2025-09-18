@@ -1,0 +1,41 @@
+{
+  "nodeName": "metabase",
+  "summary": "使用 Metabase API 進行操作。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型，如警報、資料庫、指標、問題或自訂 API 呼叫。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作，如獲取問題、獲取結果數據或自訂 API 呼叫。",
+    },
+    {
+      "name": "question id",
+      "type": "string",
+      "description": "要操作的問題的 ID。",
+    },
+    {
+      "name": "format",
+      "type": "options",
+      "description": "指定結果數據的格式，如 CSV、JSON 或 XLSX。",
+    },
+    {
+      "name": "metric id",
+      "type": "string",
+      "description": "要操作的指標的 ID。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "questions",
+        "operation": "getAll",
+        "questionId": "123",
+        "format": "csv"
+      }
+    }
+  }
+}

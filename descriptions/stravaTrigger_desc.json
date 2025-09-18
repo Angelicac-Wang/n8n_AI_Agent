@@ -1,0 +1,38 @@
+{
+  "nodename": "strava trigger",
+  "summary": "此節點會在 Strava 事件發生時啟動工作流程。",
+  "parameters": [
+    {
+      "name": "object",
+      "type": "options",
+      "description": "要監聽的 Strava 物件類型。",
+    },
+    {
+      "name": "event",
+      "type": "options",
+      "description": "要監聽的 Strava 事件類型。",
+    },
+    {
+      "name": "resolvedata",
+      "type": "boolean",
+      "description": "是否自動解析 webhook 資料以包含更多詳細資訊。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "object": "activity",
+        "event": "create",
+        "resolvedata": true,
+        "options": {
+          "deleteifexist": false
+        }
+      }
+    }
+  }
+}

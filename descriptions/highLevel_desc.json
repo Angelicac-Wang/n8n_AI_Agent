@@ -1,0 +1,36 @@
+{
+  "nodeName": "highlevel",
+  "summary": "Consume HighLevel API v1 for managing contacts, opportunities, and tasks.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with (e.g., Contact, Opportunity, Task).",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Choose the operation to perform on the selected resource (e.g., Create, Delete, Get, Update).",
+    },
+    {
+      "name": "contactCreateNotice",
+      "type": "notice",
+      "description": "A notice displayed when creating a new contact or updating an existing one.",
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "description": "Email address required to create a contact.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "contact",
+        "operation": "create",
+        "contactCreateNotice": "",
+        "email": "name@email.com"
+      }
+    }
+  }
+}

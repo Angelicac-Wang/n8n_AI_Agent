@@ -1,0 +1,36 @@
+{
+  "nodeName": "sticky note",
+  "summary": "此節點可讓您在工作流程中添加便利的便條，以幫助更好理解流程。",
+  "parameters": [
+    {
+      "name": "content",
+      "type": "string",
+      "description": "便條的內容，可以包含文字和連結等信息。"
+    },
+    {
+      "name": "height",
+      "type": "number",
+      "description": "便條的高度，以像素為單位。",
+    },
+    {
+      "name": "width",
+      "type": "number",
+      "description": "便條的寬度，以像素為單位。",
+    },
+    {
+      "name": "color",
+      "type": "number",
+      "description": "便條的顏色代碼，用於標識不同的便條。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "content": "## I'm a note \n**Double click** to edit me. [Guide](https://docs.n8n.io/workflows/sticky-notes/)",
+        "height": 160,
+        "width": 240,
+        "color": 1
+      }
+    }
+  }
+}

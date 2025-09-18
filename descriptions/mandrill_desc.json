@@ -1,0 +1,61 @@
+{
+  "nodeName": "mandrill",
+  "summary": "這個節點用於使用 Mandrill API 來發送郵件，支援根據模板或 HTML 內容發送郵件。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要使用的 Mandrill 資源，目前僅支援發送訊息。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作，可以是根據模板發送或根據 HTML 內容發送郵件。"
+    },
+    {
+      "name": "template",
+      "type": "options",
+      "description": "選擇要使用的郵件模板，或者使用表達式指定模板 ID。僅在選擇根據模板發送操作時需要設定。"
+    },
+    {
+      "name": "fromEmail",
+      "type": "string",
+      "description": "寄件者的郵件地址，可選擇性包含名稱。"
+    },
+    {
+      "name": "toEmail",
+      "type": "string",
+      "description": "收件者的郵件地址，多個地址可以用逗號分隔。"
+    },
+    {
+      "name": "jsonParameters",
+      "type": "boolean",
+      "description": "是否使用 JSON 參數來設定其他選項。"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定集合，包括異步發送、自動生成文本和 HTML 內容等。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "message",
+        "operation": "sendTemplate",
+        "template": "template_id",
+        "fromEmail": "example@yourdomain.com",
+        "toEmail": "info@example.com",
+        "jsonParameters": false,
+        "options": {
+          "async": false,
+          "autoText": false,
+          "autoHtml": false,
+          "bccAddress": "message.bcc_address@example.com",
+          "fromName": "John Doe",
+          "googleAnalyticsCampaign": ""
+        }
+      }
+    }
+  }
+}

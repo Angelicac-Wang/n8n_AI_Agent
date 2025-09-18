@@ -1,0 +1,53 @@
+{
+  "nodeName": "xero",
+  "summary": "此節點用於消費 Xero API，可執行與 Xero 服務相關的操作，如創建聯絡人、發票等。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型，如聯絡人、發票或自定義 API 請求。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作，如創建、獲取、更新聯絡人等。僅在選擇聯絡人資源時顯示。"
+    },
+    {
+      "name": "organization id",
+      "type": "options",
+      "description": "選擇組織名稱或 ID，或使用表達式指定 ID。僅在創建聯絡人時顯示。"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "聯絡人或組織的全名。僅在創建聯絡人時顯示。"
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "添加聯絡人的其他字段，如帳號號碼、地址等。僅在創建聯絡人時顯示。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "contact",
+        "operation": "create",
+        "organizationId": "exampleOrgId",
+        "name": "John Doe",
+        "additionalFields": {
+          "accountNumber": "12345",
+          "addressesUi": [
+            {
+              "type": "STREET",
+              "line1": "123 Main St",
+              "city": "City",
+              "postalCode": "12345",
+              "country": "US"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

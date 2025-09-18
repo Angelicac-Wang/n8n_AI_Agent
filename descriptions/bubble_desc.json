@@ -1,0 +1,46 @@
+{
+  "nodeName": "bubble",
+  "summary": "Consume the Bubble Data API to perform operations like creating, deleting, getting, and updating objects.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to perform operations on.",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the selected resource.",
+    },
+    {
+      "name": "typeName",
+      "type": "string",
+      "description": "Name of the data type of the object for the operation.",
+    },
+    {
+      "name": "properties",
+      "type": "fixedCollection",
+      "description": "Add properties for the object to create.",
+    },
+    {
+      "name": "objectId",
+      "type": "string",
+      "description": "ID of the object to perform the operation on.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "object",
+        "operation": "create",
+        "typeName": "User",
+        "properties": [
+          {
+            "key": "name",
+            "value": "John Doe"
+          }
+        ]
+      }
+    }
+  }
+}

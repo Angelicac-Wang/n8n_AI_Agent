@@ -1,0 +1,19 @@
+{
+  "nodeName": "lonescale trigger",
+  "summary": "觸發 LoneScale 工作流程。",
+  "parameters": [
+    {
+      "name": "workflow name",
+      "type": "options",
+      "description": "選擇一個工作流程。從列表中選擇。",
+      "required": true
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "workflow": "example_workflow"
+      }
+    }
+  }
+}

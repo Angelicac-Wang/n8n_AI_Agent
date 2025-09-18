@@ -1,0 +1,44 @@
+{
+  "nodeName": "yourls",
+  "summary": "此節點用於消費 Yourls API，可用於縮短 URL、擴展 URL 或獲取 URL 的統計信息。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，目前僅支援 URL。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，包括縮短 URL、擴展 URL 或獲取 URL 的統計信息。"
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "description": "要縮短的 URL。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "其他可選字段，包括自定義短 URL 的關鍵字和標題。",
+    },
+    {
+      "name": "shortUrl",
+      "type": "string",
+      "description": "要擴展或獲取統計信息的短 URL。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "url",
+        "operation": "shorten",
+        "url": "https://example.com",
+        "additionalFields": {
+          "keyword": "example",
+          "title": "Example Title"
+        }
+      }
+    }
+  }
+}

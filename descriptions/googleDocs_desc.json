@@ -1,0 +1,64 @@
+{
+  "nodeName": "google docs",
+  "summary": "Consume Google Docs API to perform operations like creating, getting, and updating documents.",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "Choose the authentication method, either Service Account or OAuth2."
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to work with, such as Document or Custom API Call."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Choose the operation to perform on the selected resource, like Create, Get, or Update a document."
+    },
+    {
+      "name": "driveId",
+      "type": "options",
+      "description": "Select or specify the Drive Name or ID where the document will be created.",
+      "required": true
+    },
+    {
+      "name": "folderId",
+      "type": "options",
+      "description": "Select or specify the Folder Name or ID where the document will be created.",
+      "required": true
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "Specify the title of the document to be created.",
+      "required": true
+    },
+    {
+      "name": "documentURL",
+      "type": "string",
+      "description": "Provide the Doc ID or URL of the document to get or update.",
+      "required": true
+    },
+    {
+      "name": "simple",
+      "type": "boolean",
+      "description": "Choose whether to return a simplified version of the response instead of the raw data."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "resource": "document",
+        "operation": "create",
+        "driveId": "myDrive",
+        "folderId": "folder123",
+        "title": "New Document",
+        "documentURL": "document123",
+        "simple": true
+      }
+    }
+  }
+}

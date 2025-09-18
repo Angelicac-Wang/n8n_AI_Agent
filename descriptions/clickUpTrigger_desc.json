@@ -1,0 +1,39 @@
+{
+  "nodeName": "clickup trigger",
+  "summary": "透過 Webhooks 處理 ClickUp 事件（Beta 版）。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "選擇身份驗證方式，可以是存取權杖（Access Token）或 OAuth2。"
+    },
+    {
+      "name": "team",
+      "type": "options",
+      "description": "選擇團隊名稱或 ID，也可以使用表達式指定 ID。",
+    },
+    {
+      "name": "events",
+      "type": "multiOptions",
+      "description": "選擇要監聽的事件類型，可以選擇多個。",
+    },
+    {
+      "name": "filters",
+      "type": "collection",
+      "description": "設定篩選條件，如資料夾 ID、清單 ID、空間 ID、任務 ID 等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "accessToken",
+        "team": "exampleTeam",
+        "events": ["taskCreated", "taskUpdated"],
+        "filters": {
+          "folderId": "folder123",
+          "listId": "list456"
+        }
+      }
+    }
+  }
+}

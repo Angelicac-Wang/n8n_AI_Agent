@@ -1,0 +1,53 @@
+{
+  "nodeName": "messagebird",
+  "summary": "透過 MessageBird 發送簡訊",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是簡訊（SMS）或餘額（Balance）"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如發送簡訊（Send）或獲取餘額（Get）",
+    },
+    {
+      "name": "originator",
+      "type": "string",
+      "description": "要發送訊息的號碼"
+    },
+    {
+      "name": "recipients",
+      "type": "string",
+      "description": "所有收件人的號碼，以逗號分隔"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "要發送的訊息內容"
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "其他可選欄位，如訊息類型、有效期等"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "sms",
+        "operation": "send",
+        "originator": "14155238886",
+        "recipients": "14155238886",
+        "message": "Hello from n8n",
+        "additionalFields": {
+          "createdDatetime": "2022-01-01T12:00:00+00:00",
+          "datacoding": "auto",
+          "mclass": 1,
+          "validity": 3600
+        }
+      }
+    }
+  }
+}

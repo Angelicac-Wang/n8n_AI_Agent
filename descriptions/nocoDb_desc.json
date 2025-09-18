@@ -1,0 +1,54 @@
+{
+  "nodeName": "nocodeb",
+  "summary": "Read, update, write and delete data from NocoDB.",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "Choose the type of authentication to access NocoDB (API Token or User Token)."
+    },
+    {
+      "name": "version",
+      "type": "options",
+      "description": "Select the API version to use for NocoDB operations.",
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Choose the type of resource to interact with (Row or Custom API Call)."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource."
+    },
+    {
+      "name": "workspaceId",
+      "type": "options",
+      "description": "Select the workspace by name or ID for version v0.200.0 onwards."
+    },
+    {
+      "name": "projectId",
+      "type": "options",
+      "description": "Select the base by name or ID for version v0.200.0 onwards.",
+      "required": true
+    },
+    {
+      "name": "projectId",
+      "type": "string",
+      "description": "Specify the ID of the project for API versions before v0.90.0."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "nocoDb",
+        "version": 2,
+        "resource": "row",
+        "operation": "get",
+        "workspaceId": "workspace123",
+        "projectId": "base456"
+      }
+    }
+  }
+}

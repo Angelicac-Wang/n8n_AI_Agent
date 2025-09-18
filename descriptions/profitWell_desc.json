@@ -1,0 +1,54 @@
+{
+  "nodeName": "profitwell",
+  "summary": "此節點用於消費 ProfitWell API，可獲取公司資訊或財務指標數據。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要訪問的資源類型，可以是公司資訊或財務指標數據。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如獲取公司設置或獲取特定財務指標數據。"
+    },
+    {
+      "name": "type",
+      "type": "options",
+      "description": "指定要獲取的財務指標數據的類型，可以是每日或每月數據。"
+    },
+    {
+      "name": "month",
+      "type": "string",
+      "description": "指定要獲取數據的月份，格式為 YYYY-MM，只能是當前月份或上個月份。"
+    },
+    {
+      "name": "simple",
+      "type": "boolean",
+      "description": "指定是否返回簡化版本的響應而不是原始數據。"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "提供進一步的選項設置，如指定計劃 ID 或選擇每日指標數據類型。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "metric",
+        "operation": "get",
+        "type": "daily",
+        "month": "2022-09",
+        "simple": true,
+        "options": {
+          "plan_id": "12345",
+          "dailyMetrics": [
+            "active_customers",
+            "churned_customers"
+          ]
+        }
+      }
+    }
+  }
+}

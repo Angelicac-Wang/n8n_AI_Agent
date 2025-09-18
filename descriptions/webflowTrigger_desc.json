@@ -1,0 +1,30 @@
+{
+  "nodename": "webflow trigger",
+  "summary": "處理 Webflow 事件通過 Webhooks",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於驗證的方式。選擇使用存取令牌或 OAuth2。"
+    },
+    {
+      "name": "site",
+      "type": "options",
+      "description": "將觸發事件的網站。從列表中選擇，或使用表達式指定 ID。",
+    },
+    {
+      "name": "event",
+      "type": "options",
+      "description": "要觸發的事件類型。選擇從多個事件中的一個，如創建集合項目、刪除集合項目等。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "accessToken",
+        "site": "example-site",
+        "event": "form_submission"
+      }
+    }
+  }
+}

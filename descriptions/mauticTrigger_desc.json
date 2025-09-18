@@ -1,0 +1,30 @@
+{
+  "nodename": "mautic trigger",
+  "summary": "透過 Webhooks 處理 Mautic 事件。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於指定身份驗證方式，可以選擇使用憑證（Credentials）或 OAuth2。",
+    },
+    {
+      "name": "events",
+      "type": "multioptions",
+      "description": "選擇事件名稱或 ID，也可以使用表達式指定 ID。",
+    },
+    {
+      "name": "events order",
+      "type": "options",
+      "description": "指定一個 Webhook 中排隊事件的排序方向，可以是“ASC”（升序）或“DESC”（降序）。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "credentials",
+        "events": ["event1", "event2"],
+        "eventsOrder": "ASC"
+      }
+    }
+  }
+}

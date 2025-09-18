@@ -1,0 +1,32 @@
+{
+  "nodeName": "strapi",
+  "summary": "此節點用於消耗 Strapi API。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於選擇身份驗證方式，可以是使用帳號和密碼或 API Token。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是條目（Entry）或自定義 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要對資源執行的操作，如創建、刪除、獲取、更新條目等。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "password",
+        "resource": "entry",
+        "operation": "get",
+        "contentType": "article",
+        "entryId": "12345"
+      }
+    }
+  }
+}

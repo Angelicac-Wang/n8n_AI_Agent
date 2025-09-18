@@ -1,0 +1,31 @@
+{
+  "nodeName": "hubspot trigger",
+  "summary": "啟動工作流程時，當 HubSpot 事件發生時觸發",
+  "parameters": [
+    {
+      "name": "events",
+      "type": "fixedcollection",
+      "description": "設定要觸發的 HubSpot 事件類型和屬性"
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "設定額外的字段，如最大並發請求數"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "eventsUi": {
+          "eventValues": {
+            "name": "contact.creation",
+            "property": ""
+          }
+        },
+        "additionalFields": {
+          "maxConcurrentRequests": 5
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "nodeName": "netlify",
+  "summary": "此節點用於使用 Netlify API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型，可以是部署（Deploy）或站點（Site）。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作，如取消（Cancel）、創建（Create）、獲取（Get）等。",
+    },
+    {
+      "name": "site name or id",
+      "type": "options",
+      "description": "輸入站點 ID，從列表中選擇，或使用表達式指定 ID。",
+    },
+    {
+      "name": "deploy id",
+      "type": "string",
+      "description": "輸入部署 ID。",
+    },
+    {
+      "name": "return all",
+      "type": "boolean",
+      "description": "是否返回所有結果或僅返回到指定限制。",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數。",
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "額外的字段，如分支（Branch）和標題（Title），用於創建部署。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "deploy",
+        "operation": "get",
+        "siteId": "exampleSiteId",
+        "deployId": "exampleDeployId",
+        "returnAll": false,
+        "limit": 50,
+        "additionalFields": {
+          "branch": "main",
+          "title": "New Deployment"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "nodeName": "google slides",
+  "summary": "透過 Google Slides API 來操作 Google 幻燈片。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於選擇驗證方式，可以選擇 OAuth2 或 Service Account。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇操作的資源類型，包括頁面、簡報或自訂 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作，如創建簡報、獲取簡報、獲取幻燈片等。"
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "要創建的簡報的標題。",
+    },
+    {
+      "name": "presentationId",
+      "type": "string",
+      "description": "要檢索的簡報或頁面的 ID。",
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "是否返回所有結果或僅返回一定限制數量的結果。",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數量。",
+    },
+    {
+      "name": "pageObjectId",
+      "type": "string",
+      "description": "要檢索的頁面物件的 ID。",
+    },
+    {
+      "name": "textUi",
+      "type": "fixedCollection",
+      "description": "要替換的文本內容設定。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定，如修訂 ID。",
+    },
+    {
+      "name": "download",
+      "type": "boolean",
+      "description": "是否下載讀取頁面的二進制數據。",
+    },
+    {
+      "name": "binaryProperty",
+      "type": "string",
+      "description": "將輸出文件放入的二進制字段名。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "presentation",
+        "operation": "create",
+        "title": "My Presentation",
+        "returnAll": false,
+        "limit": 100,
+        "presentationId": "1wZtNFZ8MO-WKrxhYrOLMvyiqSgFwdSz5vn8_l_7eNqw",
+        "pageObjectId": "abc123",
+        "textUi": {
+          "textValues": [
+            {
+              "matchCase": false,
+              "pageObjectIds": [],
+              "text": "Hello",
+              "replaceText": "Hi"
+            }
+          ]
+        },
+        "options": {
+          "revisionId": "123456"
+        },
+        "download": true,
+        "binaryProperty": "data"
+      }
+    }
+  }
+}

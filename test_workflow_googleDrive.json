@@ -1,0 +1,121 @@
+{
+  "name": "Google Drive Test Workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "bc8b8a92-2be6-4b9b-98c8-ccb7c49d8c83",
+      "name": "When clicking \"Test workflow\"",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [620, 300]
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "file",
+        "operation": "list",
+        "options": {
+          "fields": "id,name,mimeType,size,modifiedTime",
+          "q": "mimeType != 'application/vnd.google-apps.folder'"
+        }
+      },
+      "id": "f47ac10b-58cc-4372-a567-0e02b2c3d481",
+      "name": "List Google Drive Files",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [840, 300],
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "1",
+          "name": "Google Drive OAuth2 account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "file",
+        "operation": "upload",
+        "name": "test-upload-{{ $now.format('yyyy-MM-dd-HHmmss') }}.txt",
+        "binaryData": false,
+        "fileContent": "This is a test file uploaded via n8n workflow\\nTimestamp: {{ $now.toISO() }}"
+      },
+      "id": "f47ac10b-58cc-4372-a567-0e02b2c3d482",
+      "name": "Upload Test File",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [1060, 300],
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "1",
+          "name": "Google Drive OAuth2 account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "folder",
+        "operation": "create",
+        "name": "n8n-test-folder-{{ $now.format('yyyy-MM-dd') }}",
+        "options": {}
+      },
+      "id": "f47ac10b-58cc-4372-a567-0e02b2c3d483",
+      "name": "Create Test Folder",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [1280, 300],
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "1",
+          "name": "Google Drive OAuth2 account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "When clicking \"Test workflow\"": {
+      "main": [
+        [
+          {
+            "node": "List Google Drive Files",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "List Google Drive Files": {
+      "main": [
+        [
+          {
+            "node": "Upload Test File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload Test File": {
+      "main": [
+        [
+          {
+            "node": "Create Test Folder",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "e2b72c65-f4fb-4b41-8765-7e1b8e9b2db8",
+  "id": "test-google-drive-workflow",
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "tags": []
+}

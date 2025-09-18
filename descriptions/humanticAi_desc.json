@@ -1,0 +1,52 @@
+{
+  "nodeName": "humantic ai",
+  "summary": "此節點用於使用 Humantic AI API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，目前僅支援 'Profile'。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作類型，如創建、獲取或更新個人資料。",
+    },
+    {
+      "name": "user id",
+      "type": "string",
+      "description": "用於創建、獲取或更新 Humantic 個人資料的用戶識別。"
+    },
+    {
+      "name": "send resume",
+      "type": "boolean",
+      "description": "是否發送履歷以進行履歷分析。"
+    },
+    {
+      "name": "input binary field",
+      "type": "string",
+      "description": "包含 PDF 或 DOCX 格式履歷的輸入二進制字段的名稱。"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "用於獲取特定人物類型的 Humantic 用戶資料。"
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "description": "用戶撰寫的額外文本信息。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "profile",
+        "operation": "create",
+        "userId": "example123",
+        "sendResume": true,
+        "binaryPropertyName": "data"
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "nodeName": "customer messenger (n8n training)",
+  "summary": "This node is used for n8n training purposes to send messages to a specific customer.",
+  "parameters": [
+    {
+      "name": "customer id",
+      "type": "string",
+      "description": "The ID of the customer to whom the message will be sent."
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "The message content that will be sent to the customer. Supports multi-line text."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "customerId": "12345",
+        "message": "Hello! This is a test message for training purposes."
+      }
+    }
+  }
+}

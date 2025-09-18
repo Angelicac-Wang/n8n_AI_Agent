@@ -1,0 +1,36 @@
+{
+  "nodename": "workflow trigger",
+  "summary": "此節點基於各種生命週期事件觸發，例如當工作流程被啟動時。",
+  "parameters": [
+    {
+      "name": "oldversionnotice",
+      "type": "notice",
+      "description": "此節點已被棄用，將不會在未來更新。請改用 'n8n Trigger' 節點。"
+    },
+    {
+      "name": "events",
+      "type": "multioptions",
+      "description": "指定執行應該發生的條件。",
+      "options": [
+        {
+          "name": "active workflow updated",
+          "description": "當此工作流程被更新時觸發",
+          "value": "update"
+        },
+        {
+          "name": "workflow activated",
+          "description": "當此工作流程被啟動時觸發",
+          "value": "activate"
+        }
+      ]
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "oldVersionNotice": "",
+        "events": ["update"]
+      }
+    }
+  }
+}

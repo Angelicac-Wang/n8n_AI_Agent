@@ -1,0 +1,61 @@
+{
+  "nodeName": "affinity",
+  "summary": "Consume Affinity API to interact with resources like lists, list entries, organizations, and persons.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with (e.g., List, List Entry, Organization, Person).",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource (e.g., Get, Get Many, Create, Delete).",
+    },
+    {
+      "name": "listId",
+      "type": "string",
+      "description": "The unique ID of the list object to be retrieved.",
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "Whether to return all results or only up to a given limit.",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "Max number of results to return (between 1 and 10).",
+    },
+    {
+      "name": "listId",
+      "type": "options",
+      "description": "The unique ID of the list whose list entries are to be retrieved.",
+    },
+    {
+      "name": "entityId",
+      "type": "string",
+      "description": "The unique ID of the entity (person, organization, or opportunity) to add to this list.",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "Additional fields to include when creating a list entry.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "list",
+        "operation": "get",
+        "listId": "12345",
+        "returnAll": false,
+        "limit": 5,
+        "entityId": "6789",
+        "additionalFields": {
+          "creator_id": "abc123"
+        }
+      }
+    }
+  }
+}

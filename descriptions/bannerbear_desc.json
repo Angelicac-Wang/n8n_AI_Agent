@@ -1,0 +1,73 @@
+{
+  "nodeName": "bannerbear",
+  "summary": "Consume Bannerbear API to create and manipulate images or templates.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Choose between working with an image or a template."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Specify the operation to perform on the selected resource."
+    },
+    {
+      "name": "template id",
+      "type": "options",
+      "description": "The template ID you want to use for creating an image."
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "Additional settings for creating an image like metadata, webhook URL, etc."
+    },
+    {
+      "name": "modifications",
+      "type": "fixedcollection",
+      "description": "Specify modifications to apply to the image like text, color, background, etc."
+    },
+    {
+      "name": "image id",
+      "type": "string",
+      "description": "Unique identifier for the image when performing 'Get' operation."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Specify the operation to perform on templates."
+    },
+    {
+      "name": "template id",
+      "type": "string",
+      "description": "Unique identifier for the template when performing 'Get' operation."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "image",
+        "operation": "create",
+        "templateId": "template_id_here",
+        "additionalFields": {
+          "metadata": "some_metadata",
+          "waitForImage": true,
+          "waitForImageMaxTries": 3,
+          "webhookUrl": "https://example.com/webhook"
+        },
+        "modificationsUi": {
+          "modificationsValues": [
+            {
+              "name": "name_or_id",
+              "text": "new_text",
+              "color": "#FF0000",
+              "background": "#FFFFFF",
+              "imageUrl": "https://example.com/image.jpg"
+            }
+          ]
+        },
+        "imageId": "image_id_here"
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "nodeName": "drift",
+  "summary": "Consume Drift API to perform operations on contacts such as creating, updating, getting, and deleting.",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "Select the type of authentication to use (Access Token or OAuth2)."
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to perform operations on (Contact or Custom API Call)."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the selected resource (Create, Get, Update, Delete, etc.)."
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "description": "The email of the contact.",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "Additional fields for creating a contact (e.g., Name, Phone)."
+    },
+    {
+      "name": "contactId",
+      "type": "string",
+      "description": "Unique identifier for the contact."
+    },
+    {
+      "name": "updateFields",
+      "type": "collection",
+      "description": "Fields to update for a contact (e.g., Email, Name, Phone)."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "accessToken",
+        "resource": "contact",
+        "operation": "create",
+        "email": "john.doe@example.com",
+        "additionalFields": {
+          "name": "John Doe",
+          "phone": "1234567890"
+        }
+      }
+    }
+  }
+}

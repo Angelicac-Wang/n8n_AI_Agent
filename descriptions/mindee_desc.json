@@ -1,0 +1,44 @@
+{
+  "nodeName": "mindee",
+  "summary": "此節點用於使用 Mindee API。",
+  "parameters": [
+    {
+      "name": "api version",
+      "type": "options",
+      "description": "要使用的 Mindee API 版本。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要處理的資源類型，可以是發票、收據或自訂 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "要執行的操作，可以是預測或自訂 API 呼叫。"
+    },
+    {
+      "name": "input binary field",
+      "type": "string",
+      "description": "包含要上傳的檔案的輸入二進位欄位的名稱。",
+      "required": true
+    },
+    {
+      "name": "raw data",
+      "type": "boolean",
+      "description": "是否以從 API 收到的方式返回數據。",
+      "default": false
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "apiVersion": 3,
+        "resource": "receipt",
+        "operation": "predict",
+        "binaryPropertyName": "data",
+        "rawData": false
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "nodeName": "flow",
+  "summary": "Consume Flow API to manipulate tasks, including creating, updating, and retrieving tasks.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with (e.g., Task)."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the selected resource (e.g., Create, Update, Get).",
+    },
+    {
+      "name": "workspace id",
+      "type": "string",
+      "description": "The ID of the workspace under which to create resources.",
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "The title of the task to be created.",
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "Additional fields for creating a task, such as Owner ID, List ID, Starts On, Due On, etc.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "task",
+        "operation": "create",
+        "workspaceId": "123",
+        "name": "Sample Task",
+        "additionalFields": {
+          "ownerid": "456",
+          "listID": "789",
+          "startsOn": "2022-12-31T23:59:59Z",
+          "dueOn": "2023-01-31T23:59:59Z",
+          "mirrorParentSubscribers": true,
+          "mirrorParentTags": false,
+          "noteContent": "Sample note content",
+          "noteMimeType": "text/plain"
+        }
+      }
+    }
+  }
+}

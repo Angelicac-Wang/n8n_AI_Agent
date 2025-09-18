@@ -1,0 +1,66 @@
+{
+  "nodeName": "e-goi",
+  "summary": "此節點用於使用 E-goi API 進行操作，如創建、獲取和更新成員資訊。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要操作的資源類型，目前僅支持 'Contact'。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "要執行的操作類型，包括創建、獲取、獲取多個和更新成員資訊。"
+    },
+    {
+      "name": "list",
+      "type": "options",
+      "description": "要操作的清單的 ID。僅在執行 'Get All'、'Create'、'Update' 和 'Get' 操作時顯示。"
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "description": "訂閱者的電子郵件地址。僅在執行 'Create' 操作時顯示。"
+    },
+    {
+      "name": "contactId",
+      "type": "string",
+      "description": "訂閱者的聯絡 ID。僅在 'Contact' 資源且執行 'Update' 操作時顯示。"
+    },
+    {
+      "name": "resolveData",
+      "type": "boolean",
+      "description": "是否自動解析數據。啟用後，響應將自動包含數據。僅在執行 'Create' 和 'Update' 操作時顯示。"
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "其他字段信息，如生日、手機號碼和額外字段。僅在 'Contact' 資源且執行 'Create' 操作時顯示。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "contact",
+        "operation": "create",
+        "list": "list_id",
+        "email": "name@email.com",
+        "resolveData": true,
+        "additionalFields": {
+          "birth_date": "2022-01-01",
+          "cellphone": "1234567890",
+          "extraFieldsUi": [
+            {
+              "extraFieldValues": [
+                {
+                  "field_id": "field_id_value",
+                  "value": "field_value"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

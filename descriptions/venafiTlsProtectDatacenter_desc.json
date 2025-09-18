@@ -1,0 +1,47 @@
+{
+  "nodeName": "venafi tls protect datacenter",
+  "summary": "此節點用於使用 Venafi TLS Protect Datacenter 服務，可用於管理憑證、策略以及自訂 API 呼叫。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是憑證、策略或自訂 API 呼叫。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要對資源執行的操作，如創建、刪除、下載、取得等。",
+    },
+    {
+      "name": "policy dn",
+      "type": "string",
+      "description": "新憑證的資料夾 DN。如果值為空，則資料夾名稱為系統預設值。",
+    },
+    {
+      "name": "subject",
+      "type": "string",
+      "description": "憑證主題（DN）的 Common Name 欄位。",
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "其他需要提供的欄位，如審批者、CA DN、憑證類型等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "certificate",
+        "operation": "create",
+        "policydn": "examplePolicyDN",
+        "subject": "exampleSubject",
+        "additionalFields": {
+          "approvers": ["approver1", "approver2"],
+          "cadn": "exampleCADN",
+          "certificatetype": "Server",
+          "city": "exampleCity"
+        }
+      }
+    }
+  }
+}

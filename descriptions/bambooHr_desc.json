@@ -1,0 +1,65 @@
+{
+  "nodename": "bamboohr",
+  "summary": "此節點用於消耗 BambooHR API，可執行與公司報告、員工、員工文件和文件相關的操作。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要操作的資源類型，如公司報告、員工、員工文件或文件。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "要執行的操作，如創建、獲取、獲取多個或更新員工。",
+    },
+    {
+      "name": "synced with trax payroll",
+      "type": "boolean",
+      "description": "指示員工是否已添加到與 Trax Payroll 同步的支付計劃中。",
+    },
+    {
+      "name": "first name",
+      "type": "string",
+      "description": "要創建的員工的名字。",
+    },
+    {
+      "name": "last name",
+      "type": "string",
+      "description": "要創建的員工的姓氏。",
+    },
+    {
+      "name": "address",
+      "type": "fixedcollection",
+      "description": "員工的地址詳細信息，包括地址行1、地址行2、城市、州/省和國家。",
+    },
+    {
+      "name": "date of birth",
+      "type": "datetime",
+      "description": "要創建的員工的出生日期。",
+    },
+    {
+      "name": "department name or id",
+      "type": "options",
+      "description": "部門的名稱或 ID，可以從列表中選擇，或使用表達式指定 ID。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "employee",
+        "operation": "create",
+        "synced": true,
+        "firstName": "John",
+        "lastName": "Doe",
+        "address": {
+          "address1": "123 Main St",
+          "city": "Anytown",
+          "state": "California",
+          "country": "United States"
+        },
+        "dateOfBirth": "1980-01-01",
+        "department": "Sales"
+      }
+    }
+  }
+}

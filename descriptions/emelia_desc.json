@@ -1,0 +1,54 @@
+{
+  "nodeName": "emelia",
+  "summary": "Consume the Emelia API to perform operations on campaigns and contact lists.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to perform operations on, either Campaign or Contact List."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource, such as Add Contact, Create, Duplicate, Get, etc.",
+    },
+    {
+      "name": "campaignId",
+      "type": "options",
+      "description": "The ID of the campaign to add the contact to. Choose from the list or specify an ID using an expression.",
+    },
+    {
+      "name": "contactEmail",
+      "type": "string",
+      "description": "The email of the contact to add to the campaign.",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "Additional fields to include when adding a contact to a campaign, such as custom fields, first name, last contacted date, last name, last opened date, last replied date, etc."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "campaign",
+        "operation": "addContact",
+        "campaignId": "campaign123",
+        "contactEmail": "example@example.com",
+        "additionalFields": {
+          "customFieldsUi": [
+            {
+              "fieldName": "Field Name",
+              "value": "Field Value"
+            }
+          ],
+          "firstName": "John",
+          "lastContacted": "2022-01-01T00:00:00Z",
+          "lastName": "Doe",
+          "lastOpen": "2022-01-02T00:00:00Z",
+          "lastReplied": "2022-01-03T00:00:00Z"
+        }
+      }
+    }
+  }
+}

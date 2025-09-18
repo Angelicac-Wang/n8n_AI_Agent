@@ -1,0 +1,58 @@
+{
+  "name": "LingvaNex Test Workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "bc8b8a92-2be6-4b9b-98c8-ccb7c49d8c81",
+      "name": "When clicking \"Test workflow\"",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [820, 380]
+    },
+    {
+      "parameters": {
+        "operation": "translate",
+        "text": "Hello, how are you?",
+        "translateTo": "es",
+        "options": {
+          "from": "en",
+          "platform": "api"
+        }
+      },
+      "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+      "name": "LingvaNex",
+      "type": "n8n-nodes-base.lingvaNex",
+      "typeVersion": 1,
+      "position": [1040, 380],
+      "credentials": {
+        "lingvaNexApi": {
+          "id": "1",
+          "name": "LingvaNex account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "When clicking \"Test workflow\"": {
+      "main": [
+        [
+          {
+            "node": "LingvaNex",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "e2b72c65-f4fb-4b41-8765-7e1b8e9b2db6",
+  "id": "test-lingvanex-workflow",
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "tags": []
+}

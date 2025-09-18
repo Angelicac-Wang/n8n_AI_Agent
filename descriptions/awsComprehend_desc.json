@@ -1,0 +1,50 @@
+{
+  "nodeName": "aws comprehend",
+  "summary": "將數據發送到 Amazon Comprehend 服務。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要執行的操作類型，可以選擇文字分析或自定義 API 調用。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如檢測主要語言、檢測實體或分析情感等。"
+    },
+    {
+      "name": "language code",
+      "type": "options",
+      "description": "用於文本的語言代碼。",
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "description": "要分析的文本內容。"
+    },
+    {
+      "name": "simple",
+      "type": "boolean",
+      "description": "是否返回簡化版本的響應而非原始數據。"
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "額外的字段設置，如自定義實體識別模型的端點 ARN。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "text",
+        "operation": "detectDominantLanguage",
+        "languageCode": "en",
+        "text": "Hello, how are you?",
+        "simple": true,
+        "additionalFields": {
+          "endpointArn": "arn:aws:comprehend:us-west-2:123456789012:entity-recognizer-endpoint/EXAMPLE"
+        }
+      }
+    }
+  }
+}

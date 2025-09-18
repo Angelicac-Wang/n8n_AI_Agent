@@ -1,0 +1,24 @@
+{
+  "nodeName": "activecampaign",
+  "summary": "Create and edit data in ActiveCampaign.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "The type of resource to interact with in ActiveCampaign."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "The operation to perform on the selected resource in ActiveCampaign."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "contact",
+        "operation": "create"
+      }
+    }
+  }
+}

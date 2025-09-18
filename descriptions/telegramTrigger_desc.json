@@ -1,0 +1,143 @@
+{
+  "nodeName": "telegram trigger",
+  "summary": "啟動工作流程以回應 Telegram 更新。",
+  "parameters": [
+    {
+      "name": "telegramtriggernotice",
+      "type": "notice",
+      "description": "由於 Telegram API 限制，每個機器人同一時間只能使用一個 Telegram 觸發器。"
+    },
+    {
+      "name": "updates",
+      "type": "multioptions",
+      "description": "設定觸發器要回應的 Telegram 更新類型。",
+      "options": [
+        {
+          "name": "*",
+          "description": "所有更新"
+        },
+        {
+          "name": "Callback Query",
+          "description": "觸發新的回撥查詢"
+        },
+        {
+          "name": "Channel Post",
+          "description": "觸發新的頻道貼文"
+        },
+        {
+          "name": "Edited Channel Post",
+          "description": "觸發已知的並被編輯的頻道貼文"
+        },
+        {
+          "name": "Edited Message",
+          "description": "觸發已知的並被編輯的訊息"
+        },
+        {
+          "name": "Inline Query",
+          "description": "觸發新的內嵌查詢"
+        },
+        {
+          "name": "Message",
+          "description": "觸發新的訊息"
+        },
+        {
+          "name": "Poll",
+          "description": "觸發新的投票狀態"
+        },
+        {
+          "name": "Pre-Checkout Query",
+          "description": "觸發新的預結帳查詢"
+        },
+        {
+          "name": "Shipping Query",
+          "description": "觸發新的運送查詢"
+        }
+      ]
+    },
+    {
+      "name": "attachmentnotice",
+      "type": "notice",
+      "description": "每個上傳的附件，即使在群組中發送，都會觸發單獨的事件。您可以通過 <code>media_group_id</code> 來識別附件屬於特定群組。"
+    },
+    {
+      "name": "additionalfields",
+      "type": "collection",
+      "description": "設定額外的欄位選項。",
+      "options": [
+        {
+          "name": "download",
+          "type": "boolean",
+          "description": "下載圖片/檔案。預設僅下載大圖片。若要更改大小，請設定「Image Size」欄位。"
+        },
+        {
+          "name": "imagesize",
+          "type": "options",
+          "description": "要下載的圖片大小。",
+          "options": [
+            {
+              "name": "Small",
+              "value": "small"
+            },
+            {
+              "name": "Medium",
+              "value": "medium"
+            },
+            {
+              "name": "Large",
+              "value": "large"
+            },
+            {
+              "name": "Extra Large",
+              "value": "extraLarge"
+            }
+          ]
+        },
+        {
+          "name": "chatids",
+          "type": "string",
+          "description": "限制觸發器的聊天 ID。可以用逗號分隔定義多個。",
+          "displayoptions": {
+            "show": {
+              "@version": [
+                {
+                  "_cnd": {
+                    "gte": 1.1
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "userids",
+          "type": "string",
+          "description": "限制觸發器的使用者 ID。可以用逗號分隔定義多個。",
+          "displayoptions": {
+            "show": {
+              "@version": [
+                {
+                  "_cnd": {
+                    "gte": 1.1
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "updates": [
+          "message"
+        ],
+        "additionalFields": {
+          "download": true,
+          "imageSize": "medium"
+        }
+      }
+    }
+  }
+}

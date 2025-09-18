@@ -1,0 +1,68 @@
+{
+  "nodeName": "adalo",
+  "summary": "Consume Adalo API for operations like creating, updating, deleting, and retrieving rows in collections.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with (collection or custom API call)."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Choose the operation to perform (create, update, delete, get, getAll) on the selected resource."
+    },
+    {
+      "name": "collection id",
+      "type": "string",
+      "description": "The ID of the collection in your Adalo application to perform operations on."
+    },
+    {
+      "name": "row id",
+      "type": "string",
+      "description": "The ID of the row in the collection to perform get, update, or delete operations on."
+    },
+    {
+      "name": "data to send",
+      "type": "options",
+      "description": "Choose how to handle input data for create or update operations."
+    },
+    {
+      "name": "return all",
+      "type": "boolean",
+      "description": "Specify whether to return all results or only up to a given limit for getAll operation."
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "Maximum number of results to return for getAll operation."
+    },
+    {
+      "name": "request options",
+      "type": "collection",
+      "description": "Additional options for the HTTP request like batching, SSL validation, proxy, and timeout."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "collection",
+        "operation": "getAll",
+        "collectionId": "collection_id",
+        "returnAll": false,
+        "limit": 10,
+        "requestOptions": {
+          "batching": {
+            "batch": {
+              "batchSize": 50,
+              "batchInterval": 1000
+            }
+          },
+          "allowUnauthorizedCerts": false,
+          "proxy": "http://myproxy:3128",
+          "timeout": 10000
+        }
+      }
+    }
+  }
+}

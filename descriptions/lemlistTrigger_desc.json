@@ -1,0 +1,41 @@
+{
+  "nodeName": "lemlist trigger",
+  "summary": "This node handles Lemlist events via webhooks.",
+  "parameters": [
+    {
+      "name": "event",
+      "type": "options",
+      "description": "The event to trigger the webhook. Choose from a list of predefined events such as 'Contacted', 'Hooked', 'Emails Sent', etc."
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "Additional options for the webhook trigger.",
+      "parameters": [
+        {
+          "name": "campaign name or id",
+          "type": "options",
+          "description": "Specify a campaign ID to trigger the webhook only for this campaign. You can choose from the list or use an expression to specify an ID.",
+          "default": ""
+        },
+        {
+          "name": "is first",
+          "type": "boolean",
+          "description": "Set to true to trigger the webhook only the first time this activity occurs.",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "event": "contacted",
+        "options": {
+          "campaignId": "campaign123",
+          "isFirst": true
+        }
+      }
+    }
+  }
+}

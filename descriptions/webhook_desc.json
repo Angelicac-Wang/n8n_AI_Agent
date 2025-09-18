@@ -1,0 +1,47 @@
+{
+  "nodeName": "webhook",
+  "summary": "啟動工作流程當收到 webhook 時",
+  "parameters": [
+    {
+      "name": "allow multiple http methods",
+      "type": "boolean",
+      "description": "是否允許 webhook 監聽多個 HTTP 方法"
+    },
+    {
+      "name": "http method",
+      "type": "options",
+      "description": "要監聽的 HTTP 方法",
+    },
+    {
+      "name": "http methods",
+      "type": "multioptions",
+      "description": "要監聽的 HTTP 方法",
+    },
+    {
+      "name": "path",
+      "type": "string",
+      "description": "要監聽的路徑，可以使用 ':' 指定動態值，例如 'your-path/:dynamic-value'。如果設置動態值，'webhookId' 將被添加到路徑前面。"
+    },
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "驗證方式"
+    },
+    {
+      "name": "respond",
+      "type": "options",
+      "description": "何時以及如何回應 webhook"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "multipleMethods": false,
+        "httpMethod": "GET",
+        "path": "webhook",
+        "authentication": "none",
+        "responseMode": "onReceived"
+      }
+    }
+  }
+}

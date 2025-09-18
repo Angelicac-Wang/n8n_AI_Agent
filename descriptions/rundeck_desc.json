@@ -1,0 +1,53 @@
+{
+  "nodeName": "rundeck",
+  "summary": "管理 Rundeck API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是 Job 或自定義 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如執行作業、獲取作業的元數據等。"
+    },
+    {
+      "name": "job id",
+      "type": "string",
+      "description": "要執行的作業的 ID。",
+    },
+    {
+      "name": "arguments",
+      "type": "fixedCollection",
+      "description": "作業的參數列表，可以包含多個參數名稱和值。",
+    },
+    {
+      "name": "filter",
+      "type": "string",
+      "description": "按名稱篩選 Rundeck 節點。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "job",
+        "operation": "execute",
+        "jobid": "123",
+        "arguments": {
+          "arguments": [
+            {
+              "name": "arg1",
+              "value": "value1"
+            },
+            {
+              "name": "arg2",
+              "value": "value2"
+            }
+          ]
+        },
+        "filter": "example_filter"
+      }
+    }
+  }
+}

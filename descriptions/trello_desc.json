@@ -1,0 +1,24 @@
+{
+  "nodeName": "trello",
+  "summary": "Create, change, and delete Trello boards and cards.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with (e.g., Attachment, Board, Card, etc.).",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Choose the operation to perform on the selected resource (e.g., Create, Delete, Get, etc.).",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "card",
+        "operation": "create"
+      }
+    }
+  }
+}

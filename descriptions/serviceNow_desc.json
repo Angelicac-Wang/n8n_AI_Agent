@@ -1,0 +1,62 @@
+{
+  "nodeName": "servicenow",
+  "summary": "Consume ServiceNow API to perform various operations like uploading attachments, getting user information, etc.",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "Authentication method to use (Basic Auth or OAuth2)"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Choose the type of resource to interact with (e.g., User, Incident, Attachment)"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource (e.g., Upload, Delete, Get)"
+    },
+    {
+      "name": "table name or id",
+      "type": "options",
+      "description": "Choose the table name or specify an ID for the operation (e.g., attachment upload)"
+    },
+    {
+      "name": "table record id",
+      "type": "string",
+      "description": "Sys_id of the record in the specified table to attach the file to"
+    },
+    {
+      "name": "input data field name",
+      "type": "string",
+      "description": "Name of the binary property containing the data to upload"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "Additional options for the operation (e.g., file name for attachment)"
+    },
+    {
+      "name": "attachment id",
+      "type": "string",
+      "description": "ID of the attachment for operations like delete or get"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "attachment",
+        "operation": "upload",
+        "tableName": "incident",
+        "id": "12345",
+        "inputDataFieldName": "data",
+        "options": {
+          "file_name": "example.txt"
+        },
+        "attachmentId": "6789"
+      }
+    }
+  }
+}

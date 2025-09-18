@@ -1,0 +1,66 @@
+{
+  "nodeName": "debughelper",
+  "summary": "此節點用於故意引發問題並生成有用的數據以進行除錯。",
+  "parameters": [
+    {
+      "name": "category",
+      "type": "options",
+      "description": "指定要執行的操作類別。",
+    },
+    {
+      "name": "throwErrorType",
+      "type": "options",
+      "description": "指定要引發的錯誤類型。",
+    },
+    {
+      "name": "throwErrorMessage",
+      "type": "string",
+      "description": "引發錯誤時要發送的消息。",
+    },
+    {
+      "name": "memorySizeValue",
+      "type": "number",
+      "description": "生成的內存大小，用於引發內存不足錯誤。",
+    },
+    {
+      "name": "randomDataType",
+      "type": "options",
+      "description": "指定要生成的隨機數據類型。",
+    },
+    {
+      "name": "nanoidAlphabet",
+      "type": "string",
+      "description": "用於生成 NanoIds 的字母表。",
+    },
+    {
+      "name": "nanoidLength",
+      "type": "string",
+      "description": "每個 NanoId 的長度。",
+    },
+    {
+      "name": "randomDataSeed",
+      "type": "string",
+      "description": "用於生成數據的種子。",
+    },
+    {
+      "name": "randomDataCount",
+      "type": "number",
+      "description": "要生成的隨機數據項目數量。",
+    },
+    {
+      "name": "randomDataSingleArray",
+      "type": "boolean",
+      "description": "是否將輸出作為單個數組。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "category": "throwError",
+        "throwErrorType": "NodeApiError",
+        "throwErrorMessage": "Node has thrown an error",
+        "memorySizeValue": 10
+      }
+    }
+  }
+}

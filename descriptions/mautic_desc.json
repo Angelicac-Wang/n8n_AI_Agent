@@ -1,0 +1,57 @@
+{
+  "nodeName": "mautic",
+  "summary": "Consume Mautic API to perform various operations like adding contacts to campaigns, creating companies, modifying contacts, and more.",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "Select the type of authentication to use (Credentials or OAuth2)."
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Choose the type of resource to interact with (e.g., Contact, Company, Campaign Contact)."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource (e.g., Create, Delete, Update)."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "The name of the company to create (applicable when resource is Company and operation is Create)."
+    },
+    {
+      "name": "simple",
+      "type": "boolean",
+      "description": "Whether to return a simplified version of the response instead of the raw data (applicable when resource is Company and operation is Create)."
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "Additional fields for creating a company (e.g., Address details)."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "credentials",
+        "resource": "contact",
+        "operation": "create",
+        "name": "ABC Company",
+        "simple": true,
+        "additionalFields": {
+          "addressUi": {
+            "addressValues": {
+              "address1": "123 Main St",
+              "address2": "Apt 101",
+              "city": "New York",
+              "state": "NY"
+            }
+          }
+        }
+      }
+    }
+  }
+}

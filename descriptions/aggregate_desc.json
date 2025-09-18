@@ -1,0 +1,56 @@
+{
+  "nodeName": "aggregate",
+  "summary": "Combine a field from many items into a list in a single item.",
+  "parameters": [
+    {
+      "name": "aggregate",
+      "type": "options",
+      "description": "Choose how to aggregate the fields: individually or all item data into a single list."
+    },
+    {
+      "name": "fieldsToAggregate",
+      "type": "fixedcollection",
+      "description": "Specify the fields to aggregate, and optionally rename the output field."
+    },
+    {
+      "name": "destinationFieldName",
+      "type": "string",
+      "description": "Specify the output field name to put the aggregated data in when aggregating all item data."
+    },
+    {
+      "name": "include",
+      "type": "options",
+      "description": "Choose to include all fields, specified fields, or exclude specified fields when aggregating all item data."
+    },
+    {
+      "name": "fieldsToExclude",
+      "type": "string",
+      "description": "Specify the fields to exclude when including all fields except some."
+    },
+    {
+      "name": "fieldsToInclude",
+      "type": "string",
+      "description": "Specify the fields to include when including only specified fields."
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "Additional options for the aggregation process."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "aggregate": "aggregateIndividualFields",
+        "fieldsToAggregate": {
+          "fieldToAggregate": [
+            {
+              "fieldToAggregate": "id",
+              "renameField": false
+            }
+          ]
+        }
+      }
+    }
+  }
+}

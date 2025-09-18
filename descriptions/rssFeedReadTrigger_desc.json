@@ -1,0 +1,32 @@
+{
+  "nodeName": "rss feed trigger",
+  "summary": "啟動工作流程當 RSS 資料源更新時。",
+  "parameters": [
+    {
+      "name": "poll times",
+      "type": "fixedcollection",
+      "description": "時間間隔，用於定期檢查 RSS 資料源更新。",
+    },
+    {
+      "name": "feed url",
+      "type": "string",
+      "description": "要檢查的 RSS 資料源的 URL。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyDay",
+              "hour": 14,
+              "minute": 0
+            }
+          ]
+        },
+        "feedUrl": "https://blog.n8n.io/rss/"
+      }
+    }
+  }
+}

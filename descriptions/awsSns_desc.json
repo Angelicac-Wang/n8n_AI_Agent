@@ -1,0 +1,49 @@
+{
+  "nodeName": "aws sns",
+  "summary": "將數據發送到 AWS SNS。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作類型，如創建主題、刪除主題或發布消息到主題。"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "要創建的主題的名稱。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "用於創建主題的其他選項，如顯示名稱和是否為 FIFO 主題。",
+    },
+    {
+      "name": "topic",
+      "type": "resourceLocator",
+      "description": "指定要操作的主題，可以從列表中選擇、通過 URL 指定或使用主題的 ARN。",
+    },
+    {
+      "name": "subject",
+      "type": "string",
+      "description": "發送到電子郵件端點時的主題。",
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "要發送的消息內容。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "publish",
+        "topic": {
+          "mode": "list",
+          "value": "arn:aws:sns:us-east-1:777777777777:your_topic"
+        },
+        "subject": "New Update",
+        "message": "Hello, this is a test message."
+      }
+    }
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "name": "Google Drive Trigger Test Workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "triggerOn": "specificFolder",
+        "folderToWatch": {
+          "__rl": true,
+          "mode": "list",
+          "value": "",
+          "cachedResultName": "Select folder to watch"
+        },
+        "event": "fileUpdated",
+        "options": {
+          "googleFileType": "file"
+        }
+      },
+      "id": "bc8b8a92-2be6-4b9b-98c8-ccb7c49d8c84",
+      "name": "Google Drive Trigger",
+      "type": "n8n-nodes-base.googleDriveTrigger",
+      "typeVersion": 1,
+      "position": [620, 300],
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "1",
+          "name": "Google Drive OAuth2 account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "file",
+        "operation": "download",
+        "fileId": "={{ $json.id }}",
+        "options": {
+          "googleFileConversion": {
+            "conversion": {
+              "docsToFormat": "text"
+            }
+          }
+        }
+      },
+      "id": "f47ac10b-58cc-4372-a567-0e02b2c3d484",
+      "name": "Download Changed File",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [840, 300],
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "1",
+          "name": "Google Drive OAuth2 account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "file_info",
+              "name": "fileName",
+              "value": "={{ $('Google Drive Trigger').item.json.name }}",
+              "type": "string"
+            },
+            {
+              "id": "file_modified",
+              "name": "modifiedTime",
+              "value": "={{ $('Google Drive Trigger').item.json.modifiedTime }}",
+              "type": "string"
+            },
+            {
+              "id": "file_size",
+              "name": "fileSize",
+              "value": "={{ $('Google Drive Trigger').item.json.size }}",
+              "type": "number"
+            },
+            {
+              "id": "trigger_event",
+              "name": "triggerEvent",
+              "value": "File Updated",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "f47ac10b-58cc-4372-a567-0e02b2c3d485",
+      "name": "Process File Info",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [1060, 300]
+    },
+    {
+      "parameters": {
+        "operation": "sendMessage",
+        "chatId": "@your_channel_or_chat_id",
+        "text": "🔔 Google Drive File Updated\\n\\n📁 File: {{ $json.fileName }}\\n⏰ Modified: {{ $json.modifiedTime }}\\n📊 Size: {{ $json.fileSize }} bytes\\n\\n#GoogleDrive #FileUpdate",
+        "additionalFields": {
+          "parse_mode": "Markdown"
+        }
+      },
+      "id": "f47ac10b-58cc-4372-a567-0e02b2c3d486",
+      "name": "Send Notification",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [1280, 300],
+      "credentials": {
+        "telegramApi": {
+          "id": "1",
+          "name": "Telegram Bot API"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Google Drive Trigger": {
+      "main": [
+        [
+          {
+            "node": "Download Changed File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download Changed File": {
+      "main": [
+        [
+          {
+            "node": "Process File Info",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Process File Info": {
+      "main": [
+        [
+          {
+            "node": "Send Notification",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "e2b72c65-f4fb-4b41-8765-7e1b8e9b2db9",
+  "id": "test-google-drive-trigger-workflow",
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "tags": []
+}

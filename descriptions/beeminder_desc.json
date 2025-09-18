@@ -1,0 +1,31 @@
+{
+  "nodeName": "beeminder",
+  "summary": "此節點用於消費 Beeminder API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是 Datapoint 或自訂 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如創建、刪除、獲取多個或更新資料點。",
+    },
+    {
+      "name": "goal name or id",
+      "type": "options",
+      "description": "指定目標的名稱或 ID，用於識別目標。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "datapoint",
+        "operation": "create",
+        "goalName": "my_goal",
+        "value": 5
+      }
+    }
+  }
+}

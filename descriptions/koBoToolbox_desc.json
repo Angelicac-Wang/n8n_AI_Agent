@@ -1,0 +1,55 @@
+{
+  "nodeName": "kobotoolbox",
+  "summary": "與 KoBoToolbox 表單和提交進行互動。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如檔案、表單、Hook、提交或自訂 API 呼叫。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如獲取表單、獲取多個表單或重新部署表單版本。",
+    },
+    {
+      "name": "form name or id",
+      "type": "options",
+      "description": "指定表單的名稱或 ID，用於執行操作。可以從列表中選擇，或使用表達式指定 ID。",
+    },
+    {
+      "name": "return all",
+      "type": "boolean",
+      "description": "指定是否返回所有結果或僅返回至指定限制。",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "指定要返回的最大結果數量。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "提供進階選項，如排序設定。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "form",
+        "operation": "get",
+        "formId": "aSAvYreNzVEkrWg5Gdcvg",
+        "returnAll": false,
+        "limit": 1000,
+        "options": {
+          "sort": {
+            "value": {
+              "descending": true,
+              "ordering": "date_modified"
+            }
+          }
+        }
+      }
+    }
+  }
+}

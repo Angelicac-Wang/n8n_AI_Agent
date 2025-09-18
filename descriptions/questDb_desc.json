@@ -1,0 +1,52 @@
+{
+  "nodeName": "questdb",
+  "summary": "此節點用於在 QuestDB 中獲取、添加和更新數據。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作類型，可以是執行 SQL 查詢或插入數據。"
+    },
+    {
+      "name": "query",
+      "type": "string",
+      "description": "要執行的 SQL 查詢語句。可以使用 n8n 表達式或 $1 和 $2 與查詢參數一起使用。"
+    },
+    {
+      "name": "schema",
+      "type": "hidden",
+      "description": "表所屬的模式名稱。"
+    },
+    {
+      "name": "table",
+      "type": "string",
+      "description": "要插入數據的表名。"
+    },
+    {
+      "name": "columns",
+      "type": "string",
+      "description": "作為新行列的屬性的逗號分隔列表。"
+    },
+    {
+      "name": "returnFields",
+      "type": "string",
+      "description": "操作將返回的字段列表。"
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "其他字段設置，如執行模式和查詢參數。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "insert",
+        "schema": "public",
+        "table": "products",
+        "columns": "id,name,description",
+        "returnFields": "*"
+      }
+    }
+  }
+}

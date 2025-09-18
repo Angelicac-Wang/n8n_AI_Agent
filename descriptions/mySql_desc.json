@@ -1,0 +1,52 @@
+{
+  "nodeName": "mysql",
+  "summary": "此節點可用於在 MySQL 中獲取、添加和更新數據。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作類型，包括執行 SQL 查詢、插入數據和更新數據。"
+    },
+    {
+      "name": "query",
+      "type": "string",
+      "description": "要執行的 SQL 查詢語句。"
+    },
+    {
+      "name": "table",
+      "type": "resourceLocator",
+      "description": "要插入或更新數據的表名稱。"
+    },
+    {
+      "name": "columns",
+      "type": "string",
+      "description": "要插入或更新的列名稱，以逗號分隔。"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "插入語句的修飾符，如忽略錯誤和優先級選項。"
+    },
+    {
+      "name": "updateKey",
+      "type": "string",
+      "description": "用於更新數據的屬性名稱，通常是唯一標識符，如 \"id\"。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "insert",
+        "table": {
+          "mode": "list",
+          "value": "products"
+        },
+        "columns": "id,name,description",
+        "options": {
+          "ignore": true,
+          "priority": "LOW_PRIORITY"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "nodeName": "woocommerce",
+  "summary": "此節點用於消費 WooCommerce API，可執行與顧客、訂單和產品相關的操作。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如顧客、訂單或產品。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如創建、刪除、獲取或更新資源。",
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "description": "顧客的電子郵件地址。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "額外的字段，如帳單地址、名字、姓氏等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "customer",
+        "operation": "create",
+        "email": "john.doe@example.com",
+        "additionalFields": {
+          "billing": {
+            "first_name": "John",
+            "last_name": "Doe",
+            "address_1": "123 Street",
+            "city": "City",
+            "postcode": "12345",
+            "country": "US",
+            "email": "john.doe@example.com",
+            "phone": "123-456-7890"
+          }
+        }
+      }
+    }
+  }
+}

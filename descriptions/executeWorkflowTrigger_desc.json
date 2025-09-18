@@ -1,0 +1,46 @@
+{
+  "nodeName": "execute workflow trigger",
+  "summary": "This node is used to trigger other n8n workflows, allowing for modular and microservice-like workflow design.",
+  "parameters": [
+    {
+      "name": "events",
+      "type": "hidden",
+      "description": "Defines the event that triggers the workflow. Default is 'Workflow Call' triggered by another workflow."
+    },
+    {
+      "name": "inputSource",
+      "type": "options",
+      "description": "Select how input data will be provided to the workflow.",
+    },
+    {
+      "name": "jsonExample",
+      "type": "json",
+      "description": "Provide an example JSON object to infer input fields and their types.",
+    },
+    {
+      "name": "workflowInputs",
+      "type": "fixedCollection",
+      "description": "Define expected input fields with their data types. If no inputs are provided, all data from the calling workflow will be passed through."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "events": "worklfow_call",
+        "inputSource": "workflowInputs",
+        "workflowInputs": {
+          "values": [
+            {
+              "name": "field1",
+              "type": "string"
+            },
+            {
+              "name": "field2",
+              "type": "number"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "nodeName": "harvest",
+  "summary": "Access data on Harvest for operations like managing clients, companies, contacts, estimates, expenses, invoices, projects, tasks, time entries, and users.",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "Choose the method of authentication: Access Token or OAuth2."
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to perform operations on (e.g., client, company, contact, estimate, expense, invoice, project, task, time entry, user, or make a custom API call)."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Choose the operation to perform on the selected resource (e.g., create, delete, get, get all, update, or make a custom API call)."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "accessToken",
+        "resource": "client",
+        "operation": "getAll"
+      }
+    }
+  }
+}

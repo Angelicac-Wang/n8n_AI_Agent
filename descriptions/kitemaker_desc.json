@@ -1,0 +1,40 @@
+{
+  "nodeName": "kitemaker",
+  "summary": "Consume the Kitemaker GraphQL API to interact with organizations, spaces, users, and work items.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with (Organization, Space, User, Work Item).",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource.",
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "Specify whether to return all results or only up to a given limit.",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "Set the maximum number of results to return.",
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "Provide the title of the work item to create.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "workItem",
+        "operation": "create",
+        "title": "New Task"
+      }
+    }
+  }
+}

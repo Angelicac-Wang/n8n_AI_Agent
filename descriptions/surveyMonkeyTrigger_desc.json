@@ -1,0 +1,59 @@
+{
+  "nodeName": "surveymonkey trigger",
+  "summary": "啟動工作流程，當 Survey Monkey 事件發生時觸發。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於選擇身份驗證方法，可以選擇使用存取令牌或 OAuth2。"
+    },
+    {
+      "name": "objecttype",
+      "type": "options",
+      "description": "選擇要監聽的 Survey Monkey 物件類型，可以是收集器（Collector）或調查（Survey）。"
+    },
+    {
+      "name": "event",
+      "type": "options",
+      "description": "選擇要監聽的事件類型，根據所選的物件類型不同，可選擇的事件也會有所不同。"
+    },
+    {
+      "name": "surveyids",
+      "type": "multioptions",
+      "description": "選擇要監聽的調查名稱或 ID，或使用表達式指定 ID。僅當物件類型為調查且事件不是調查創建時顯示。"
+    },
+    {
+      "name": "surveyid",
+      "type": "options",
+      "description": "選擇要監聽的調查名稱或 ID，或使用表達式指定 ID。僅當物件類型為收集器時顯示。"
+    },
+    {
+      "name": "collectorids",
+      "type": "multioptions",
+      "description": "選擇要監聽的收集器名稱或 ID，或使用表達式指定 ID。需依賴所選的調查 ID。僅當物件類型為收集器時顯示。"
+    },
+    {
+      "name": "resolvedata",
+      "type": "boolean",
+      "description": "啟用後，將自動解析 webhook 資料，預設僅包含 ID。僅當事件為回應完成時顯示。"
+    },
+    {
+      "name": "onlyanswers",
+      "type": "boolean",
+      "description": "是否僅返回表單的答案，而不包含其他資料。僅當啟用資料解析且事件為回應完成時顯示。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "accessToken",
+        "objectType": "collector",
+        "event": "response_completed",
+        "surveyId": "12345",
+        "collectorIds": ["67890"],
+        "resolveData": true,
+        "onlyAnswers": true
+      }
+    }
+  }
+}

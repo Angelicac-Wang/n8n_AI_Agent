@@ -1,0 +1,55 @@
+{
+  "nodeName": "asana",
+  "summary": "This node allows you to interact with the Asana REST API to manage tasks, projects, users, and more.",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "The type of authentication to use (Access Token or OAuth2).",
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "The type of resource to interact with (e.g., Project, Task, User).",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "The operation to perform on the selected resource (e.g., Create, Get Many).",
+    },
+    {
+      "name": "taskId",
+      "type": "string",
+      "description": "The ID of the parent task to operate on.",
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "The name of the subtask to create.",
+    },
+    {
+      "name": "otherProperties",
+      "type": "collection",
+      "description": "Additional fields for creating a subtask.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "accessToken",
+        "resource": "subtask",
+        "operation": "create",
+        "taskId": "12345",
+        "name": "New Subtask",
+        "otherProperties": {
+          "assignee": "John Doe",
+          "assignee_status": "inbox",
+          "completed": false,
+          "due_on": "2022-12-31T23:59:59Z",
+          "liked": false,
+          "notes": "This is a new subtask."
+        }
+      }
+    }
+  }
+}

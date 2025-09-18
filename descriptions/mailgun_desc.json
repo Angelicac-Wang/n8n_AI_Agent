@@ -1,0 +1,57 @@
+{
+  "nodename": "mailgun",
+  "summary": "透過 Mailgun 發送郵件。",
+  "parameters": [
+    {
+      "name": "from email",
+      "type": "string",
+      "description": "寄件者的電子郵件地址，可選擇性包含名稱。"
+    },
+    {
+      "name": "to email",
+      "type": "string",
+      "description": "收件者的電子郵件地址。多個地址可以用逗號分隔。"
+    },
+    {
+      "name": "cc email",
+      "type": "string",
+      "description": "抄送收件者的電子郵件地址。多個地址可以用逗號分隔。"
+    },
+    {
+      "name": "bcc email",
+      "type": "string",
+      "description": "密件抄送收件者的電子郵件地址。多個地址可以用逗號分隔。"
+    },
+    {
+      "name": "subject",
+      "type": "string",
+      "description": "郵件的主題行。"
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "description": "郵件的純文本內容。"
+    },
+    {
+      "name": "html",
+      "type": "string",
+      "description": "郵件的 HTML 格式內容。"
+    },
+    {
+      "name": "attachments",
+      "type": "string",
+      "description": "包含要作為附件添加到郵件中的數據的二進制屬性的名稱。多個名稱可以用逗號分隔。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "fromEmail": "admin@example.com",
+        "toEmail": "info@example.com",
+        "subject": "My subject line",
+        "text": "This is the plain text content of the email.",
+        "html": "<p>This is the HTML content of the email.</p>"
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "nodeName": "summarize",
+  "summary": "Summarize, count, find max/min, etc. across items based on specified fields",
+  "parameters": [
+    {
+      "name": "fields to summarize",
+      "type": "fixedcollection",
+      "description": "Specify the fields and aggregation methods to summarize the data. You can choose from options like count, sum, average, max, min, etc."
+    },
+    {
+      "name": "fields to split by",
+      "type": "string",
+      "description": "Specify the fields by which you want to split the summary data."
+    },
+    {
+      "name": "fields to group by",
+      "type": "string",
+      "description": "Specify the fields by which you want to group the summary data."
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "Additional options to customize the summarization process, such as handling missing fields, output format, etc."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "fieldsToSummarize": {
+          "values": [
+            {
+              "aggregation": "count",
+              "field": "age"
+            },
+            {
+              "aggregation": "sum",
+              "field": "income"
+            }
+          ]
+        },
+        "fieldsToSplitBy": "country, city",
+        "fieldsToGroupBy": "department",
+        "options": {
+          "continueIfFieldNotFound": false,
+          "disableDotNotation": false,
+          "outputFormat": "separateItems",
+          "skipEmptySplitFields": false
+        }
+      }
+    }
+  }
+}

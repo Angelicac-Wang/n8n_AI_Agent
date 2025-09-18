@@ -1,0 +1,18 @@
+{
+  "nodename": "crowd.dev trigger",
+  "summary": "此節點可在 crowd.dev 事件發生時啟動工作流程。",
+  "parameters": [
+    {
+      "name": "trigger",
+      "type": "options",
+      "description": "定義何種事件將觸發自動化。可選值包括 'New Activity' 和 'New Member'。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "trigger": "new_activity"
+      }
+    }
+  }
+}

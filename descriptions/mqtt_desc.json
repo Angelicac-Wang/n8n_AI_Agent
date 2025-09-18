@@ -1,0 +1,39 @@
+{
+  "nodeName": "mqtt",
+  "summary": "將訊息推送至 MQTT 伺服器。",
+  "parameters": [
+    {
+      "name": "topic",
+      "type": "string",
+      "description": "要發佈訊息的主題。"
+    },
+    {
+      "name": "sendInputData",
+      "type": "boolean",
+      "description": "是否將節點接收的資料作為 JSON 發送。"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "要發佈的訊息內容。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "topic": "example/topic",
+        "sendInputData": true,
+        "message": "Hello, World!",
+        "options": {
+          "qos": 0,
+          "retain": false
+        }
+      }
+    }
+  }
+}

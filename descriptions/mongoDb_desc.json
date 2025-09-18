@@ -1,0 +1,71 @@
+{
+  "nodeName": "mongodb",
+  "summary": "在 MongoDB 中查找、插入和更新文檔。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要在 MongoDB 中執行的操作類型，如聚合、刪除、查找、插入或更新文檔。"
+    },
+    {
+      "name": "collection",
+      "type": "string",
+      "description": "MongoDB 中的集合名稱。"
+    },
+    {
+      "name": "query",
+      "type": "json",
+      "description": "以 JSON 格式指定 MongoDB 聚合管道查詢（用於聚合操作）。",
+    },
+    {
+      "name": "query",
+      "type": "json",
+      "description": "以 JSON 格式指定 MongoDB 查找或刪除查詢。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "設置查找操作的選項，如限制數量、跳過數量、排序和投影。",
+    },
+    {
+      "name": "fields",
+      "type": "string",
+      "description": "要包含在新文檔中的字段列表（用於插入操作）。",
+    },
+    {
+      "name": "updateKey",
+      "type": "string",
+      "description": "決定應更新數據庫中哪些行的屬性名稱。通常是“id”（用於更新和查找並替換或更新操作）。",
+    },
+    {
+      "name": "fields",
+      "type": "string",
+      "description": "要包含在新文檔中的字段列表（用於更新和查找並替換或更新操作）。",
+    },
+    {
+      "name": "upsert",
+      "type": "boolean",
+      "description": "如果沒有文檔與更新鍵匹配，是否執行插入（用於更新和查找並替換或更新操作）。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "設置更新、插入、查找並替換或查找並更新操作的選項，如日期字段和使用點表示法。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "find",
+        "collection": "users",
+        "query": {},
+        "options": {
+          "limit": 10,
+          "skip": 0,
+          "sort": { "createdAt": -1 },
+          "projection": { "_id": 0, "name": 1 }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "nodeName": "venafi tls protect cloud trigger",
+  "summary": "此節點會在 Venafi 事件發生時啟動工作流程。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "從列表中選擇，或使用表達式指定 ID。"
+    },
+    {
+      "name": "trigger on",
+      "type": "multioptions",
+      "description": "從列表中選擇，或使用表達式指定 ID。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "resource_id",
+        "triggerOn": ["trigger_type"]
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "nodeName": "crowd.dev",
+  "summary": "This node allows you to interact with crowd.dev's open-source suite of community and data tools to facilitate community-led growth for your organization.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource you want to interact with.",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "activity",
+        "operation": "createWithMember"
+      }
+    }
+  }
+}

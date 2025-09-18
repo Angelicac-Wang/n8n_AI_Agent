@@ -1,0 +1,48 @@
+{
+  "nodeName": "ldap",
+  "summary": "與 LDAP 伺服器進行互動，可執行比較、創建、刪除、重命名、搜索和更新等操作。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的 LDAP 操作類型，如比較、創建、刪除、重命名、搜索或更新。"
+    },
+    {
+      "name": "nodeDebug",
+      "type": "boolean",
+      "description": "啟用以在節點上啟用調試模式。"
+    },
+    {
+      "name": "dn",
+      "type": "string",
+      "description": "要執行操作的條目的區別名稱（DN）。根據不同操作，此參數將有不同的作用。"
+    },
+    {
+      "name": "id",
+      "type": "options",
+      "description": "要比較的屬性的 ID。僅在比較操作中需要此參數。"
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "description": "要進行比較的值。僅在比較操作中需要此參數。"
+    },
+    {
+      "name": "targetDn",
+      "type": "string",
+      "description": "要重命名的現有條目的新區別名稱（DN）。僅在重命名操作中需要此參數。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "search",
+        "nodeDebug": false,
+        "dn": "ou=users,dc=n8n,dc=io",
+        "id": "cn",
+        "value": "john",
+        "targetDn": "cn=nathan,ou=users,dc=n8n,dc=io"
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "nodeName": "chargebee",
+  "summary": "此節點可從 Chargebee API 擷取數據，支援檢索客戶、發票和訂閱相關資訊。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要從中擷取數據的資源類型，如客戶、發票或訂閱。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如創建客戶、列出發票或取消訂閱。"
+    },
+    {
+      "name": "properties",
+      "type": "collection",
+      "description": "設置新用戶的屬性，如用戶ID、姓名、電子郵件等。僅在創建客戶操作下顯示。"
+    },
+    {
+      "name": "maxResults",
+      "type": "number",
+      "description": "返回的最大結果數量（小於100）。僅在列出發票操作下顯示。"
+    },
+    {
+      "name": "filters",
+      "type": "fixedCollection",
+      "description": "用於過濾發票的條件，如發票日期或金額範圍。僅在列出發票操作下顯示。"
+    },
+    {
+      "name": "invoiceId",
+      "type": "string",
+      "description": "要獲取的發票的ID。僅在獲取發票PDF URL操作下顯示。"
+    },
+    {
+      "name": "subscriptionId",
+      "type": "string",
+      "description": "要取消或刪除的訂閱的ID。"
+    },
+    {
+      "name": "endOfTerm",
+      "type": "boolean",
+      "description": "是否在訂閱結束時取消訂閱。僅在取消訂閱操作下顯示。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "customer",
+        "operation": "create",
+        "properties": {
+          "id": "123",
+          "first_name": "John",
+          "last_name": "Doe",
+          "email": "john.doe@example.com"
+        }
+      }
+    }
+  }
+}

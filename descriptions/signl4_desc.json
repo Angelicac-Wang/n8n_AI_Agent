@@ -1,0 +1,58 @@
+{
+  "nodeName": "signl4",
+  "summary": "Consume SIGNL4 API to send and resolve alerts with additional details and options.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "The type of resource to interact with, in this case, it is 'Alert'.",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "The operation to perform on the alert, either 'Send' to send a new alert or 'Resolve' to mark an alert as resolved.",
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "A more detailed description for the alert to be sent.",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "Additional fields and options for the alert, such as alerting scenario, attachments, external ID, filtering, location, service, and title.",
+    },
+    {
+      "name": "externalId",
+      "type": "string",
+      "description": "Unique ID of the record from a 3rd party system for resolving an alert.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "alert",
+        "operation": "send",
+        "message": "Critical issue detected!",
+        "additionalFields": {
+          "alertingScenario": "single_ack",
+          "attachmentsUi": {
+            "attachmentsBinary": {
+              "property": "data"
+            }
+          },
+          "externalId": "123456",
+          "filtering": false,
+          "locationFieldsUi": {
+            "locationFieldsValues": {
+              "latitude": "37.7749",
+              "longitude": "-122.4194"
+            }
+          },
+          "service": "IT Support",
+          "title": "Server Down"
+        }
+      }
+    }
+  }
+}

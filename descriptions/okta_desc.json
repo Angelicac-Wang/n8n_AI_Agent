@@ -1,0 +1,39 @@
+{
+  "nodeName": "okta",
+  "summary": "使用 Okta API 進行操作。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是使用者或自訂 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要對資源執行的操作，如創建、刪除、獲取資訊等。",
+    },
+    {
+      "name": "userId",
+      "type": "resourceLocator",
+      "description": "要操作的使用者。可以從列表中選擇，或指定使用者名稱或 ID。",
+    },
+    {
+      "name": "firstName",
+      "type": "string",
+      "description": "使用者的名字。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "user",
+        "operation": "create",
+        "userId": {
+          "mode": "list",
+          "value": ""
+        },
+        "firstName": "Nathan"
+      }
+    }
+  }
+}

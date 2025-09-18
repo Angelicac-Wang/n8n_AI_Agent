@@ -1,0 +1,52 @@
+{
+  "nodeName": "zoom",
+  "summary": "此節點用於消費 Zoom API，可執行與 Zoom 相關的操作，如創建、刪除、獲取會議等。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於選擇身份驗證方法，可以是 Access Token 或 OAuth2。預設為 Access Token。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型，可以是會議或自定義 API 調用。預設為會議。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作，如創建、刪除、獲取會議等。僅在資源為會議時顯示。"
+    },
+    {
+      "name": "topic",
+      "type": "string",
+      "description": "會議的主題。僅在操作為創建會議且資源為會議時顯示。"
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "額外的會議設定字段，如議程、持續時間、密碼等。僅在操作為創建會議且資源為會議時顯示。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "accessToken",
+        "resource": "meeting",
+        "operation": "create",
+        "topic": "Team Meeting",
+        "additionalFields": {
+          "agenda": "Discuss project updates",
+          "duration": 60,
+          "password": "123456",
+          "scheduleFor": "example@example.com",
+          "settings": {
+            "audio": "both",
+            "alternativeHosts": "host1@example.com, host2@example.com",
+            "autoRecording": "local"
+          }
+        }
+      }
+    }
+  }
+}

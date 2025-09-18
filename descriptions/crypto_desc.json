@@ -1,0 +1,59 @@
+{
+  "nodeName": "crypto",
+  "summary": "提供加密工具，可生成隨機字串、對文本或文件進行哈希、HMAC加密以及使用私鑰對字串進行簽名。",
+  "parameters": [
+    {
+      "name": "action",
+      "type": "options",
+      "description": "指定要執行的加密操作類型，如生成隨機字串、哈希、HMAC加密或簽名。"
+    },
+    {
+      "name": "type",
+      "type": "options",
+      "description": "指定要使用的哈希類型，如MD5、SHA256等。僅在執行哈希操作時需要設定。",
+      "required": true
+    },
+    {
+      "name": "binaryData",
+      "type": "boolean",
+      "description": "指示是否從二進制字段中取得要進行哈希的數據。",
+      "required": true
+    },
+    {
+      "name": "binaryPropertyName",
+      "type": "string",
+      "description": "包含輸入數據的二進制屬性的名稱。僅在使用二進制數據進行哈希或HMAC操作時需要設定。",
+      "required": true
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "description": "要進行哈希的值。僅在不使用二進制數據進行哈希操作時需要設定。",
+      "required": true
+    },
+    {
+      "name": "dataPropertyName",
+      "type": "string",
+      "description": "要寫入哈希值的屬性名稱。僅在執行哈希操作時需要設定。",
+      "required": true
+    },
+    {
+      "name": "encoding",
+      "type": "options",
+      "description": "指定哈希值的編碼格式，如BASE64或HEX。僅在執行哈希操作時需要設定。",
+      "required": true
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "action": "hash",
+        "type": "SHA256",
+        "binaryData": false,
+        "value": "exampleValue",
+        "dataPropertyName": "hashedValue",
+        "encoding": "base64"
+      }
+    }
+  }
+}

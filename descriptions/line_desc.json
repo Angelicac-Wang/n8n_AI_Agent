@@ -1,0 +1,51 @@
+{
+  "nodeName": "line",
+  "summary": "此節點用於消費 Line API，可用於發送通知或自定義 API 呼叫。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要執行的操作類型，可以是發送通知或自定義 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如發送通知給使用者或群組。"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "要發送的訊息內容。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "包含額外的設定欄位，如圖片、貼圖等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "notification",
+        "operation": "send",
+        "message": "Hello, this is a notification message.",
+        "additionalFields": {
+          "imageUi": {
+            "imageValue": {
+              "binaryData": false,
+              "imageFullsize": "https://example.com/image.jpg",
+              "imageThumbnail": "https://example.com/image_thumb.jpg"
+            }
+          },
+          "notificationDisabled": false,
+          "stickerUi": {
+            "stickerValue": {
+              "stickerId": 123,
+              "stickerPackageId": 456
+            }
+          }
+        }
+      }
+    }
+  }
+}

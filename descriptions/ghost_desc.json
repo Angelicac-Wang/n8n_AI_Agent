@@ -1,0 +1,53 @@
+{
+  "nodeName": "ghost",
+  "summary": "此節點用於消耗 Ghost API，可從 Content 或 Admin API 中獲取數據。",
+  "parameters": [
+    {
+      "name": "source",
+      "type": "options",
+      "description": "選擇數據來源，Content 或 Admin API。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源，如文章或自定義 API 請求。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定操作類型，如獲取單個文章、獲取多個文章或自定義 API 請求。"
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "文章的標題。",
+    },
+    {
+      "name": "contentFormat",
+      "type": "options",
+      "description": "文章內容的格式，如 HTML、Mobile Doc 或 Lexical。"
+    },
+    {
+      "name": "content",
+      "type": "string",
+      "description": "要創建的文章內容。"
+    },
+    {
+      "name": "content",
+      "type": "json",
+      "description": "Mobiledoc 是 Ghost 用於存儲文章內容的原始 JSON 格式。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "source": "contentApi",
+        "resource": "post",
+        "operation": "get",
+        "title": "Sample Post",
+        "contentFormat": "html",
+        "content": "<p>This is a sample post content.</p>"
+      }
+    }
+  }
+}

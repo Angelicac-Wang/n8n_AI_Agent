@@ -1,0 +1,37 @@
+{
+  "nodename": "typeform trigger",
+  "summary": "啟動工作流程以回應 Typeform 表單提交。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於驗證的方法。選擇使用存取權杖或 OAuth2。"
+    },
+    {
+      "name": "form id",
+      "type": "options",
+      "description": "應觸發工作流程的表單。從列表中選擇，或使用表達式指定 ID。",
+      "required": true
+    },
+    {
+      "name": "simplify answers",
+      "type": "boolean",
+      "description": "是否將答案轉換為鍵值對（\"FIELD_TITLE\":\"USER_ANSER\"），以便於處理。"
+    },
+    {
+      "name": "only answers",
+      "type": "boolean",
+      "description": "是否僅返回表單的答案，而不返回任何其他數據。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "accessToken",
+        "formId": "form123",
+        "simplifyAnswers": true,
+        "onlyAnswers": true
+      }
+    }
+  }
+}

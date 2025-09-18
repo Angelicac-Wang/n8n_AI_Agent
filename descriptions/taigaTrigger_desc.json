@@ -1,0 +1,30 @@
+{
+  "nodename": "taiga trigger",
+  "summary": "透過 webhook 處理 Taiga 事件",
+  "parameters": [
+    {
+      "name": "project name or id",
+      "type": "options",
+      "description": "從列表中選擇，或使用 <a href=\"https://docs.n8n.io/code/expressions/\">表達式</a> 指定 ID",
+    },
+    {
+      "name": "resources",
+      "type": "multioptions",
+      "description": "要監聽的資源",
+    },
+    {
+      "name": "operations",
+      "type": "multioptions",
+      "description": "要監聽的操作",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "projectId": "project1",
+        "resources": ["all"],
+        "operations": ["create"]
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "nodeName": "google cloud realtime database",
+  "summary": "與 Google Firebase - Realtime Database API 進行互動。",
+  "parameters": [
+    {
+      "name": "project name or id",
+      "type": "options",
+      "description": "在 Firebase 控制台 URL 中顯示的專案名稱或 ID。從列表中選擇，或使用 <a href=\"https://docs.n8n.io/code/expressions/\">表達式</a> 指定 ID。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "操作類型：創建、刪除、獲取、推送、更新或自定義 API 調用。",
+    },
+    {
+      "name": "object path",
+      "type": "string",
+      "description": "數據庫中的對象路徑。不要附加 .json。",
+    },
+    {
+      "name": "object path",
+      "type": "string",
+      "description": "數據庫中的對象路徑。不要附加 .json。",
+    },
+    {
+      "name": "columns / attributes",
+      "type": "string",
+      "description": "要保存的屬性。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "projectId": "project-12345",
+        "operation": "create",
+        "path": "/app/users",
+        "attributes": "age, name, city"
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "nodename": "invoice ninja trigger",
+  "summary": "此節點在發生 Invoice Ninja 事件時啟動工作流程。",
+  "parameters": [
+    {
+      "name": "api version",
+      "type": "options",
+      "description": "要使用的 Invoice Ninja API 版本。",
+    },
+    {
+      "name": "event",
+      "type": "options",
+      "description": "要觸發的 Invoice Ninja 事件類型。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "apiVersion": "v4",
+        "event": "create_client"
+      }
+    }
+  }
+}

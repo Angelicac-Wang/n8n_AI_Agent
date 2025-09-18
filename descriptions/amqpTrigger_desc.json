@@ -1,0 +1,93 @@
+{
+  "nodeName": "amqp trigger",
+  "summary": "此節點可監聽 AMQP 1.0 訊息，並觸發工作流程。",
+  "parameters": [
+    {
+      "name": "queue / topic",
+      "type": "string",
+      "description": "要監聽的佇列或主題的名稱。"
+    },
+    {
+      "name": "clientname",
+      "type": "string",
+      "description": "用於持久性主題訂閱的客戶端名稱。"
+    },
+    {
+      "name": "subscription",
+      "type": "string",
+      "description": "用於持久性主題訂閱的訂閱名稱。"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定",
+      "options": [
+        {
+          "name": "container id",
+          "type": "string",
+          "description": "將用於傳遞至 RHEA 後端的容器 ID。"
+        },
+        {
+          "name": "convert body to string",
+          "type": "boolean",
+          "description": "是否將 JSON 主體內容（[\"body\"][\"content\"]）從位元組陣列轉換為字串。需要用於 Azure Service Bus。"
+        },
+        {
+          "name": "json parse body",
+          "type": "boolean",
+          "description": "是否將主體解析為物件。"
+        },
+        {
+          "name": "messages per cicle",
+          "type": "number",
+          "description": "每個週期從匯流排中拉取的訊息數量。"
+        },
+        {
+          "name": "only body",
+          "type": "boolean",
+          "description": "是否僅返回主體屬性。"
+        },
+        {
+          "name": "parallel processing",
+          "type": "boolean",
+          "description": "是否並行處理訊息。"
+        },
+        {
+          "name": "reconnect",
+          "type": "boolean",
+          "description": "是否在斷開連接時自動重新連接。"
+        },
+        {
+          "name": "reconnect limit",
+          "type": "number",
+          "description": "重新連接嘗試的最大次數。"
+        },
+        {
+          "name": "sleep time",
+          "type": "number",
+          "description": "每個週期後睡眠的毫秒數。"
+        }
+      ]
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "sink": "topic://sourcename.something",
+        "clientname": "n8n",
+        "subscription": "order-worker",
+        "options": {
+          "containerId": "myContainer",
+          "jsonConvertByteArrayToString": true,
+          "jsonParseBody": true,
+          "pullMessagesNumber": 50,
+          "onlyBody": false,
+          "parallelProcessing": true,
+          "reconnect": true,
+          "reconnectLimit": 10,
+          "sleepTime": 5
+        }
+      }
+    }
+  }
+}

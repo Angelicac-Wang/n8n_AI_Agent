@@ -1,0 +1,42 @@
+{
+  "nodeName": "one simple api",
+  "summary": "此節點可從不同資源中執行各種操作，如生成 PDF、取得社交媒體資料等。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要從中執行操作的資源類型。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作。",
+    },
+    {
+      "name": "link",
+      "type": "string",
+      "description": "要轉換的網頁連結。",
+    },
+    {
+      "name": "download",
+      "type": "boolean",
+      "description": "是否下載 PDF 或返回連結。",
+    },
+    {
+      "name": "output",
+      "type": "string",
+      "description": "將輸出放入的欄位名稱。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "website",
+        "operation": "pdf",
+        "link": "https://example.com",
+        "download": true,
+        "output": "pdf_output"
+      }
+    }
+  }
+}

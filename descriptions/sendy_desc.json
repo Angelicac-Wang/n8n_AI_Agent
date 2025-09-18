@@ -1,0 +1,82 @@
+{
+  "nodeName": "sendy",
+  "summary": "此節點用於消費 Sendy API，可用於創建和發送郵件活動。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是 'Campaign' 或 'Subscriber'。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要對資源執行的操作，例如創建活動。僅當資源為 'Campaign' 時可見。",
+    },
+    {
+      "name": "fromName",
+      "type": "string",
+      "description": "活動的寄件人名稱。",
+    },
+    {
+      "name": "fromEmail",
+      "type": "string",
+      "description": "活動的寄件人電子郵件地址。",
+    },
+    {
+      "name": "replyTo",
+      "type": "string",
+      "description": "活動的回覆電子郵件地址。",
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "活動的標題。",
+    },
+    {
+      "name": "subject",
+      "type": "string",
+      "description": "活動的主題。",
+    },
+    {
+      "name": "htmlText",
+      "type": "string",
+      "description": "活動的 HTML 版本內容。",
+    },
+    {
+      "name": "sendCampaign",
+      "type": "boolean",
+      "description": "是否發送活動，而不僅僅是創建草稿。預設為 false。",
+    },
+    {
+      "name": "brandId",
+      "type": "string",
+      "description": "品牌 ID。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "其他可選字段。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "campaign",
+        "operation": "create",
+        "fromName": "John Doe",
+        "fromEmail": "john.doe@example.com",
+        "replyTo": "reply@example.com",
+        "title": "Summer Sale Campaign",
+        "subject": "Don't miss out on our summer sale!",
+        "htmlText": "<p>Check out our amazing deals for this summer!</p>",
+        "sendCampaign": true,
+        "brandId": "12345",
+        "additionalFields": {
+          "excludeListIds": "1,2,3",
+          "excludeSegmentIds": "4,5,6",
+          "listIds": "7,8,9"
+        }
+      }
+    }
+  }
+}

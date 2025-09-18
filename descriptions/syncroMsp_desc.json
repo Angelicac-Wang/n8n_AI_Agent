@@ -1,0 +1,55 @@
+{
+  "nodeName": "syncromsp",
+  "summary": "此節點從 SyncroMSP 獲取數據。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要從中獲取數據的資源類型。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "要執行的操作類型，如創建、刪除、獲取等。",
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "是否返回所有結果或僅返回到指定限制。",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數量。",
+    },
+    {
+      "name": "filters",
+      "type": "collection",
+      "description": "用於過濾結果的條件集合。",
+    },
+    {
+      "name": "customerId",
+      "type": "string",
+      "description": "通過ID獲取特定客戶。",
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "description": "客戶的電子郵件地址。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "customer",
+        "operation": "getAll",
+        "returnAll": false,
+        "limit": 25,
+        "filters": {
+          "businessName": "ABC Inc",
+          "includeDisabled": true
+        }
+      }
+    }
+  }
+}

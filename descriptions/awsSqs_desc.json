@@ -1,0 +1,77 @@
+{
+  "nodeName": "aws sqs",
+  "summary": "此節點用於將訊息發送到 AWS SQS。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，可以是發送訊息到隊列或自定義 API 呼叫。"
+    },
+    {
+      "name": "queue",
+      "type": "options",
+      "description": "要發送訊息的隊列名稱或 ID。"
+    },
+    {
+      "name": "queueType",
+      "type": "options",
+      "description": "指定隊列的類型，可以是 FIFO 或標準隊列。"
+    },
+    {
+      "name": "sendInputData",
+      "type": "boolean",
+      "description": "是否將節點接收的資料以 JSON 格式發送到 SQS。"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "要發送到隊列的訊息內容。"
+    },
+    {
+      "name": "messageGroupId",
+      "type": "string",
+      "description": "指定訊息屬於特定訊息群組的標籤。僅適用於 FIFO 隊列。"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定，如延遲秒數、訊息屬性、訊息重複 ID 等。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "sendMessage",
+        "queue": "myQueue",
+        "queueType": "standard",
+        "sendInputData": true,
+        "message": "Hello, world!",
+        "messageGroupId": "group1",
+        "options": {
+          "delaySeconds": 0,
+          "messageAttributes": {
+            "binary": [
+              {
+                "name": "attribute1",
+                "dataPropertyName": "data1"
+              }
+            ],
+            "number": [
+              {
+                "name": "attribute2",
+                "value": 123
+              }
+            ],
+            "string": [
+              {
+                "name": "attribute3",
+                "value": "value3"
+              }
+            ]
+          },
+          "messageDeduplicationId": "deduplicationId1"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "nodeName": "zendesk trigger",
+  "summary": "此節點用於通過 Webhook 處理 Zendesk 事件。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於指定身份驗證方法，可以選擇使用 API Token 或 OAuth2。"
+    },
+    {
+      "name": "service",
+      "type": "options",
+      "description": "指定要使用的 Zendesk 服務，目前僅支持 Support。",
+      "required": true
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "設置要返回值的字段。可以從列表中選擇，或使用表達式指定 ID。",
+      "placeholder": "新增選項"
+    },
+    {
+      "name": "conditions",
+      "type": "fixedCollection",
+      "description": "設置條件以過濾事件。可以設置多個條件。",
+      "placeholder": "新增條件"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "apiToken",
+        "service": "support",
+        "options": {
+          "fields": []
+        },
+        "conditions": []
+      }
+    }
+  }
+}

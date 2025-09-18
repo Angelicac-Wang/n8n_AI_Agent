@@ -1,0 +1,52 @@
+{
+  "nodeName": "microsoftonedrive",
+  "summary": "此節點用於使用 Microsoft OneDrive API，可執行文件和資料夾的操作，如複製、刪除、下載、獲取、重命名、搜索、共享和上傳文件。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是文件或資料夾。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如複製、刪除、下載、獲取、重命名、搜索、共享和上傳文件。"
+    },
+    {
+      "name": "file id",
+      "type": "string",
+      "description": "要操作的文件的唯一識別符。僅在執行複製操作時需要。"
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "提供額外的字段，用於複製操作時指定新文件的名稱。"
+    },
+    {
+      "name": "parent reference",
+      "type": "collection",
+      "description": "指定複製操作中新文件的父級參考。包含驅動器 ID、驅動器類型、項目 ID、列表 ID、名稱、路徑、共享 ID 等信息。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "file",
+        "operation": "copy",
+        "fileId": "12345",
+        "additionalFields": {
+          "name": "new_file_name"
+        },
+        "parentReference": {
+          "driveId": "drive123",
+          "driveType": "personal",
+          "id": "item123",
+          "listId": "list123",
+          "name": "parent_folder",
+          "path": "/path/to/parent",
+          "shareId": "share123"
+        }
+      }
+    }
+  }
+}

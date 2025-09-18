@@ -1,0 +1,68 @@
+{
+  "nodeName": "travisci",
+  "summary": "此節點用於消費 TravisCI API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，例如 'Build'。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如取消、獲取、重啟或觸發建置。"
+    },
+    {
+      "name": "build id",
+      "type": "string",
+      "description": "用於唯一識別建置的值。",
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "包含進一步的自訂欄位設定，如要載入的屬性列表、排序方式等。"
+    },
+    {
+      "name": "return all",
+      "type": "boolean",
+      "description": "指定是否返回所有結果或僅返回至特定限制數量。"
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數量。"
+    },
+    {
+      "name": "slug",
+      "type": "string",
+      "description": "與 {擁有者名稱}/{存儲庫名稱} 相同。"
+    },
+    {
+      "name": "branch",
+      "type": "string",
+      "description": "要構建的分支。"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "附加到請求的 Travis-ci 狀態訊息。"
+    },
+    {
+      "name": "merge mode",
+      "type": "options",
+      "description": "指定合併模式，如深度合併、深度合併附加、深度合併前置、合併或替換。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "build",
+        "operation": "get",
+        "buildId": "12345",
+        "additionalFields": {
+          "include": "build.commit"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "nodeName": "dhl",
+  "summary": "此節點用於消耗 DHL API，可用於獲取運送的追蹤詳情。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "hidden",
+      "description": "資源類型，此處固定為 'shipment'。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "操作類型，可選 'Get Tracking Details' 以獲取運送的追蹤詳情。"
+    },
+    {
+      "name": "trackingNumber",
+      "type": "string",
+      "description": "要查詢的運送追蹤號碼。",
+      "required": true
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定。",
+      "placeholder": "新增選項",
+      "options": [
+        {
+          "name": "recipientPostalCode",
+          "type": "string",
+          "description": "提供收件人的郵政編碼以獲得更詳細的運送資訊。"
+        }
+      ]
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "shipment",
+        "operation": "get",
+        "trackingNumber": "123456789",
+        "options": {
+          "recipientPostalCode": "12345"
+        }
+      }
+    }
+  }
+}

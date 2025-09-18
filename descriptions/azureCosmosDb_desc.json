@@ -1,0 +1,39 @@
+{
+  "nodeName": "azure cosmos db",
+  "summary": "此節點可與 Azure Cosmos DB API 進行互動，包括創建、刪除、獲取容器等操作。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的 Azure Cosmos DB 資源類型，可以是容器、項目或自定義 API 呼叫。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作，如創建、刪除、獲取容器或獲取多個容器。",
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "description": "新容器的唯一標識符。",
+    },
+    {
+      "name": "partition key",
+      "type": "json",
+      "description": "用於自動分佈數據的分區鍵，選擇 JSON 文檔中具有廣泛值範圍並均勻分佈請求量的屬性。",
+    },
+    {
+      "name": "additional fields",
+      "type": "object",
+      "description": "其他設定字段，如索引策略等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "container",
+        "operation": "getAll"
+      }
+    }
+  }
+}

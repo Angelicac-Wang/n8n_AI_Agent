@@ -1,0 +1,45 @@
+{
+  "nodeName": "todoist",
+  "summary": "此節點用於消費 Todoist API，可執行與 Todoist 任務相關的操作。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於選擇驗證方式，可以是 API Key 或 OAuth2。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，例如任務 (Task)。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如關閉任務 (Close)、創建任務 (Create)、刪除任務 (Delete) 等。"
+    },
+    {
+      "name": "task id",
+      "type": "string",
+      "description": "指定要操作的任務的 ID。僅在刪除、關閉、獲取、重新開啟、更新和移動任務時需要。"
+    },
+    {
+      "name": "project name or id",
+      "type": "resourcelocator",
+      "description": "指定要操作的專案。可以從列表中選擇，或指定 ID。僅在創建、移動和同步任務時需要。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "apiKey",
+        "resource": "task",
+        "operation": "create",
+        "taskId": "12345",
+        "project": {
+          "mode": "list",
+          "value": ""
+        }
+      }
+    }
+  }
+}

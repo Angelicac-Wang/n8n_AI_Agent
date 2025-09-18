@@ -1,0 +1,37 @@
+{
+  "nodeName": "xml",
+  "summary": "將數據從 XML 轉換為 JSON 或從 JSON 轉換為 XML。",
+  "parameters": [
+    {
+      "name": "mode",
+      "type": "options",
+      "description": "From and to what format the data should be converted"
+    },
+    {
+      "name": "dataPropertyName",
+      "type": "string",
+      "description": "Name of the property to which to contains the converted XML data (for JSON to XML) or Name of the property which contains the XML data to convert (for XML to JSON)"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "Additional options for the conversion process"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "mode": "jsonToxml",
+        "dataPropertyName": "data",
+        "options": {
+          "allowSurrogateChars": false,
+          "attrkey": "$",
+          "cdata": false,
+          "charkey": "_",
+          "headless": false,
+          "rootName": "root"
+        }
+      }
+    }
+  }
+}

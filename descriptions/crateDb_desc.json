@@ -1,0 +1,60 @@
+{
+  "nodeName": "cratedb",
+  "summary": "在 CrateDB 中新增和更新數據",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作類型，包括執行 SQL 查詢、插入新行或更新現有行。"
+    },
+    {
+      "name": "query",
+      "type": "string",
+      "description": "要執行的 SQL 查詢。可以使用 n8n 表達式或 $1 和 $2 與查詢參數一起使用。"
+    },
+    {
+      "name": "schema",
+      "type": "string",
+      "description": "表所屬的模式名稱。"
+    },
+    {
+      "name": "table",
+      "type": "string",
+      "description": "要插入或更新數據的表名。"
+    },
+    {
+      "name": "columns",
+      "type": "string",
+      "description": "新行的列屬性列表，用逗號分隔。"
+    },
+    {
+      "name": "update key",
+      "type": "string",
+      "description": "決定應更新數據庫中哪些行的屬性列表。通常是 \"id\"。"
+    },
+    {
+      "name": "return fields",
+      "type": "string",
+      "description": "操作將返回的字段列表，用逗號分隔。"
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "其他可選設置，如發送多個查詢到數據庫的方式和查詢參數。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "insert",
+        "schema": "public",
+        "table": "products",
+        "columns": "id,name,description",
+        "returnFields": "*",
+        "additionalFields": {
+          "mode": "multiple"
+        }
+      }
+    }
+  }
+}

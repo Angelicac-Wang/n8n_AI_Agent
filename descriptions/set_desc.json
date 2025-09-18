@@ -1,0 +1,61 @@
+{
+  "nodeName": "set",
+  "summary": "此節點用於設定項目的值，並可選擇移除其他值。",
+  "parameters": [
+    {
+      "name": "keep only set",
+      "type": "boolean",
+      "description": "是否僅保留此節點設定的值，並移除所有其他值。"
+    },
+    {
+      "name": "values to set",
+      "type": "fixedcollection",
+      "description": "要設定的值",
+      "values": [
+        {
+          "name": "boolean",
+          "type": "boolean",
+          "description": "要寫入屬性的布林值"
+        },
+        {
+          "name": "number",
+          "type": "number",
+          "description": "要寫入屬性的數字值"
+        },
+        {
+          "name": "string",
+          "type": "string",
+          "description": "要寫入屬性的字串值"
+        }
+      ]
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項",
+      "options": [
+        {
+          "name": "dot notation",
+          "type": "boolean",
+          "description": "默認情況下，屬性名稱使用點表示法。這意味著\"a.b\"將在\"a\"下設置\"b\"屬性，因此{ \"a\": { \"b\": value} }。<p></p>如果不需要這樣，可以停用，這樣將設置{ \"a.b\": value }。"
+        }
+      ]
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "keepOnlySet": false,
+        "values": [
+          {
+            "name": "boolean",
+            "value": true
+          }
+        ],
+        "options": {
+          "dotNotation": true
+        }
+      }
+    }
+  }
+}

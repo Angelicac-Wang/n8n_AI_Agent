@@ -1,0 +1,53 @@
+{
+  "nodeName": "compression",
+  "summary": "Compress and decompress files.",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select whether to compress or decompress files."
+    },
+    {
+      "name": "input binary field(s)",
+      "type": "string",
+      "description": "Name of the input binary field(s) containing the file(s) to be compressed or decompressed."
+    },
+    {
+      "name": "output format",
+      "type": "options",
+      "description": "Select the format of the output file (gzip or zip)."
+    },
+    {
+      "name": "file name",
+      "type": "string",
+      "description": "Name of the output file to be generated."
+    },
+    {
+      "name": "put output file in field",
+      "type": "string",
+      "description": "Name of the output binary field to store the file in."
+    },
+    {
+      "name": "output file prefix",
+      "type": "string",
+      "description": "Prefix to add to the output file (applicable for gzip format)."
+    },
+    {
+      "name": "output prefix",
+      "type": "string",
+      "description": "Prefix to add to the decompressed files."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "compress",
+        "binaryPropertyName": "data",
+        "outputFormat": "zip",
+        "fileName": "data.zip",
+        "binaryPropertyOutput": "compressed_data",
+        "outputPrefix": "data"
+      }
+    }
+  }
+}

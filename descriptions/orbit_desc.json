@@ -1,0 +1,60 @@
+{
+  "nodeName": "orbit",
+  "summary": "Consume Orbit API to interact with activities, members, notes, and posts.",
+  "parameters": [
+    {
+      "name": "deprecated",
+      "type": "notice",
+      "description": "Indicates that Orbit has been shutdown and will no longer function."
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to interact with (Activity, Member, Note, Post).",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource.",
+    },
+    {
+      "name": "workspaceId",
+      "type": "options",
+      "description": "Select or specify the Workspace ID for the activity resource.",
+    },
+    {
+      "name": "memberId",
+      "type": "string",
+      "description": "Specify the Member ID for creating an activity.",
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "Specify the title of the activity to create.",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "Additional fields for creating an activity.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "activity",
+        "operation": "create",
+        "workspaceId": "workspace123",
+        "memberId": "member123",
+        "title": "New Activity",
+        "additionalFields": {
+          "activityType": "type123",
+          "description": "Description of the activity",
+          "key": "uniquekey",
+          "link": "https://example.com",
+          "linkText": "Link to example",
+          "occurredAt": "2022-01-01T12:00:00Z"
+        }
+      }
+    }
+  }
+}

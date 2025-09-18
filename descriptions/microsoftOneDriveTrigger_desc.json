@@ -1,0 +1,57 @@
+{
+  "nodename": "microsoftonedrivetrigger",
+  "summary": "此節點可觸發 Microsoft OneDrive API 的操作。",
+  "parameters": [
+    {
+      "name": "poll times",
+      "type": "fixedcollection",
+      "description": "設定觸發的時間間隔",
+      "placeholder": "Add Poll Time"
+    },
+    {
+      "name": "mode",
+      "type": "options",
+      "description": "設定觸發的頻率"
+    },
+    {
+      "name": "hour",
+      "type": "number",
+      "description": "設定觸發的小時（24小時制）"
+    },
+    {
+      "name": "minute",
+      "type": "number",
+      "description": "設定觸發的分鐘"
+    },
+    {
+      "name": "day of month",
+      "type": "number",
+      "description": "設定觸發的日期"
+    },
+    {
+      "name": "weekday",
+      "type": "options",
+      "description": "設定觸發的星期幾"
+    },
+    {
+      "name": "cron expression",
+      "type": "string",
+      "description": "自訂的 Cron 表達式"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyDay",
+              "hour": 14,
+              "minute": 0
+            }
+          ]
+        }
+      }
+    }
+  }
+}

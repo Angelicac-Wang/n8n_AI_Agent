@@ -1,0 +1,27 @@
+{
+  "nodename": "workable trigger",
+  "summary": "啟動工作流程，當 Workable 事件發生時",
+  "parameters": [
+    {
+      "name": "trigger on",
+      "type": "options",
+      "description": "指定觸發事件，例如候選人創建或移動。",
+    },
+    {
+      "name": "filters",
+      "type": "collection",
+      "description": "設定篩選條件以過濾事件通知。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "triggerOn": "candidateCreated",
+        "filters": {
+          "job": "12345",
+          "stage": "hired"
+        }
+      }
+    }
+  }
+}

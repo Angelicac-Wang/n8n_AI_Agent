@@ -1,0 +1,45 @@
+{
+  "nodename": "mqtt trigger",
+  "summary": "此節點可監聽 MQTT 事件。",
+  "parameters": [
+    {
+      "name": "topics",
+      "type": "string",
+      "description": "要訂閱的主題，可以使用逗號定義多個。支援通配符（+：單層，#：多層）。默認所有訂閱使用 QoS=0。若要設置不同的 QoS，請在主題後面加上冒號和所需的 QoS。例如：topicA:1,topicB:2"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項",
+      "options": [
+        {
+          "name": "jsonparsebody",
+          "type": "boolean",
+          "description": "是否嘗試將消息解析為物件"
+        },
+        {
+          "name": "onlymessage",
+          "type": "boolean",
+          "description": "是否僅返回消息屬性"
+        },
+        {
+          "name": "parallelprocessing",
+          "type": "boolean",
+          "description": "是否並行處理消息或按順序保留消息"
+        }
+      ]
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "topics": "topicA,topicB",
+        "options": {
+          "jsonParseBody": true,
+          "onlyMessage": false,
+          "parallelProcessing": true
+        }
+      }
+    }
+  }
+}

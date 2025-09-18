@@ -1,0 +1,30 @@
+{
+  "nodename": "mailcheck",
+  "summary": "此節點用於使用 Mailcheck API 進行郵件地址的驗證。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要操作的資源類型。在此節點中只支援 'Email'。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "要執行的操作類型。在此節點中只支援 'Check'，用於驗證郵件地址。",
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "description": "要驗證的郵件地址。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "email",
+        "operation": "check",
+        "email": "name@email.com"
+      }
+    }
+  }
+}

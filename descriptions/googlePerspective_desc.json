@@ -1,0 +1,45 @@
+{
+  "nodeName": "google perspective",
+  "summary": "此節點用於使用 Google Perspective API 進行文字分析。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作類型，可以是分析評論或自定義 API 呼叫。"
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "description": "要分析的文字內容。",
+    },
+    {
+      "name": "requestedattributesui",
+      "type": "fixedcollection",
+      "description": "要分析的屬性集合，例如情色、侮辱等。"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定，例如指定文字的語言。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "analyzeComment",
+        "text": "This is a sample comment to analyze.",
+        "requestedattributesui": {
+          "requestedattributesvalues": [
+            {
+              "attributeName": "flirtation",
+              "scoreThreshold": 0.5
+            }
+          ]
+        },
+        "options": {
+          "languages": "English"
+        }
+      }
+    }
+  }
+}

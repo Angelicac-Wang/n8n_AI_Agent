@@ -1,0 +1,36 @@
+{
+  "nodeName": "mailjet",
+  "summary": "這個節點用於使用 Mailjet API 來發送郵件或簡訊。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要使用的資源類型，可以是郵件（email）、簡訊（sms）或自定義 API 呼叫（Custom API Call）。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如發送郵件（Send）、發送郵件模板（Send Template）或自定義 API 呼叫（Custom API Call）。"
+    },
+    {
+      "name": "fromEmail",
+      "type": "string",
+      "description": "寄件者的電子郵件地址。"
+    },
+    {
+      "name": "toEmail",
+      "type": "string",
+      "description": "收件者的電子郵件地址，多個地址可以用逗號分隔。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "email",
+        "operation": "send",
+        "fromEmail": "admin@example.com",
+        "toEmail": "info@example.com"
+      }
+    }
+  }
+}

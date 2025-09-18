@@ -1,0 +1,42 @@
+{
+  "nodeName": "cockpit",
+  "summary": "Consume Cockpit API to perform operations on collections, forms, and singletons.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Specifies the type of resource to operate on (collection, form, singleton)."
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Specifies the operation to perform on the selected resource."
+    },
+    {
+      "name": "collection",
+      "type": "options",
+      "description": "Name of the collection to operate on."
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "Whether to return all results or only up to a given limit."
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "Max number of results to return."
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "collection",
+        "operation": "getAll",
+        "collection": "example_collection",
+        "returnAll": false,
+        "limit": 50
+      }
+    }
+  }
+}

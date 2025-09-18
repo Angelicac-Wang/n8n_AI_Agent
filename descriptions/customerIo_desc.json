@@ -1,0 +1,51 @@
+{
+  "nodeName": "customer.io",
+  "summary": "此節點用於消費 Customer.io API，可執行與客戶、事件、活動、分段等相關的操作。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如客戶、事件、活動、分段等。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如獲取活動、獲取多個活動、獲取活動指標等。"
+    },
+    {
+      "name": "campaign id",
+      "type": "number",
+      "description": "活動的唯一識別符。僅在獲取活動或活動指標時需要。"
+    },
+    {
+      "name": "period",
+      "type": "options",
+      "description": "指定指標的時間段，如小時、天、週、月等。僅在獲取活動指標時需要。"
+    },
+    {
+      "name": "json parameters",
+      "type": "boolean",
+      "description": "指示是否使用 JSON 參數。僅在獲取活動指標時需要。"
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "額外的字段設定，如步驟數、類型等。僅在獲取活動指標時需要。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "campaign",
+        "operation": "get",
+        "campaignId": 123,
+        "period": "days",
+        "jsonParameters": false,
+        "additionalFields": {
+          "steps": 10,
+          "type": "email"
+        }
+      }
+    }
+  }
+}

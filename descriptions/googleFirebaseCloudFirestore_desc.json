@@ -1,0 +1,66 @@
+{
+  "nodeName": "googlefirebasecloudfirestore",
+  "summary": "此節點可與 Google Firebase - Cloud Firestore API 進行互動。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於選擇身份驗證方式，建議使用 OAuth2 或 Service Account。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定資源類型，可以是文件（Document）、集合（Collection）或自定義 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定操作類型，如創建、更新、刪除文件，或者查詢文件等。"
+    },
+    {
+      "name": "projectId",
+      "type": "options",
+      "description": "指定項目名稱或 ID，通常在 Firebase 控制台 URL 中顯示。"
+    },
+    {
+      "name": "database",
+      "type": "string",
+      "description": "指定要使用的資料庫，通常使用預設值即可。"
+    },
+    {
+      "name": "collection",
+      "type": "string",
+      "description": "指定集合的名稱，用於創建文件時指定所屬的集合。"
+    },
+    {
+      "name": "documentId",
+      "type": "string",
+      "description": "指定文件的 ID，用於創建、更新或刪除文件。"
+    },
+    {
+      "name": "columns",
+      "type": "string",
+      "description": "指定要保存的屬性列表，用於創建文件時保存的屬性。"
+    },
+    {
+      "name": "simple",
+      "type": "boolean",
+      "description": "指定是否返回簡化版本的回應，僅適用於創建文件操作。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "googleFirebaseCloudFirestoreOAuth2Api",
+        "resource": "document",
+        "operation": "create",
+        "projectId": "my-project-id",
+        "database": "(default)",
+        "collection": "products",
+        "documentId": "product1",
+        "columns": "productId, modelName, description",
+        "simple": true
+      }
+    }
+  }
+}

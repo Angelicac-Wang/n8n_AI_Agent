@@ -1,0 +1,42 @@
+{
+  "nodename": "http request",
+  "summary": "發送 HTTP 請求並返回回應數據。",
+  "parameters": [
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "用於身份驗證的方式。"
+    },
+    {
+      "name": "request method",
+      "type": "options",
+      "description": "要使用的請求方法。"
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "description": "要發送請求的 URL。",
+    },
+    {
+      "name": "allowunauthorizedcerts",
+      "type": "boolean",
+      "description": "是否在 SSL 憑證驗證失敗時繼續下載回應。"
+    },
+    {
+      "name": "response format",
+      "type": "options",
+      "description": "從 URL 返回數據的格式。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "authentication": "none",
+        "requestMethod": "GET",
+        "url": "https://example.com/api",
+        "allowUnauthorizedCerts": false,
+        "responseFormat": "json"
+      }
+    }
+  }
+}

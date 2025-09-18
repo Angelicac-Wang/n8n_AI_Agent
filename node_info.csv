@@ -1,0 +1,436 @@
+檔案名稱,顯示名稱,描述
+onfleet.json,Onfleet,Consume Onfleet API
+wait.json,Wait,Wait before continue with execution
+rabbitmqTrigger.json,RabbitMQ Trigger,Listens to RabbitMQ messages
+freshdesk.json,Freshdesk,Consume Freshdesk API
+yourls.json,Yourls,Consume Yourls API
+mauticTrigger.json,Mautic Trigger,Handle Mautic events via webhooks
+clockify.json,Clockify,Consume Clockify REST API
+postHog.json,PostHog,Consume PostHog API
+goToWebinar.json,GoToWebinar,Consume the GoToWebinar API
+line.json,Line,Consume Line API
+googleFirebaseCloudFirestore.json,Google Cloud Firestore,Interact with Google Firebase - Cloud Firestore API
+eventbriteTrigger.json,Eventbrite Trigger,Handle Eventbrite events via webhooks
+airtop.json,Airtop,Scrape and control any site with Airtop
+openThesaurus.json,OpenThesaurus,Get synonmns for German words using the OpenThesaurus API
+Brandfetch.json,Brandfetch,Consume Brandfetch API
+zulip.json,Zulip,Consume Zulip API
+xero.json,Xero,Consume Xero API
+switch.json,Switch,Route items depending on defined expression or rules
+filter.json,Filter,Remove items matching a condition
+microsoftSql.json,Microsoft SQL,"Get, add and update data in Microsoft SQL"
+tapfiliate.json,Tapfiliate,Consume Tapfiliate API
+sendInBlue.json,Brevo,Consume Brevo API
+erpNext.json,ERPNext,Consume ERPNext API
+googleCloudStorage.json,Google Cloud Storage,Use the Google Cloud Storage API
+gitlab.json,GitLab,Retrieve data from GitLab API
+redisTrigger.json,Redis Trigger,Subscribe to redis channel
+ssh.json,SSH,Execute commands via SSH
+philipsHue.json,Philips Hue,Consume Philips Hue API
+postgresTrigger.json,Postgres Trigger,Listens to Postgres messages
+elasticsearch.json,Elasticsearch,Consume the Elasticsearch API
+payPalTrigger.json,PayPal Trigger,Handle PayPal events via webhooks
+chargebeeTrigger.json,Chargebee Trigger,Starts the workflow when Chargebee events occur
+mautic.json,Mautic,Consume Mautic API
+quickChart.json,QuickChart,Create a chart via QuickChart
+emailReadImap.json,Email Trigger (IMAP),Triggers the workflow when a new email is received
+httpRequest.json,HTTP Request,Makes an HTTP request and returns the response data
+demio.json,Demio,Consume the Demio API
+microsoftTeamsTrigger.json,Microsoft Teams Trigger,"Triggers workflows in n8n based on events from Microsoft Teams, such as new messages or team updates, using specified configurations."
+function.json,Function,"Run custom function code which gets executed once and allows you to add, remove, change and replace items"
+googleBusinessProfile.json,Google Business Profile,Consume Google Business Profile API
+uproc.json,uProc,Consume uProc API
+webflowTrigger.json,Webflow Trigger,Handle Webflow events via webhooks
+n8n.json,n8n,Handle events and perform actions on your n8n instance
+flowTrigger.json,Flow Trigger,Handle Flow events via webhooks
+crateDb.json,CrateDB,Add and update data in CrateDB
+set.json,Set,Sets values on items and optionally remove other values
+editImage.json,Edit Image,"Edits an image like blur, resize or adding border and text"
+orbit.json,Orbit,Consume Orbit API
+if.json,If,Route items to different branches (true/false)
+nextCloud.json,Nextcloud,Access data on Nextcloud
+homeAssistant.json,Home Assistant,Consume Home Assistant API
+executeCommand.json,Execute Command,Executes a command on the host
+helpScout.json,Help Scout,Consume Help Scout API
+microsoftOutlook.json,Microsoft Outlook,Consume Microsoft Outlook API
+coinGecko.json,CoinGecko,Consume CoinGecko API
+kafka.json,Kafka,Sends messages to a Kafka topic
+awsSnsTrigger.json,AWS SNS Trigger,Handle AWS SNS events via webhooks
+npm.json,Npm,Consume NPM registry API
+jwt.json,JWT,JWT
+misp.json,MISP,Consume the MISP API
+microsoftOutlookTrigger.json,Microsoft Outlook Trigger,Fetches emails from Microsoft Outlook and starts the workflow on specified polling intervals.
+metabase.json,Metabase,Use the Metabase API
+awsRekognition.json,AWS Rekognition,Sends data to AWS Rekognition
+googlePerspective.json,Google Perspective,Consume Google Perspective API
+ldap.json,Ldap,Interact with LDAP servers
+netlifyTrigger.json,Netlify Trigger,Handle netlify events via webhooks
+awsTranscribe.json,AWS Transcribe,Sends data to AWS Transcribe
+customerIo.json,Customer.io,Consume Customer.io API
+urlScanIo.json,urlscan.io,Provides various utilities for monitoring websites like health checks or screenshots
+stickyNote.json,Sticky Note,Make your workflow easier to understand
+mailerLiteTrigger.json,MailerLite Trigger,Starts the workflow when MailerLite events occur
+sendInBlueTrigger.json,Brevo Trigger,Starts the workflow when Brevo events occur
+stripe.json,Stripe,Consume the Stripe API
+activeCampaign.json,ActiveCampaign,Create and edit data in ActiveCampaign
+keap.json,Keap,Consume Keap API
+amqpTrigger.json,AMQP Trigger,Listens to AMQP 1.0 Messages
+openAi.json,OpenAI,Consume Open AI
+evaluationTrigger.json,Evaluation Trigger,Run a test dataset through your workflow to check performance
+dateTime.json,Date & Time,Allows you to manipulate date and time values
+googleSheetsTrigger.json,Google Sheets Trigger,Starts the workflow when Google Sheets events occur
+bambooHr.json,BambooHR,Consume BambooHR API
+lemlistTrigger.json,Lemlist Trigger,Handle Lemlist events via webhooks
+mistralAi.json,Mistral AI,Consume Mistral AI API
+twake.json,Twake,Consume Twake API
+wiseTrigger.json,Wise Trigger,Handle Wise events via webhooks
+theHiveProjectTrigger.json,TheHive 5 Trigger,Starts the workflow when TheHive events occur
+box.json,Box,Consume Box API
+mongoDb.json,MongoDB,"Find, insert and update documents in MongoDB"
+mondayCom.json,Monday.com,Consume Monday.com API
+grist.json,Grist,Consume the Grist API
+serviceNow.json,ServiceNow,Consume ServiceNow API
+summarize.json,Summarize,"Sum, count, max, etc. across items"
+microsoftOneDrive.json,Microsoft OneDrive,Consume Microsoft OneDrive API
+beeminder.json,Beeminder,Consume Beeminder API
+mailjetTrigger.json,Mailjet Trigger,Handle Mailjet events via webhooks
+getResponseTrigger.json,GetResponse Trigger,Starts the workflow when GetResponse events occur
+awsS3.json,AWS S3,Sends data to AWS S3
+dhl.json,DHL,Consume DHL API
+todoist.json,Todoist,Consume Todoist API
+cron.json,Cron,Triggers the workflow at a specific time
+crypto.json,Crypto,Provide cryptographic utilities
+theHive.json,TheHive,Consume TheHive API
+hunter.json,Hunter,Consume Hunter API
+slackTrigger.json,Slack Trigger,Handle Slack events via webhooks
+baserow.json,Baserow,Consume the Baserow API
+xml.json,XML,Convert data from and to XML
+airtableTrigger.json,Airtable Trigger,Starts the workflow when Airtable events occur
+readPDF.json,Read PDF,Reads a PDF and extracts its content
+splitOut.json,Split Out,Turn a list inside item(s) into separate items
+gotify.json,Gotify,Consume Gotify API
+discord.json,Discord,Sends data to Discord
+gitlabTrigger.json,GitLab Trigger,Starts the workflow when GitLab events occur
+messageBird.json,MessageBird,Sends SMS via MessageBird
+webhook.json,Webhook,Starts the workflow when a webhook is called
+asana.json,Asana,Consume Asana REST API
+salesmate.json,Salesmate,Consume Salesmate API
+code.json,Code,Run custom JavaScript or Python code
+awsDynamoDb.json,AWS DynamoDB,Consume the AWS DynamoDB API
+jinaAi.json,Jina AI,Interact with Jina AI API
+mailgun.json,Mailgun,Sends an email via Mailgun
+emeliaTrigger.json,Emelia Trigger,Handle Emelia campaign activity events via webhooks
+highLevel.json,HighLevel,Consume HighLevel API v1
+calendlyTrigger.json,Calendly Trigger,Starts the workflow when Calendly events occur
+loneScale.json,LoneScale,"Create List, add / delete items"
+compareDatasets.json,Compare Datasets,Compare two inputs for changes
+customerIoTrigger.json,Customer.io Trigger,Starts the workflow on a Customer.io update (Beta)
+freshworksCrm.json,Freshworks CRM,Consume the Freshworks CRM API
+kafkaTrigger.json,Kafka Trigger,Consume messages from a Kafka topic
+jira.json,Jira Software,Consume Jira Software API
+workableTrigger.json,Workable Trigger,Starts the workflow when Workable events occur
+awsTextract.json,AWS Textract,Sends data to Amazon Textract
+simulateTrigger.json,Simulate Trigger,Simulate a trigger node
+uplead.json,Uplead,Consume Uplead API
+jiraTrigger.json,Jira Trigger,Starts the workflow when Jira events occur
+sseTrigger.json,SSE Trigger,Triggers the workflow when Server-Sent Events occur
+payPal.json,PayPal,Consume PayPal API
+venafiTlsProtectCloud.json,Venafi TLS Protect Cloud,Consume Venafi TLS Protect Cloud API
+functionItem.json,Function Item,Run custom function code which gets executed once per item
+hackerNews.json,Hacker News,Consume Hacker News API
+koBoToolbox.json,KoBoToolbox,Work with KoBoToolbox forms and submissions
+wordpress.json,Wordpress,Consume Wordpress API
+microsoftDynamicsCrm.json,Microsoft Dynamics CRM,Consume Microsoft Dynamics CRM API
+chargebee.json,Chargebee,Retrieve data from Chargebee API
+whatsAppTrigger.json,WhatsApp Trigger,Handle WhatsApp events via webhooks
+mySql.json,MySQL,"Get, add and update data in MySQL"
+freshservice.json,Freshservice,Consume the Freshservice API
+mqttTrigger.json,MQTT Trigger,Listens to MQTT events
+boxTrigger.json,Box Trigger,Starts the workflow when Box events occur
+pushcut.json,Pushcut,Consume Pushcut API
+autopilot.json,Autopilot,Consume Autopilot API
+clockifyTrigger.json,Clockify Trigger,Listens to Clockify events
+openWeatherMap.json,OpenWeatherMap,Gets current and future weather information
+splunk.json,Splunk,Consume the Splunk Enterprise API
+awsSqs.json,AWS SQS,Sends messages to AWS SQS
+acuitySchedulingTrigger.json,Acuity Scheduling Trigger,Handle Acuity Scheduling events via webhooks
+markdown.json,Markdown,Convert data between Markdown and HTML
+grafana.json,Grafana,Consume the Grafana API
+googleCalendarTrigger.json,Google Calendar Trigger,Starts the workflow when Google Calendar events occur
+medium.json,Medium,Consume Medium API
+sms77.json,seven,Send SMS and make text-to-speech calls
+activeCampaignTrigger.json,ActiveCampaign Trigger,Handle ActiveCampaign events via webhooks
+signl4.json,SIGNL4,Consume SIGNL4 API
+magento2.json,Magento 2,Consume Magento API
+humanticAi.json,Humantic AI,Consume Humantic AI API
+googleDrive.json,Google Drive,Access data on Google Drive
+venafiTlsProtectCloudTrigger.json,Venafi TLS Protect Cloud Trigger,Starts the workflow when Venafi events occur
+googleChat.json,Google Chat,Consume Google Chat API
+figmaTrigger.json,Figma Trigger (Beta),Starts the workflow when Figma events occur
+strapi.json,Strapi,Consume Strapi API
+stackby.json,Stackby,"Read, write, and delete data in Stackby"
+affinity.json,Affinity,Consume Affinity API
+oneSimpleApi.json,One Simple API,A toolbox of no-code utilities
+gSuiteAdmin.json,Google Workspace Admin,Consume Google Workspace Admin API
+unleashedSoftware.json,Unleashed Software,Consume Unleashed Software API
+awsComprehend.json,AWS Comprehend,Sends data to Amazon Comprehend
+clickUp.json,ClickUp,Consume ClickUp API (Beta)
+elasticSecurity.json,Elastic Security,Consume the Elastic Security API
+googleFirebaseRealtimeDatabase.json,Google Cloud Realtime Database,Interact with Google Firebase - Realtime Database API
+egoi.json,E-goi,Consume E-goi API
+filemaker.json,FileMaker,Retrieve data from the FileMaker data API
+mailerLite.json,MailerLite,Consume Mailer Lite API
+spotify.json,Spotify,Access public song data via the Spotify API
+taigaTrigger.json,Taiga Trigger,Handle Taiga events via webhook
+awsSns.json,AWS SNS,Sends data to AWS SNS
+helpScoutTrigger.json,Help Scout Trigger,Starts the workflow when Help Scout events occur
+lemlist.json,Lemlist,Consume the Lemlist API
+keapTrigger.json,Keap Trigger,Starts the workflow when Infusionsoft events occur
+taiga.json,Taiga,Consume Taiga API
+sendy.json,Sendy,Consume Sendy API
+awsCognito.json,AWS Cognito,Sends data to AWS Cognito
+loneScaleTrigger.json,LoneScale Trigger,Trigger LoneScale Workflow
+airtable.json,Airtable,"Read, update, write and delete data from Airtable"
+googleDocs.json,Google Docs,Consume Google Docs API.
+monicaCrm.json,Monica CRM,Consume the Monica CRM API
+rabbitmq.json,RabbitMQ,Sends messages to a RabbitMQ topic
+shopifyTrigger.json,Shopify Trigger,Handle Shopify events via webhooks
+azureCosmosDb.json,Azure Cosmos DB,Interact with Azure Cosmos DB API
+zammad.json,Zammad,Consume the Zammad API
+hubspot.json,HubSpot,Consume HubSpot API
+aiTransform.json,AI Transform,Modify data based on instructions written in plain english
+seaTable.json,SeaTable,Consume the SeaTable API
+gmail.json,Gmail,Consume the Gmail API
+githubTrigger.json,Github Trigger,Starts the workflow when Github events occur
+googleCloudNaturalLanguage.json,Google Cloud Natural Language,Consume Google Cloud Natural Language API
+formstackTrigger.json,Formstack Trigger,Starts the workflow on a Formstack form submission.
+discourse.json,Discourse,Consume Discourse API
+youTube.json,YouTube,Consume YouTube API
+citrixAdc.json,Netscaler ADC,Consume Netscaler ADC API
+executeWorkflowTrigger.json,Execute Workflow Trigger,"Helpers for calling other n8n workflows. Used for designing modular, microservice-like workflows."
+affinityTrigger.json,Affinity Trigger,Handle Affinity events via webhooks
+questDb.json,QuestDB,"Get, add and update data in QuestDB"
+respondToWebhook.json,Respond to Webhook,Returns data for Webhook
+clearbit.json,Clearbit,Consume Clearbit API
+getResponse.json,GetResponse,Consume GetResponse API
+paddle.json,Paddle,Consume Paddle API
+plivo.json,Plivo,Send SMS/MMS messages or make phone calls
+seaTableTrigger.json,SeaTable Trigger,Starts the workflow when SeaTable events occur
+cloudflare.json,Cloudflare,Consume Cloudflare API
+drift.json,Drift,Consume Drift API
+nocoDb.json,NocoDB,"Read, update, write and delete data from NocoDB"
+jotFormTrigger.json,JotForm Trigger,Handle JotForm events via webhooks
+perplexity.json,Perplexity,Interact with the Perplexity API to generate AI responses with citations
+workflowTrigger.json,Workflow Trigger,"Triggers based on various lifecycle events, like when a workflow is activated"
+pipedriveTrigger.json,Pipedrive Trigger,Starts the workflow when Pipedrive events occur
+n8nTrigger.json,n8n Trigger,Handle events and perform actions on your n8n instance
+disqus.json,Disqus,Access data on Disqus
+typeformTrigger.json,Typeform Trigger,Starts the workflow on a Typeform form submission
+amqp.json,AMQP Sender,"Sends a raw-message via AMQP 1.0, executed once per item"
+googleContacts.json,Google Contacts,Consume Google Contacts API
+phantombuster.json,Phantombuster,Consume Phantombuster API
+telegram.json,Telegram,Sends data to Telegram
+flow.json,Flow,Consume Flow API
+htmlExtract.json,HTML Extract,Extracts data from HTML
+itemLists.json,Item Lists,Helper for working with lists of items and transforming arrays
+intercom.json,Intercom,Consume Intercom API
+compression.json,Compression,Compress and decompress files
+renameKeys.json,Rename Keys,Update item field names
+stravaTrigger.json,Strava Trigger,Starts the workflow when Strava events occur
+microsoftTeams.json,Microsoft Teams,Consume Microsoft Teams API
+sendGrid.json,SendGrid,Consume SendGrid API
+quickbase.json,Quick Base,Integrate with the Quick Base RESTful API
+aggregate.json,Aggregate,Combine a field from many items into a list in a single item
+stripeTrigger.json,Stripe Trigger,Handle Stripe events via webhooks
+azureStorage.json,Azure Storage,Interact with Azure Storage API
+uptimeRobot.json,UptimeRobot,Consume UptimeRobot API
+convertToFile.json,Convert to File,Convert JSON data to binary data
+googleBigQuery.json,Google BigQuery,Consume Google BigQuery API
+trello.json,Trello,"Create, change and delete boards and cards"
+limit.json,Limit,Restrict the number of items
+surveyMonkeyTrigger.json,SurveyMonkey Trigger,Starts the workflow when Survey Monkey events occur
+googleSlides.json,Google Slides,Consume the Google Slides API
+dropcontact.json,Dropcontact,Find B2B emails and enrich contacts
+readBinaryFiles.json,Read Binary Files,Reads binary files from disk
+vero.json,Vero,Consume Vero API
+lingvaNex.json,LingvaNex,Consume LingvaNex API
+pushbullet.json,Pushbullet,Consume Pushbullet API
+haloPSA.json,HaloPSA,Consume HaloPSA API
+rssFeedReadTrigger.json,RSS Feed Trigger,Starts a workflow when an RSS feed is updated
+theHiveTrigger.json,TheHive Trigger,Starts the workflow when TheHive events occur
+circleCi.json,CircleCI,Consume CircleCI API
+deepL.json,DeepL,Translate data using DeepL
+s3.json,S3,Sends data to any S3-compatible service
+mocean.json,Mocean,Send SMS and voice messages via Mocean
+start.json,Start,Starts the workflow execution from this node
+googleAds.json,Google Ads,Use the Google Ads API
+googleAnalytics.json,Google Analytics,Use the Google Analytics API
+timescaleDb.json,TimescaleDB,Add and update data in TimescaleDB
+awsIam.json,AWS IAM,Interacts with Amazon IAM
+contentful.json,Contentful,Consume Contentful API
+twilioTrigger.json,Twilio Trigger,Starts the workflow on a Twilio update
+koBoToolboxTrigger.json,KoBoToolbox Trigger,Process KoBoToolbox submissions
+twist.json,Twist,Consume Twist API
+executionData.json,Execution Data,Add execution data for search
+convertKit.json,ConvertKit,Consume ConvertKit API
+securityScorecard.json,SecurityScorecard,Consume SecurityScorecard API
+raindrop.json,Raindrop,Consume the Raindrop API
+bitly.json,Bitly,Consume Bitly API
+zendesk.json,Zendesk,Consume Zendesk API
+googleBooks.json,Google Books,Read data from Google Books
+notionTrigger.json,Notion Trigger,Starts the workflow when Notion events occur
+adalo.json,Adalo,Consume Adalo API
+pagerDuty.json,PagerDuty,Consume PagerDuty API
+removeDuplicates.json,Remove Duplicates,Delete items with matching field values
+rocketchat.json,RocketChat,Consume RocketChat API
+coda.json,Coda,Consume Coda API
+awsLambda.json,AWS Lambda,Invoke functions on AWS Lambda
+googleTranslate.json,Google Translate,Translate data using Google Translate
+venafiTlsProtectDatacenter.json,Venafi TLS Protect Datacenter,Consume Venafi TLS Protect Datacenter
+postgres.json,Postgres,"Get, add and update data in Postgres"
+togglTrigger.json,Toggl Trigger,Starts the workflow when Toggl events occur
+stopAndError.json,Stop and Error,Throw an error in the workflow
+webflow.json,Webflow,Consume the Webflow API
+whatsApp.json,WhatsApp Business Cloud,Access WhatsApp API
+iCal.json,iCalendar,Create iCalendar file
+simulate.json,Simulate,Simulate a node
+matrix.json,Matrix,Consume Matrix API
+readBinaryFile.json,Read Binary File,Reads a binary file from disk
+crowdDev.json,crowd.dev,crowd.dev is an open-source suite of community and data tools built to unlock community-led growth for your organization.
+wise.json,Wise,Consume the Wise API
+asanaTrigger.json,Asana Trigger,Starts the workflow when Asana events occur.
+msg91.json,MSG91,Sends transactional SMS via MSG91
+vonage.json,Vonage,Consume Vonage API
+localFileTrigger.json,Local File Trigger,Triggers a workflow on file system changes
+googleCalendar.json,Google Calendar,Consume Google Calendar API
+zohoCrm.json,Zoho CRM,Consume Zoho CRM API
+emelia.json,Emelia,Consume the Emelia API
+googleDriveTrigger.json,Google Drive Trigger,Starts the workflow when Google Drive events occur
+okta.json,Okta,Use the Okta API
+netlify.json,Netlify,Consume Netlify API
+microsoftOneDriveTrigger.json,Microsoft OneDrive Trigger,Trigger for Microsoft OneDrive API.
+nasa.json,NASA,Retrieve data from the NASA API
+pipedrive.json,Pipedrive,Create and edit data in Pipedrive
+emailSend.json,Send Email,Sends an Email
+salesforce.json,Salesforce,Consume Salesforce API
+readWriteFile.json,Read/Write Files from Disk,Read or write files from the computer that runs n8n
+n8nTrainingCustomerMessenger.json,Customer Messenger (n8n training),Dummy node used for n8n training
+agileCrm.json,Agile CRM,Consume Agile CRM API
+spontit.json,Spontit,Consume Spontit API
+cortex.json,Cortex,Apply the Cortex analyzer/responder on the given entity
+googleBusinessProfileTrigger.json,Google Business Profile Trigger,Fetches reviews from Google Business Profile and starts the workflow on specified polling intervals.
+shopify.json,Shopify,Consume Shopify API
+syncroMsp.json,SyncroMSP,Gets data from SyncroMSP
+peekalink.json,Peekalink,Consume the Peekalink API
+facebookTrigger.json,Facebook Trigger,Starts the workflow when Facebook events occur
+debugHelper.json,DebugHelper,Causes problems intentionally and generates useful data for debugging
+scheduleTrigger.json,Schedule Trigger,Triggers the workflow on a given schedule
+mailjet.json,Mailjet,Consume Mailjet API
+ciscoWebex.json,Webex by Cisco,Consume the Cisco Webex API
+microsoftGraphSecurity.json,Microsoft Graph Security,Consume the Microsoft Graph Security API
+segment.json,Segment,Consume Segment API
+travisCi.json,TravisCI,Consume TravisCI API
+pushover.json,Pushover,Consume Pushover API
+gumroadTrigger.json,Gumroad Trigger,Handle Gumroad events via webhooks
+kitemaker.json,Kitemaker,Consume the Kitemaker GraphQL API
+manualTrigger.json,Manual Trigger,Runs the flow on clicking a button in n8n
+bubble.json,Bubble,Consume the Bubble Data API
+redis.json,Redis,"Get, send and update data in Redis"
+supabase.json,Supabase,"Add, get, delete and update data in a table"
+extractFromFile.json,Extract from File,Convert binary data to JSON
+apiTemplateIo.json,APITemplate.io,Consume the APITemplate.io API
+interval.json,Interval,Triggers the workflow in a given interval
+mailchimpTrigger.json,Mailchimp Trigger,Handle Mailchimp events via webhooks
+wooCommerceTrigger.json,WooCommerce Trigger,Handle WooCommerce events via webhooks
+postBin.json,PostBin,Consume PostBin API
+calTrigger.json,Cal.com Trigger,Handle Cal.com events via webhooks
+facebookGraphApi.json,Facebook Graph API,Interacts with Facebook using the Graph API
+quickbooks.json,QuickBooks Online,Consume the QuickBooks Online API
+sentryIo.json,Sentry.io,Consume Sentry.io API
+automizy.json,Automizy,Consume Automizy API
+postmarkTrigger.json,Postmark Trigger,Starts the workflow when Postmark events occur
+snowflake.json,Snowflake,"Get, add and update data in Snowflake"
+marketstack.json,Marketstack,Consume Marketstack API
+invoiceNinjaTrigger.json,Invoice Ninja Trigger,Starts the workflow when Invoice Ninja events occur
+ghost.json,Ghost,Consume Ghost API
+copperTrigger.json,Copper Trigger,Handle Copper events via webhooks
+dropbox.json,Dropbox,Access data on Dropbox
+ftp.json,FTP,Transfer files via FTP or SFTP
+telegramTrigger.json,Telegram Trigger,Starts the workflow on a Telegram update
+errorTrigger.json,Error Trigger,Triggers the workflow when another workflow has an error
+mailcheck.json,Mailcheck,Consume Mailcheck API
+microsoftEntra.json,Microsoft Entra ID,Interact with Microsoft Entra ID API
+convertKitTrigger.json,ConvertKit Trigger,Handle ConvertKit events via webhooks
+html.json,HTML,Work with HTML
+bitbucketTrigger.json,Bitbucket Trigger,Handle Bitbucket events via webhooks
+clickUpTrigger.json,ClickUp Trigger,Handle ClickUp events via webhooks (Beta)
+pushcutTrigger.json,Pushcut Trigger,Starts the workflow when Pushcut events occur
+jenkins.json,Jenkins,Consume Jenkins API
+ciscoWebexTrigger.json,Webex by Cisco Trigger,Starts the workflow when Cisco Webex events occur.
+github.json,GitHub,Consume GitHub API
+trelloTrigger.json,Trello Trigger,Starts the workflow when Trello events occur
+twitter.json,X (Formerly Twitter),Consume Twitter API
+zoom.json,Zoom,Consume Zoom API
+linear.json,Linear,Consume Linear API
+cockpit.json,Cockpit,Consume Cockpit API
+wufooTrigger.json,Wufoo Trigger,Handle Wufoo events via webhooks
+iterable.json,Iterable,Consume Iterable API
+awsElb.json,AWS ELB,Sends data to AWS ELB API
+odoo.json,Odoo,Consume Odoo API
+onfleetTrigger.json,Onfleet Trigger,Starts the workflow when Onfleet events occur
+storyblok.json,Storyblok,Consume Storyblok API
+notion.json,Notion,Consume Notion API
+autopilotTrigger.json,Autopilot Trigger,Handle Autopilot events via webhooks
+slack.json,Slack,Consume Slack API
+totp.json,TOTP,Generate a time-based one-time password
+harvest.json,Harvest,Access data on Harvest
+rundeck.json,Rundeck,Manage Rundeck API
+twilio.json,Twilio,Send SMS and WhatsApp messages or make phone calls
+reddit.json,Reddit,Consume the Reddit API
+facebookLeadAdsTrigger.json,Facebook Lead Ads Trigger,Handle Facebook Lead Ads events via webhooks
+oura.json,Oura,Consume Oura API
+bitwarden.json,Bitwarden,Consume the Bitwarden API
+merge.json,Merge,Merges data of multiple streams once data from both is available
+form.json,n8n Form,Generate webforms in n8n and pass their responses to the workflow
+linearTrigger.json,Linear Trigger,Starts the workflow when Linear events occur
+bannerbear.json,Bannerbear,Consume Bannerbear API
+gong.json,Gong,Interact with Gong API
+wooCommerce.json,WooCommerce,Consume WooCommerce API
+hubspotTrigger.json,HubSpot Trigger,Starts the workflow when HubSpot events occur
+graphql.json,GraphQL,Makes a GraphQL request and returns the received data
+writeBinaryFile.json,Write Binary File,Writes a binary file to disk
+n8nTrainingCustomerDatastore.json,Customer Datastore (n8n training),Dummy node used for n8n training
+gmailTrigger.json,Gmail Trigger,Fetches emails from Gmail and starts the workflow on specified polling intervals.
+microsoftToDo.json,Microsoft To Do,Consume Microsoft To Do API.
+rssFeedRead.json,RSS Read,Reads data from an RSS Feed
+spreadsheetFile.json,Spreadsheet File,"Reads and writes data from a spreadsheet file like CSV, XLS, ODS, etc"
+splitInBatches.json,Split In Batches,Split data into batches and iterate over each batch
+actionNetwork.json,Action Network,Consume the Action Network API
+awsSes.json,AWS SES,Sends data to AWS SES
+microsoftExcel.json,Microsoft Excel,Consume Microsoft Excel API
+googleTasks.json,Google Tasks,Consume Google Tasks API
+formIoTrigger.json,Form.io Trigger,Handle form.io events via webhooks
+evaluation.json,Evaluation,Runs an evaluation
+formTrigger.json,n8n Form Trigger,Generate webforms in n8n and pass their responses to the workflow
+linkedIn.json,LinkedIn,Consume LinkedIn API
+git.json,Git,Control git.
+awsCertificateManager.json,AWS Certificate Manager,Sends data to AWS Certificate Manager
+mandrill.json,Mandrill,Consume Mandrill API
+copper.json,Copper,Consume the Copper API
+mindee.json,Mindee,Consume Mindee API
+googleSheets.json,Google Sheets ,"Read, update and write data to Google Sheets"
+invoiceNinja.json,Invoice Ninja,Consume Invoice Ninja API
+profitWell.json,ProfitWell,Consume ProfitWell API
+microsoftSharePoint.json,Microsoft SharePoint,Interact with Microsoft SharePoint API
+strava.json,Strava,Consume Strava API
+zendeskTrigger.json,Zendesk Trigger,Handle Zendesk events via webhooks
+moveBinaryData.json,Convert to/from binary data,Move data between binary and JSON properties
+mailchimp.json,Mailchimp,Consume Mailchimp API
+sort.json,Sort,Change items order
+mattermost.json,Mattermost,Sends data to Mattermost
+executeWorkflow.json,Execute Sub-workflow,Execute another workflow
+wekan.json,Wekan,Consume Wekan API
+salesforceTrigger.json,Salesforce Trigger,Fetches data from Salesforce and starts the workflow on specified polling intervals.
+theHiveProject.json,TheHive 5,Consume TheHive 5 API
+crowdDevTrigger.json,crowd.dev Trigger,Starts the workflow when crowd.dev events occur.
+mqtt.json,MQTT,Push messages to MQTT

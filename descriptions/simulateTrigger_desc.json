@@ -1,0 +1,36 @@
+{
+  "nodename": "simulate trigger",
+  "summary": "模擬觸發器節點，用於模擬觸發工作流程。",
+  "parameters": [
+    {
+      "name": "icon to display on canvas",
+      "type": "options",
+      "description": "選擇要顯示相應圖示的節點類型。",
+    },
+    {
+      "name": "subtitle",
+      "type": "string",
+      "description": "副標題。",
+    },
+    {
+      "name": "output (json)",
+      "type": "json",
+      "description": "輸出 JSON 格式的數據。",
+    },
+    {
+      "name": "execution duration (ms)",
+      "type": "number",
+      "description": "執行持續時間（毫秒）。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "icon": "n8n-nodes-base.manualTrigger",
+        "subtitle": "record: read",
+        "jsonOutput": "[\n  {\n  \"my_field_1\": \"value\",\n  \"my_field_2\": 1\n  }\n]",
+        "executionDuration": 150
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "nodename": "simulate",
+  "summary": "模擬一個節點的操作",
+  "parameters": [
+    {
+      "name": "icon to display on canvas",
+      "type": "options",
+      "description": "選擇要顯示相應圖示的節點類型",
+    },
+    {
+      "name": "subtitle",
+      "type": "string",
+      "description": "副標題，例如 'record: read'",
+    },
+    {
+      "name": "output",
+      "type": "options",
+      "description": "指定輸出的方式",
+    },
+    {
+      "name": "number of items",
+      "type": "number",
+      "description": "要返回的項目數量，如果大於輸入長度，將返回所有項目",
+    },
+    {
+      "name": "json",
+      "type": "json",
+      "description": "自定義輸出的 JSON 格式",
+    },
+    {
+      "name": "execution duration (ms)",
+      "type": "number",
+      "description": "執行持續時間（毫秒）",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "icon": "n8n-nodes-base.noOp",
+        "subtitle": "record: read",
+        "output": "all",
+        "numberofitems": 1,
+        "jsonoutput": "[\n  {\n  \"my_field_1\": \"value\",\n  \"my_field_2\": 1\n  }\n]",
+        "executionduration": 150
+      }
+    }
+  }
+}

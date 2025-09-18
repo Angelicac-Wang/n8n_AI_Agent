@@ -1,0 +1,18 @@
+{
+  "nodename": "stripe trigger",
+  "summary": "此節點用於通過 Webhooks 處理 Stripe 事件。",
+  "parameters": [
+    {
+      "name": "events",
+      "type": "multiOptions",
+      "description": "要監聽的事件類型。可以選擇多個事件。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "events": ["account.updated", "charge.succeeded"]
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "nodeName": "npm",
+  "summary": "使用 NPM 註冊 API",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，可以是套件、發行標籤或自訂 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如獲取套件的元數據、獲取套件的版本或搜索套件。"
+    },
+    {
+      "name": "package name",
+      "type": "string",
+      "description": "要操作的套件名稱。",
+    },
+    {
+      "name": "package version",
+      "type": "string",
+      "description": "要操作的套件版本。",
+    },
+    {
+      "name": "query",
+      "type": "string",
+      "description": "用於搜索套件的查詢文本。",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數量。",
+    },
+    {
+      "name": "offset",
+      "type": "number",
+      "description": "從哪個位置開始返回結果。",
+    },
+    {
+      "name": "dist tag name",
+      "type": "string",
+      "description": "要操作的發行標籤名稱。",
+    },
+    {
+      "name": "request options",
+      "type": "collection",
+      "description": "設置請求的選項，如批處理、SSL 忽略、代理、超時等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "package",
+        "operation": "getMetadata",
+        "packageName": "example-package",
+        "packageVersion": "1.0.0"
+      }
+    }
+  }
+}

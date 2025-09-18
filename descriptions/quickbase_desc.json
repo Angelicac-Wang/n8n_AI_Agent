@@ -1,0 +1,65 @@
+{
+  "nodeName": "quick base",
+  "summary": "Integrate with the Quick Base RESTful API to perform operations on resources like fields, files, records, and reports.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to perform operations on (e.g., field, file, record, report).",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the chosen resource (e.g., get many fields, delete file, download file).",
+    },
+    {
+      "name": "table id",
+      "type": "string",
+      "description": "The identifier of the table where the operation will be performed.",
+    },
+    {
+      "name": "return all",
+      "type": "boolean",
+      "description": "Specify whether to return all results or only up to a given limit.",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "The maximum number of results to return (between 1 and 100).",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "Additional options for the operation, such as including field permissions.",
+    },
+    {
+      "name": "record id",
+      "type": "string",
+      "description": "The unique identifier of the record when performing operations on files.",
+    },
+    {
+      "name": "field id",
+      "type": "string",
+      "description": "The unique identifier of the field when performing operations on files.",
+    },
+    {
+      "name": "version number",
+      "type": "number",
+      "description": "The version number required for certain file operations.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "field",
+        "operation": "getAll",
+        "tableId": "12345",
+        "returnAll": false,
+        "limit": 50,
+        "options": {
+          "includeFieldPerms": true
+        }
+      }
+    }
+  }
+}

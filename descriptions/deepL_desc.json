@@ -1,0 +1,47 @@
+{
+  "nodeName": "deepl",
+  "summary": "使用 DeepL 進行資料翻譯。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定資源類型，可以選擇語言翻譯或自訂 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定操作類型，可以選擇翻譯或自訂 API 呼叫。",
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "description": "要翻譯的輸入文字。",
+    },
+    {
+      "name": "translateTo",
+      "type": "options",
+      "description": "指定要翻譯成的目標語言。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "包含其他可選參數，如原始語言、句子拆分方式、保留格式等。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "language",
+        "operation": "translate",
+        "text": "Hello, world!",
+        "translateTo": "fr",
+        "additionalFields": {
+          "sourceLang": "en",
+          "splitSentences": "1",
+          "preserveFormatting": "0",
+          "formality": "default"
+        }
+      }
+    }
+  }
+}

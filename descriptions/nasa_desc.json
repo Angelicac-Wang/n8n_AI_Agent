@@ -1,0 +1,24 @@
+{
+  "nodeName": "nasa",
+  "summary": "此節點可從 NASA API 擷取資料。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要從 NASA API 擷取的資源類型。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作，根據所選的資源類型不同，操作選項也會有所變化。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "astronomyPictureOfTheDay",
+        "operation": "get"
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "nodename": "twist",
+  "summary": "此節點用於消費 Twist API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "要操作的資源類型，可以是頻道、評論、訊息對話、討論串或自訂 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "要執行的操作，例如對頻道進行存檔、建立、刪除、取得資訊等。"
+    },
+    {
+      "name": "workspace name or id",
+      "type": "options",
+      "description": "工作區的 ID，必須從清單中選擇，或使用表達式指定 ID。僅在創建頻道時需要。"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "頻道的名稱。僅在創建頻道時需要。"
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "其他欄位設定，如頻道顏色和描述。僅在創建頻道時需要。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "messageConversation",
+        "operation": "get",
+        "workspaceId": "workspace123",
+        "name": "New Channel",
+        "additionalFields": {
+          "color": 1,
+          "description": "This is a new channel"
+        }
+      }
+    }
+  }
+}

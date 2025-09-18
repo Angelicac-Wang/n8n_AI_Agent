@@ -1,0 +1,45 @@
+{
+  "nodeName": "microsoft sql",
+  "summary": "此節點可用於在 Microsoft SQL 中獲取、添加和更新數據。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作類型，包括執行查詢、插入、更新和刪除操作。"
+    },
+    {
+      "name": "query",
+      "type": "string",
+      "description": "要執行的 SQL 查詢語句。僅在操作選擇為「執行查詢」時顯示。"
+    },
+    {
+      "name": "table",
+      "type": "string",
+      "description": "要插入、更新或刪除數據的表名。"
+    },
+    {
+      "name": "columns",
+      "type": "string",
+      "description": "要插入或更新的新行的屬性列表。"
+    },
+    {
+      "name": "update key",
+      "type": "string",
+      "description": "決定應更新哪些行的屬性名稱。通常是「id」。"
+    },
+    {
+      "name": "delete key",
+      "type": "string",
+      "description": "決定應刪除哪些行的屬性名稱。通常是「id」。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "insert",
+        "table": "products",
+        "columns": "id,name,description"
+      }
+    }
+  }
+}

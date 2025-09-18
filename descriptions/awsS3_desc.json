@@ -1,0 +1,45 @@
+{
+  "nodename": "aws s3",
+  "summary": "將數據發送到 AWS S3。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型（桶、文件或文件夾）。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要對桶執行的操作（創建、刪除、獲取多個、搜索）。",
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "要創建的桶的名稱。",
+    },
+    {
+      "name": "additionalfields",
+      "type": "collection",
+      "description": "其他可選字段，用於指定創建桶時的 ACL、區域等設置。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "bucket",
+        "operation": "create",
+        "name": "my-bucket",
+        "additionalFields": {
+          "acl": "publicRead",
+          "bucketObjectLockEnabled": true,
+          "grantFullControl": false,
+          "grantRead": true,
+          "grantReadAcp": false,
+          "grantWrite": true,
+          "grantWriteAcp": false,
+          "region": "us-west-1"
+        }
+      }
+    }
+  }
+}

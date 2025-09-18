@@ -1,0 +1,32 @@
+{
+  "nodeName": "toggl trigger",
+  "summary": "啟動工作流程，當 Toggl 事件發生時觸發。",
+  "parameters": [
+    {
+      "name": "poll times",
+      "type": "fixedcollection",
+      "description": "時間間隔，用於定期檢查事件是否發生。",
+      "placeholder": "Add Poll Time"
+    },
+    {
+      "name": "event",
+      "type": "options",
+      "description": "要觸發的 Toggl 事件類型。",
+      "required": true
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "pollTimes": [
+          {
+            "mode": "everyDay",
+            "hour": 14,
+            "minute": 0
+          }
+        ],
+        "event": "newTimeEntry"
+      }
+    }
+  }
+}

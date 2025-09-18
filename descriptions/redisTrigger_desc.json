@@ -1,0 +1,39 @@
+{
+  "nodeName": "redis trigger",
+  "summary": "此節點用於訂閱 Redis 頻道。",
+  "parameters": [
+    {
+      "name": "channels",
+      "type": "string",
+      "description": "要訂閱的頻道，可以使用逗號定義多個頻道。支援通配符(*)。"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定。",
+      "options": [
+        {
+          "name": "jsonparsebody",
+          "type": "boolean",
+          "description": "是否嘗試將訊息解析為物件。"
+        },
+        {
+          "name": "onlymessage",
+          "type": "boolean",
+          "description": "是否僅返回訊息屬性。"
+        }
+      ]
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "channels": "channel1,channel2",
+        "options": {
+          "jsonparsebody": true,
+          "onlymessage": false
+        }
+      }
+    }
+  }
+}

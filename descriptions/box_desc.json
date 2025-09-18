@@ -1,0 +1,52 @@
+{
+  "nodeName": "box",
+  "summary": "Consume Box API to perform operations like copying, deleting, downloading, and sharing files.",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "Select the type of resource to perform operations on (File, Folder, Custom API Call).",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "Select the operation to perform on the selected resource.",
+    },
+    {
+      "name": "file id",
+      "type": "string",
+      "description": "The ID of the file to perform the operation on.",
+    },
+    {
+      "name": "parent id",
+      "type": "string",
+      "description": "The ID of the folder to copy the file to.",
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "Additional fields to include when performing the copy operation.",
+    },
+    {
+      "name": "binary property name",
+      "type": "string",
+      "description": "The name of the output binary field to store the downloaded file.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "file",
+        "operation": "copy",
+        "fileId": "12345",
+        "parentId": "67890",
+        "additionalFields": {
+          "fields": "name,size",
+          "name": "New File Name",
+          "version": "v2"
+        },
+        "binaryPropertyName": "fileData"
+      }
+    }
+  }
+}

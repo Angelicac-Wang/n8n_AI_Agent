@@ -1,0 +1,70 @@
+{
+  "nodeName": "aws dynamodb",
+  "summary": "此節點用於消費 AWS DynamoDB API。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型，可以是項目（Item）或自訂 API 呼叫（Custom API Call）。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作，如創建或更新（upsert）、刪除（delete）、獲取（get）等。",
+    },
+    {
+      "name": "table name or id",
+      "type": "options",
+      "description": "指定要操作的表格，可以從列表中選擇，或使用表格 ID 進行指定。",
+    },
+    {
+      "name": "data to send",
+      "type": "options",
+      "description": "指定要發送的數據，可以自動映射輸入數據到列（autoMapInputData），或為每個目標列單獨定義值（defineBelow）。",
+    },
+    {
+      "name": "inputs to ignore",
+      "type": "string",
+      "description": "列出要忽略發送的輸入屬性列表，用逗號分隔。留空以發送所有屬性。",
+    },
+    {
+      "name": "fields to send",
+      "type": "fixedcollection",
+      "description": "指定要發送的字段，可以添加多個字段及其值。",
+    },
+    {
+      "name": "additional fields",
+      "type": "collection",
+      "description": "添加額外的字段，如表達式屬性值（Expression Attribute Values）。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "item",
+        "operation": "upsert",
+        "tableName": "exampleTable",
+        "dataToSend": "defineBelow",
+        "inputsToIgnore": "property1,property2",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "field1",
+              "fieldValue": "value1"
+            },
+            {
+              "fieldId": "field2",
+              "fieldValue": "value2"
+            }
+          ]
+        },
+        "additionalFields": {
+          "eavUi": {
+            "attribute1": "value1",
+            "attribute2": "value2"
+          }
+        }
+      }
+    }
+  }
+}

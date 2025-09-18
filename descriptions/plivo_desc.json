@@ -1,0 +1,57 @@
+{
+  "nodeName": "plivo",
+  "summary": "此節點可用於發送簡訊/多媒體簡訊或進行電話通話。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要使用的 Plivo 資源類型（簡訊、多媒體簡訊或電話通話）"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作（發送簡訊、發送多媒體簡訊或進行電話通話）"
+    },
+    {
+      "name": "from",
+      "type": "string",
+      "description": "指定發送簡訊/多媒體簡訊或進行電話通話的來源號碼"
+    },
+    {
+      "name": "to",
+      "type": "string",
+      "description": "指定接收簡訊/多媒體簡訊或進行電話通話的目標號碼"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "要發送的簡訊/多媒體簡訊內容"
+    },
+    {
+      "name": "media_urls",
+      "type": "string",
+      "description": "多媒體簡訊中文件的媒體 URL 列表"
+    },
+    {
+      "name": "answer_method",
+      "type": "options",
+      "description": "指定調用 Answer URL 時要使用的 HTTP 方法"
+    },
+    {
+      "name": "answer_url",
+      "type": "string",
+      "description": "當通話接通後 Plivo 要調用的 URL，用於處理通話"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "sms",
+        "operation": "send",
+        "from": "+14156667777",
+        "to": "+14156667778",
+        "message": "Hello, this is a test message."
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "nodename": "autopilot trigger",
+  "summary": "透過 Webhooks 處理 Autopilot 事件。",
+  "parameters": [
+    {
+      "name": "event",
+      "type": "options",
+      "description": "要觸發的 Autopilot 事件類型。",
+      "options": [
+        {
+          "name": "Contact Added",
+          "value": "contactAdded"
+        },
+        {
+          "name": "Contact Added To List",
+          "value": "contactAddedToList"
+        },
+        {
+          "name": "Contact Entered Segment",
+          "value": "contactEnteredSegment"
+        },
+        {
+          "name": "Contact Left Segment",
+          "value": "contactLeftSegment"
+        },
+        {
+          "name": "Contact Removed From List",
+          "value": "contactRemovedFromList"
+        },
+        {
+          "name": "Contact Unsubscribed",
+          "value": "contactUnsubscribed"
+        },
+        {
+          "name": "Contact Updated",
+          "value": "contactUpdated"
+        }
+      ]
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "event": "contactAdded"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "nodename": "function",
+  "summary": "執行自定義函數代碼，該代碼將被執行一次，並允許您添加、刪除、更改和替換項目。",
+  "parameters": [
+    {
+      "name": "notice",
+      "type": "notice",
+      "description": "此節點類型的更新版本稱為“代碼”節點。"
+    },
+    {
+      "name": "functioncode",
+      "type": "string",
+      "description": "要執行的 JavaScript 代碼。代碼將僅運行一次，無論輸入項目數量如何。您可以在代碼中對輸入進行操作，並返回修改後的項目。",
+      "default": "// Code here will run only once, no matter how many input items there are.\n// More info and help:https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.function/\n// Tip: You can use luxon for dates and $jmespath for querying JSON structures\n\n// Loop over inputs and add a new field called 'myNewField' to the JSON of each one\nfor (item of items) {\n  item.json.myNewField = 1;\n}\n\n// You can write logs to the browser console\nconsole.log('Done!');\n\nreturn items;",
+      "noDataExpression": true
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "notice": "",
+        "functionCode": "// Your custom JavaScript code here"
+      }
+    }
+  }
+}

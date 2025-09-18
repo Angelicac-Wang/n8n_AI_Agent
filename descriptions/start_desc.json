@@ -1,0 +1,18 @@
+{
+  "nodename": "start",
+  "summary": "此節點用於從此節點開始執行工作流程。",
+  "parameters": [
+    {
+      "name": "notice",
+      "type": "notice",
+      "description": "此節點是手動工作流程執行的起點。要啟動工作流程，請返回畫布並點擊'執行工作流程'。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "notice": ""
+      }
+    }
+  }
+}

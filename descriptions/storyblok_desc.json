@@ -1,0 +1,56 @@
+{
+  "nodeName": "storyblok",
+  "summary": "此節點用於消費 Storyblok API，可從 Content 或 Management API 中獲取故事內容。",
+  "parameters": [
+    {
+      "name": "source",
+      "type": "options",
+      "description": "選擇數據來源，可以是 Content API 或 Management API。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型，如故事（story）。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作，如獲取單個故事或多個故事。",
+    },
+    {
+      "name": "identifier",
+      "type": "string",
+      "description": "要獲取的故事的 ID 或 slug。",
+    },
+    {
+      "name": "returnAll",
+      "type": "boolean",
+      "description": "是否返回所有結果或僅返回到指定限制。",
+    },
+    {
+      "name": "limit",
+      "type": "number",
+      "description": "要返回的最大結果數量。",
+    },
+    {
+      "name": "filters",
+      "type": "collection",
+      "description": "根據特定條件過濾結果，如根據 slug 開頭過濾。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "source": "contentApi",
+        "resource": "story",
+        "operation": "get",
+        "identifier": "123",
+        "returnAll": false,
+        "limit": 50,
+        "filters": {
+          "starts_with": "example"
+        }
+      }
+    }
+  }
+}

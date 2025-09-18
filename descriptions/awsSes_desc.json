@@ -1,0 +1,60 @@
+{
+  "nodeName": "aws ses",
+  "summary": "此節點用於將數據發送到 AWS SES。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如自定義驗證郵件、郵件、模板等。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要對資源執行的操作，如創建、刪除、獲取等。",
+    },
+    {
+      "name": "from email",
+      "type": "string",
+      "description": "自定義驗證郵件發送方的電子郵件地址。",
+    },
+    {
+      "name": "template name",
+      "type": "string",
+      "description": "自定義驗證郵件模板的名稱。",
+    },
+    {
+      "name": "template content",
+      "type": "string",
+      "description": "自定義驗證郵件的內容，支持 HTML 格式。",
+    },
+    {
+      "name": "template subject",
+      "type": "string",
+      "description": "自定義驗證郵件的主題。",
+    },
+    {
+      "name": "success redirection url",
+      "type": "string",
+      "description": "驗證成功後收件人將被重定向到的 URL。",
+    },
+    {
+      "name": "failure redirection url",
+      "type": "string",
+      "description": "驗證失敗後收件人將被重定向到的 URL。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "customVerificationEmail",
+        "operation": "create",
+        "fromEmailAddress": "sender@example.com",
+        "templateName": "Verification Template",
+        "templateContent": "<p>This is a verification email.</p>",
+        "templateSubject": "Verify your email address",
+        "successRedirectionURL": "https://example.com/success",
+        "failureRedirectionURL": "https://example.com/failure"
+      }
+    }
+  }
+}

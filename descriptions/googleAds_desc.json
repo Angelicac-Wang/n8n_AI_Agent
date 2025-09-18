@@ -1,0 +1,66 @@
+{
+  "nodeName": "google ads",
+  "summary": "使用 Google Ads API 進行操作的節點。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如廣告活動或自訂 API 呼叫。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作，如獲取多個廣告活動或獲取特定廣告活動的詳細資訊。"
+    },
+    {
+      "name": "manager customer id",
+      "type": "string",
+      "description": "管理客戶的 ID，必填項目。",
+    },
+    {
+      "name": "client customer id",
+      "type": "string",
+      "description": "客戶的 ID，必填項目。",
+    },
+    {
+      "name": "campaign id",
+      "type": "string",
+      "description": "廣告活動的 ID，僅在獲取特定廣告活動時需要。",
+    },
+    {
+      "name": "additional options",
+      "type": "collection",
+      "description": "用於獲取廣告活動的額外選項，如日期範圍和活動狀態。",
+    },
+    {
+      "name": "request options",
+      "type": "collection",
+      "description": "用於設置請求的選項，如批處理、忽略 SSL 問題、代理和超時時間。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "campaign",
+        "operation": "getAll",
+        "managerCustomerId": "9998887777",
+        "clientCustomerId": "6665554444",
+        "additionalOptions": {
+          "dateRange": "allTime",
+          "campaignStatus": "all"
+        },
+        "requestOptions": {
+          "batching": {
+            "batch": {
+              "batchSize": 50,
+              "batchInterval": 1000
+            }
+          },
+          "allowUnauthorizedCerts": false,
+          "proxy": "",
+          "timeout": 10000
+        }
+      }
+    }
+  }
+}

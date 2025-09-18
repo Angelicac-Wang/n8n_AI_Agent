@@ -1,0 +1,39 @@
+{
+  "nodeName": "convert to file",
+  "summary": "將 JSON 數據轉換為二進制數據的節點。",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的轉換操作，例如轉換為 CSV、HTML、JSON 等格式。"
+    },
+    {
+      "name": "binaryPropertyName",
+      "type": "string",
+      "description": "將輸出文件放入的二進制字段的名稱。",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "設置特定轉換操作的選項，如壓縮、分隔符、文件名等。",
+    },
+    {
+      "name": "sourceProperty",
+      "type": "string",
+      "description": "要轉換的 base64 編碼字符串的字段名稱。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "csv",
+        "binaryPropertyName": "data",
+        "options": {
+          "delimiter": ",",
+          "headerRow": true
+        },
+        "sourceProperty": "base64Data"
+      }
+    }
+  }
+}

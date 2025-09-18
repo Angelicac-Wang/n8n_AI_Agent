@@ -1,0 +1,48 @@
+{
+  "nodeName": "microsoft teams",
+  "summary": "此節點可用於操作 Microsoft Teams API，包括創建、刪除、獲取和更新頻道等功能。",
+  "parameters": [
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如頻道、頻道訊息、聊天訊息或任務。"
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要對資源執行的操作，如創建、刪除、獲取或更新頻道。"
+    },
+    {
+      "name": "team",
+      "type": "resourcelocator",
+      "description": "選擇要操作的團隊，可以從列表中選擇、通過 URL 或 ID 進行選擇。"
+    },
+    {
+      "name": "new channel name",
+      "type": "string",
+      "description": "要創建的新頻道的名稱。"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項，如頻道描述和類型。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "channel",
+        "operation": "create",
+        "teamId": {
+          "mode": "list",
+          "value": "My Team"
+        },
+        "name": "My New Channel",
+        "options": {
+          "description": "This is a new channel",
+          "type": "private"
+        }
+      }
+    }
+  }
+}

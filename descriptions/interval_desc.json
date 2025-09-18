@@ -1,0 +1,46 @@
+{
+  "nodename": "interval",
+  "summary": "此節點在指定的間隔時間內觸發工作流程。",
+  "parameters": [
+    {
+      "name": "notice",
+      "type": "notice",
+      "description": "工作流程將在您定義的時間表上運行，一旦您啟用它。<br><br>為了測試，您也可以手動觸發它：返回到畫布並點擊'執行工作流程'"
+    },
+    {
+      "name": "interval",
+      "type": "number",
+      "description": "間隔值",
+      "typeOptions": {
+        "minValue": 1
+      }
+    },
+    {
+      "name": "unit",
+      "type": "options",
+      "description": "間隔值的單位",
+      "options": [
+        {
+          "name": "Seconds",
+          "value": "seconds"
+        },
+        {
+          "name": "Minutes",
+          "value": "minutes"
+        },
+        {
+          "name": "Hours",
+          "value": "hours"
+        }
+      ]
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "interval": 5,
+        "unit": "minutes"
+      }
+    }
+  }
+}

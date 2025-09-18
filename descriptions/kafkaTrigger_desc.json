@@ -1,0 +1,54 @@
+{
+  "nodeName": "kafka trigger",
+  "summary": "Consume messages from a Kafka topic.",
+  "parameters": [
+    {
+      "name": "topic",
+      "type": "string",
+      "description": "Name of the queue or topic to consume messages from."
+    },
+    {
+      "name": "group id",
+      "type": "string",
+      "description": "ID of the consumer group for Kafka."
+    },
+    {
+      "name": "use schema registry",
+      "type": "boolean",
+      "description": "Whether to use Confluent Schema Registry for message schema management."
+    },
+    {
+      "name": "schema registry url",
+      "type": "string",
+      "description": "URL of the schema registry to use.",
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "Additional options for Kafka consumer configuration.",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "topic": "topic-name",
+        "groupId": "n8n-kafka",
+        "useSchemaRegistry": true,
+        "schemaRegistryUrl": "https://schema-registry-domain:8081",
+        "options": {
+          "allowAutoTopicCreation": false,
+          "autoCommitThreshold": 0,
+          "autoCommitInterval": 0,
+          "heartbeatInterval": 3000,
+          "maxInFlightRequests": 1,
+          "fromBeginning": true,
+          "jsonParseMessage": false,
+          "parallelProcessing": true,
+          "onlyMessage": false,
+          "returnHeaders": false,
+          "sessionTimeout": 30000
+        }
+      }
+    }
+  }
+}

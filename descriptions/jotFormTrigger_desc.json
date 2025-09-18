@@ -1,0 +1,30 @@
+{
+  "nodeName": "jotform trigger",
+  "summary": "透過 Webhooks 處理 JotForm 事件",
+  "parameters": [
+    {
+      "name": "form name or id",
+      "type": "options",
+      "description": "從清單中選擇，或使用 <a href=\"https://docs.n8n.io/code/expressions/\">表達式</a> 指定 ID。",
+    },
+    {
+      "name": "resolve data",
+      "type": "boolean",
+      "description": "預設情況下，Webhook 資料使用內部鍵而非名稱。啟用此選項將自動將鍵解析為實際名稱。",
+    },
+    {
+      "name": "only answers",
+      "type": "boolean",
+      "description": "是否僅返回表單的答案，而不包含任何其他資料。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "form": "form_id",
+        "resolveData": true,
+        "onlyAnswers": true
+      }
+    }
+  }
+}

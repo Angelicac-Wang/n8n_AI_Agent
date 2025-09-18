@@ -1,0 +1,56 @@
+{
+  "nodeName": "shopify",
+  "summary": "此節點用於連接並使用 Shopify API，可執行訂單管理、產品管理等操作。",
+  "parameters": [
+    {
+      "name": "apiVersion",
+      "type": "notice",
+      "description": "Shopify API 的版本設定，預設為空。"
+    },
+    {
+      "name": "authentication",
+      "type": "options",
+      "description": "身份驗證方式選擇，可選擇 Access Token、OAuth2 或 API Key。",
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "指定要操作的資源類型，如訂單、產品或自訂 API 呼叫。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定對資源的操作，如創建、刪除、獲取單個或多個資源。",
+    },
+    {
+      "name": "additionalFields",
+      "type": "collection",
+      "description": "額外的欄位設定，用於特定操作和資源的其他資訊設定。",
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "apiVersion": "2024-07",
+        "authentication": "apiKey",
+        "resource": "order",
+        "operation": "create",
+        "additionalFields": {
+          "billingAddressUi": {
+            "billingAddressValues": {
+              "firstName": "John",
+              "lastName": "Doe",
+              "company": "ABC Inc.",
+              "country": "US",
+              "address1": "123 Street",
+              "city": "New York",
+              "province": "NY",
+              "zip": "10001",
+              "phone": "123-456-7890"
+            }
+          }
+        }
+      }
+    }
+  }
+}

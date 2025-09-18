@@ -1,0 +1,40 @@
+{
+  "nodeName": "openai",
+  "summary": "此節點用於使用 OpenAI 服務進行文字、圖像處理等操作。",
+  "parameters": [
+    {
+      "name": "oldVersionNotice",
+      "type": "notice",
+      "description": "顯示新節點版本的通知信息。"
+    },
+    {
+      "name": "resource",
+      "type": "options",
+      "description": "選擇要操作的資源類型，如聊天、圖像、文字或自定義 API 請求。",
+    },
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "選擇要執行的操作，如生成完成文本或自定義 API 呼叫。",
+    },
+    {
+      "name": "model",
+      "type": "options",
+      "description": "選擇要使用的模型來生成完成文本。"
+    },
+    {
+      "name": "chatModel",
+      "type": "options",
+      "description": "選擇要使用的模型來生成聊天完成文本。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "resource": "text",
+        "operation": "complete",
+        "model": "gpt-3.5-turbo"
+      }
+    }
+  }
+}

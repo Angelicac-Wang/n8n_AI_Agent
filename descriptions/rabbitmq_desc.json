@@ -1,0 +1,72 @@
+{
+  "nodeName": "rabbitmq",
+  "summary": "將訊息發送到 RabbitMQ 主題",
+  "parameters": [
+    {
+      "name": "operation",
+      "type": "options",
+      "description": "指定要執行的操作類型，可以是發送訊息或從佇列中刪除訊息。"
+    },
+    {
+      "name": "mode",
+      "type": "options",
+      "description": "指定要將資料發送到的目的地，可以是佇列或交換機。"
+    },
+    {
+      "name": "queue",
+      "type": "string",
+      "description": "要發送到的佇列的名稱。"
+    },
+    {
+      "name": "exchange",
+      "type": "string",
+      "description": "要發送到的交換機的名稱。"
+    },
+    {
+      "name": "exchangeType",
+      "type": "options",
+      "description": "指定交換機的類型，可以是直接、主題、標頭或分散式。"
+    },
+    {
+      "name": "routingKey",
+      "type": "string",
+      "description": "訊息的路由鍵。"
+    },
+    {
+      "name": "sendInputData",
+      "type": "boolean",
+      "description": "是否將節點接收的資料作為 JSON 發送。"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "要發送的訊息內容。"
+    },
+    {
+      "name": "options",
+      "type": "collection",
+      "description": "其他選項設定，如替代交換機、自動刪除佇列、持久性等。"
+    }
+  ],
+  "example": {
+    "node": {
+      "parameters": {
+        "operation": "sendMessage",
+        "mode": "queue",
+        "queue": "my-queue",
+        "exchange": "",
+        "exchangeType": "fanout",
+        "routingKey": "",
+        "sendInputData": true,
+        "message": "Hello, RabbitMQ!",
+        "options": {
+          "autoDelete": false,
+          "durable": true,
+          "exclusive": false,
+          "arguments": [],
+          "headers": []
+        }
+      }
+    }
+  }
+}
