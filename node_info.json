@@ -1,0 +1,2177 @@
+[
+  {
+    "filename": "onfleet.json",
+    "displayName": "Onfleet",
+    "description": "Consume Onfleet API"
+  },
+  {
+    "filename": "wait.json",
+    "displayName": "Wait",
+    "description": "Wait before continue with execution"
+  },
+  {
+    "filename": "rabbitmqTrigger.json",
+    "displayName": "RabbitMQ Trigger",
+    "description": "Listens to RabbitMQ messages"
+  },
+  {
+    "filename": "freshdesk.json",
+    "displayName": "Freshdesk",
+    "description": "Consume Freshdesk API"
+  },
+  {
+    "filename": "yourls.json",
+    "displayName": "Yourls",
+    "description": "Consume Yourls API"
+  },
+  {
+    "filename": "mauticTrigger.json",
+    "displayName": "Mautic Trigger",
+    "description": "Handle Mautic events via webhooks"
+  },
+  {
+    "filename": "clockify.json",
+    "displayName": "Clockify",
+    "description": "Consume Clockify REST API"
+  },
+  {
+    "filename": "postHog.json",
+    "displayName": "PostHog",
+    "description": "Consume PostHog API"
+  },
+  {
+    "filename": "goToWebinar.json",
+    "displayName": "GoToWebinar",
+    "description": "Consume the GoToWebinar API"
+  },
+  {
+    "filename": "line.json",
+    "displayName": "Line",
+    "description": "Consume Line API"
+  },
+  {
+    "filename": "googleFirebaseCloudFirestore.json",
+    "displayName": "Google Cloud Firestore",
+    "description": "Interact with Google Firebase - Cloud Firestore API"
+  },
+  {
+    "filename": "eventbriteTrigger.json",
+    "displayName": "Eventbrite Trigger",
+    "description": "Handle Eventbrite events via webhooks"
+  },
+  {
+    "filename": "airtop.json",
+    "displayName": "Airtop",
+    "description": "Scrape and control any site with Airtop"
+  },
+  {
+    "filename": "openThesaurus.json",
+    "displayName": "OpenThesaurus",
+    "description": "Get synonmns for German words using the OpenThesaurus API"
+  },
+  {
+    "filename": "Brandfetch.json",
+    "displayName": "Brandfetch",
+    "description": "Consume Brandfetch API"
+  },
+  {
+    "filename": "zulip.json",
+    "displayName": "Zulip",
+    "description": "Consume Zulip API"
+  },
+  {
+    "filename": "xero.json",
+    "displayName": "Xero",
+    "description": "Consume Xero API"
+  },
+  {
+    "filename": "switch.json",
+    "displayName": "Switch",
+    "description": "Route items depending on defined expression or rules"
+  },
+  {
+    "filename": "filter.json",
+    "displayName": "Filter",
+    "description": "Remove items matching a condition"
+  },
+  {
+    "filename": "microsoftSql.json",
+    "displayName": "Microsoft SQL",
+    "description": "Get, add and update data in Microsoft SQL"
+  },
+  {
+    "filename": "tapfiliate.json",
+    "displayName": "Tapfiliate",
+    "description": "Consume Tapfiliate API"
+  },
+  {
+    "filename": "sendInBlue.json",
+    "displayName": "Brevo",
+    "description": "Consume Brevo API"
+  },
+  {
+    "filename": "erpNext.json",
+    "displayName": "ERPNext",
+    "description": "Consume ERPNext API"
+  },
+  {
+    "filename": "googleCloudStorage.json",
+    "displayName": "Google Cloud Storage",
+    "description": "Use the Google Cloud Storage API"
+  },
+  {
+    "filename": "gitlab.json",
+    "displayName": "GitLab",
+    "description": "Retrieve data from GitLab API"
+  },
+  {
+    "filename": "redisTrigger.json",
+    "displayName": "Redis Trigger",
+    "description": "Subscribe to redis channel"
+  },
+  {
+    "filename": "ssh.json",
+    "displayName": "SSH",
+    "description": "Execute commands via SSH"
+  },
+  {
+    "filename": "philipsHue.json",
+    "displayName": "Philips Hue",
+    "description": "Consume Philips Hue API"
+  },
+  {
+    "filename": "postgresTrigger.json",
+    "displayName": "Postgres Trigger",
+    "description": "Listens to Postgres messages"
+  },
+  {
+    "filename": "elasticsearch.json",
+    "displayName": "Elasticsearch",
+    "description": "Consume the Elasticsearch API"
+  },
+  {
+    "filename": "payPalTrigger.json",
+    "displayName": "PayPal Trigger",
+    "description": "Handle PayPal events via webhooks"
+  },
+  {
+    "filename": "chargebeeTrigger.json",
+    "displayName": "Chargebee Trigger",
+    "description": "Starts the workflow when Chargebee events occur"
+  },
+  {
+    "filename": "mautic.json",
+    "displayName": "Mautic",
+    "description": "Consume Mautic API"
+  },
+  {
+    "filename": "quickChart.json",
+    "displayName": "QuickChart",
+    "description": "Create a chart via QuickChart"
+  },
+  {
+    "filename": "emailReadImap.json",
+    "displayName": "Email Trigger (IMAP)",
+    "description": "Triggers the workflow when a new email is received"
+  },
+  {
+    "filename": "httpRequest.json",
+    "displayName": "HTTP Request",
+    "description": "Makes an HTTP request and returns the response data"
+  },
+  {
+    "filename": "demio.json",
+    "displayName": "Demio",
+    "description": "Consume the Demio API"
+  },
+  {
+    "filename": "microsoftTeamsTrigger.json",
+    "displayName": "Microsoft Teams Trigger",
+    "description": "Triggers workflows in n8n based on events from Microsoft Teams, such as new messages or team updates, using specified configurations."
+  },
+  {
+    "filename": "function.json",
+    "displayName": "Function",
+    "description": "Run custom function code which gets executed once and allows you to add, remove, change and replace items"
+  },
+  {
+    "filename": "googleBusinessProfile.json",
+    "displayName": "Google Business Profile",
+    "description": "Consume Google Business Profile API"
+  },
+  {
+    "filename": "uproc.json",
+    "displayName": "uProc",
+    "description": "Consume uProc API"
+  },
+  {
+    "filename": "webflowTrigger.json",
+    "displayName": "Webflow Trigger",
+    "description": "Handle Webflow events via webhooks"
+  },
+  {
+    "filename": "n8n.json",
+    "displayName": "n8n",
+    "description": "Handle events and perform actions on your n8n instance"
+  },
+  {
+    "filename": "flowTrigger.json",
+    "displayName": "Flow Trigger",
+    "description": "Handle Flow events via webhooks"
+  },
+  {
+    "filename": "crateDb.json",
+    "displayName": "CrateDB",
+    "description": "Add and update data in CrateDB"
+  },
+  {
+    "filename": "set.json",
+    "displayName": "Set",
+    "description": "Sets values on items and optionally remove other values"
+  },
+  {
+    "filename": "editImage.json",
+    "displayName": "Edit Image",
+    "description": "Edits an image like blur, resize or adding border and text"
+  },
+  {
+    "filename": "orbit.json",
+    "displayName": "Orbit",
+    "description": "Consume Orbit API"
+  },
+  {
+    "filename": "if.json",
+    "displayName": "If",
+    "description": "Route items to different branches (true/false)"
+  },
+  {
+    "filename": "nextCloud.json",
+    "displayName": "Nextcloud",
+    "description": "Access data on Nextcloud"
+  },
+  {
+    "filename": "homeAssistant.json",
+    "displayName": "Home Assistant",
+    "description": "Consume Home Assistant API"
+  },
+  {
+    "filename": "executeCommand.json",
+    "displayName": "Execute Command",
+    "description": "Executes a command on the host"
+  },
+  {
+    "filename": "helpScout.json",
+    "displayName": "Help Scout",
+    "description": "Consume Help Scout API"
+  },
+  {
+    "filename": "microsoftOutlook.json",
+    "displayName": "Microsoft Outlook",
+    "description": "Consume Microsoft Outlook API"
+  },
+  {
+    "filename": "coinGecko.json",
+    "displayName": "CoinGecko",
+    "description": "Consume CoinGecko API"
+  },
+  {
+    "filename": "kafka.json",
+    "displayName": "Kafka",
+    "description": "Sends messages to a Kafka topic"
+  },
+  {
+    "filename": "awsSnsTrigger.json",
+    "displayName": "AWS SNS Trigger",
+    "description": "Handle AWS SNS events via webhooks"
+  },
+  {
+    "filename": "npm.json",
+    "displayName": "Npm",
+    "description": "Consume NPM registry API"
+  },
+  {
+    "filename": "jwt.json",
+    "displayName": "JWT",
+    "description": "JWT"
+  },
+  {
+    "filename": "misp.json",
+    "displayName": "MISP",
+    "description": "Consume the MISP API"
+  },
+  {
+    "filename": "microsoftOutlookTrigger.json",
+    "displayName": "Microsoft Outlook Trigger",
+    "description": "Fetches emails from Microsoft Outlook and starts the workflow on specified polling intervals."
+  },
+  {
+    "filename": "metabase.json",
+    "displayName": "Metabase",
+    "description": "Use the Metabase API"
+  },
+  {
+    "filename": "awsRekognition.json",
+    "displayName": "AWS Rekognition",
+    "description": "Sends data to AWS Rekognition"
+  },
+  {
+    "filename": "googlePerspective.json",
+    "displayName": "Google Perspective",
+    "description": "Consume Google Perspective API"
+  },
+  {
+    "filename": "ldap.json",
+    "displayName": "Ldap",
+    "description": "Interact with LDAP servers"
+  },
+  {
+    "filename": "netlifyTrigger.json",
+    "displayName": "Netlify Trigger",
+    "description": "Handle netlify events via webhooks"
+  },
+  {
+    "filename": "awsTranscribe.json",
+    "displayName": "AWS Transcribe",
+    "description": "Sends data to AWS Transcribe"
+  },
+  {
+    "filename": "customerIo.json",
+    "displayName": "Customer.io",
+    "description": "Consume Customer.io API"
+  },
+  {
+    "filename": "urlScanIo.json",
+    "displayName": "urlscan.io",
+    "description": "Provides various utilities for monitoring websites like health checks or screenshots"
+  },
+  {
+    "filename": "stickyNote.json",
+    "displayName": "Sticky Note",
+    "description": "Make your workflow easier to understand"
+  },
+  {
+    "filename": "mailerLiteTrigger.json",
+    "displayName": "MailerLite Trigger",
+    "description": "Starts the workflow when MailerLite events occur"
+  },
+  {
+    "filename": "sendInBlueTrigger.json",
+    "displayName": "Brevo Trigger",
+    "description": "Starts the workflow when Brevo events occur"
+  },
+  {
+    "filename": "stripe.json",
+    "displayName": "Stripe",
+    "description": "Consume the Stripe API"
+  },
+  {
+    "filename": "activeCampaign.json",
+    "displayName": "ActiveCampaign",
+    "description": "Create and edit data in ActiveCampaign"
+  },
+  {
+    "filename": "keap.json",
+    "displayName": "Keap",
+    "description": "Consume Keap API"
+  },
+  {
+    "filename": "amqpTrigger.json",
+    "displayName": "AMQP Trigger",
+    "description": "Listens to AMQP 1.0 Messages"
+  },
+  {
+    "filename": "openAi.json",
+    "displayName": "OpenAI",
+    "description": "Consume Open AI"
+  },
+  {
+    "filename": "evaluationTrigger.json",
+    "displayName": "Evaluation Trigger",
+    "description": "Run a test dataset through your workflow to check performance"
+  },
+  {
+    "filename": "dateTime.json",
+    "displayName": "Date & Time",
+    "description": "Allows you to manipulate date and time values"
+  },
+  {
+    "filename": "googleSheetsTrigger.json",
+    "displayName": "Google Sheets Trigger",
+    "description": "Starts the workflow when Google Sheets events occur"
+  },
+  {
+    "filename": "bambooHr.json",
+    "displayName": "BambooHR",
+    "description": "Consume BambooHR API"
+  },
+  {
+    "filename": "lemlistTrigger.json",
+    "displayName": "Lemlist Trigger",
+    "description": "Handle Lemlist events via webhooks"
+  },
+  {
+    "filename": "mistralAi.json",
+    "displayName": "Mistral AI",
+    "description": "Consume Mistral AI API"
+  },
+  {
+    "filename": "twake.json",
+    "displayName": "Twake",
+    "description": "Consume Twake API"
+  },
+  {
+    "filename": "wiseTrigger.json",
+    "displayName": "Wise Trigger",
+    "description": "Handle Wise events via webhooks"
+  },
+  {
+    "filename": "theHiveProjectTrigger.json",
+    "displayName": "TheHive 5 Trigger",
+    "description": "Starts the workflow when TheHive events occur"
+  },
+  {
+    "filename": "box.json",
+    "displayName": "Box",
+    "description": "Consume Box API"
+  },
+  {
+    "filename": "mongoDb.json",
+    "displayName": "MongoDB",
+    "description": "Find, insert and update documents in MongoDB"
+  },
+  {
+    "filename": "mondayCom.json",
+    "displayName": "Monday.com",
+    "description": "Consume Monday.com API"
+  },
+  {
+    "filename": "grist.json",
+    "displayName": "Grist",
+    "description": "Consume the Grist API"
+  },
+  {
+    "filename": "serviceNow.json",
+    "displayName": "ServiceNow",
+    "description": "Consume ServiceNow API"
+  },
+  {
+    "filename": "summarize.json",
+    "displayName": "Summarize",
+    "description": "Sum, count, max, etc. across items"
+  },
+  {
+    "filename": "microsoftOneDrive.json",
+    "displayName": "Microsoft OneDrive",
+    "description": "Consume Microsoft OneDrive API"
+  },
+  {
+    "filename": "beeminder.json",
+    "displayName": "Beeminder",
+    "description": "Consume Beeminder API"
+  },
+  {
+    "filename": "mailjetTrigger.json",
+    "displayName": "Mailjet Trigger",
+    "description": "Handle Mailjet events via webhooks"
+  },
+  {
+    "filename": "getResponseTrigger.json",
+    "displayName": "GetResponse Trigger",
+    "description": "Starts the workflow when GetResponse events occur"
+  },
+  {
+    "filename": "awsS3.json",
+    "displayName": "AWS S3",
+    "description": "Sends data to AWS S3"
+  },
+  {
+    "filename": "dhl.json",
+    "displayName": "DHL",
+    "description": "Consume DHL API"
+  },
+  {
+    "filename": "todoist.json",
+    "displayName": "Todoist",
+    "description": "Consume Todoist API"
+  },
+  {
+    "filename": "cron.json",
+    "displayName": "Cron",
+    "description": "Triggers the workflow at a specific time"
+  },
+  {
+    "filename": "crypto.json",
+    "displayName": "Crypto",
+    "description": "Provide cryptographic utilities"
+  },
+  {
+    "filename": "theHive.json",
+    "displayName": "TheHive",
+    "description": "Consume TheHive API"
+  },
+  {
+    "filename": "hunter.json",
+    "displayName": "Hunter",
+    "description": "Consume Hunter API"
+  },
+  {
+    "filename": "slackTrigger.json",
+    "displayName": "Slack Trigger",
+    "description": "Handle Slack events via webhooks"
+  },
+  {
+    "filename": "baserow.json",
+    "displayName": "Baserow",
+    "description": "Consume the Baserow API"
+  },
+  {
+    "filename": "xml.json",
+    "displayName": "XML",
+    "description": "Convert data from and to XML"
+  },
+  {
+    "filename": "airtableTrigger.json",
+    "displayName": "Airtable Trigger",
+    "description": "Starts the workflow when Airtable events occur"
+  },
+  {
+    "filename": "readPDF.json",
+    "displayName": "Read PDF",
+    "description": "Reads a PDF and extracts its content"
+  },
+  {
+    "filename": "splitOut.json",
+    "displayName": "Split Out",
+    "description": "Turn a list inside item(s) into separate items"
+  },
+  {
+    "filename": "gotify.json",
+    "displayName": "Gotify",
+    "description": "Consume Gotify API"
+  },
+  {
+    "filename": "discord.json",
+    "displayName": "Discord",
+    "description": "Sends data to Discord"
+  },
+  {
+    "filename": "gitlabTrigger.json",
+    "displayName": "GitLab Trigger",
+    "description": "Starts the workflow when GitLab events occur"
+  },
+  {
+    "filename": "messageBird.json",
+    "displayName": "MessageBird",
+    "description": "Sends SMS via MessageBird"
+  },
+  {
+    "filename": "webhook.json",
+    "displayName": "Webhook",
+    "description": "Starts the workflow when a webhook is called"
+  },
+  {
+    "filename": "asana.json",
+    "displayName": "Asana",
+    "description": "Consume Asana REST API"
+  },
+  {
+    "filename": "salesmate.json",
+    "displayName": "Salesmate",
+    "description": "Consume Salesmate API"
+  },
+  {
+    "filename": "code.json",
+    "displayName": "Code",
+    "description": "Run custom JavaScript or Python code"
+  },
+  {
+    "filename": "awsDynamoDb.json",
+    "displayName": "AWS DynamoDB",
+    "description": "Consume the AWS DynamoDB API"
+  },
+  {
+    "filename": "jinaAi.json",
+    "displayName": "Jina AI",
+    "description": "Interact with Jina AI API"
+  },
+  {
+    "filename": "mailgun.json",
+    "displayName": "Mailgun",
+    "description": "Sends an email via Mailgun"
+  },
+  {
+    "filename": "emeliaTrigger.json",
+    "displayName": "Emelia Trigger",
+    "description": "Handle Emelia campaign activity events via webhooks"
+  },
+  {
+    "filename": "highLevel.json",
+    "displayName": "HighLevel",
+    "description": "Consume HighLevel API v1"
+  },
+  {
+    "filename": "calendlyTrigger.json",
+    "displayName": "Calendly Trigger",
+    "description": "Starts the workflow when Calendly events occur"
+  },
+  {
+    "filename": "loneScale.json",
+    "displayName": "LoneScale",
+    "description": "Create List, add / delete items"
+  },
+  {
+    "filename": "compareDatasets.json",
+    "displayName": "Compare Datasets",
+    "description": "Compare two inputs for changes"
+  },
+  {
+    "filename": "customerIoTrigger.json",
+    "displayName": "Customer.io Trigger",
+    "description": "Starts the workflow on a Customer.io update (Beta)"
+  },
+  {
+    "filename": "freshworksCrm.json",
+    "displayName": "Freshworks CRM",
+    "description": "Consume the Freshworks CRM API"
+  },
+  {
+    "filename": "kafkaTrigger.json",
+    "displayName": "Kafka Trigger",
+    "description": "Consume messages from a Kafka topic"
+  },
+  {
+    "filename": "jira.json",
+    "displayName": "Jira Software",
+    "description": "Consume Jira Software API"
+  },
+  {
+    "filename": "workableTrigger.json",
+    "displayName": "Workable Trigger",
+    "description": "Starts the workflow when Workable events occur"
+  },
+  {
+    "filename": "awsTextract.json",
+    "displayName": "AWS Textract",
+    "description": "Sends data to Amazon Textract"
+  },
+  {
+    "filename": "simulateTrigger.json",
+    "displayName": "Simulate Trigger",
+    "description": "Simulate a trigger node"
+  },
+  {
+    "filename": "uplead.json",
+    "displayName": "Uplead",
+    "description": "Consume Uplead API"
+  },
+  {
+    "filename": "jiraTrigger.json",
+    "displayName": "Jira Trigger",
+    "description": "Starts the workflow when Jira events occur"
+  },
+  {
+    "filename": "sseTrigger.json",
+    "displayName": "SSE Trigger",
+    "description": "Triggers the workflow when Server-Sent Events occur"
+  },
+  {
+    "filename": "payPal.json",
+    "displayName": "PayPal",
+    "description": "Consume PayPal API"
+  },
+  {
+    "filename": "venafiTlsProtectCloud.json",
+    "displayName": "Venafi TLS Protect Cloud",
+    "description": "Consume Venafi TLS Protect Cloud API"
+  },
+  {
+    "filename": "functionItem.json",
+    "displayName": "Function Item",
+    "description": "Run custom function code which gets executed once per item"
+  },
+  {
+    "filename": "hackerNews.json",
+    "displayName": "Hacker News",
+    "description": "Consume Hacker News API"
+  },
+  {
+    "filename": "koBoToolbox.json",
+    "displayName": "KoBoToolbox",
+    "description": "Work with KoBoToolbox forms and submissions"
+  },
+  {
+    "filename": "wordpress.json",
+    "displayName": "Wordpress",
+    "description": "Consume Wordpress API"
+  },
+  {
+    "filename": "microsoftDynamicsCrm.json",
+    "displayName": "Microsoft Dynamics CRM",
+    "description": "Consume Microsoft Dynamics CRM API"
+  },
+  {
+    "filename": "chargebee.json",
+    "displayName": "Chargebee",
+    "description": "Retrieve data from Chargebee API"
+  },
+  {
+    "filename": "whatsAppTrigger.json",
+    "displayName": "WhatsApp Trigger",
+    "description": "Handle WhatsApp events via webhooks"
+  },
+  {
+    "filename": "mySql.json",
+    "displayName": "MySQL",
+    "description": "Get, add and update data in MySQL"
+  },
+  {
+    "filename": "freshservice.json",
+    "displayName": "Freshservice",
+    "description": "Consume the Freshservice API"
+  },
+  {
+    "filename": "mqttTrigger.json",
+    "displayName": "MQTT Trigger",
+    "description": "Listens to MQTT events"
+  },
+  {
+    "filename": "boxTrigger.json",
+    "displayName": "Box Trigger",
+    "description": "Starts the workflow when Box events occur"
+  },
+  {
+    "filename": "pushcut.json",
+    "displayName": "Pushcut",
+    "description": "Consume Pushcut API"
+  },
+  {
+    "filename": "autopilot.json",
+    "displayName": "Autopilot",
+    "description": "Consume Autopilot API"
+  },
+  {
+    "filename": "clockifyTrigger.json",
+    "displayName": "Clockify Trigger",
+    "description": "Listens to Clockify events"
+  },
+  {
+    "filename": "openWeatherMap.json",
+    "displayName": "OpenWeatherMap",
+    "description": "Gets current and future weather information"
+  },
+  {
+    "filename": "splunk.json",
+    "displayName": "Splunk",
+    "description": "Consume the Splunk Enterprise API"
+  },
+  {
+    "filename": "awsSqs.json",
+    "displayName": "AWS SQS",
+    "description": "Sends messages to AWS SQS"
+  },
+  {
+    "filename": "acuitySchedulingTrigger.json",
+    "displayName": "Acuity Scheduling Trigger",
+    "description": "Handle Acuity Scheduling events via webhooks"
+  },
+  {
+    "filename": "markdown.json",
+    "displayName": "Markdown",
+    "description": "Convert data between Markdown and HTML"
+  },
+  {
+    "filename": "grafana.json",
+    "displayName": "Grafana",
+    "description": "Consume the Grafana API"
+  },
+  {
+    "filename": "googleCalendarTrigger.json",
+    "displayName": "Google Calendar Trigger",
+    "description": "Starts the workflow when Google Calendar events occur"
+  },
+  {
+    "filename": "medium.json",
+    "displayName": "Medium",
+    "description": "Consume Medium API"
+  },
+  {
+    "filename": "sms77.json",
+    "displayName": "seven",
+    "description": "Send SMS and make text-to-speech calls"
+  },
+  {
+    "filename": "activeCampaignTrigger.json",
+    "displayName": "ActiveCampaign Trigger",
+    "description": "Handle ActiveCampaign events via webhooks"
+  },
+  {
+    "filename": "signl4.json",
+    "displayName": "SIGNL4",
+    "description": "Consume SIGNL4 API"
+  },
+  {
+    "filename": "magento2.json",
+    "displayName": "Magento 2",
+    "description": "Consume Magento API"
+  },
+  {
+    "filename": "humanticAi.json",
+    "displayName": "Humantic AI",
+    "description": "Consume Humantic AI API"
+  },
+  {
+    "filename": "googleDrive.json",
+    "displayName": "Google Drive",
+    "description": "Access data on Google Drive"
+  },
+  {
+    "filename": "venafiTlsProtectCloudTrigger.json",
+    "displayName": "Venafi TLS Protect Cloud Trigger",
+    "description": "Starts the workflow when Venafi events occur"
+  },
+  {
+    "filename": "googleChat.json",
+    "displayName": "Google Chat",
+    "description": "Consume Google Chat API"
+  },
+  {
+    "filename": "figmaTrigger.json",
+    "displayName": "Figma Trigger (Beta)",
+    "description": "Starts the workflow when Figma events occur"
+  },
+  {
+    "filename": "strapi.json",
+    "displayName": "Strapi",
+    "description": "Consume Strapi API"
+  },
+  {
+    "filename": "stackby.json",
+    "displayName": "Stackby",
+    "description": "Read, write, and delete data in Stackby"
+  },
+  {
+    "filename": "affinity.json",
+    "displayName": "Affinity",
+    "description": "Consume Affinity API"
+  },
+  {
+    "filename": "oneSimpleApi.json",
+    "displayName": "One Simple API",
+    "description": "A toolbox of no-code utilities"
+  },
+  {
+    "filename": "gSuiteAdmin.json",
+    "displayName": "Google Workspace Admin",
+    "description": "Consume Google Workspace Admin API"
+  },
+  {
+    "filename": "unleashedSoftware.json",
+    "displayName": "Unleashed Software",
+    "description": "Consume Unleashed Software API"
+  },
+  {
+    "filename": "awsComprehend.json",
+    "displayName": "AWS Comprehend",
+    "description": "Sends data to Amazon Comprehend"
+  },
+  {
+    "filename": "clickUp.json",
+    "displayName": "ClickUp",
+    "description": "Consume ClickUp API (Beta)"
+  },
+  {
+    "filename": "elasticSecurity.json",
+    "displayName": "Elastic Security",
+    "description": "Consume the Elastic Security API"
+  },
+  {
+    "filename": "googleFirebaseRealtimeDatabase.json",
+    "displayName": "Google Cloud Realtime Database",
+    "description": "Interact with Google Firebase - Realtime Database API"
+  },
+  {
+    "filename": "egoi.json",
+    "displayName": "E-goi",
+    "description": "Consume E-goi API"
+  },
+  {
+    "filename": "filemaker.json",
+    "displayName": "FileMaker",
+    "description": "Retrieve data from the FileMaker data API"
+  },
+  {
+    "filename": "mailerLite.json",
+    "displayName": "MailerLite",
+    "description": "Consume Mailer Lite API"
+  },
+  {
+    "filename": "spotify.json",
+    "displayName": "Spotify",
+    "description": "Access public song data via the Spotify API"
+  },
+  {
+    "filename": "taigaTrigger.json",
+    "displayName": "Taiga Trigger",
+    "description": "Handle Taiga events via webhook"
+  },
+  {
+    "filename": "awsSns.json",
+    "displayName": "AWS SNS",
+    "description": "Sends data to AWS SNS"
+  },
+  {
+    "filename": "helpScoutTrigger.json",
+    "displayName": "Help Scout Trigger",
+    "description": "Starts the workflow when Help Scout events occur"
+  },
+  {
+    "filename": "lemlist.json",
+    "displayName": "Lemlist",
+    "description": "Consume the Lemlist API"
+  },
+  {
+    "filename": "keapTrigger.json",
+    "displayName": "Keap Trigger",
+    "description": "Starts the workflow when Infusionsoft events occur"
+  },
+  {
+    "filename": "taiga.json",
+    "displayName": "Taiga",
+    "description": "Consume Taiga API"
+  },
+  {
+    "filename": "sendy.json",
+    "displayName": "Sendy",
+    "description": "Consume Sendy API"
+  },
+  {
+    "filename": "awsCognito.json",
+    "displayName": "AWS Cognito",
+    "description": "Sends data to AWS Cognito"
+  },
+  {
+    "filename": "loneScaleTrigger.json",
+    "displayName": "LoneScale Trigger",
+    "description": "Trigger LoneScale Workflow"
+  },
+  {
+    "filename": "airtable.json",
+    "displayName": "Airtable",
+    "description": "Read, update, write and delete data from Airtable"
+  },
+  {
+    "filename": "googleDocs.json",
+    "displayName": "Google Docs",
+    "description": "Consume Google Docs API."
+  },
+  {
+    "filename": "monicaCrm.json",
+    "displayName": "Monica CRM",
+    "description": "Consume the Monica CRM API"
+  },
+  {
+    "filename": "rabbitmq.json",
+    "displayName": "RabbitMQ",
+    "description": "Sends messages to a RabbitMQ topic"
+  },
+  {
+    "filename": "shopifyTrigger.json",
+    "displayName": "Shopify Trigger",
+    "description": "Handle Shopify events via webhooks"
+  },
+  {
+    "filename": "azureCosmosDb.json",
+    "displayName": "Azure Cosmos DB",
+    "description": "Interact with Azure Cosmos DB API"
+  },
+  {
+    "filename": "zammad.json",
+    "displayName": "Zammad",
+    "description": "Consume the Zammad API"
+  },
+  {
+    "filename": "hubspot.json",
+    "displayName": "HubSpot",
+    "description": "Consume HubSpot API"
+  },
+  {
+    "filename": "aiTransform.json",
+    "displayName": "AI Transform",
+    "description": "Modify data based on instructions written in plain english"
+  },
+  {
+    "filename": "seaTable.json",
+    "displayName": "SeaTable",
+    "description": "Consume the SeaTable API"
+  },
+  {
+    "filename": "gmail.json",
+    "displayName": "Gmail",
+    "description": "Consume the Gmail API"
+  },
+  {
+    "filename": "githubTrigger.json",
+    "displayName": "Github Trigger",
+    "description": "Starts the workflow when Github events occur"
+  },
+  {
+    "filename": "googleCloudNaturalLanguage.json",
+    "displayName": "Google Cloud Natural Language",
+    "description": "Consume Google Cloud Natural Language API"
+  },
+  {
+    "filename": "formstackTrigger.json",
+    "displayName": "Formstack Trigger",
+    "description": "Starts the workflow on a Formstack form submission."
+  },
+  {
+    "filename": "discourse.json",
+    "displayName": "Discourse",
+    "description": "Consume Discourse API"
+  },
+  {
+    "filename": "youTube.json",
+    "displayName": "YouTube",
+    "description": "Consume YouTube API"
+  },
+  {
+    "filename": "citrixAdc.json",
+    "displayName": "Netscaler ADC",
+    "description": "Consume Netscaler ADC API"
+  },
+  {
+    "filename": "executeWorkflowTrigger.json",
+    "displayName": "Execute Workflow Trigger",
+    "description": "Helpers for calling other n8n workflows. Used for designing modular, microservice-like workflows."
+  },
+  {
+    "filename": "affinityTrigger.json",
+    "displayName": "Affinity Trigger",
+    "description": "Handle Affinity events via webhooks"
+  },
+  {
+    "filename": "questDb.json",
+    "displayName": "QuestDB",
+    "description": "Get, add and update data in QuestDB"
+  },
+  {
+    "filename": "respondToWebhook.json",
+    "displayName": "Respond to Webhook",
+    "description": "Returns data for Webhook"
+  },
+  {
+    "filename": "clearbit.json",
+    "displayName": "Clearbit",
+    "description": "Consume Clearbit API"
+  },
+  {
+    "filename": "getResponse.json",
+    "displayName": "GetResponse",
+    "description": "Consume GetResponse API"
+  },
+  {
+    "filename": "paddle.json",
+    "displayName": "Paddle",
+    "description": "Consume Paddle API"
+  },
+  {
+    "filename": "plivo.json",
+    "displayName": "Plivo",
+    "description": "Send SMS/MMS messages or make phone calls"
+  },
+  {
+    "filename": "seaTableTrigger.json",
+    "displayName": "SeaTable Trigger",
+    "description": "Starts the workflow when SeaTable events occur"
+  },
+  {
+    "filename": "cloudflare.json",
+    "displayName": "Cloudflare",
+    "description": "Consume Cloudflare API"
+  },
+  {
+    "filename": "drift.json",
+    "displayName": "Drift",
+    "description": "Consume Drift API"
+  },
+  {
+    "filename": "nocoDb.json",
+    "displayName": "NocoDB",
+    "description": "Read, update, write and delete data from NocoDB"
+  },
+  {
+    "filename": "jotFormTrigger.json",
+    "displayName": "JotForm Trigger",
+    "description": "Handle JotForm events via webhooks"
+  },
+  {
+    "filename": "perplexity.json",
+    "displayName": "Perplexity",
+    "description": "Interact with the Perplexity API to generate AI responses with citations"
+  },
+  {
+    "filename": "workflowTrigger.json",
+    "displayName": "Workflow Trigger",
+    "description": "Triggers based on various lifecycle events, like when a workflow is activated"
+  },
+  {
+    "filename": "pipedriveTrigger.json",
+    "displayName": "Pipedrive Trigger",
+    "description": "Starts the workflow when Pipedrive events occur"
+  },
+  {
+    "filename": "n8nTrigger.json",
+    "displayName": "n8n Trigger",
+    "description": "Handle events and perform actions on your n8n instance"
+  },
+  {
+    "filename": "disqus.json",
+    "displayName": "Disqus",
+    "description": "Access data on Disqus"
+  },
+  {
+    "filename": "typeformTrigger.json",
+    "displayName": "Typeform Trigger",
+    "description": "Starts the workflow on a Typeform form submission"
+  },
+  {
+    "filename": "amqp.json",
+    "displayName": "AMQP Sender",
+    "description": "Sends a raw-message via AMQP 1.0, executed once per item"
+  },
+  {
+    "filename": "googleContacts.json",
+    "displayName": "Google Contacts",
+    "description": "Consume Google Contacts API"
+  },
+  {
+    "filename": "phantombuster.json",
+    "displayName": "Phantombuster",
+    "description": "Consume Phantombuster API"
+  },
+  {
+    "filename": "telegram.json",
+    "displayName": "Telegram",
+    "description": "Sends data to Telegram"
+  },
+  {
+    "filename": "flow.json",
+    "displayName": "Flow",
+    "description": "Consume Flow API"
+  },
+  {
+    "filename": "htmlExtract.json",
+    "displayName": "HTML Extract",
+    "description": "Extracts data from HTML"
+  },
+  {
+    "filename": "itemLists.json",
+    "displayName": "Item Lists",
+    "description": "Helper for working with lists of items and transforming arrays"
+  },
+  {
+    "filename": "intercom.json",
+    "displayName": "Intercom",
+    "description": "Consume Intercom API"
+  },
+  {
+    "filename": "compression.json",
+    "displayName": "Compression",
+    "description": "Compress and decompress files"
+  },
+  {
+    "filename": "renameKeys.json",
+    "displayName": "Rename Keys",
+    "description": "Update item field names"
+  },
+  {
+    "filename": "stravaTrigger.json",
+    "displayName": "Strava Trigger",
+    "description": "Starts the workflow when Strava events occur"
+  },
+  {
+    "filename": "microsoftTeams.json",
+    "displayName": "Microsoft Teams",
+    "description": "Consume Microsoft Teams API"
+  },
+  {
+    "filename": "sendGrid.json",
+    "displayName": "SendGrid",
+    "description": "Consume SendGrid API"
+  },
+  {
+    "filename": "quickbase.json",
+    "displayName": "Quick Base",
+    "description": "Integrate with the Quick Base RESTful API"
+  },
+  {
+    "filename": "aggregate.json",
+    "displayName": "Aggregate",
+    "description": "Combine a field from many items into a list in a single item"
+  },
+  {
+    "filename": "stripeTrigger.json",
+    "displayName": "Stripe Trigger",
+    "description": "Handle Stripe events via webhooks"
+  },
+  {
+    "filename": "azureStorage.json",
+    "displayName": "Azure Storage",
+    "description": "Interact with Azure Storage API"
+  },
+  {
+    "filename": "uptimeRobot.json",
+    "displayName": "UptimeRobot",
+    "description": "Consume UptimeRobot API"
+  },
+  {
+    "filename": "convertToFile.json",
+    "displayName": "Convert to File",
+    "description": "Convert JSON data to binary data"
+  },
+  {
+    "filename": "googleBigQuery.json",
+    "displayName": "Google BigQuery",
+    "description": "Consume Google BigQuery API"
+  },
+  {
+    "filename": "trello.json",
+    "displayName": "Trello",
+    "description": "Create, change and delete boards and cards"
+  },
+  {
+    "filename": "limit.json",
+    "displayName": "Limit",
+    "description": "Restrict the number of items"
+  },
+  {
+    "filename": "surveyMonkeyTrigger.json",
+    "displayName": "SurveyMonkey Trigger",
+    "description": "Starts the workflow when Survey Monkey events occur"
+  },
+  {
+    "filename": "googleSlides.json",
+    "displayName": "Google Slides",
+    "description": "Consume the Google Slides API"
+  },
+  {
+    "filename": "dropcontact.json",
+    "displayName": "Dropcontact",
+    "description": "Find B2B emails and enrich contacts"
+  },
+  {
+    "filename": "readBinaryFiles.json",
+    "displayName": "Read Binary Files",
+    "description": "Reads binary files from disk"
+  },
+  {
+    "filename": "vero.json",
+    "displayName": "Vero",
+    "description": "Consume Vero API"
+  },
+  {
+    "filename": "lingvaNex.json",
+    "displayName": "LingvaNex",
+    "description": "Consume LingvaNex API"
+  },
+  {
+    "filename": "pushbullet.json",
+    "displayName": "Pushbullet",
+    "description": "Consume Pushbullet API"
+  },
+  {
+    "filename": "haloPSA.json",
+    "displayName": "HaloPSA",
+    "description": "Consume HaloPSA API"
+  },
+  {
+    "filename": "rssFeedReadTrigger.json",
+    "displayName": "RSS Feed Trigger",
+    "description": "Starts a workflow when an RSS feed is updated"
+  },
+  {
+    "filename": "theHiveTrigger.json",
+    "displayName": "TheHive Trigger",
+    "description": "Starts the workflow when TheHive events occur"
+  },
+  {
+    "filename": "circleCi.json",
+    "displayName": "CircleCI",
+    "description": "Consume CircleCI API"
+  },
+  {
+    "filename": "deepL.json",
+    "displayName": "DeepL",
+    "description": "Translate data using DeepL"
+  },
+  {
+    "filename": "s3.json",
+    "displayName": "S3",
+    "description": "Sends data to any S3-compatible service"
+  },
+  {
+    "filename": "mocean.json",
+    "displayName": "Mocean",
+    "description": "Send SMS and voice messages via Mocean"
+  },
+  {
+    "filename": "start.json",
+    "displayName": "Start",
+    "description": "Starts the workflow execution from this node"
+  },
+  {
+    "filename": "googleAds.json",
+    "displayName": "Google Ads",
+    "description": "Use the Google Ads API"
+  },
+  {
+    "filename": "googleAnalytics.json",
+    "displayName": "Google Analytics",
+    "description": "Use the Google Analytics API"
+  },
+  {
+    "filename": "timescaleDb.json",
+    "displayName": "TimescaleDB",
+    "description": "Add and update data in TimescaleDB"
+  },
+  {
+    "filename": "awsIam.json",
+    "displayName": "AWS IAM",
+    "description": "Interacts with Amazon IAM"
+  },
+  {
+    "filename": "contentful.json",
+    "displayName": "Contentful",
+    "description": "Consume Contentful API"
+  },
+  {
+    "filename": "twilioTrigger.json",
+    "displayName": "Twilio Trigger",
+    "description": "Starts the workflow on a Twilio update"
+  },
+  {
+    "filename": "koBoToolboxTrigger.json",
+    "displayName": "KoBoToolbox Trigger",
+    "description": "Process KoBoToolbox submissions"
+  },
+  {
+    "filename": "twist.json",
+    "displayName": "Twist",
+    "description": "Consume Twist API"
+  },
+  {
+    "filename": "executionData.json",
+    "displayName": "Execution Data",
+    "description": "Add execution data for search"
+  },
+  {
+    "filename": "convertKit.json",
+    "displayName": "ConvertKit",
+    "description": "Consume ConvertKit API"
+  },
+  {
+    "filename": "securityScorecard.json",
+    "displayName": "SecurityScorecard",
+    "description": "Consume SecurityScorecard API"
+  },
+  {
+    "filename": "raindrop.json",
+    "displayName": "Raindrop",
+    "description": "Consume the Raindrop API"
+  },
+  {
+    "filename": "bitly.json",
+    "displayName": "Bitly",
+    "description": "Consume Bitly API"
+  },
+  {
+    "filename": "zendesk.json",
+    "displayName": "Zendesk",
+    "description": "Consume Zendesk API"
+  },
+  {
+    "filename": "googleBooks.json",
+    "displayName": "Google Books",
+    "description": "Read data from Google Books"
+  },
+  {
+    "filename": "notionTrigger.json",
+    "displayName": "Notion Trigger",
+    "description": "Starts the workflow when Notion events occur"
+  },
+  {
+    "filename": "adalo.json",
+    "displayName": "Adalo",
+    "description": "Consume Adalo API"
+  },
+  {
+    "filename": "pagerDuty.json",
+    "displayName": "PagerDuty",
+    "description": "Consume PagerDuty API"
+  },
+  {
+    "filename": "removeDuplicates.json",
+    "displayName": "Remove Duplicates",
+    "description": "Delete items with matching field values"
+  },
+  {
+    "filename": "rocketchat.json",
+    "displayName": "RocketChat",
+    "description": "Consume RocketChat API"
+  },
+  {
+    "filename": "coda.json",
+    "displayName": "Coda",
+    "description": "Consume Coda API"
+  },
+  {
+    "filename": "awsLambda.json",
+    "displayName": "AWS Lambda",
+    "description": "Invoke functions on AWS Lambda"
+  },
+  {
+    "filename": "googleTranslate.json",
+    "displayName": "Google Translate",
+    "description": "Translate data using Google Translate"
+  },
+  {
+    "filename": "venafiTlsProtectDatacenter.json",
+    "displayName": "Venafi TLS Protect Datacenter",
+    "description": "Consume Venafi TLS Protect Datacenter"
+  },
+  {
+    "filename": "postgres.json",
+    "displayName": "Postgres",
+    "description": "Get, add and update data in Postgres"
+  },
+  {
+    "filename": "togglTrigger.json",
+    "displayName": "Toggl Trigger",
+    "description": "Starts the workflow when Toggl events occur"
+  },
+  {
+    "filename": "stopAndError.json",
+    "displayName": "Stop and Error",
+    "description": "Throw an error in the workflow"
+  },
+  {
+    "filename": "webflow.json",
+    "displayName": "Webflow",
+    "description": "Consume the Webflow API"
+  },
+  {
+    "filename": "whatsApp.json",
+    "displayName": "WhatsApp Business Cloud",
+    "description": "Access WhatsApp API"
+  },
+  {
+    "filename": "iCal.json",
+    "displayName": "iCalendar",
+    "description": "Create iCalendar file"
+  },
+  {
+    "filename": "simulate.json",
+    "displayName": "Simulate",
+    "description": "Simulate a node"
+  },
+  {
+    "filename": "matrix.json",
+    "displayName": "Matrix",
+    "description": "Consume Matrix API"
+  },
+  {
+    "filename": "readBinaryFile.json",
+    "displayName": "Read Binary File",
+    "description": "Reads a binary file from disk"
+  },
+  {
+    "filename": "crowdDev.json",
+    "displayName": "crowd.dev",
+    "description": "crowd.dev is an open-source suite of community and data tools built to unlock community-led growth for your organization."
+  },
+  {
+    "filename": "wise.json",
+    "displayName": "Wise",
+    "description": "Consume the Wise API"
+  },
+  {
+    "filename": "asanaTrigger.json",
+    "displayName": "Asana Trigger",
+    "description": "Starts the workflow when Asana events occur."
+  },
+  {
+    "filename": "msg91.json",
+    "displayName": "MSG91",
+    "description": "Sends transactional SMS via MSG91"
+  },
+  {
+    "filename": "vonage.json",
+    "displayName": "Vonage",
+    "description": "Consume Vonage API"
+  },
+  {
+    "filename": "localFileTrigger.json",
+    "displayName": "Local File Trigger",
+    "description": "Triggers a workflow on file system changes"
+  },
+  {
+    "filename": "googleCalendar.json",
+    "displayName": "Google Calendar",
+    "description": "Consume Google Calendar API"
+  },
+  {
+    "filename": "zohoCrm.json",
+    "displayName": "Zoho CRM",
+    "description": "Consume Zoho CRM API"
+  },
+  {
+    "filename": "emelia.json",
+    "displayName": "Emelia",
+    "description": "Consume the Emelia API"
+  },
+  {
+    "filename": "googleDriveTrigger.json",
+    "displayName": "Google Drive Trigger",
+    "description": "Starts the workflow when Google Drive events occur"
+  },
+  {
+    "filename": "okta.json",
+    "displayName": "Okta",
+    "description": "Use the Okta API"
+  },
+  {
+    "filename": "netlify.json",
+    "displayName": "Netlify",
+    "description": "Consume Netlify API"
+  },
+  {
+    "filename": "microsoftOneDriveTrigger.json",
+    "displayName": "Microsoft OneDrive Trigger",
+    "description": "Trigger for Microsoft OneDrive API."
+  },
+  {
+    "filename": "nasa.json",
+    "displayName": "NASA",
+    "description": "Retrieve data from the NASA API"
+  },
+  {
+    "filename": "pipedrive.json",
+    "displayName": "Pipedrive",
+    "description": "Create and edit data in Pipedrive"
+  },
+  {
+    "filename": "emailSend.json",
+    "displayName": "Send Email",
+    "description": "Sends an Email"
+  },
+  {
+    "filename": "salesforce.json",
+    "displayName": "Salesforce",
+    "description": "Consume Salesforce API"
+  },
+  {
+    "filename": "readWriteFile.json",
+    "displayName": "Read/Write Files from Disk",
+    "description": "Read or write files from the computer that runs n8n"
+  },
+  {
+    "filename": "n8nTrainingCustomerMessenger.json",
+    "displayName": "Customer Messenger (n8n training)",
+    "description": "Dummy node used for n8n training"
+  },
+  {
+    "filename": "agileCrm.json",
+    "displayName": "Agile CRM",
+    "description": "Consume Agile CRM API"
+  },
+  {
+    "filename": "spontit.json",
+    "displayName": "Spontit",
+    "description": "Consume Spontit API"
+  },
+  {
+    "filename": "cortex.json",
+    "displayName": "Cortex",
+    "description": "Apply the Cortex analyzer/responder on the given entity"
+  },
+  {
+    "filename": "googleBusinessProfileTrigger.json",
+    "displayName": "Google Business Profile Trigger",
+    "description": "Fetches reviews from Google Business Profile and starts the workflow on specified polling intervals."
+  },
+  {
+    "filename": "shopify.json",
+    "displayName": "Shopify",
+    "description": "Consume Shopify API"
+  },
+  {
+    "filename": "syncroMsp.json",
+    "displayName": "SyncroMSP",
+    "description": "Gets data from SyncroMSP"
+  },
+  {
+    "filename": "peekalink.json",
+    "displayName": "Peekalink",
+    "description": "Consume the Peekalink API"
+  },
+  {
+    "filename": "facebookTrigger.json",
+    "displayName": "Facebook Trigger",
+    "description": "Starts the workflow when Facebook events occur"
+  },
+  {
+    "filename": "debugHelper.json",
+    "displayName": "DebugHelper",
+    "description": "Causes problems intentionally and generates useful data for debugging"
+  },
+  {
+    "filename": "scheduleTrigger.json",
+    "displayName": "Schedule Trigger",
+    "description": "Triggers the workflow on a given schedule"
+  },
+  {
+    "filename": "mailjet.json",
+    "displayName": "Mailjet",
+    "description": "Consume Mailjet API"
+  },
+  {
+    "filename": "ciscoWebex.json",
+    "displayName": "Webex by Cisco",
+    "description": "Consume the Cisco Webex API"
+  },
+  {
+    "filename": "microsoftGraphSecurity.json",
+    "displayName": "Microsoft Graph Security",
+    "description": "Consume the Microsoft Graph Security API"
+  },
+  {
+    "filename": "segment.json",
+    "displayName": "Segment",
+    "description": "Consume Segment API"
+  },
+  {
+    "filename": "travisCi.json",
+    "displayName": "TravisCI",
+    "description": "Consume TravisCI API"
+  },
+  {
+    "filename": "pushover.json",
+    "displayName": "Pushover",
+    "description": "Consume Pushover API"
+  },
+  {
+    "filename": "gumroadTrigger.json",
+    "displayName": "Gumroad Trigger",
+    "description": "Handle Gumroad events via webhooks"
+  },
+  {
+    "filename": "kitemaker.json",
+    "displayName": "Kitemaker",
+    "description": "Consume the Kitemaker GraphQL API"
+  },
+  {
+    "filename": "manualTrigger.json",
+    "displayName": "Manual Trigger",
+    "description": "Runs the flow on clicking a button in n8n"
+  },
+  {
+    "filename": "bubble.json",
+    "displayName": "Bubble",
+    "description": "Consume the Bubble Data API"
+  },
+  {
+    "filename": "redis.json",
+    "displayName": "Redis",
+    "description": "Get, send and update data in Redis"
+  },
+  {
+    "filename": "supabase.json",
+    "displayName": "Supabase",
+    "description": "Add, get, delete and update data in a table"
+  },
+  {
+    "filename": "extractFromFile.json",
+    "displayName": "Extract from File",
+    "description": "Convert binary data to JSON"
+  },
+  {
+    "filename": "apiTemplateIo.json",
+    "displayName": "APITemplate.io",
+    "description": "Consume the APITemplate.io API"
+  },
+  {
+    "filename": "interval.json",
+    "displayName": "Interval",
+    "description": "Triggers the workflow in a given interval"
+  },
+  {
+    "filename": "mailchimpTrigger.json",
+    "displayName": "Mailchimp Trigger",
+    "description": "Handle Mailchimp events via webhooks"
+  },
+  {
+    "filename": "wooCommerceTrigger.json",
+    "displayName": "WooCommerce Trigger",
+    "description": "Handle WooCommerce events via webhooks"
+  },
+  {
+    "filename": "postBin.json",
+    "displayName": "PostBin",
+    "description": "Consume PostBin API"
+  },
+  {
+    "filename": "calTrigger.json",
+    "displayName": "Cal.com Trigger",
+    "description": "Handle Cal.com events via webhooks"
+  },
+  {
+    "filename": "facebookGraphApi.json",
+    "displayName": "Facebook Graph API",
+    "description": "Interacts with Facebook using the Graph API"
+  },
+  {
+    "filename": "quickbooks.json",
+    "displayName": "QuickBooks Online",
+    "description": "Consume the QuickBooks Online API"
+  },
+  {
+    "filename": "sentryIo.json",
+    "displayName": "Sentry.io",
+    "description": "Consume Sentry.io API"
+  },
+  {
+    "filename": "automizy.json",
+    "displayName": "Automizy",
+    "description": "Consume Automizy API"
+  },
+  {
+    "filename": "postmarkTrigger.json",
+    "displayName": "Postmark Trigger",
+    "description": "Starts the workflow when Postmark events occur"
+  },
+  {
+    "filename": "snowflake.json",
+    "displayName": "Snowflake",
+    "description": "Get, add and update data in Snowflake"
+  },
+  {
+    "filename": "marketstack.json",
+    "displayName": "Marketstack",
+    "description": "Consume Marketstack API"
+  },
+  {
+    "filename": "invoiceNinjaTrigger.json",
+    "displayName": "Invoice Ninja Trigger",
+    "description": "Starts the workflow when Invoice Ninja events occur"
+  },
+  {
+    "filename": "ghost.json",
+    "displayName": "Ghost",
+    "description": "Consume Ghost API"
+  },
+  {
+    "filename": "copperTrigger.json",
+    "displayName": "Copper Trigger",
+    "description": "Handle Copper events via webhooks"
+  },
+  {
+    "filename": "dropbox.json",
+    "displayName": "Dropbox",
+    "description": "Access data on Dropbox"
+  },
+  {
+    "filename": "ftp.json",
+    "displayName": "FTP",
+    "description": "Transfer files via FTP or SFTP"
+  },
+  {
+    "filename": "telegramTrigger.json",
+    "displayName": "Telegram Trigger",
+    "description": "Starts the workflow on a Telegram update"
+  },
+  {
+    "filename": "errorTrigger.json",
+    "displayName": "Error Trigger",
+    "description": "Triggers the workflow when another workflow has an error"
+  },
+  {
+    "filename": "mailcheck.json",
+    "displayName": "Mailcheck",
+    "description": "Consume Mailcheck API"
+  },
+  {
+    "filename": "microsoftEntra.json",
+    "displayName": "Microsoft Entra ID",
+    "description": "Interact with Microsoft Entra ID API"
+  },
+  {
+    "filename": "convertKitTrigger.json",
+    "displayName": "ConvertKit Trigger",
+    "description": "Handle ConvertKit events via webhooks"
+  },
+  {
+    "filename": "html.json",
+    "displayName": "HTML",
+    "description": "Work with HTML"
+  },
+  {
+    "filename": "bitbucketTrigger.json",
+    "displayName": "Bitbucket Trigger",
+    "description": "Handle Bitbucket events via webhooks"
+  },
+  {
+    "filename": "clickUpTrigger.json",
+    "displayName": "ClickUp Trigger",
+    "description": "Handle ClickUp events via webhooks (Beta)"
+  },
+  {
+    "filename": "pushcutTrigger.json",
+    "displayName": "Pushcut Trigger",
+    "description": "Starts the workflow when Pushcut events occur"
+  },
+  {
+    "filename": "jenkins.json",
+    "displayName": "Jenkins",
+    "description": "Consume Jenkins API"
+  },
+  {
+    "filename": "ciscoWebexTrigger.json",
+    "displayName": "Webex by Cisco Trigger",
+    "description": "Starts the workflow when Cisco Webex events occur."
+  },
+  {
+    "filename": "github.json",
+    "displayName": "GitHub",
+    "description": "Consume GitHub API"
+  },
+  {
+    "filename": "trelloTrigger.json",
+    "displayName": "Trello Trigger",
+    "description": "Starts the workflow when Trello events occur"
+  },
+  {
+    "filename": "twitter.json",
+    "displayName": "X (Formerly Twitter)",
+    "description": "Consume Twitter API"
+  },
+  {
+    "filename": "zoom.json",
+    "displayName": "Zoom",
+    "description": "Consume Zoom API"
+  },
+  {
+    "filename": "linear.json",
+    "displayName": "Linear",
+    "description": "Consume Linear API"
+  },
+  {
+    "filename": "cockpit.json",
+    "displayName": "Cockpit",
+    "description": "Consume Cockpit API"
+  },
+  {
+    "filename": "wufooTrigger.json",
+    "displayName": "Wufoo Trigger",
+    "description": "Handle Wufoo events via webhooks"
+  },
+  {
+    "filename": "iterable.json",
+    "displayName": "Iterable",
+    "description": "Consume Iterable API"
+  },
+  {
+    "filename": "awsElb.json",
+    "displayName": "AWS ELB",
+    "description": "Sends data to AWS ELB API"
+  },
+  {
+    "filename": "odoo.json",
+    "displayName": "Odoo",
+    "description": "Consume Odoo API"
+  },
+  {
+    "filename": "onfleetTrigger.json",
+    "displayName": "Onfleet Trigger",
+    "description": "Starts the workflow when Onfleet events occur"
+  },
+  {
+    "filename": "storyblok.json",
+    "displayName": "Storyblok",
+    "description": "Consume Storyblok API"
+  },
+  {
+    "filename": "notion.json",
+    "displayName": "Notion",
+    "description": "Consume Notion API"
+  },
+  {
+    "filename": "autopilotTrigger.json",
+    "displayName": "Autopilot Trigger",
+    "description": "Handle Autopilot events via webhooks"
+  },
+  {
+    "filename": "slack.json",
+    "displayName": "Slack",
+    "description": "Consume Slack API"
+  },
+  {
+    "filename": "totp.json",
+    "displayName": "TOTP",
+    "description": "Generate a time-based one-time password"
+  },
+  {
+    "filename": "harvest.json",
+    "displayName": "Harvest",
+    "description": "Access data on Harvest"
+  },
+  {
+    "filename": "rundeck.json",
+    "displayName": "Rundeck",
+    "description": "Manage Rundeck API"
+  },
+  {
+    "filename": "twilio.json",
+    "displayName": "Twilio",
+    "description": "Send SMS and WhatsApp messages or make phone calls"
+  },
+  {
+    "filename": "reddit.json",
+    "displayName": "Reddit",
+    "description": "Consume the Reddit API"
+  },
+  {
+    "filename": "facebookLeadAdsTrigger.json",
+    "displayName": "Facebook Lead Ads Trigger",
+    "description": "Handle Facebook Lead Ads events via webhooks"
+  },
+  {
+    "filename": "oura.json",
+    "displayName": "Oura",
+    "description": "Consume Oura API"
+  },
+  {
+    "filename": "bitwarden.json",
+    "displayName": "Bitwarden",
+    "description": "Consume the Bitwarden API"
+  },
+  {
+    "filename": "merge.json",
+    "displayName": "Merge",
+    "description": "Merges data of multiple streams once data from both is available"
+  },
+  {
+    "filename": "form.json",
+    "displayName": "n8n Form",
+    "description": "Generate webforms in n8n and pass their responses to the workflow"
+  },
+  {
+    "filename": "linearTrigger.json",
+    "displayName": "Linear Trigger",
+    "description": "Starts the workflow when Linear events occur"
+  },
+  {
+    "filename": "bannerbear.json",
+    "displayName": "Bannerbear",
+    "description": "Consume Bannerbear API"
+  },
+  {
+    "filename": "gong.json",
+    "displayName": "Gong",
+    "description": "Interact with Gong API"
+  },
+  {
+    "filename": "wooCommerce.json",
+    "displayName": "WooCommerce",
+    "description": "Consume WooCommerce API"
+  },
+  {
+    "filename": "hubspotTrigger.json",
+    "displayName": "HubSpot Trigger",
+    "description": "Starts the workflow when HubSpot events occur"
+  },
+  {
+    "filename": "graphql.json",
+    "displayName": "GraphQL",
+    "description": "Makes a GraphQL request and returns the received data"
+  },
+  {
+    "filename": "writeBinaryFile.json",
+    "displayName": "Write Binary File",
+    "description": "Writes a binary file to disk"
+  },
+  {
+    "filename": "n8nTrainingCustomerDatastore.json",
+    "displayName": "Customer Datastore (n8n training)",
+    "description": "Dummy node used for n8n training"
+  },
+  {
+    "filename": "gmailTrigger.json",
+    "displayName": "Gmail Trigger",
+    "description": "Fetches emails from Gmail and starts the workflow on specified polling intervals."
+  },
+  {
+    "filename": "microsoftToDo.json",
+    "displayName": "Microsoft To Do",
+    "description": "Consume Microsoft To Do API."
+  },
+  {
+    "filename": "rssFeedRead.json",
+    "displayName": "RSS Read",
+    "description": "Reads data from an RSS Feed"
+  },
+  {
+    "filename": "spreadsheetFile.json",
+    "displayName": "Spreadsheet File",
+    "description": "Reads and writes data from a spreadsheet file like CSV, XLS, ODS, etc"
+  },
+  {
+    "filename": "splitInBatches.json",
+    "displayName": "Split In Batches",
+    "description": "Split data into batches and iterate over each batch"
+  },
+  {
+    "filename": "actionNetwork.json",
+    "displayName": "Action Network",
+    "description": "Consume the Action Network API"
+  },
+  {
+    "filename": "awsSes.json",
+    "displayName": "AWS SES",
+    "description": "Sends data to AWS SES"
+  },
+  {
+    "filename": "microsoftExcel.json",
+    "displayName": "Microsoft Excel",
+    "description": "Consume Microsoft Excel API"
+  },
+  {
+    "filename": "googleTasks.json",
+    "displayName": "Google Tasks",
+    "description": "Consume Google Tasks API"
+  },
+  {
+    "filename": "formIoTrigger.json",
+    "displayName": "Form.io Trigger",
+    "description": "Handle form.io events via webhooks"
+  },
+  {
+    "filename": "evaluation.json",
+    "displayName": "Evaluation",
+    "description": "Runs an evaluation"
+  },
+  {
+    "filename": "formTrigger.json",
+    "displayName": "n8n Form Trigger",
+    "description": "Generate webforms in n8n and pass their responses to the workflow"
+  },
+  {
+    "filename": "linkedIn.json",
+    "displayName": "LinkedIn",
+    "description": "Consume LinkedIn API"
+  },
+  {
+    "filename": "git.json",
+    "displayName": "Git",
+    "description": "Control git."
+  },
+  {
+    "filename": "awsCertificateManager.json",
+    "displayName": "AWS Certificate Manager",
+    "description": "Sends data to AWS Certificate Manager"
+  },
+  {
+    "filename": "mandrill.json",
+    "displayName": "Mandrill",
+    "description": "Consume Mandrill API"
+  },
+  {
+    "filename": "copper.json",
+    "displayName": "Copper",
+    "description": "Consume the Copper API"
+  },
+  {
+    "filename": "mindee.json",
+    "displayName": "Mindee",
+    "description": "Consume Mindee API"
+  },
+  {
+    "filename": "googleSheets.json",
+    "displayName": "Google Sheets ",
+    "description": "Read, update and write data to Google Sheets"
+  },
+  {
+    "filename": "invoiceNinja.json",
+    "displayName": "Invoice Ninja",
+    "description": "Consume Invoice Ninja API"
+  },
+  {
+    "filename": "profitWell.json",
+    "displayName": "ProfitWell",
+    "description": "Consume ProfitWell API"
+  },
+  {
+    "filename": "microsoftSharePoint.json",
+    "displayName": "Microsoft SharePoint",
+    "description": "Interact with Microsoft SharePoint API"
+  },
+  {
+    "filename": "strava.json",
+    "displayName": "Strava",
+    "description": "Consume Strava API"
+  },
+  {
+    "filename": "zendeskTrigger.json",
+    "displayName": "Zendesk Trigger",
+    "description": "Handle Zendesk events via webhooks"
+  },
+  {
+    "filename": "moveBinaryData.json",
+    "displayName": "Convert to/from binary data",
+    "description": "Move data between binary and JSON properties"
+  },
+  {
+    "filename": "mailchimp.json",
+    "displayName": "Mailchimp",
+    "description": "Consume Mailchimp API"
+  },
+  {
+    "filename": "sort.json",
+    "displayName": "Sort",
+    "description": "Change items order"
+  },
+  {
+    "filename": "mattermost.json",
+    "displayName": "Mattermost",
+    "description": "Sends data to Mattermost"
+  },
+  {
+    "filename": "executeWorkflow.json",
+    "displayName": "Execute Sub-workflow",
+    "description": "Execute another workflow"
+  },
+  {
+    "filename": "wekan.json",
+    "displayName": "Wekan",
+    "description": "Consume Wekan API"
+  },
+  {
+    "filename": "salesforceTrigger.json",
+    "displayName": "Salesforce Trigger",
+    "description": "Fetches data from Salesforce and starts the workflow on specified polling intervals."
+  },
+  {
+    "filename": "theHiveProject.json",
+    "displayName": "TheHive 5",
+    "description": "Consume TheHive 5 API"
+  },
+  {
+    "filename": "crowdDevTrigger.json",
+    "displayName": "crowd.dev Trigger",
+    "description": "Starts the workflow when crowd.dev events occur."
+  },
+  {
+    "filename": "mqtt.json",
+    "displayName": "MQTT",
+    "description": "Push messages to MQTT"
+  }
+]
