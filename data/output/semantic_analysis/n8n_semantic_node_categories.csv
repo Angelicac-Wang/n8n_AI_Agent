@@ -1,0 +1,431 @@
+category_id,category_label,functional_focus,node_name,node_type,summary,probability
+0,透過 + 事件,general,spotify,regular,透過 Spotify API 存取公共歌曲數據,0.8792941921119924
+0,透過 + 事件,general,sticky note,regular,此節點可讓您在工作流程中添加便利的便條，以幫助更好理解流程。,0.7605079982613515
+0,透過 + 事件,general,cron,regular,在特定時間觸發工作流程,0.7499999999999948
+0,透過 + 事件,general,wait,regular,等待節點可讓工作流在執行過程中暫停一段時間，再繼續執行。,0.7499951023399283
+0,透過 + 事件,general,venafi tls protect cloud,regular,此節點用於使用 Venafi TLS Protect Cloud API。,0.7307780413117586
+0,透過 + 事件,general,webhook,regular,啟動工作流程當收到 webhook 時,0.7061979362785792
+0,透過 + 事件,general,google cloud realtime database,regular,與 Google Firebase - Realtime Database API 進行互動。,0.6727545926336784
+0,透過 + 事件,general,rss read,regular,此節點從 RSS Feed 中讀取數據。,0.6332421493310252
+0,透過 + 事件,general,venafi tls protect datacenter,regular,此節點用於使用 Venafi TLS Protect Datacenter 服務，可用於管理憑證、策略以及自訂 API 呼叫。,0.5911364969396361
+0,透過 + 事件,general,quickchart,regular,透過 QuickChart 創建圖表,0.5339555905251319
+0,透過 + 事件,general,respond to webhook,regular,此節點用於回應 Webhook，根據設定回傳不同類型的數據。,0.4450881221018885
+0,透過 + 事件,general,formIoTrigger,trigger,透過 Webhooks 處理 form.io 事件,0.9898254039914067
+0,透過 + 事件,general,netlifyTrigger,trigger,透過 Webhooks 處理 Netlify 事件。,0.9888533703766216
+0,透過 + 事件,general,activeCampaignTrigger,trigger,透過 Webhooks 處理 ActiveCampaign 事件。,0.9836441979146363
+0,透過 + 事件,general,wise trigger,trigger,透過 Webhooks 處理 Wise 事件,0.9832532527961833
+0,透過 + 事件,general,jotform trigger,trigger,透過 Webhooks 處理 JotForm 事件,0.9832530039034125
+0,透過 + 事件,general,payPalTrigger,trigger,透過 Webhooks 處理 PayPal 事件。,0.9828429760409222
+0,透過 + 事件,general,wufooTrigger,trigger,透過 Webhooks 處理 Wufoo 事件。,0.9828426696109275
+0,透過 + 事件,general,taigaTrigger,trigger,透過 webhook 處理 Taiga 事件,0.98240969836513
+0,透過 + 事件,general,emelia trigger,trigger,透過 Webhooks 處理 Emelia 活動事件,0.9809775003663022
+0,透過 + 事件,general,mailchimp trigger,trigger,透過 Webhooks 處理 Mailchimp 事件。,0.9786576820814327
+0,透過 + 事件,general,clickup trigger,trigger,透過 Webhooks 處理 ClickUp 事件（Beta 版）。,0.9786557404677693
+0,透過 + 事件,general,kobotoolbox trigger,trigger,處理 KoBoToolbox 提交的資料。,0.9765089806029505
+0,透過 + 事件,general,acuitySchedulingTrigger,trigger,透過 Webhooks 處理 Acuity Scheduling 事件。,0.9756923374449203
+0,透過 + 事件,general,bitbucketTrigger,trigger,透過 Webhooks 處理 Bitbucket 事件。,0.9748190750058416
+0,透過 + 事件,general,copper trigger,trigger,透過 Webhooks 處理 Copper 事件,0.9738799324208278
+0,透過 + 事件,general,mauticTrigger,trigger,透過 Webhooks 處理 Mautic 事件。,0.9738789123030132
+0,透過 + 事件,general,wooCommerceTrigger,trigger,透過 Webhooks 處理 WooCommerce 事件,0.9705877332740896
+0,透過 + 事件,general,autopilotTrigger,trigger,透過 Webhooks 處理 Autopilot 事件。,0.9692977389797088
+0,透過 + 事件,general,flowTrigger,trigger,透過 Webhooks 處理 Flow 事件,0.9692976079615757
+0,透過 + 事件,general,gumroadTrigger,trigger,透過 Webhooks 處理 Gumroad 事件。,0.9663460562298752
+0,透過 + 事件,general,webflowTrigger,trigger,處理 Webflow 事件通過 Webhooks,0.9627601005362046
+0,透過 + 事件,general,salesforce trigger,trigger,此節點從 Salesforce 擷取數據並在指定的輪詢間隔開始工作流程。,0.9627575391707335
+0,透過 + 事件,general,rss feed trigger,trigger,啟動工作流程當 RSS 資料源更新時。,0.9556958422367544
+0,透過 + 事件,general,affinityTrigger,trigger,此節點可透過 Webhook 處理 Affinity 事件。,0.9556950081047302
+0,透過 + 事件,general,gmailTrigger,trigger,此節點從 Gmail 中擷取郵件，並在指定的輪詢間隔啟動工作流程。,0.9556932733695265
+0,透過 + 事件,general,googleCalendarTrigger,trigger,啟動工作流程，當 Google 日曆事件發生時觸發,0.9556917506957049
+0,透過 + 事件,general,clockifyTrigger,trigger,此節點用於監聽 Clockify 事件。,0.9527003737286099
+0,透過 + 事件,general,stripeTrigger,trigger,此節點用於通過 Webhooks 處理 Stripe 事件。,0.9492738685255317
+0,透過 + 事件,general,shopify trigger,trigger,透過 Webhooks 處理 Shopify 事件。,0.940132849996757
+0,透過 + 事件,general,typeformTrigger,trigger,啟動工作流程以回應 Typeform 表單提交。,0.9285590503133989
+0,透過 + 事件,general,postmark trigger,trigger,啟動工作流程，當發生 Postmark 事件時觸發。,0.9102449229792964
+0,透過 + 事件,general,convertkit trigger,trigger,透過 Webhooks 處理 ConvertKit 事件,0.9097203883437749
+0,透過 + 事件,general,workableTrigger,trigger,啟動工作流程，當 Workable 事件發生時,0.854152869251609
+0,透過 + 事件,general,mqttTrigger,trigger,此節點可監聽 MQTT 事件。,0.8541525187300615
+0,透過 + 事件,general,eventbriteTrigger,trigger,透過 Webhooks 處理 Eventbrite 事件。,0.7942414225714834
+0,透過 + 事件,general,asanaTrigger,trigger,此節點在發生 Asana 事件時啟動工作流程。,0.7896521522623859
+0,透過 + 事件,general,slack trigger,trigger,透過 Webhooks 處理 Slack 事件,0.7874399145139515
+0,透過 + 事件,general,mailjetTrigger,trigger,透過 Webhooks 處理 Mailjet 事件,0.77286778282465
+0,透過 + 事件,general,microsoftOutlookTrigger,trigger,此節點從 Microsoft Outlook 擷取郵件，並在指定的輪詢間隔開始工作流程。,0.7094557245058776
+0,透過 + 事件,general,keapTrigger,trigger,此節點在 Infusionsoft 事件發生時啟動工作流程。,0.6753965918650874
+0,透過 + 事件,general,seaTable trigger,trigger,啟動工作流程，當 SeaTable 發生事件時觸發。,0.6405054531178092
+0,透過 + 事件,general,venafi tls protect cloud trigger,trigger,此節點會在 Venafi 事件發生時啟動工作流程。,0.6344532126439247
+0,透過 + 事件,general,facebookLeadAdsTrigger,trigger,處理 Facebook Lead Ads 事件通過 Webhooks。,0.6336914057913526
+0,透過 + 事件,general,zendesk trigger,trigger,此節點用於通過 Webhook 處理 Zendesk 事件。,0.6329631585544145
+0,透過 + 事件,general,lonescale trigger,trigger,觸發 LoneScale 工作流程。,0.6111055391408863
+0,透過 + 事件,general,toggl trigger,trigger,啟動工作流程，當 Toggl 事件發生時觸發。,0.6023540912122173
+0,透過 + 事件,general,microsoftOneDriveTrigger,trigger,此節點可觸發 Microsoft OneDrive API 的操作。,0.5701774311251786
+0,透過 + 事件,general,surveymonkey trigger,trigger,啟動工作流程，當 Survey Monkey 事件發生時觸發。,0.5509760921544735
+0,透過 + 事件,general,awsSnsTrigger,trigger,透過 Webhooks 處理 AWS SNS 事件。,0.53561879687947
+0,透過 + 事件,general,customer.io trigger,trigger,啟動在 Customer.io 更新時的工作流程 (Beta)。,0.5018983291926847
+0,透過 + 事件,general,notionTrigger,trigger,啟動工作流程，當 Notion 事件發生時觸發,0.47267391496621963
+0,透過 + 事件,general,n8n form trigger,trigger,Generate webforms in n8n and pass their responses to the workflow.,0.3941385468856931
+1,Create + Get,general,jira software,regular,"Consume Jira Software API to perform various operations like creating, updating, and deleting issues, comments, users, and more.",0.994435268350151
+1,Create + Get,general,phantombuster,regular,"Consume Phantombuster API to perform various operations like deleting agents, getting agent details, launching agents, and more.",0.9936820442256199
+1,Create + Get,general,grafana,regular,"Consume the Grafana API to perform operations like creating, deleting, updating, and retrieving dashboards.",0.9932556150941448
+1,Create + Get,general,slack,regular,"This node allows you to interact with the Slack API to perform various operations such as sending messages, archiving channels, inviting users, and more.",0.9926149872418367
+1,Create + Get,general,google drive,regular,"Access data on Google Drive including operations like copying, deleting, downloading, listing, sharing, updating, and uploading files or creating, deleting, and sharing folders.",0.9922896777991432
+1,Create + Get,general,stripe,regular,"Consume the Stripe API to perform various operations like getting balance, adding or removing customer cards, and more.",0.9918409290207038
+1,Create + Get,general,affinity,regular,"Consume Affinity API to interact with resources like lists, list entries, organizations, and persons.",0.9917445528234902
+1,Create + Get,general,sentry.io,regular,"Consume Sentry.io API to manage events, issues, organizations, projects, releases, and teams.",0.9917436421515539
+1,Create + Get,general,demio,regular,Consume the Demio API to interact with events and reports.,0.9906400359240994
+1,Create + Get,general,lemlist,regular,"Consume the Lemlist API to interact with activities, campaigns, leads, teams, and unsubscribes.",0.9902495778257517
+1,Create + Get,general,zammad,regular,"Consume the Zammad API to interact with groups, organizations, tickets, and users.",0.9898248278774151
+1,Create + Get,general,asana,regular,"This node allows you to interact with the Asana REST API to manage tasks, projects, users, and more.",0.9895197507208147
+1,Create + Get,general,circleci,regular,"Consume CircleCI API to interact with pipelines, including getting, triggering, and listing pipelines.",0.9891966230382677
+1,Create + Get,general,gong,regular,Interact with Gong API to retrieve call data and user information.,0.9890272150024804
+1,Create + Get,general,bubble,regular,"Consume the Bubble Data API to perform operations like creating, deleting, getting, and updating objects.",0.9884851527380507
+1,Create + Get,general,filemaker,regular,Retrieve data from the FileMaker data API.,0.9856532752967951
+1,Create + Get,general,quick base,regular,"Integrate with the Quick Base RESTful API to perform operations on resources like fields, files, records, and reports.",0.9758878985362857
+1,Create + Get,general,mailchimp,regular,"Consume Mailchimp API to perform operations such as managing members, campaigns, and list groups.",0.9749220267097791
+1,Create + Get,general,item lists,regular,Helper for working with lists of items and transforming arrays.,0.9748165733629461
+1,Create + Get,general,airtop,regular,Scrape and control any site with Airtop.,0.9728596037254579
+1,Create + Get,general,cockpit,regular,"Consume Cockpit API to perform operations on collections, forms, and singletons.",0.9694015298928729
+1,Create + Get,general,taiga,regular,"Consume Taiga API to perform operations on epics, issues, tasks, and user stories.",0.9499980470917372
+1,Create + Get,general,misp,regular,"Consume the MISP API to interact with various resources like attributes, events, tags, and more.",0.9494926541179524
+1,Create + Get,general,monday.com,regular,"This node allows you to interact with the Monday.com API to perform operations such as creating, getting, and archiving boards.",0.9387875209400907
+1,Create + Get,general,google docs,regular,"Consume Google Docs API to perform operations like creating, getting, and updating documents.",0.9376275606914073
+1,Create + Get,general,git,regular,"Control git by performing various operations like cloning repositories, committing files, pushing changes, and more.",0.9338660864552493
+1,Create + Get,general,kitemaker,regular,"Consume the Kitemaker GraphQL API to interact with organizations, spaces, users, and work items.",0.929099090549359
+1,Create + Get,general,aggregate,regular,Combine a field from many items into a list in a single item.,0.9263120747948865
+1,Create + Get,general,adalo,regular,"Consume Adalo API for operations like creating, updating, deleting, and retrieving rows in collections.",0.9166355313928369
+1,Create + Get,general,dropbox,regular,"Access data on Dropbox including files, folders, and search functionality.",0.9036908081866714
+1,Create + Get,general,harvest,regular,"Access data on Harvest for operations like managing clients, companies, contacts, estimates, expenses, invoices, projects, tasks, time entries, and users.",0.8963722498205119
+1,Create + Get,general,securityscorecard,regular,Consume SecurityScorecard API to retrieve company security information and scores.,0.8938949301085929
+1,Create + Get,general,nextcloud,regular,"Access data on Nextcloud including files, folders, and users.",0.8917409431946999
+1,Create + Get,general,pipedrive,regular,Create and edit data in Pipedrive CRM system.,0.889353464060391
+1,Create + Get,general,raindrop,regular,"Consume the Raindrop API to perform operations such as creating, updating, deleting bookmarks, and more.",0.8866808141741133
+1,Create + Get,general,microsoft graph security,regular,Consume the Microsoft Graph Security API to retrieve secure scores and control profiles.,0.8650631524170805
+1,Create + Get,general,flow,regular,"Consume Flow API to manipulate tasks, including creating, updating, and retrieving tasks.",0.8639879246227077
+1,Create + Get,general,convertkit,regular,"Consume ConvertKit API to manage custom fields, forms, sequences, tags, and subscribers.",0.8608584250680229
+1,Create + Get,general,mautic,regular,"Consume Mautic API to perform various operations like adding contacts to campaigns, creating companies, modifying contacts, and more.",0.8601805754683545
+1,Create + Get,general,zulip,regular,"Consume Zulip API to perform various operations like sending messages, updating messages, and managing streams and users.",0.8377550864427057
+1,Create + Get,general,netscaler adc,regular,This node allows you to consume Netscaler ADC API for operations like creating and installing certificates.,0.8361729622764262
+1,Create + Get,general,x (formerly twitter),regular,"This node allows you to interact with the Twitter API to perform actions such as creating tweets, sending direct messages, liking tweets, retweeting, and searching for tweets.",0.813967544560181
+1,Create + Get,general,customer datastore (n8n training),regular,This node is used for n8n training purposes and allows you to retrieve data about people from a dummy datastore.,0.808101457581868
+1,Create + Get,general,trello,regular,"Create, change, and delete Trello boards and cards.",0.8049027545505264
+1,Create + Get,general,perplexity,regular,Interact with the Perplexity API to generate AI responses with citations.,0.7972968162756298
+1,Create + Get,general,servicenow,regular,"Consume ServiceNow API to perform various operations like uploading attachments, getting user information, etc.",0.7775093069352651
+1,Create + Get,general,signl4,regular,Consume SIGNL4 API to send and resolve alerts with additional details and options.,0.758300825456345
+1,Create + Get,general,baserow,regular,"Consume the Baserow API to perform operations such as creating, deleting, updating, and retrieving rows in a database table.",0.7561752210231979
+1,Create + Get,general,limit,regular,限制項目數量，根據設定保留或移除項目。,0.7499999999999758
+1,Create + Get,general,edit image,regular,"This node allows you to edit an image by applying operations like blur, resize, adding borders, text, and more.",0.7454965458090408
+1,Create + Get,general,box,regular,"Consume Box API to perform operations like copying, deleting, downloading, and sharing files.",0.7433765090129604
+1,Create + Get,general,drift,regular,"Consume Drift API to perform operations on contacts such as creating, updating, getting, and deleting.",0.742620619385518
+1,Create + Get,general,customer messenger (n8n training),regular,This node is used for n8n training purposes to send messages to a specific customer.,0.7256381468867126
+1,Create + Get,general,emelia,regular,Consume the Emelia API to perform operations on campaigns and contact lists.,0.6946675216791944
+1,Create + Get,general,summarize,regular,"Summarize, count, find max/min, etc. across items based on specified fields",0.6831478716215562
+1,Create + Get,general,automizy,regular,Consume Automizy API to manage contacts and lists.,0.6736970703162111
+1,Create + Get,general,whatsapp business cloud,regular,"Access WhatsApp API to send messages, media, or make custom API calls.",0.6470043049163646
+1,Create + Get,general,highlevel,regular,"Consume HighLevel API v1 for managing contacts, opportunities, and tasks.",0.6308840548214119
+1,Create + Get,general,twake,regular,Consume Twake API to send messages or make custom API calls.,0.6205150336149813
+1,Create + Get,general,orbit,regular,"Consume Orbit API to interact with activities, members, notes, and posts.",0.5589967098277139
+1,Create + Get,general,crowd.dev,regular,This node allows you to interact with crowd.dev's open-source suite of community and data tools to facilitate community-led growth for your organization.,0.5522304274305596
+1,Create + Get,general,compare datasets,regular,比較兩個輸入以查看變化,0.39285293742997474
+1,Create + Get,general,humantic ai,regular,此節點用於使用 Humantic AI API。,0.33910069488409694
+1,Create + Get,general,thehive 5 trigger,trigger,啟動工作流程，當 TheHive 事件發生時觸發,0.9646383533009857
+1,Create + Get,general,theHiveTrigger,trigger,啟動工作流程，當 TheHive 事件發生時觸發,0.9556863597009593
+1,Create + Get,general,linearTrigger,trigger,啟動工作流程，當 Linear 事件發生時觸發。,0.7834410515511901
+1,Create + Get,general,microsoftTeamsTrigger,trigger,"Triggers workflows in n8n based on events from Microsoft Teams, such as new messages or team updates, using specified configurations.",0.7756198351147908
+1,Create + Get,general,calendlyTrigger,trigger,啟動工作流程，當 Calendly 事件發生時觸發,0.7067615512503855
+1,Create + Get,general,pipedrive trigger,trigger,啟動工作流程，當 Pipedrive 事件發生時觸發,0.6922749330871312
+1,Create + Get,general,getResponseTrigger,trigger,啟動工作流程，當 GetResponse 事件發生時觸發。,0.6534708722780667
+1,Create + Get,general,execute workflow trigger,trigger,"This node is used to trigger other n8n workflows, allowing for modular and microservice-like workflow design.",0.6510088812923509
+1,Create + Get,general,brevo trigger,trigger,啟動工作流程，當 Brevo 事件發生時觸發,0.6392357480073934
+1,Create + Get,general,onfleetTrigger,trigger,啟動工作流程，當 Onfleet 事件發生時觸發。,0.4884198345954219
+1,Create + Get,general,google business profile trigger,trigger,Fetches reviews from Google Business Profile and starts the workflow on specified polling intervals.,0.4273720035566253
+2,Update,general,totp,regular,Generate a time-based one-time password.,0.9756915311853571
+2,Update,general,code,regular,執行自定義 JavaScript 或 Python 代碼。,0.9663435024063965
+2,Update,general,aiTransform,regular,Modify data based on instructions written in plain English.,0.9583250858282831
+2,Update,general,google sheets,regular,"This node allows you to read, update, and write data to Google Sheets.",0.91592058290484
+2,Update,general,sort,regular,此節點用於改變項目的排序順序。,0.8970510542998477
+2,Update,general,openweathermap,regular,此節點可獲取當前和未來天氣信息。,0.8793048213637168
+2,Update,general,date & time,regular,此節點允許您操作日期和時間值。,0.8792865711190133
+2,Update,general,execute command,regular,此節點用於在主機上執行命令。,0.8157868178016875
+2,Update,general,google translate,regular,使用 Google 翻譯來翻譯數據。,0.7747472524148812
+2,Update,general,function,regular,執行自定義函數代碼，該代碼將被執行一次，並允許您添加、刪除、更改和替換項目。,0.7032523263116744
+2,Update,general,functionItem,regular,執行自定義函數代碼，每個項目執行一次。,0.6635094720772048
+2,Update,general,snowflake,regular,"Get, add, and update data in Snowflake.",0.5140387365533621
+2,Update,general,markdown,regular,將數據在 Markdown 和 HTML 之間進行轉換。,0.5042593833402289
+2,Update,general,supabase,regular,"Add, get, delete, and update data in a Supabase table.",0.49767033791382187
+2,Update,general,nocodeb,regular,"Read, update, write and delete data from NocoDB.",0.4958859076043095
+2,Update,general,evaluationTrigger,trigger,Run a test dataset through your workflow to check performance.,0.7939513845201698
+2,Update,general,googleSheetsTrigger,trigger,此節點會在 Google Sheets 事件發生時啟動工作流程。,0.36348468083717356
+3,中獲取 + Get,general,microsoft sql,regular,此節點可用於在 Microsoft SQL 中獲取、添加和更新數據。,0.9786581891979028
+3,中獲取 + Get,general,moveBinaryData,regular,此節點用於在二進制和 JSON 屬性之間移動數據。,0.9717732910011566
+3,中獲取 + Get,general,mysql,regular,此節點可用於在 MySQL 中獲取、添加和更新數據。,0.9692979508172307
+3,中獲取 + Get,general,redis,regular,此節點可用於在 Redis 中獲取、發送和更新數據。,0.9692974863153865
+3,中獲取 + Get,general,questdb,regular,此節點用於在 QuestDB 中獲取、添加和更新數據。,0.9678887040372588
+3,中獲取 + Get,general,cratedb,regular,在 CrateDB 中新增和更新數據,0.955694682802528
+3,中獲取 + Get,general,if,regular,此節點可根據條件將項目路由到不同的分支（true/false）。,0.879309344855309
+3,中獲取 + Get,general,set,regular,此節點用於設定項目的值，並可選擇移除其他值。,0.8541641226215752
+3,中獲取 + Get,general,form,regular,生成 n8n 中的 web 表單並將其回應傳遞到工作流程。,0.8131078029024628
+3,中獲取 + Get,general,postgres,regular,在 Postgres 中獲取、新增和更新數據。,0.6700405746939353
+3,中獲取 + Get,general,rename keys,regular,此節點用於更新項目字段名稱。,0.6110538051983851
+3,中獲取 + Get,general,facebook graph api,regular,此節點與 Facebook 互動，使用 Graph API。,0.43902306611567127
+3,中獲取 + Get,general,timescaledb,regular,Add and update data in TimescaleDB.,0.43805924275939284
+3,中獲取 + Get,general,filter,regular,Remove items matching a condition.,0.3985666315433672
+3,中獲取 + Get,general,mongodb,regular,在 MongoDB 中查找、插入和更新文檔。,0.3620683766118572
+3,中獲取 + Get,general,redis trigger,trigger,此節點用於訂閱 Redis 頻道。,0.7068965517241522
+3,中獲取 + Get,general,postgres trigger,trigger,此節點用於監聽 Postgres 資料庫的訊息。,0.4908052212374964
+4,Create + 刪除,general,google cloud storage,regular,使用 Google Cloud Storage API 進行操作。,0.9850405001394124
+4,Create + 刪除,general,google contacts,regular,此節點用於消費 Google 聯絡人 API，可執行創建、刪除、獲取、更新聯絡人等操作。,0.9819576104828345
+4,Create + 刪除,general,wekan,regular,此節點用於消費 Wekan API，可執行與 Wekan 相關的操作，如創建、刪除、獲取資料等。,0.9814813127721369
+4,Create + 刪除,general,hubspot,regular,此節點用於連接並使用 HubSpot API。,0.9798830030326324
+4,Create + 刪除,general,woocommerce,regular,此節點用於消費 WooCommerce API，可執行與顧客、訂單和產品相關的操作。,0.9792892761352252
+4,Create + 刪除,general,onfleet,regular,此節點用於與 Onfleet API 進行互動，可執行各種操作如創建、刪除、更新管理員等。,0.9786579341808332
+4,Create + 刪除,general,e-goi,regular,此節點用於使用 E-goi API 進行操作，如創建、獲取和更新成員資訊。,0.9786547964813458
+4,Create + 刪除,general,webflow,regular,此節點用於使用 Webflow API。,0.9779850504626031
+4,Create + 刪除,general,microsoft teams,regular,此節點可用於操作 Microsoft Teams API，包括創建、刪除、獲取和更新頻道等功能。,0.9779846722479799
+4,Create + 刪除,general,getresponse,regular,此節點用於消費 GetResponse API。,0.9772715636547051
+4,Create + 刪除,general,azure storage,regular,與 Azure Storage API 進行互動，可用於管理 Blob 和 Container。,0.9772707390104016
+4,Create + 刪除,general,tapfiliate,regular,此節點用於消費 Tapfiliate API，可執行與 Tapfiliate 有關的操作，如創建、刪除、獲取聯盟成員等。,0.9756941015174373
+4,Create + 刪除,general,magento 2,regular,此節點用於消費 Magento API，可執行與客戶、發票、訂單、產品相關的操作。,0.9748195166874473
+4,Create + 刪除,general,halopsa,regular,此節點用於消費 HaloPSA API。,0.9748167660879863
+4,Create + 刪除,general,mailerlite,regular,此節點用於使用 Mailer Lite API。,0.9728673916637466
+4,Create + 刪除,general,sendGrid,regular,此節點用於消費 SendGrid API，可執行與 SendGrid 相關的操作。,0.9717730438929597
+4,Create + 刪除,general,freshservice,regular,此節點用於與 Freshservice API 進行互動。,0.9717716770744763
+4,Create + 刪除,general,copper,regular,此節點用於使用 Copper API。,0.9717714669451741
+4,Create + 刪除,general,todoist,regular,此節點用於消費 Todoist API，可執行與 Todoist 任務相關的操作。,0.971770479221666
+4,Create + 刪除,general,xero,regular,此節點用於消費 Xero API，可執行與 Xero 服務相關的操作，如創建聯絡人、發票等。,0.9705871381305639
+4,Create + 刪除,general,pagerduty,regular,此節點用於消費 PagerDuty API，可執行創建、獲取、更新事件等操作。,0.9705851471933229
+4,Create + 刪除,general,thehive,regular,此節點用於消耗 TheHive API。,0.9705848872521544
+4,Create + 刪除,general,google workspace admin,regular,此節點用於使用 Google Workspace Admin API。,0.9692948292710605
+4,Create + 刪除,general,keap,regular,此節點用於與 Keap API 進行互動，可用於創建公司、獲取公司資訊等操作。,0.9692943742603602
+4,Create + 刪除,general,erpnext,regular,此節點用於消費 ERPNext API，可執行各種操作如創建、刪除、獲取和更新文件。,0.9678878732309707
+4,Create + 刪除,general,salesmate,regular,此節點用於連接並使用 Salesmate API。,0.9663440473823558
+4,Create + 刪除,general,linear,regular,此節點用於與 Linear API 進行互動，可執行各種操作如新增評論、新增連結、創建問題等。,0.9663440059744063
+4,Create + 刪除,general,microsoftToDo,regular,此節點用於使用 Microsoft To Do API。,0.9663434259084687
+4,Create + 刪除,general,zoom,regular,此節點用於消費 Zoom API，可執行與 Zoom 相關的操作，如創建、刪除、獲取會議等。,0.9659495135155541
+4,Create + 刪除,general,elastic security,regular,此節點用於消費 Elastic Security API。,0.9646441435577037
+4,Create + 刪除,general,storyblok,regular,此節點用於消費 Storyblok API，可從 Content 或 Management API 中獲取故事內容。,0.9646431855727257
+4,Create + 刪除,general,wordpress,regular,此節點用於消費 Wordpress API，可用於管理文章、頁面和使用者等資源。,0.9646430586791648
+4,Create + 刪除,general,odoo,regular,此節點用於消耗 Odoo API。,0.9627631965665229
+4,Create + 刪除,general,autopilot,regular,此節點用於消費 Autopilot API。,0.9606731473078011
+4,Create + 刪除,general,bambooHr,regular,此節點用於消耗 BambooHR API，可執行與公司報告、員工、員工文件和文件相關的操作。,0.9606717818229087
+4,Create + 刪除,general,google ads,regular,使用 Google Ads API 進行操作的節點。,0.9606652328208561
+4,Create + 刪除,general,microsoft excel,regular,此節點用於消耗 Microsoft Excel API。,0.9583302154449489
+4,Create + 刪除,general,googleCalendar,regular,此節點用於使用 Google Calendar API。,0.9583267965121769
+4,Create + 刪除,general,discourse,regular,此節點用於消費 Discourse API。,0.9556950042651777
+4,Create + 刪除,general,thehive 5,regular,此節點用於消耗 TheHive 5 API。,0.9556948548761081
+4,Create + 刪除,general,google books,regular,從 Google Books 讀取數據。,0.9556920521904934
+4,Create + 刪除,general,twist,regular,此節點用於消費 Twist API。,0.955691417569828
+4,Create + 刪除,general,evaluation,regular,運行評估操作，可設置輸出、指標、檢查是否正在評估，或自定義 API 呼叫。,0.9556900958779865
+4,Create + 刪除,general,google perspective,regular,此節點用於使用 Google Perspective API 進行文字分析。,0.9556888650428444
+4,Create + 刪除,general,hunter,regular,此節點用於使用 Hunter API 來執行不同的操作，如尋找特定域名的郵件地址、生成或檢索最可能的郵件地址，以及驗證郵件地址的可遞送性。,0.9556858703195256
+4,Create + 刪除,general,beeminder,regular,此節點用於消費 Beeminder API。,0.9527020104488122
+4,Create + 刪除,general,unleashed software,regular,此節點用於消費 Unleashed Software API。,0.9527015422865606
+4,Create + 刪除,general,jenkins,regular,此節點用於消費 Jenkins API。,0.95270139419636
+4,Create + 刪除,general,postbin,regular,此節點用於消費 PostBin API。,0.9526995637437548
+4,Create + 刪除,general,quickbooks online,regular,此節點用於使用 QuickBooks Online API。,0.9526994654274217
+4,Create + 刪除,general,google analytics,regular,使用 Google Analytics API 來取得報告或使用者活動數據。,0.9526972553615768
+4,Create + 刪除,general,youtube,regular,此節點用於消費 YouTube API，可執行各種操作，如檢索頻道、播放清單、影片等。,0.9492732123731231
+4,Create + 刪除,general,okta,regular,使用 Okta API 進行操作。,0.9492700384894298
+4,Create + 刪除,general,vero,regular,此節點用於消費 Vero API，可用於管理用戶訂閱狀態和跟蹤客戶事件。,0.9492635246772364
+4,Create + 刪除,general,clockify,regular,此節點用於消費 Clockify 的 REST API，可用於管理客戶端、專案、標籤、任務等資源。,0.9406771046384274
+4,Create + 刪除,general,oura,regular,此節點用於消費 Oura API。,0.9406761952827525
+4,Create + 刪除,general,mailcheck,regular,此節點用於使用 Mailcheck API 進行郵件地址的驗證。,0.9406752192198183
+4,Create + 刪除,general,splunk,regular,此節點用於消費 Splunk Enterprise API。,0.9406729017254724
+4,Create + 刪除,general,contentful,regular,此節點用於消費 Contentful API。,0.9406687179472014
+4,Create + 刪除,general,marketstack,regular,此節點用於消費 Marketstack API，可獲取股市數據。,0.9351836169585389
+4,Create + 刪除,general,freshdesk,regular,此節點用於消費 Freshdesk API，可執行與 Freshdesk 相關的操作，如創建、刪除、更新票務等。,0.9323486898123993
+4,Create + 刪除,general,paypal,regular,此節點用於消費 PayPal API。,0.92856799798991
+4,Create + 刪除,general,dhl,regular,此節點用於消耗 DHL API，可用於獲取運送的追蹤詳情。,0.9204419691804536
+4,Create + 刪除,general,sendy,regular,此節點用於消費 Sendy API，可用於創建和發送郵件活動。,0.9108670924507458
+4,Create + 刪除,general,openai,regular,此節點用於使用 OpenAI 服務進行文字、圖像處理等操作。,0.9102440670174538
+4,Create + 刪除,general,strapi,regular,此節點用於消耗 Strapi API。,0.9086490747391243
+4,Create + 刪除,general,profitwell,regular,此節點用於消費 ProfitWell API，可獲取公司資訊或財務指標數據。,0.8970492206649303
+4,Create + 刪除,general,microsoft outlook,regular,此節點用於使用 Microsoft Outlook API，可執行與郵件相關的操作，如創建、刪除、發送郵件草稿等。,0.8718612333212503
+4,Create + 刪除,general,uptimerobot,regular,此節點用於消費 UptimeRobot API，可執行不同資源的操作，如帳戶、監控器等。,0.8635177092539871
+4,Create + 刪除,general,iterable,regular,此節點用於消費 Iterable API。,0.8613321173477287
+4,Create + 刪除,general,uproc,regular,此節點用於消費 uProc API，根據不同的資源和操作來執行相應的操作。,0.8541666062587889
+4,Create + 刪除,general,n8n,regular,處理事件並執行動作於您的 n8n 實例。,0.8541571781837075
+4,Create + 刪除,general,azure cosmos db,regular,此節點可與 Azure Cosmos DB API 進行互動，包括創建、刪除、獲取容器等操作。,0.8526528178045355
+4,Create + 刪除,general,rundeck,regular,管理 Rundeck API。,0.8520877955477347
+4,Create + 刪除,general,freshworkscrm,regular,此節點用於連接並使用 Freshworks CRM API。,0.8432221181795616
+4,Create + 刪除,general,intercom,regular,此節點用於消耗 Intercom API，可用於管理公司、潛在客戶和用戶資料。,0.8431568077966182
+4,Create + 刪除,general,google bigquery,regular,此節點用於消費 Google BigQuery API。,0.8353566684346566
+4,Create + 刪除,general,microsoft dynamics crm,regular,此節點用於消費 Microsoft Dynamics CRM API。,0.8351891258925118
+4,Create + 刪除,general,google cloud natural language,regular,此節點用於使用 Google Cloud Natural Language API 進行文本分析。,0.8265036719667493
+4,Create + 刪除,general,microsoftonedrive,regular,此節點用於使用 Microsoft OneDrive API，可執行文件和資料夾的操作，如複製、刪除、下載、獲取、重命名、搜索、共享和上傳文件。,0.8259023714395276
+4,Create + 刪除,general,medium,regular,此節點用於消費 Medium API。,0.8253095477353279
+4,Create + 刪除,general,elasticsearch,regular,此節點用於消費 Elasticsearch API。,0.8247639391291685
+4,Create + 刪除,general,bitly,regular,此節點用於消費 Bitly API。,0.8036891737972066
+4,Create + 刪除,general,googleChat,regular,此節點用於使用 Google Chat API。,0.7864200720822372
+4,Create + 刪除,general,segment,regular,此節點用於消費 Segment API，可執行與使用者分組、識別、追蹤事件等相關的操作。,0.7785994742366555
+4,Create + 刪除,general,ciscoWebex,regular,此節點可用於使用 Cisco Webex API。,0.7771515068997866
+4,Create + 刪除,general,syncromsp,regular,此節點從 SyncroMSP 獲取數據。,0.7767861836381372
+4,Create + 刪除,general,github,regular,此節點用於消費 GitHub API。,0.7748476088331852
+4,Create + 刪除,general,googleTasks,regular,此節點用於使用 Google Tasks API。,0.7745866112085081
+4,Create + 刪除,general,shopify,regular,此節點用於連接並使用 Shopify API，可執行訂單管理、產品管理等操作。,0.7709096932845146
+4,Create + 刪除,general,zoho crm,regular,此節點用於消耗 Zoho CRM API。,0.7699263508658577
+4,Create + 刪除,general,coingecko,regular,此節點可用於消費 CoinGecko API。,0.7499964293092347
+4,Create + 刪除,general,urlscan.io,regular,提供各種用於監控網站的工具，如健康檢查或截圖。,0.7221629043456252
+4,Create + 刪除,general,wise,regular,此節點用於消費 Wise API。,0.718403987579264
+4,Create + 刪除,general,brevo,regular,此節點用於使用 Brevo API。,0.7167834560247477
+4,Create + 刪除,general,philips hue,regular,此節點用於消費 Philips Hue API，可執行與 Philips Hue 燈具相關的操作，如刪除、獲取、更新燈具資訊。,0.7161927828611849
+4,Create + 刪除,general,posthog,regular,此節點用於消費 PostHog API，可用於創建別名（alias）或事件（event）。,0.7009032825271748
+4,Create + 刪除,general,microsoftEntra,regular,此節點可與 Microsoft Entra ID API 進行互動，用於管理群組和使用者資訊。,0.6942802771823189
+4,Create + 刪除,general,agile crm,regular,此節點用於使用 Agile CRM API。,0.6936874630281497
+4,Create + 刪除,general,strava,regular,此節點用於消費 Strava API，可執行與 Strava 相關的操作，如創建、獲取活動等。,0.6921584449099257
+4,Create + 刪除,general,salesforce,regular,此節點用於連接並使用 Salesforce API。,0.6903831439594568
+4,Create + 刪除,general,paddle,regular,此節點用於消費 Paddle API。,0.6868549293513448
+4,Create + 刪除,general,googlebusinessprofile,regular,此節點用於消費 Google Business Profile API，可用於管理帖子、評論等資訊。,0.6849398218925421
+4,Create + 刪除,general,coda,regular,此節點用於消費 Coda API。,0.6538439634619186
+4,Create + 刪除,general,clickup,regular,使用 ClickUp API 進行操作的節點。,0.6501065536188613
+4,Create + 刪除,general,cloudflare,regular,此節點用於消耗 Cloudflare API，可執行與 Cloudflare 相關的操作，如管理 SSL 憑證。,0.6459538743248121
+4,Create + 刪除,general,bitwarden,regular,此節點用於使用 Bitwarden API。,0.6439408348135256
+4,Create + 刪除,general,metabase,regular,使用 Metabase API 進行操作。,0.6395303505031417
+4,Create + 刪除,general,gotify,regular,此節點用於消費 Gotify API。,0.6327254647301548
+4,Create + 刪除,general,help scout,regular,此節點用於消費 Help Scout API。,0.6296085608956072
+4,Create + 刪除,general,monica crm,regular,此節點用於連接 Monica CRM API，可執行與 Monica CRM 相關的操作。,0.6280530184658969
+4,Create + 刪除,general,netlify,regular,此節點用於使用 Netlify API。,0.623024433185682
+4,Create + 刪除,general,chargebee,regular,此節點可從 Chargebee API 擷取數據，支援檢索客戶、發票和訂閱相關資訊。,0.6214276016169139
+4,Create + 刪除,general,customer.io,regular,此節點用於消費 Customer.io API，可執行與客戶、事件、活動、分段等相關的操作。,0.6133847003087877
+4,Create + 刪除,general,zendesk,regular,此節點用於連接並使用 Zendesk API。,0.6097840180174892
+4,Create + 刪除,general,awsIam,regular,與 Amazon IAM 進行互動，可執行用戶、群組等資源的管理操作。,0.6048688961445422
+4,Create + 刪除,general,googlefirebasecloudfirestore,regular,此節點可與 Google Firebase - Cloud Firestore API 進行互動。,0.5760688598917988
+4,Create + 刪除,general,jina ai,regular,與 Jina AI API 進行互動。,0.5749708713594311
+4,Create + 刪除,general,awsElb,regular,此節點可與 AWS ELB API 進行數據交互。,0.5683301290593767
+4,Create + 刪除,general,activecampaign,regular,Create and edit data in ActiveCampaign.,0.5609657208302464
+4,Create + 刪除,general,goToWebinar,regular,此節點用於使用 GoToWebinar API。,0.5598042098534507
+4,Create + 刪除,general,invoice ninja,regular,此節點用於消費 Invoice Ninja API，可執行不同資源的操作，如客戶管理、發票處理等。,0.5564690508958895
+4,Create + 刪除,general,yourls,regular,此節點用於消費 Yourls API，可用於縮短 URL、擴展 URL 或獲取 URL 的統計信息。,0.55126251269388
+4,Create + 刪除,general,pushbullet,regular,此節點用於消費 Pushbullet API，可用於發送推送通知至不同裝置或用戶。,0.5484549630455858
+4,Create + 刪除,general,aws dynamodb,regular,此節點用於消費 AWS DynamoDB API。,0.5391185441108124
+4,Create + 刪除,general,spontit,regular,此節點用於消費 Spontit API。,0.536005260054789
+4,Create + 刪除,general,microsoft sharepoint,regular,此節點可與 Microsoft SharePoint API 進行互動，包括下載、更新和上傳文件等操作。,0.535342262226929
+4,Create + 刪除,general,seatable,regular,此節點用於消耗 SeaTable API。,0.5347848822982523
+4,Create + 刪除,general,grist,regular,透過 Grist API 來操作 Grist 文件中的表格資料。,0.5256320525937643
+4,Create + 刪除,general,openthesaurus,regular,使用 OpenThesaurus API 為德文單詞取得同義詞。,0.5245081029878353
+4,Create + 刪除,general,reddit,regular,這個節點用於使用 Reddit API。,0.5168478050675301
+4,Create + 刪除,general,google slides,regular,透過 Google Slides API 來操作 Google 幻燈片。,0.5097271255111296
+4,Create + 刪除,general,action network,regular,此節點用於消費 Action Network API。,0.5051432712428084
+4,Create + 刪除,general,mindee,regular,此節點用於使用 Mindee API。,0.4965577101526128
+4,Create + 刪除,general,gitlab,regular,此節點可從 GitLab API 擷取資料。,0.49326173328343376
+4,Create + 刪除,general,aws transcribe,regular,此節點用於將數據發送到 AWS Transcribe 服務。,0.4807171364125503
+4,Create + 刪除,general,travisci,regular,此節點用於消費 TravisCI API。,0.4689801274073269
+4,Create + 刪除,general,matrix,regular,此節點用於消費 Matrix API。,0.4562092354722959
+4,Create + 刪除,general,uplead,regular,此節點用於消耗 Uplead API，可查詢公司或個人的相關資料。,0.3993968579516718
+4,Create + 刪除,general,pushcut,regular,此節點用於消費 Pushcut API。,0.3946405024593071
+4,Create + 刪除,general,hubspot trigger,trigger,啟動工作流程時，當 HubSpot 事件發生時觸發,0.5601437461176991
+4,Create + 刪除,general,jiraTrigger,trigger,啟動工作流程時，監聽 Jira 事件的發生。,0.4753238432795517
+5,File + Message,communication,extract from file,regular,"Convert binary data to JSON by extracting content from various file formats such as CSV, HTML, PDF, etc.",0.9880941364448816
+5,File + Message,communication,html,regular,與 HTML 相關的操作，包括生成 HTML 模板、提取 HTML 內容和將數據轉換為 HTML 表格。,0.9832532529782705
+5,File + Message,communication,compression,regular,Compress and decompress files.,0.9814795669493491
+5,File + Message,communication,mailjet,regular,這個節點用於使用 Mailjet API 來發送郵件或簡訊。,0.9772710613677457
+5,File + Message,communication,one simple api,regular,此節點可從不同資源中執行各種操作，如生成 PDF、取得社交媒體資料等。,0.955689247349888
+5,File + Message,communication,spreadsheet file,regular,此節點可讀取和寫入像 CSV、XLS、ODS 等格式的試算表文件中的數據。,0.9453118812134084
+5,File + Message,communication,seven,regular,此節點可用於發送簡訊和進行文字轉語音通話。,0.9351783334976357
+5,File + Message,communication,xml,regular,將數據從 XML 轉換為 JSON 或從 JSON 轉換為 XML。,0.9285637588231265
+5,File + Message,communication,plivo,regular,此節點可用於發送簡訊/多媒體簡訊或進行電話通話。,0.9285618358263572
+5,File + Message,communication,httpRequest,regular,發送 HTTP 請求並返回回應數據。,0.9285524180910589
+5,File + Message,communication,read binary file,regular,此節點從磁碟讀取二進制文件。,0.9204485961232411
+5,File + Message,communication,read binary files,regular,此節點從磁碟讀取二進制文件。,0.8970491689073826
+5,File + Message,communication,convert to file,regular,將 JSON 數據轉換為二進制數據的節點。,0.8793095488997326
+5,File + Message,communication,split out,regular,將項目內的列表拆分為單獨的項目,0.8793043138673271
+5,File + Message,communication,remove duplicates,regular,此節點用於刪除具有相同字段值的項目。,0.8792810628704327
+5,File + Message,communication,mailgun,regular,透過 Mailgun 發送郵件。,0.874589024086659
+5,File + Message,communication,writeBinaryFile,regular,此節點將二進制文件寫入磁盤。,0.8541649819000595
+5,File + Message,communication,switch,regular,根據定義的表達式或規則路由項目,0.8541423710701971
+5,File + Message,communication,clearbit,regular,Consume Clearbit API to retrieve company or person information based on domain or email.,0.8467373518823238
+5,File + Message,communication,read pdf,regular,此節點用於讀取 PDF 檔案並提取其內容。,0.8219473210916436
+5,File + Message,communication,deepl,regular,使用 DeepL 進行資料翻譯。,0.8135215654365041
+5,File + Message,communication,read/write files from disk,regular,This node allows reading or writing files on the computer that runs n8n.,0.7877598514921226
+5,File + Message,communication,line,regular,此節點用於消費 Line API，可用於發送通知或自定義 API 呼叫。,0.772472234583194
+5,File + Message,communication,ghost,regular,此節點用於消耗 Ghost API，可從 Content 或 Admin API 中獲取數據。,0.7606679525405589
+5,File + Message,communication,html extract,regular,此節點從 HTML 中提取數據。,0.7576171827499181
+5,File + Message,communication,mandrill,regular,這個節點用於使用 Mandrill API 來發送郵件，支援根據模板或 HTML 內容發送郵件。,0.7565195138166614
+5,File + Message,communication,messagebird,regular,透過 MessageBird 發送簡訊,0.7530114614751223
+5,File + Message,communication,merge,regular,此節點用於合併多個數據流的數據，一旦來自兩個數據流的數據都可用。,0.7499507596891739
+5,File + Message,communication,msg91,regular,透過 MSG91 發送交易性簡訊,0.734107849548334
+5,File + Message,communication,vonage,regular,此節點用於使用 Vonage API 來發送簡訊消息。,0.7199422405792062
+5,File + Message,communication,email trigger (imap),regular,當收到新郵件時觸發工作流程。,0.6630284127692867
+5,File + Message,communication,ftp,regular,透過 FTP 或 SFTP 進行文件傳輸。,0.6363184658485942
+5,File + Message,communication,linkedin,regular,此節點用於消費 LinkedIn API。,0.6313558661118702
+5,File + Message,communication,pushover,regular,此節點用於消費 Pushover API，可用於推送訊息至用戶的設備。,0.6142029634818904
+5,File + Message,communication,aws ses,regular,此節點用於將數據發送到 AWS SES。,0.6055148327262986
+5,File + Message,communication,mocean,regular,透過 Mocean 發送簡訊和語音訊息,0.5959177908527252
+5,File + Message,communication,rocketchat,regular,此節點用於消費 RocketChat API。,0.5947518424182305
+5,File + Message,communication,mqtt,regular,將訊息推送至 MQTT 伺服器。,0.5873582988445791
+5,File + Message,communication,apitemplate.io,regular,此節點用於消費 APITemplate.io API。,0.5827940723518498
+5,File + Message,communication,lingvanex,regular,此節點用於使用 LingvaNex API 進行文本翻譯。,0.5707616306813981
+5,File + Message,communication,bannerbear,regular,Consume Bannerbear API to create and manipulate images or templates.,0.5554310678641277
+5,File + Message,communication,cortex,regular,將 Cortex 分析器/回應器應用於給定的實體。,0.5403577149610492
+5,File + Message,communication,gmail,regular,此節點用於使用 Gmail API。,0.5218316457380112
+5,File + Message,communication,discord,regular,將數據發送到 Discord。,0.49898180309404044
+5,File + Message,communication,brandfetch,regular,此節點用於消耗 Brandfetch API，可返回公司的顏色、資料、字體、產業、標誌等信息。,0.4931360591219911
+5,File + Message,communication,peekalink,regular,此節點用於消耗 Peekalink API，可檢查給定連結的預覽是否可用，或返回連結的預覽內容。,0.48026581956690767
+5,File + Message,communication,twilio,regular,透過 Twilio 節點，可以發送簡訊、WhatsApp 訊息或進行電話通話。,0.4203196666945819
+5,File + Message,communication,ssh,regular,透過 SSH 執行命令,0.4139275259585106
+5,File + Message,communication,executionData,regular,此節點用於添加執行數據以進行搜索。,0.39285655465692243
+5,File + Message,communication,dropcontact,regular,Find B2B emails and enrich contacts using Dropcontact API.,0.346422388157144
+5,File + Message,communication,localFileTrigger,trigger,此節點可在檔案系統變更時觸發工作流程。,0.482100206479053
+5,File + Message,communication,simulateTrigger,trigger,模擬觸發器節點，用於模擬觸發工作流程。,0.45994794345041784
+6,事件發生時啟動工作流程 + Topic,customer_management,ldap,regular,與 LDAP 伺服器進行互動，可執行比較、創建、刪除、重命名、搜索和更新等操作。,0.9678863558645548
+6,事件發生時啟動工作流程 + Topic,customer_management,notion,regular,此節點可用於訪問 Notion API。,0.9646352086683675
+6,事件發生時啟動工作流程 + Topic,customer_management,rabbitmq,regular,將訊息發送到 RabbitMQ 主題,0.9627611428685676
+6,事件發生時啟動工作流程 + Topic,customer_management,kafka,regular,將訊息發送到 Kafka 主題,0.9606709737189526
+6,事件發生時啟動工作流程 + Topic,customer_management,stop and error,regular,Throw an error in the workflow.,0.9583325756765252
+6,事件發生時啟動工作流程 + Topic,customer_management,airtable,regular,此節點可從 Airtable 讀取、更新、寫入和刪除數據。,0.8811629238403962
+6,事件發生時啟動工作流程 + Topic,customer_management,amqp sender,regular,透過 AMQP 1.0 發送原始訊息，每個項目執行一次,0.7318806714664002
+6,事件發生時啟動工作流程 + Topic,customer_management,icalendar,regular,創建 iCalendar 文件的節點。,0.657305924015394
+6,事件發生時啟動工作流程 + Topic,customer_management,debughelper,regular,此節點用於故意引發問題並生成有用的數據以進行除錯。,0.6111111111111092
+6,事件發生時啟動工作流程 + Topic,customer_management,jwt,regular,此節點用於對 JWT（JSON Web Token）進行編碼、解碼和驗證操作。,0.5610796768734048
+6,事件發生時啟動工作流程 + Topic,customer_management,nasa,regular,此節點可從 NASA API 擷取資料。,0.5344827586206956
+6,事件發生時啟動工作流程 + Topic,customer_management,crypto,regular,提供加密工具，可生成隨機字串、對文本或文件進行哈希、HMAC加密以及使用私鑰對字串進行簽名。,0.39285089420429636
+6,事件發生時啟動工作流程 + Topic,customer_management,stravaTrigger,trigger,此節點會在 Strava 事件發生時啟動工作流程。,0.9646416883345909
+6,事件發生時啟動工作流程 + Topic,customer_management,helpScoutTrigger,trigger,此節點在 Help Scout 事件發生時啟動工作流程。,0.9627640227473474
+6,事件發生時啟動工作流程 + Topic,customer_management,pushcut trigger,trigger,此節點會在 Pushcut 事件發生時啟動工作流程。,0.9492752899394457
+6,事件發生時啟動工作流程 + Topic,customer_management,mailerLiteTrigger,trigger,此節點在 MailerLite 事件發生時啟動工作流程。,0.9492731068182779
+6,事件發生時啟動工作流程 + Topic,customer_management,facebook trigger,trigger,此節點可在 Facebook 事件發生時啟動工作流程。,0.9492680721039819
+6,事件發生時啟動工作流程 + Topic,customer_management,rabbitmq trigger,trigger,此節點用於監聽 RabbitMQ 訊息。,0.940677371156897
+6,事件發生時啟動工作流程 + Topic,customer_management,twilioTrigger,trigger,此節點會在 Twilio 更新時啟動工作流程。,0.935179683975506
+6,事件發生時啟動工作流程 + Topic,customer_management,crowdDevTrigger,trigger,此節點可在 crowd.dev 事件發生時啟動工作流程。,0.928569620408348
+6,事件發生時啟動工作流程 + Topic,customer_management,amqp trigger,trigger,此節點可監聽 AMQP 1.0 訊息，並觸發工作流程。,0.9204540779600364
+6,事件發生時啟動工作流程 + Topic,customer_management,figmaTrigger,trigger,此節點在 Figma 事件發生時啟動工作流程。,0.8534066487943109
+6,事件發生時啟動工作流程 + Topic,customer_management,manualTrigger,trigger,此節點可在 n8n 中點擊按鈕時觸發工作流程。,0.645833333333342
+6,事件發生時啟動工作流程 + Topic,customer_management,kafka trigger,trigger,Consume messages from a Kafka topic.,0.6456101988203311
+6,事件發生時啟動工作流程 + Topic,customer_management,trello trigger,trigger,此節點在 Trello 事件發生時啟動工作流程。,0.6323206177067764
+6,事件發生時啟動工作流程 + Topic,customer_management,gitlab trigger,trigger,此節點在 GitLab 事件發生時啟動工作流程。,0.5985591774690733
+6,事件發生時啟動工作流程 + Topic,customer_management,googleDriveTrigger,trigger,此節點會在 Google Drive 事件發生時啟動工作流程。,0.5633100874925471
+6,事件發生時啟動工作流程 + Topic,customer_management,formstackTrigger,trigger,此節點在 Formstack 表單提交時啟動工作流程。,0.5278070085413712
+6,事件發生時啟動工作流程 + Topic,customer_management,box trigger,trigger,此節點在 Box 事件發生時啟動工作流程。,0.5273549584327147
+6,事件發生時啟動工作流程 + Topic,customer_management,githubTrigger,trigger,此節點在 Github 事件發生時啟動工作流程。,0.43384974319593256
+6,事件發生時啟動工作流程 + Topic,customer_management,airtableTrigger,trigger,啟動工作流程，當 Airtable 發生事件時觸發。,0.37832870463158136
+7,將數據發送到 + 將數據發送到 Aws,data_management,aws sns,regular,將數據發送到 AWS SNS。,0.9786524285898786
+7,將數據發送到 + 將數據發送到 Aws,data_management,kobotoolbox,regular,與 KoBoToolbox 表單和提交進行互動。,0.9646418006119282
+7,將數據發送到 + 將數據發送到 Aws,data_management,npm,regular,使用 NPM 註冊 API,0.945303188705665
+7,將數據發送到 + 將數據發送到 Aws,data_management,aws textract,regular,將數據發送到 Amazon Textract。,0.9351833133405881
+7,將數據發送到 + 將數據發送到 Aws,data_management,telegram,regular,此節點用於將數據發送到 Telegram。,0.935182630579434
+7,將數據發送到 + 將數據發送到 Aws,data_management,disqus,regular,此節點用於訪問 Disqus 上的數據。,0.9351775248730889
+7,將數據發送到 + 將數據發送到 Aws,data_management,aws certificate manager,regular,將數據發送到 AWS Certificate Manager。,0.8461695197132261
+7,將數據發送到 + 將數據發送到 Aws,data_management,homeAssistant,regular,這個節點用於消費 Home Assistant API。,0.7984485993323985
+7,將數據發送到 + 將數據發送到 Aws,data_management,awsS3,regular,將數據發送到 AWS S3。,0.7919819059612158
+7,將數據發送到 + 將數據發送到 Aws,data_management,aws lambda,regular,調用 AWS Lambda 上的函數。,0.756380339725787
+7,將數據發送到 + 將數據發送到 Aws,data_management,s3,regular,將數據發送到任何兼容 S3 服務的節點。,0.7159898401040427
+7,將數據發送到 + 將數據發送到 Aws,data_management,awsCognito,regular,將數據發送到 AWS Cognito。,0.6886403131518611
+7,將數據發送到 + 將數據發送到 Aws,data_management,graphql,regular,發送 GraphQL 請求並返回接收到的數據。,0.6837306324210949
+7,將數據發送到 + 將數據發送到 Aws,data_management,aws rekognition,regular,將數據發送到 AWS Rekognition 服務。,0.6494219456719831
+7,將數據發送到 + 將數據發送到 Aws,data_management,lonescale,regular,此節點用於創建列表，添加/刪除項目。,0.6234839201315996
+7,將數據發送到 + 將數據發送到 Aws,data_management,start,regular,此節點用於從此節點開始執行工作流程。,0.6111033824625682
+7,將數據發送到 + 將數據發送到 Aws,data_management,interval,regular,此節點在指定的間隔時間內觸發工作流程。,0.6111033824625682
+7,將數據發送到 + 將數據發送到 Aws,data_management,aws comprehend,regular,將數據發送到 Amazon Comprehend 服務。,0.5423498215823321
+7,將數據發送到 + 將數據發送到 Aws,data_management,stackby,regular,讀取、寫入和刪除 Stackby 中的數據。,0.5261141740926917
+7,將數據發送到 + 將數據發送到 Aws,data_management,hacker news,regular,此節點用於消費 Hacker News API。,0.5148678581795052
+7,將數據發送到 + 將數據發送到 Aws,data_management,aws sqs,regular,此節點用於將訊息發送到 AWS SQS。,0.4839723658767266
+7,將數據發送到 + 將數據發送到 Aws,data_management,mistral ai,regular,此節點用於使用 Mistral AI API 進行文檔處理，包括文字提取和自定義 API 調用。,0.34115117827497277
+7,將數據發送到 + 將數據發送到 Aws,data_management,mattermost,regular,此節點用於將數據發送到 Mattermost。,0.33196609390750087
+7,將數據發送到 + 將數據發送到 Aws,data_management,whatsapp trigger,trigger,This node handles WhatsApp events via webhooks.,0.976505894823024
+7,將數據發送到 + 將數據發送到 Aws,data_management,invoiceNinjaTrigger,trigger,此節點在發生 Invoice Ninja 事件時啟動工作流程。,0.9717738365136193
+7,將數據發送到 + 將數據發送到 Aws,data_management,webex by cisco trigger,trigger,此節點在發生 Cisco Webex 事件時啟動工作流程。,0.9527016610298716
+7,將數據發送到 + 將數據發送到 Aws,data_management,chargebeeTrigger,trigger,此節點在發生 Chargebee 事件時啟動工作流程。,0.9453112215895052
+7,將數據發送到 + 將數據發送到 Aws,data_management,telegram trigger,trigger,啟動工作流程以回應 Telegram 更新。,0.9453077324669064
+7,將數據發送到 + 將數據發送到 Aws,data_management,sse trigger,trigger,此節點在發生 Server-Sent Events 時觸發工作流程。,0.8516267942038142
+7,將數據發送到 + 將數據發送到 Aws,data_management,lemlist trigger,trigger,This node handles Lemlist events via webhooks.,0.7489578804697167
+7,將數據發送到 + 將數據發送到 Aws,data_management,cal.com trigger,trigger,Handle Cal.com events via webhooks.,0.7066532084873237
+7,將數據發送到 + 將數據發送到 Aws,data_management,errorTrigger,trigger,此節點在另一個工作流程出現錯誤時觸發工作流程。,0.6111033824625682
+7,將數據發送到 + 將數據發送到 Aws,data_management,n8nTrigger,trigger,處理事件並在您的 n8n 實例上執行操作。,0.6111015835837851
+7,將數據發送到 + 將數據發送到 Aws,data_management,workflowTrigger,trigger,此節點基於各種生命週期事件觸發，例如當工作流程被啟動時。,0.6111015835837851

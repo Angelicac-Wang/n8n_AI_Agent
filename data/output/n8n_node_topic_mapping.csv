@@ -1,0 +1,793 @@
+topic_id,topic_label,file_name,display_name,probability
+0,Contact + Id + Field,agileCrm.json,Agile CRM,0.9883120524444574
+0,Contact + Id + Field,clearbit.json,Clearbit,0.9647707847340985
+0,Contact + Id + Field,zohoCrm.json,Zoho CRM,0.9061130109630053
+0,Contact + Id + Field,zohoCrmTool.json,Zoho CRM Tool,0.9054242706518517
+0,Contact + Id + Field,activeCampaign.json,ActiveCampaign,0.8759472794631141
+0,Contact + Id + Field,agileCrmTool.json,Agile CRM Tool,0.8666453266006962
+0,Contact + Id + Field,drift.json,Drift,0.8585615369386614
+0,Contact + Id + Field,uplead.json,Uplead,0.8568916781540781
+0,Contact + Id + Field,activeCampaignTool.json,ActiveCampaign Tool,0.8403996377768522
+0,Contact + Id + Field,mailcheck.json,Mailcheck,0.7260619284279177
+0,Contact + Id + Field,sendInBlueTrigger.json,Brevo Trigger,0.713634808879384
+0,Contact + Id + Field,googleContacts.json,Google Contacts,0.6561188223762918
+0,Contact + Id + Field,sort.json,Sort,0.6376034902406523
+0,Contact + Id + Field,driftTool.json,Drift Tool,0.6054123408436678
+0,Contact + Id + Field,Brandfetch.json,Brandfetch,0.5999409422912323
+0,Contact + Id + Field,mautic.json,Mautic,0.5936009698973763
+0,Contact + Id + Field,googleContactsTool.json,Google Contacts Tool,0.5911704375193554
+0,Contact + Id + Field,clearbitTool.json,Clearbit Tool,0.5854851449944987
+0,Contact + Id + Field,mauticTool.json,Mautic Tool,0.5471479527504518
+0,Contact + Id + Field,autopilotTrigger.json,Autopilot Trigger,0.5346948295429808
+0,Contact + Id + Field,hunter.json,Hunter,0.5224989796826714
+0,Contact + Id + Field,dropcontact.json,Dropcontact,0.5209570970344768
+0,Contact + Id + Field,loneScale.json,LoneScale,0.4792882174692809
+0,Contact + Id + Field,freshdesk.json,Freshdesk,0.46342946158226733
+0,Contact + Id + Field,freshdeskTool.json,Freshdesk Tool,0.4306497762370864
+0,Contact + Id + Field,autopilot.json,Autopilot,0.41760223081210573
+0,Contact + Id + Field,keap.json,Keap,0.38311424115727927
+0,Contact + Id + Field,emelia.json,Emelia,0.37863565668271343
+0,Contact + Id + Field,autopilotTool.json,Autopilot Tool,0.3630167642505119
+0,Contact + Id + Field,keapTool.json,Keap Tool,0.3627959260049856
+0,Contact + Id + Field,getResponse.json,GetResponse,0.3593419818097879
+0,Contact + Id + Field,salesmate.json,Salesmate,0.35569696475421514
+0,Contact + Id + Field,sendInBlue.json,Brevo,0.3403745694002291
+0,Contact + Id + Field,salesmateTool.json,Salesmate Tool,0.32829052539284354
+0,Contact + Id + Field,getResponseTool.json,GetResponse Tool,0.3184367277561101
+0,Contact + Id + Field,emeliaTool.json,Emelia Tool,0.31438959683240225
+0,Contact + Id + Field,sendGrid.json,SendGrid,0.3056515218873742
+0,Contact + Id + Field,sendGridTool.json,SendGrid Tool,0.2814992193188519
+1,Id + User + Create,discourse.json,Discourse,0.9984794757989496
+1,Id + User + Create,strava.json,Strava,0.950169324179922
+1,Id + User + Create,trelloTool.json,Trello Tool,0.9454029064132624
+1,Id + User + Create,trello.json,Trello,0.9410554255644851
+1,Id + User + Create,discourseTool.json,Discourse Tool,0.9392149801385873
+1,Id + User + Create,sendy.json,Sendy,0.9100091351295327
+1,Id + User + Create,reddit.json,Reddit,0.8935299920286839
+1,Id + User + Create,iterable.json,Iterable,0.8899179966585787
+1,Id + User + Create,flow.json,Flow,0.8741310464890852
+1,Id + User + Create,philipsHue.json,Philips Hue,0.8713168039308045
+1,Id + User + Create,flowTrigger.json,Flow Trigger,0.8547019689338761
+1,Id + User + Create,netlify.json,Netlify,0.8485747710308604
+1,Id + User + Create,mailerLiteTrigger.json,MailerLite Trigger,0.8455121610188978
+1,Id + User + Create,bitwarden.json,Bitwarden,0.8366129504460943
+1,Id + User + Create,crowdDev.json,crowd.dev,0.8221085107075112
+1,Id + User + Create,medium.json,Medium,0.8121356635868573
+1,Id + User + Create,microsoftToDo.json,Microsoft To Do,0.7989496248497119
+1,Id + User + Create,sendyTool.json,Sendy Tool,0.7943264149862349
+1,Id + User + Create,raindrop.json,Raindrop,0.7877240246285507
+1,Id + User + Create,vero.json,Vero,0.7874440874367998
+1,Id + User + Create,misp.json,MISP,0.7845442968123137
+1,Id + User + Create,disqus.json,Disqus,0.7793233464392314
+1,Id + User + Create,hackerNews.json,Hacker News,0.7639329085388895
+1,Id + User + Create,n8nTrainingCustomerDatastore.json,Customer Datastore (n8n training),0.7584795826062232
+1,Id + User + Create,crowdDevTool.json,crowd.dev Tool,0.7574988668670568
+1,Id + User + Create,clockifyTool.json,Clockify Tool,0.7570210356721931
+1,Id + User + Create,bitwardenTool.json,Bitwarden Tool,0.746112347540783
+1,Id + User + Create,clockify.json,Clockify,0.7390250154112554
+1,Id + User + Create,segment.json,Segment,0.7344264161623925
+1,Id + User + Create,beeminder.json,Beeminder,0.7320779387496179
+1,Id + User + Create,awsIam.json,AWS IAM,0.7285965720842985
+1,Id + User + Create,postHog.json,PostHog,0.7248906560337606
+1,Id + User + Create,wordpressTool.json,Wordpress Tool,0.7208964189069997
+1,Id + User + Create,iterableTool.json,Iterable Tool,0.718452644276816
+1,Id + User + Create,wordpress.json,Wordpress,0.716081230849205
+1,Id + User + Create,grafana.json,Grafana,0.7115109885360166
+1,Id + User + Create,grafanaTool.json,Grafana Tool,0.710965311655356
+1,Id + User + Create,microsoftToDoTool.json,Microsoft To Do Tool,0.7102902162812558
+1,Id + User + Create,monicaCrmTool.json,Monica CRM Tool,0.7098617238075502
+1,Id + User + Create,redditTool.json,Reddit Tool,0.7074429911686912
+1,Id + User + Create,mispTool.json,MISP Tool,0.7013536941536215
+1,Id + User + Create,monicaCrm.json,Monica CRM,0.6912953704338676
+1,Id + User + Create,haloPSA.json,HaloPSA,0.6740239045976105
+1,Id + User + Create,convertKit.json,ConvertKit,0.6626157295783297
+1,Id + User + Create,gSuiteAdmin.json,Google Workspace Admin,0.6617042010462106
+1,Id + User + Create,strapi.json,Strapi,0.660856632754865
+1,Id + User + Create,stravaTool.json,Strava Tool,0.6552166515034009
+1,Id + User + Create,splunk.json,Splunk,0.6545824452807263
+1,Id + User + Create,todoistTool.json,Todoist Tool,0.6523180404011948
+1,Id + User + Create,intercom.json,Intercom,0.6491871352258762
+1,Id + User + Create,circleCi.json,CircleCI,0.6472960709445648
+1,Id + User + Create,gSuiteAdminTool.json,Google Workspace Admin Tool,0.6466057804971748
+1,Id + User + Create,uptimeRobot.json,UptimeRobot,0.6422308958849527
+1,Id + User + Create,raindropTool.json,Raindrop Tool,0.6302115263220289
+1,Id + User + Create,googleBooks.json,Google Books,0.6299437994548379
+1,Id + User + Create,microsoftEntra.json,Microsoft Entra ID,0.6274507189886948
+1,Id + User + Create,beeminderTool.json,Beeminder Tool,0.6209213541888895
+1,Id + User + Create,segmentTool.json,Segment Tool,0.6197514793543857
+1,Id + User + Create,haloPSATool.json,HaloPSA Tool,0.6190663782348746
+1,Id + User + Create,zulip.json,Zulip,0.6185447798529716
+1,Id + User + Create,harvestTool.json,Harvest Tool,0.615281513560951
+1,Id + User + Create,ghost.json,Ghost,0.6147019612057575
+1,Id + User + Create,harvest.json,Harvest,0.6144833450486176
+1,Id + User + Create,awsCognito.json,AWS Cognito,0.6106111906411353
+1,Id + User + Create,microsoftEntraTool.json,Microsoft Entra ID Tool,0.5978755439927324
+1,Id + User + Create,veroTool.json,Vero Tool,0.5964405862983481
+1,Id + User + Create,convertKitTool.json,ConvertKit Tool,0.5915490041505168
+1,Id + User + Create,affinity.json,Affinity,0.5902423537959576
+1,Id + User + Create,intercomTool.json,Intercom Tool,0.5876140236295556
+1,Id + User + Create,affinityTool.json,Affinity Tool,0.5754000031894191
+1,Id + User + Create,zulipTool.json,Zulip Tool,0.5753311674951175
+1,Id + User + Create,googleTasks.json,Google Tasks,0.5666135012114063
+1,Id + User + Create,orbit.json,Orbit,0.5648703753979885
+1,Id + User + Create,uptimeRobotTool.json,UptimeRobot Tool,0.5460596747130463
+1,Id + User + Create,mailchimp.json,Mailchimp,0.5449188969151958
+1,Id + User + Create,mailchimpTool.json,Mailchimp Tool,0.5439193618539556
+1,Id + User + Create,twitter.json,X (Formerly Twitter),0.5403042385776251
+1,Id + User + Create,travisCi.json,TravisCI,0.529966813635433
+1,Id + User + Create,asanaTool.json,Asana Tool,0.5244015772736277
+1,Id + User + Create,twitterTool.json,X (Formerly Twitter) Tool,0.5208751259069864
+1,Id + User + Create,mailerLiteTool.json,MailerLite Tool,0.5196174527811684
+1,Id + User + Create,spotify.json,Spotify,0.5187571491895796
+1,Id + User + Create,kitemaker.json,Kitemaker,0.5179621642383715
+1,Id + User + Create,gotify.json,Gotify,0.5116191063610802
+1,Id + User + Create,linkedIn.json,LinkedIn,0.5027819020996146
+1,Id + User + Create,philipsHueTool.json,Philips Hue Tool,0.5016885581468763
+1,Id + User + Create,ghostTool.json,Ghost Tool,0.5007011645693644
+1,Id + User + Create,asana.json,Asana,0.49918468745163846
+1,Id + User + Create,elasticSecurity.json,Elastic Security,0.499118771207273
+1,Id + User + Create,mailerLite.json,MailerLite,0.49482718465285097
+1,Id + User + Create,cloudflare.json,Cloudflare,0.4813953916008973
+1,Id + User + Create,lemlist.json,Lemlist,0.47313313365271975
+1,Id + User + Create,urlScanIo.json,urlscan.io,0.4697444768294137
+1,Id + User + Create,mattermostTool.json,Mattermost Tool,0.4697436588368723
+1,Id + User + Create,pushbullet.json,Pushbullet,0.46870722323999103
+1,Id + User + Create,mattermost.json,Mattermost,0.46609440173578925
+1,Id + User + Create,okta.json,Okta,0.46183272434950196
+1,Id + User + Create,googleTasksTool.json,Google Tasks Tool,0.44623361925492105
+1,Id + User + Create,mediumTool.json,Medium Tool,0.4349326140716369
+1,Id + User + Create,customerIo.json,Customer.io,0.4297478528120385
+1,Id + User + Create,kitemakerTool.json,Kitemaker Tool,0.4173223048624213
+1,Id + User + Create,gong.json,Gong,0.4163294021051152
+1,Id + User + Create,elasticSecurityTool.json,Elastic Security Tool,0.4111462741789147
+1,Id + User + Create,copperTool.json,Copper Tool,0.4099890168884199
+1,Id + User + Create,helpScoutTrigger.json,Help Scout Trigger,0.4078916824951155
+1,Id + User + Create,copper.json,Copper,0.4018300929896401
+1,Id + User + Create,lemlistTool.json,Lemlist Tool,0.37572232845615067
+1,Id + User + Create,microsoftSharePoint.json,Microsoft SharePoint,0.374822178122661
+1,Id + User + Create,helpScout.json,Help Scout,0.3460419783645279
+1,Id + User + Create,zoom.json,Zoom,0.32057067138074347
+1,Id + User + Create,helpScoutTool.json,Help Scout Tool,0.32050566782599077
+1,Id + User + Create,securityScorecard.json,SecurityScorecard,0.31859769535180116
+1,Id + User + Create,slack.json,Slack,0.2864340370072869
+2,America + Utc + Asia,googleCalendar.json,Google Calendar,0.9887876806187368
+2,America + Utc + Asia,googleCalendarTool.json,Google Calendar Tool,0.957008490235228
+2,America + Utc + Asia,freshworksCrm.json,Freshworks CRM,0.7625238455104633
+2,America + Utc + Asia,freshworksCrmTool.json,Freshworks CRM Tool,0.7613480558132755
+2,America + Utc + Asia,hubspotTool.json,HubSpot Tool,0.5933108142330572
+2,America + Utc + Asia,microsoftOutlookTool.json,Microsoft Outlook Tool,0.4652057755876037
+3,Field + Id + 9A,theHiveProject.json,TheHive 5,0.7540335153116184
+3,Field + Id + 9A,theHiveProjectTool.json,TheHive 5 Tool,0.736757264064492
+3,Field + Id + 9A,notion.json,Notion,0.6399999911710906
+3,Field + Id + 9A,notionTool.json,Notion Tool,0.6348169927357052
+3,Field + Id + 9A,stickyNote.json,Sticky Note,0.6309361253395736
+3,Field + Id + 9A,microsoftTeams.json,Microsoft Teams,0.5720175504215255
+3,Field + Id + 9A,microsoftTeamsTrigger.json,Microsoft Teams Trigger,0.5384392173113308
+3,Field + Id + 9A,microsoftTeamsTool.json,Microsoft Teams Tool,0.5367884565384681
+3,Field + Id + 9A,slackTool.json,Slack Tool,0.35153739993807087
+4,File + Message + Send,googleGeminiTool.json,Google Gemini Tool,0.9991443001075948
+4,File + Message + Send,googleGemini.json,Google Gemini,0.9990879393281787
+4,File + Message + Send,formTrigger.json,n8n Form Trigger,0.9965108974133073
+4,File + Message + Send,ftp.json,FTP,0.9954538279943398
+4,File + Message + Send,messageBird.json,MessageBird,0.9934768787950979
+4,File + Message + Send,ssh.json,SSH,0.9929115392956489
+4,File + Message + Send,sms77.json,seven,0.9925599775226301
+4,File + Message + Send,compression.json,Compression,0.9921730205107756
+4,File + Message + Send,anthropic.json,Anthropic,0.9912196161041682
+4,File + Message + Send,mocean.json,Mocean,0.9859359729323873
+4,File + Message + Send,yourls.json,Yourls,0.9812461758363711
+4,File + Message + Send,msg91.json,MSG91,0.9795432277088411
+4,File + Message + Send,readWriteFile.json,Read/Write Files from Disk,0.9766539687454483
+4,File + Message + Send,discord.json,Discord,0.9749959456207589
+4,File + Message + Send,mqtt.json,MQTT,0.9742840433522756
+4,File + Message + Send,emailSendTool.json,Send Email Tool,0.9720798895848026
+4,File + Message + Send,writeBinaryFile.json,Write Binary File,0.9709651252470114
+4,File + Message + Send,jwt.json,JWT,0.9667290054929918
+4,File + Message + Send,readPDF.json,Read PDF,0.9624975402977963
+4,File + Message + Send,line.json,Line,0.9594229719897198
+4,File + Message + Send,readBinaryFile.json,Read Binary File,0.9590878921729104
+4,File + Message + Send,telegramTool.json,Telegram Tool,0.955641529799847
+4,File + Message + Send,citrixAdc.json,Netscaler ADC,0.9555487182728576
+4,File + Message + Send,telegram.json,Telegram,0.9501143267102395
+4,File + Message + Send,plivo.json,Plivo,0.9470600032934369
+4,File + Message + Send,readBinaryFiles.json,Read Binary Files,0.9437454632263911
+4,File + Message + Send,anthropicTool.json,Anthropic Tool,0.9357742344996055
+4,File + Message + Send,lmOpenAi.json,OpenAI Model,0.9339436693974994
+4,File + Message + Send,openAi.json,OpenAI,0.9307174521443643
+4,File + Message + Send,emailReadImap.json,Email Trigger (IMAP),0.9303696735483692
+4,File + Message + Send,form.json,n8n Form,0.9276147376064818
+4,File + Message + Send,wait.json,Wait,0.923180565763675
+4,File + Message + Send,googleDrive.json,Google Drive,0.9081779569381082
+4,File + Message + Send,googleDriveTool.json,Google Drive Tool,0.9049470699559403
+4,File + Message + Send,kafka.json,Kafka,0.9042924343251552
+4,File + Message + Send,twilio.json,Twilio,0.9031839604235042
+4,File + Message + Send,microsoftOneDrive.json,Microsoft OneDrive,0.8953010435395656
+4,File + Message + Send,chatTrigger.json,Chat Trigger,0.8950223598205473
+4,File + Message + Send,mistralAi.json,Mistral AI,0.8799795918870651
+4,File + Message + Send,amqpTrigger.json,AMQP Trigger,0.8779719620441626
+4,File + Message + Send,emailSend.json,Send Email,0.8733287298503228
+4,File + Message + Send,awsSns.json,AWS SNS,0.8635690032852416
+4,File + Message + Send,mandrill.json,Mandrill,0.8604907765841584
+4,File + Message + Send,chat.json,Respond to Chat,0.8508383539559221
+4,File + Message + Send,mailgun.json,Mailgun,0.8480925541853858
+4,File + Message + Send,sseTrigger.json,SSE Trigger,0.8478247314344849
+4,File + Message + Send,mqttTrigger.json,MQTT Trigger,0.8459667353706819
+4,File + Message + Send,kafkaTrigger.json,Kafka Trigger,0.8445241560158897
+4,File + Message + Send,amqp.json,AMQP Sender,0.8359582205087943
+4,File + Message + Send,vonage.json,Vonage,0.8208955805868625
+4,File + Message + Send,mailjet.json,Mailjet,0.8179073006628548
+4,File + Message + Send,microsoftOneDriveTool.json,Microsoft OneDrive Tool,0.813357028302526
+4,File + Message + Send,openAiAssistant.json,OpenAI Assistant,0.8113615187611491
+4,File + Message + Send,awsRekognition.json,AWS Rekognition,0.8013063216438773
+4,File + Message + Send,mailgunTool.json,Mailgun Tool,0.7991153049419822
+4,File + Message + Send,htmlExtract.json,HTML Extract,0.7954446761261367
+4,File + Message + Send,pushover.json,Pushover,0.7877271901368029
+4,File + Message + Send,dropbox.json,Dropbox,0.7850552511739775
+4,File + Message + Send,extractFromFile.json,Extract from File,0.7842254077495933
+4,File + Message + Send,gmailTool.json,Gmail Tool,0.7815069633429821
+4,File + Message + Send,oneSimpleApi.json,One Simple API,0.780846006496769
+4,File + Message + Send,rocketchat.json,RocketChat,0.7796474355485614
+4,File + Message + Send,markdown.json,Markdown,0.7790107346723939
+4,File + Message + Send,mailjetTool.json,Mailjet Tool,0.7775536569471699
+4,File + Message + Send,perplexity.json,Perplexity,0.7643516206927161
+4,File + Message + Send,git.json,Git,0.7624002406985693
+4,File + Message + Send,lmChatGoogleGemini.json,Google Gemini Chat Model,0.7622847998825808
+4,File + Message + Send,lmChatOpenAi.json,OpenAI Chat Model,0.7611222075213246
+4,File + Message + Send,mandrillTool.json,Mandrill Tool,0.759411107723181
+4,File + Message + Send,respondToWebhook.json,Respond to Webhook,0.7588151489888055
+4,File + Message + Send,spontit.json,Spontit,0.7574364708692595
+4,File + Message + Send,lmChatAzureOpenAi.json,Azure OpenAI Chat Model,0.7523526631730646
+4,File + Message + Send,quickChart.json,QuickChart,0.7506432574452893
+4,File + Message + Send,lmChatOllama.json,Ollama Chat Model,0.7493175896367659
+4,File + Message + Send,awsSnsTrigger.json,AWS SNS Trigger,0.7462864497563454
+4,File + Message + Send,lmOllama.json,Ollama Model,0.7456279347412951
+4,File + Message + Send,lmOpenHuggingFaceInference.json,Hugging Face Inference Model,0.7444496132296524
+4,File + Message + Send,localFileTrigger.json,Local File Trigger,0.7417947451803382
+4,File + Message + Send,lmChatAwsBedrock.json,AWS Bedrock Chat Model,0.7407094594926803
+4,File + Message + Send,lmChatVercelAiGateway.json,Vercel AI Gateway Chat Model,0.7387804461182738
+4,File + Message + Send,lmChatDeepSeek.json,DeepSeek Chat Model,0.7350197284848501
+4,File + Message + Send,nextCloudTool.json,Nextcloud Tool,0.7260102851283257
+4,File + Message + Send,lmChatOpenRouter.json,OpenRouter Chat Model,0.7255856280381451
+4,File + Message + Send,convertToFile.json,Convert to File,0.7248490716614334
+4,File + Message + Send,compressionTool.json,Compression Tool,0.7216268768163574
+4,File + Message + Send,chainLlm.json,Basic LLM Chain,0.7163266311876215
+4,File + Message + Send,mcpTrigger.json,MCP Server Trigger,0.7154048568689388
+4,File + Message + Send,gmail.json,Gmail,0.7094942251592092
+4,File + Message + Send,nextCloud.json,Nextcloud,0.7090824156204985
+4,File + Message + Send,venafiTlsProtectDatacenter.json,Venafi TLS Protect Datacenter,0.7079896706893776
+4,File + Message + Send,lmChatXAiGrok.json,xAI Grok Chat Model,0.7074293231851804
+4,File + Message + Send,emailReadImapTool.json,Email Trigger (IMAP) Tool,0.7041429611963366
+4,File + Message + Send,totp.json,TOTP,0.7037138682135181
+4,File + Message + Send,googleChatTool.json,Google Chat Tool,0.7005460157009392
+4,File + Message + Send,splitOut.json,Split Out,0.6995914686240906
+4,File + Message + Send,googleChat.json,Google Chat,0.6978295615478723
+4,File + Message + Send,dropboxTool.json,Dropbox Tool,0.6953065793911942
+4,File + Message + Send,embeddingsOpenAi.json,Embeddings OpenAI,0.6899066306793651
+4,File + Message + Send,rabbitmq.json,RabbitMQ,0.6889742885583088
+4,File + Message + Send,xml.json,XML,0.684161387358018
+4,File + Message + Send,retrieverMultiQuery.json,MultiQuery Retriever,0.6805133247354946
+4,File + Message + Send,rabbitmqTrigger.json,RabbitMQ Trigger,0.6796740928761329
+4,File + Message + Send,microsoftOutlook.json,Microsoft Outlook,0.6786620566948176
+4,File + Message + Send,lmChatGroq.json,Groq Chat Model,0.6774568592190863
+4,File + Message + Send,lmChatMistralCloud.json,Mistral Cloud Chat Model,0.6757976082180153
+4,File + Message + Send,whatsAppTool.json,WhatsApp Business Cloud Tool,0.6747469019565516
+4,File + Message + Send,quickChartTool.json,QuickChart Tool,0.6741871073946182
+4,File + Message + Send,spreadsheetFile.json,Spreadsheet File,0.6717154771251268
+4,File + Message + Send,memoryManager.json,Chat Memory Manager,0.6660102905304516
+4,File + Message + Send,box.json,Box,0.6609036961771358
+4,File + Message + Send,toolHttpRequest.json,HTTP Request Tool,0.6604645363175287
+4,File + Message + Send,pushoverTool.json,Pushover Tool,0.6600162544769642
+4,File + Message + Send,whatsApp.json,WhatsApp Business Cloud,0.6583736461485089
+4,File + Message + Send,lmCohere.json,Cohere Model,0.6582042502178371
+4,File + Message + Send,awsSnsTool.json,AWS SNS Tool,0.6561924625971737
+4,File + Message + Send,redisTrigger.json,Redis Trigger,0.6501070867525611
+4,File + Message + Send,messageBirdTool.json,MessageBird Tool,0.6443752057054396
+4,File + Message + Send,webhook.json,Webhook,0.6295733668439201
+4,File + Message + Send,sentimentAnalysis.json,Sentiment Analysis,0.6289228589507311
+4,File + Message + Send,html.json,HTML,0.6222876775449293
+4,File + Message + Send,oneSimpleApiTool.json,One Simple API Tool,0.6200293297961764
+4,File + Message + Send,lmChatGoogleVertex.json,Google Vertex Chat Model,0.6094984286296481
+4,File + Message + Send,gitTool.json,Git Tool,0.6075142485873325
+4,File + Message + Send,facebookGraphApi.json,Facebook Graph API,0.6059177889347517
+4,File + Message + Send,rocketchatTool.json,RocketChat Tool,0.603286393398461
+4,File + Message + Send,rssFeedRead.json,RSS Read,0.6000461211012571
+4,File + Message + Send,lmChatAnthropic.json,Anthropic Chat Model,0.5988773694575551
+4,File + Message + Send,venafiTlsProtectDatacenterTool.json,Venafi TLS Protect Datacenter Tool,0.598220845702704
+4,File + Message + Send,awsCertificateManager.json,AWS Certificate Manager,0.596479265234251
+4,File + Message + Send,mqttTool.json,MQTT Tool,0.5951943519848358
+4,File + Message + Send,awsTextract.json,AWS Textract,0.5912577466224801
+4,File + Message + Send,lmChatCohere.json,Cohere Chat Model,0.5911830312861114
+4,File + Message + Send,perplexityTool.json,Perplexity Tool,0.5878788812185792
+4,File + Message + Send,n8nTrainingCustomerMessenger.json,Customer Messenger (n8n training),0.5856103171004782
+4,File + Message + Send,koBoToolboxTrigger.json,KoBoToolbox Trigger,0.5813393331271439
+4,File + Message + Send,awsSqs.json,AWS SQS,0.5799689715602966
+4,File + Message + Send,twake.json,Twake,0.5745674408030204
+4,File + Message + Send,discordTool.json,Discord Tool,0.5743604357721659
+4,File + Message + Send,httpRequest.json,HTTP Request,0.571343936668291
+4,File + Message + Send,debugHelper.json,DebugHelper,0.5678915332192721
+4,File + Message + Send,boxTrigger.json,Box Trigger,0.5630776047267807
+4,File + Message + Send,airtop.json,Airtop,0.5629418300447437
+4,File + Message + Send,sms77Tool.json,seven Tool,0.5598194269076437
+4,File + Message + Send,jinaAi.json,Jina AI,0.5592818108444549
+4,File + Message + Send,moveBinaryData.json,Convert to/from binary data,0.5572565465807112
+4,File + Message + Send,plivoTool.json,Plivo Tool,0.5553429138905048
+4,File + Message + Send,aggregate.json,Aggregate,0.5521560220635616
+4,File + Message + Send,lineTool.json,Line Tool,0.5481696609185202
+4,File + Message + Send,airtopTool.json,Airtop Tool,0.5456003829363512
+4,File + Message + Send,chainRetrievalQa.json,Question and Answer Chain,0.5377887658895657
+4,File + Message + Send,gitlab.json,GitLab,0.5374302723642493
+4,File + Message + Send,spontitTool.json,Spontit Tool,0.5351464136856514
+4,File + Message + Send,crypto.json,Crypto,0.5291917444312937
+4,File + Message + Send,kafkaTool.json,Kafka Tool,0.5287634910092879
+4,File + Message + Send,googleCloudNaturalLanguage.json,Google Cloud Natural Language,0.5277747175015
+4,File + Message + Send,apiTemplateIo.json,APITemplate.io,0.5213244521059044
+4,File + Message + Send,memoryChatRetriever.json,Chat Messages Retriever,0.5209524613790172
+4,File + Message + Send,microsoftOneDriveTrigger.json,Microsoft OneDrive Trigger,0.5208112462035552
+4,File + Message + Send,gitlabTool.json,GitLab Tool,0.5179603055726404
+4,File + Message + Send,awsComprehend.json,AWS Comprehend,0.5046131268581522
+4,File + Message + Send,googleDriveTrigger.json,Google Drive Trigger,0.500442169896796
+4,File + Message + Send,cryptoTool.json,Crypto Tool,0.4945930388968809
+4,File + Message + Send,telegramTrigger.json,Telegram Trigger,0.48978250761141806
+4,File + Message + Send,whatsAppTrigger.json,WhatsApp Trigger,0.48406295896783863
+4,File + Message + Send,agentTool.json,AI Agent Tool,0.48100294086335754
+4,File + Message + Send,humanticAi.json,Humantic AI,0.4661773720404605
+4,File + Message + Send,github.json,GitHub,0.4640486122103409
+4,File + Message + Send,venafiTlsProtectCloud.json,Venafi TLS Protect Cloud,0.46365718461729266
+4,File + Message + Send,awsSesTool.json,AWS SES Tool,0.4625421611002858
+4,File + Message + Send,httpRequestTool.json,HTTP Request Tool,0.45589704017460614
+4,File + Message + Send,githubTool.json,GitHub Tool,0.44919748238232743
+4,File + Message + Send,editImage.json,Edit Image,0.44892387315039
+4,File + Message + Send,awsSes.json,AWS SES,0.4366624898381611
+4,File + Message + Send,customerIoTrigger.json,Customer.io Trigger,0.4303783304749295
+4,File + Message + Send,chainSummarization.json,Summarization Chain,0.4296315621139174
+4,File + Message + Send,figmaTrigger.json,Figma Trigger (Beta),0.4220073243984298
+4,File + Message + Send,twilioTrigger.json,Twilio Trigger,0.4177979858863846
+4,File + Message + Send,iCal.json,iCalendar,0.40573717217888283
+4,File + Message + Send,aiTransform.json,AI Transform,0.4044596839664014
+4,File + Message + Send,textClassifier.json,Text Classifier,0.39927296736970774
+4,File + Message + Send,bannerbear.json,Bannerbear,0.39311751209516427
+4,File + Message + Send,jira.json,Jira Software,0.3809119359604788
+4,File + Message + Send,koBoToolbox.json,KoBoToolbox,0.37193237482602143
+4,File + Message + Send,jiraTool.json,Jira Software Tool,0.3664357914636587
+4,File + Message + Send,ciscoWebex.json,Webex by Cisco,0.3642700875829774
+4,File + Message + Send,venafiTlsProtectCloudTool.json,Venafi TLS Protect Cloud Tool,0.36102674135926177
+4,File + Message + Send,githubTrigger.json,Github Trigger,0.3607380485726566
+4,File + Message + Send,ciscoWebexTool.json,Webex by Cisco Tool,0.3480905802653275
+4,File + Message + Send,koBoToolboxTool.json,KoBoToolbox Tool,0.3258668133770233
+4,File + Message + Send,youTube.json,YouTube,0.3227753340730298
+4,File + Message + Send,matrix.json,Matrix,0.30391414335707473
+4,File + Message + Send,matrixTool.json,Matrix Tool,0.2980948374981811
+4,File + Message + Send,youTubeTool.json,YouTube Tool,0.2920810411721091
+4,File + Message + Send,slackTrigger.json,Slack Trigger,0.2665890087723748
+5,Id + List + Expressions,wekanTool.json,Wekan Tool,0.9997061287442774
+5,Id + List + Expressions,wekan.json,Wekan,0.9996996637170772
+5,Id + List + Expressions,linear.json,Linear,0.998012910810513
+5,Id + List + Expressions,zendeskTrigger.json,Zendesk Trigger,0.9975800564956517
+5,Id + List + Expressions,venafiTlsProtectCloudTrigger.json,Venafi TLS Protect Cloud Trigger,0.9650545743911719
+5,Id + List + Expressions,taiga.json,Taiga,0.9044113240122436
+5,Id + List + Expressions,taigaTool.json,Taiga Tool,0.8928394855104964
+5,Id + List + Expressions,workableTrigger.json,Workable Trigger,0.8719372183616467
+5,Id + List + Expressions,payPalTrigger.json,PayPal Trigger,0.8332572905791001
+5,Id + List + Expressions,linearTool.json,Linear Tool,0.8187458203934703
+5,Id + List + Expressions,erpNext.json,ERPNext,0.8145968026342102
+5,Id + List + Expressions,webflow.json,Webflow,0.7999989920991065
+5,Id + List + Expressions,freshservice.json,Freshservice,0.7984763424854926
+5,Id + List + Expressions,bitbucketTrigger.json,Bitbucket Trigger,0.7944954055995105
+5,Id + List + Expressions,taigaTrigger.json,Taiga Trigger,0.7918017962675771
+5,Id + List + Expressions,wufooTrigger.json,Wufoo Trigger,0.7835209285086675
+5,Id + List + Expressions,freshserviceTool.json,Freshservice Tool,0.7823067297524732
+5,Id + List + Expressions,emeliaTrigger.json,Emelia Trigger,0.7671907478446744
+5,Id + List + Expressions,coda.json,Coda,0.7585334736650281
+5,Id + List + Expressions,convertKitTrigger.json,ConvertKit Trigger,0.7523351602839268
+5,Id + List + Expressions,microsoftDynamicsCrm.json,Microsoft Dynamics CRM,0.7504979105315781
+5,Id + List + Expressions,mondayCom.json,Monday.com,0.7484016100287667
+5,Id + List + Expressions,filemaker.json,FileMaker,0.7366346688918196
+5,Id + List + Expressions,mauticTrigger.json,Mautic Trigger,0.7289008651314886
+5,Id + List + Expressions,webflowTool.json,Webflow Tool,0.726976726554156
+5,Id + List + Expressions,linearTrigger.json,Linear Trigger,0.7261754911999647
+5,Id + List + Expressions,codaTool.json,Coda Tool,0.7188084649666656
+5,Id + List + Expressions,keapTrigger.json,Keap Trigger,0.71311602469484
+5,Id + List + Expressions,mondayComTool.json,Monday.com Tool,0.7037685118653
+5,Id + List + Expressions,microsoftDynamicsCrmTool.json,Microsoft Dynamics CRM Tool,0.6997264705824598
+5,Id + List + Expressions,formIoTrigger.json,Form.io Trigger,0.6847539035568594
+5,Id + List + Expressions,hubspot.json,HubSpot,0.6840617938693465
+5,Id + List + Expressions,coinGecko.json,CoinGecko,0.681449638443419
+5,Id + List + Expressions,clickUp.json,ClickUp,0.6749755189982284
+5,Id + List + Expressions,filemakerTool.json,FileMaker Tool,0.6743609580113332
+5,Id + List + Expressions,microsoftExcel.json,Microsoft Excel,0.6688434791539618
+5,Id + List + Expressions,netlifyTrigger.json,Netlify Trigger,0.6688427712708537
+5,Id + List + Expressions,clickUpTool.json,ClickUp Tool,0.6646220237015019
+5,Id + List + Expressions,erpNextTool.json,ERPNext Tool,0.6615920700947642
+5,Id + List + Expressions,salesforce.json,Salesforce,0.6600899583912831
+5,Id + List + Expressions,salesforceTool.json,Salesforce Tool,0.6565911325425382
+5,Id + List + Expressions,jotFormTrigger.json,JotForm Trigger,0.654226201604862
+5,Id + List + Expressions,googleBigQuery.json,Google BigQuery,0.6232080223256862
+5,Id + List + Expressions,typeformTrigger.json,Typeform Trigger,0.615026240698849
+5,Id + List + Expressions,storyblok.json,Storyblok,0.6095230876176684
+5,Id + List + Expressions,deepL.json,DeepL,0.605629780117222
+5,Id + List + Expressions,lingvaNex.json,LingvaNex,0.6032877818043396
+5,Id + List + Expressions,activeCampaignTrigger.json,ActiveCampaign Trigger,0.5932925524557192
+5,Id + List + Expressions,coinGeckoTool.json,CoinGecko Tool,0.5887961879637211
+5,Id + List + Expressions,awsElb.json,AWS ELB,0.585294399898241
+5,Id + List + Expressions,odoo.json,Odoo,0.5785738433785291
+5,Id + List + Expressions,todoist.json,Todoist,0.5774410006118462
+5,Id + List + Expressions,serviceNow.json,ServiceNow,0.572625669476082
+5,Id + List + Expressions,serviceNowTool.json,ServiceNow Tool,0.5583773837104435
+5,Id + List + Expressions,bitly.json,Bitly,0.5582197852365329
+5,Id + List + Expressions,seaTable.json,SeaTable,0.5566283865872149
+5,Id + List + Expressions,zammad.json,Zammad,0.551719313867851
+5,Id + List + Expressions,awsLambda.json,AWS Lambda,0.5510333995291646
+5,Id + List + Expressions,pushcut.json,Pushcut,0.5482726856880884
+5,Id + List + Expressions,hubspotTrigger.json,HubSpot Trigger,0.5286352627869035
+5,Id + List + Expressions,zammadTool.json,Zammad Tool,0.5268841880150412
+5,Id + List + Expressions,asanaTrigger.json,Asana Trigger,0.5266686190378337
+5,Id + List + Expressions,odooTool.json,Odoo Tool,0.526405855188817
+5,Id + List + Expressions,surveyMonkeyTrigger.json,SurveyMonkey Trigger,0.5260643484985121
+5,Id + List + Expressions,phantombuster.json,Phantombuster,0.5136720350418662
+5,Id + List + Expressions,sentryIo.json,Sentry.io,0.511702139035687
+5,Id + List + Expressions,googlePerspective.json,Google Perspective,0.5040698654298453
+5,Id + List + Expressions,wiseTrigger.json,Wise Trigger,0.5032253743331468
+5,Id + List + Expressions,eventbriteTrigger.json,Eventbrite Trigger,0.5011666797147762
+5,Id + List + Expressions,zendesk.json,Zendesk,0.4996798462259856
+5,Id + List + Expressions,storyblokTool.json,Storyblok Tool,0.4919329955326461
+5,Id + List + Expressions,sentryIoTool.json,Sentry.io Tool,0.49077769377847014
+5,Id + List + Expressions,webflowTrigger.json,Webflow Trigger,0.47738497972872584
+5,Id + List + Expressions,pipedrive.json,Pipedrive,0.47447701958692556
+5,Id + List + Expressions,formstackTrigger.json,Formstack Trigger,0.4742711091635402
+5,Id + List + Expressions,zendeskTool.json,Zendesk Tool,0.47402159250092807
+5,Id + List + Expressions,automizy.json,Automizy,0.46628119925651035
+5,Id + List + Expressions,pipedriveTool.json,Pipedrive Tool,0.46499282506812845
+5,Id + List + Expressions,magento2.json,Magento 2,0.4644956948477072
+5,Id + List + Expressions,calTrigger.json,Cal.com Trigger,0.44871177460653383
+5,Id + List + Expressions,supabase.json,Supabase,0.448667583812721
+5,Id + List + Expressions,demio.json,Demio,0.4454334565953423
+5,Id + List + Expressions,grist.json,Grist,0.4403515154402452
+5,Id + List + Expressions,bitlyTool.json,Bitly Tool,0.4395080633949836
+5,Id + List + Expressions,magento2Tool.json,Magento 2 Tool,0.43780779379751444
+5,Id + List + Expressions,getResponseTrigger.json,GetResponse Trigger,0.4366062492878043
+5,Id + List + Expressions,homeAssistant.json,Home Assistant,0.435018240197806
+5,Id + List + Expressions,baserow.json,Baserow,0.42990488459842435
+5,Id + List + Expressions,pagerDuty.json,PagerDuty,0.4281387949002331
+5,Id + List + Expressions,xero.json,Xero,0.4241581405988131
+5,Id + List + Expressions,googleAnalytics.json,Google Analytics,0.40697095271348716
+5,Id + List + Expressions,bambooHr.json,BambooHR,0.406286399513289
+5,Id + List + Expressions,highLevelTool.json,HighLevel Tool,0.4046183097630958
+5,Id + List + Expressions,egoi.json,E-goi,0.4006185161664446
+5,Id + List + Expressions,xeroTool.json,Xero Tool,0.39948780022005315
+5,Id + List + Expressions,theHive.json,TheHive,0.39244885169657756
+5,Id + List + Expressions,pagerDutyTool.json,PagerDuty Tool,0.3906799943475949
+5,Id + List + Expressions,mcpClientTool.json,MCP Client Tool,0.38723770775072863
+5,Id + List + Expressions,theHiveTool.json,TheHive Tool,0.37921671607202867
+5,Id + List + Expressions,clickUpTrigger.json,ClickUp Trigger,0.36746270675904363
+5,Id + List + Expressions,googleAnalyticsTool.json,Google Analytics Tool,0.36440865072710055
+5,Id + List + Expressions,highLevel.json,HighLevel,0.3633761632351147
+5,Id + List + Expressions,supabaseTool.json,Supabase Tool,0.3545610049457835
+5,Id + List + Expressions,baserowTool.json,Baserow Tool,0.3527799622221185
+5,Id + List + Expressions,egoiTool.json,E-goi Tool,0.3369260581567302
+5,Id + List + Expressions,nocoDb.json,NocoDB,0.33641513716531435
+5,Id + List + Expressions,twist.json,Twist,0.32380454056392055
+5,Id + List + Expressions,lemlistTrigger.json,Lemlist Trigger,0.3168975832446687
+5,Id + List + Expressions,twistTool.json,Twist Tool,0.3074089506623592
+5,Id + List + Expressions,facebookTrigger.json,Facebook Trigger,0.26367733069943095
+5,Id + List + Expressions,cortex.json,Cortex,0.2605415238069488
+6,Create + Id + Address,stripeTool.json,Stripe Tool,0.9706782621993558
+6,Create + Id + Address,stripe.json,Stripe,0.9632661779521836
+6,Create + Id + Address,wooCommerceTool.json,WooCommerce Tool,0.8882282511377958
+6,Create + Id + Address,onfleetTool.json,Onfleet Tool,0.8864395595438623
+6,Create + Id + Address,onfleet.json,Onfleet,0.8788849020149969
+6,Create + Id + Address,wooCommerce.json,WooCommerce,0.8780366561135281
+6,Create + Id + Address,quickbooks.json,QuickBooks Online,0.858469323940555
+6,Create + Id + Address,quickbooksTool.json,QuickBooks Online Tool,0.8573345245873604
+6,Create + Id + Address,onfleetTrigger.json,Onfleet Trigger,0.7455306359656655
+6,Create + Id + Address,unleashedSoftware.json,Unleashed Software,0.6871203182649813
+6,Create + Id + Address,shopify.json,Shopify,0.6787539433794747
+6,Create + Id + Address,shopifyTool.json,Shopify Tool,0.666274843785709
+6,Create + Id + Address,marketstack.json,Marketstack,0.657158009579453
+6,Create + Id + Address,invoiceNinjaTool.json,Invoice Ninja Tool,0.6373901703614536
+6,Create + Id + Address,invoiceNinja.json,Invoice Ninja,0.6324207204746334
+6,Create + Id + Address,tapfiliate.json,Tapfiliate,0.6215750049887003
+6,Create + Id + Address,tapfiliateTool.json,Tapfiliate Tool,0.5961497529547832
+6,Create + Id + Address,dhl.json,DHL,0.5855298783051928
+6,Create + Id + Address,paddle.json,Paddle,0.5805709110694146
+6,Create + Id + Address,chargebee.json,Chargebee,0.5529043306033224
+6,Create + Id + Address,goToWebinarTool.json,GoToWebinar Tool,0.5418596664916121
+6,Create + Id + Address,goToWebinar.json,GoToWebinar,0.5328553561339238
+6,Create + Id + Address,paddleTool.json,Paddle Tool,0.5305457670546364
+6,Create + Id + Address,limit.json,Limit,0.5108145057062663
+6,Create + Id + Address,openWeatherMap.json,OpenWeatherMap,0.4967874544696968
+6,Create + Id + Address,payPal.json,PayPal,0.4926376658034475
+6,Create + Id + Address,wise.json,Wise,0.44596297942961627
+6,Create + Id + Address,syncroMsp.json,SyncroMSP,0.42190478419545047
+6,Create + Id + Address,syncroMspTool.json,SyncroMSP Tool,0.4045717752802909
+6,Create + Id + Address,bambooHrTool.json,BambooHR Tool,0.39395784691319785
+7,Database + Text + Data,merge.json,Merge,0.99473624050478
+7,Database + Text + Data,scheduleTrigger.json,Schedule Trigger,0.9912605680266046
+7,Database + Text + Data,cron.json,Cron,0.9896540422545668
+7,Database + Text + Data,togglTrigger.json,Toggl Trigger,0.9890226708755288
+7,Database + Text + Data,rssFeedReadTrigger.json,RSS Feed Trigger,0.9888872942583814
+7,Database + Text + Data,documentJsonInputLoader.json,JSON Input Loader,0.9816285862365873
+7,Database + Text + Data,vectorStoreZepLoad.json,Zep Vector Store: Load,0.9769186754791392
+7,Database + Text + Data,vectorStorePineconeLoad.json,Pinecone: Load,0.9763104071754902
+7,Database + Text + Data,vectorStoreInMemoryLoad.json,In Memory Vector Store Load,0.9590874113073424
+7,Database + Text + Data,toolCalculator.json,Calculator,0.9571402267759853
+7,Database + Text + Data,toolWikipedia.json,Wikipedia,0.954987453952359
+7,Database + Text + Data,toolWolframAlpha.json,Wolfram|Alpha,0.9526288121700408
+7,Database + Text + Data,function.json,Function,0.9499906992072613
+7,Database + Text + Data,functionItem.json,Function Item,0.9470488332334853
+7,Database + Text + Data,start.json,Start,0.9437435242530532
+7,Database + Text + Data,vectorStoreSupabaseInsert.json,Supabase: Insert,0.9242426518323396
+7,Database + Text + Data,googleCalendarTrigger.json,Google Calendar Trigger,0.9234812526350153
+7,Database + Text + Data,toolWorkflow.json,Call n8n Workflow Tool,0.8911761485111913
+7,Database + Text + Data,outputParserAutofixing.json,Auto-fixing Output Parser,0.884214082582144
+7,Database + Text + Data,memoryZep.json,Zep,0.8637832669378285
+7,Database + Text + Data,vectorStoreInMemoryInsert.json,In Memory Vector Store Insert,0.8599019971908737
+7,Database + Text + Data,memoryMotorhead.json,Motorhead,0.8562539439002016
+7,Database + Text + Data,vectorStoreSupabaseLoad.json,Supabase: Load,0.853997666491345
+7,Database + Text + Data,retrieverWorkflow.json,Workflow Retriever,0.8535945220933835
+7,Database + Text + Data,set.json,Set,0.8509818812014884
+7,Database + Text + Data,vectorStoreZepInsert.json,Zep Vector Store: Insert,0.8465832144534815
+7,Database + Text + Data,executeWorkflow.json,Execute Sub-workflow,0.8361631522716001
+7,Database + Text + Data,seaTableTrigger.json,SeaTable Trigger,0.8307690004291471
+7,Database + Text + Data,toolCode.json,Code Tool,0.8275972921001996
+7,Database + Text + Data,memoryXata.json,Xata,0.8217611755859227
+7,Database + Text + Data,manualTrigger.json,Manual Trigger,0.8128118642757595
+7,Database + Text + Data,googleSheetsTrigger.json,Google Sheets Trigger,0.8038105730153001
+7,Database + Text + Data,outputParserStructured.json,Structured Output Parser,0.8008664352216204
+7,Database + Text + Data,filter.json,Filter,0.7956330550597008
+7,Database + Text + Data,vectorStoreInMemory.json,Simple Vector Store,0.792743656633135
+7,Database + Text + Data,executeWorkflowTrigger.json,Execute Workflow Trigger,0.7880227685536927
+7,Database + Text + Data,vectorStorePineconeInsert.json,Pinecone: Insert,0.7859063220797993
+7,Database + Text + Data,switch.json,Switch,0.7818291274525635
+7,Database + Text + Data,toolThink.json,Think Tool,0.7810809600479603
+7,Database + Text + Data,embeddingsHuggingFaceInference.json,Embeddings Hugging Face Inference,0.7796222359669162
+7,Database + Text + Data,pushcutTrigger.json,Pushcut Trigger,0.7791129645321349
+7,Database + Text + Data,memoryPostgresChat.json,Postgres Chat Memory,0.7744951486400943
+7,Database + Text + Data,clockifyTrigger.json,Clockify Trigger,0.7693460822371622
+7,Database + Text + Data,memoryBufferWindow.json,Simple Memory,0.76334488620293
+7,Database + Text + Data,memoryMongoDbChat.json,MongoDB Chat Memory,0.7571617107579207
+7,Database + Text + Data,notionTrigger.json,Notion Trigger,0.7522069662482294
+7,Database + Text + Data,code.json,LangChain Code,0.749235228145258
+7,Database + Text + Data,vectorStoreMongoDBAtlas.json,MongoDB Atlas Vector Store,0.7491417976085973
+7,Database + Text + Data,vectorStoreQdrant.json,Qdrant Vector Store,0.7484656123220413
+7,Database + Text + Data,vectorStoreZep.json,Zep Vector Store,0.7441945987396187
+7,Database + Text + Data,vectorStoreMilvus.json,Milvus Vector Store,0.7395097965332728
+7,Database + Text + Data,airtableTrigger.json,Airtable Trigger,0.7375789203382258
+7,Database + Text + Data,vectorStoreSupabase.json,Supabase Vector Store,0.7294516948868442
+7,Database + Text + Data,trelloTrigger.json,Trello Trigger,0.7263378018507147
+7,Database + Text + Data,loneScaleTrigger.json,LoneScale Trigger,0.7197748442121307
+7,Database + Text + Data,textSplitterCharacterTextSplitter.json,Character Text Splitter,0.7196222638745801
+7,Database + Text + Data,memoryRedisChat.json,Redis Chat Memory,0.7172612043617207
+7,Database + Text + Data,toolVectorStore.json,Vector Store Question Answer Tool,0.714523494570801
+7,Database + Text + Data,crowdDevTrigger.json,crowd.dev Trigger,0.7130351348019175
+7,Database + Text + Data,removeDuplicates.json,Remove Duplicates,0.7111233771817982
+7,Database + Text + Data,interval.json,Interval,0.7104603254981103
+7,Database + Text + Data,vectorStorePGVector.json,Postgres PGVector Store,0.7073278528666
+7,Database + Text + Data,retrieverVectorStore.json,Vector Store Retriever,0.6976426753604216
+7,Database + Text + Data,outputParserItemList.json,Item List Output Parser,0.6916202861034414
+7,Database + Text + Data,documentBinaryInputLoader.json,Binary Input Loader,0.6911448574611424
+7,Database + Text + Data,if.json,If,0.6878212327468882
+7,Database + Text + Data,documentDefaultDataLoader.json,Default Data Loader,0.6865320475071344
+7,Database + Text + Data,vectorStorePinecone.json,Pinecone Vector Store,0.6827438668917079
+7,Database + Text + Data,workflowTrigger.json,Workflow Trigger,0.6674120817971982
+7,Database + Text + Data,embeddingsGoogleVertex.json,Embeddings Google Vertex,0.6652998990838038
+7,Database + Text + Data,modelSelector.json,Model Selector,0.6616214221999301
+7,Database + Text + Data,microsoftExcelTool.json,Microsoft Excel 365 Tool,0.6472238516658662
+7,Database + Text + Data,vectorStoreWeaviate.json,Weaviate Vector Store,0.640461632355684
+7,Database + Text + Data,compareDatasets.json,Compare Datasets,0.6377356908043021
+7,Database + Text + Data,googleSheetsTool.json,Google Sheets Tool,0.6353737224682271
+7,Database + Text + Data,textSplitterTokenSplitter.json,Token Splitter,0.6280784450141201
+7,Database + Text + Data,googleBusinessProfileTrigger.json,Google Business Profile Trigger,0.6246400959600359
+7,Database + Text + Data,dateTimeTool.json,Date & Time Tool,0.6166134685640812
+7,Database + Text + Data,dataTable.json,Data Table,0.6098694825195533
+7,Database + Text + Data,documentGithubLoader.json,GitHub Document Loader,0.6069936283872869
+7,Database + Text + Data,errorTrigger.json,Error Trigger,0.598410278700238
+7,Database + Text + Data,simulate.json,Simulate,0.5951573702519355
+7,Database + Text + Data,textSplitterRecursiveCharacterTextSplitter.json,Recursive Character Text Splitter,0.5937445130690573
+7,Database + Text + Data,embeddingsMistralCloud.json,Embeddings Mistral Cloud,0.5880971012051639
+7,Database + Text + Data,embeddingsGoogleGemini.json,Embeddings Google Gemini,0.5823034879721425
+7,Database + Text + Data,rerankerCohere.json,Reranker Cohere,0.5778558786009172
+7,Database + Text + Data,embeddingsOllama.json,Embeddings Ollama,0.5692699354797334
+7,Database + Text + Data,summarize.json,Summarize,0.5601525771429412
+7,Database + Text + Data,n8nTrigger.json,n8n Trigger,0.5522632195445825
+7,Database + Text + Data,toolSearXng.json,SearXNG,0.5506588645308624
+7,Database + Text + Data,embeddingsCohere.json,Embeddings Cohere,0.5405347473427538
+7,Database + Text + Data,toolExecutor.json,Tool Executor,0.5404437467520385
+7,Database + Text + Data,manualChatTrigger.json,Manual Chat Trigger,0.5403071846131696
+7,Database + Text + Data,embeddingsAwsBedrock.json,Embeddings AWS Bedrock,0.5391554469658364
+7,Database + Text + Data,googleSheets.json,Google Sheets ,0.538079822500153
+7,Database + Text + Data,agent.json,AI Agent,0.5363179845684564
+7,Database + Text + Data,embeddingsAzureOpenAi.json,Embeddings Azure OpenAI,0.5269345494522188
+7,Database + Text + Data,renameKeys.json,Rename Keys,0.5257717751653325
+7,Database + Text + Data,mySqlTool.json,MySQL Tool,0.5198650295885461
+7,Database + Text + Data,postgresTool.json,Postgres Tool,0.5104616810812704
+7,Database + Text + Data,dateTime.json,Date & Time,0.5014368941041224
+7,Database + Text + Data,executionData.json,Execution Data,0.4906040523727734
+7,Database + Text + Data,salesforceTrigger.json,Salesforce Trigger,0.4794666164205711
+7,Database + Text + Data,simulateTrigger.json,Simulate Trigger,0.4686256269002595
+7,Database + Text + Data,evaluationTrigger.json,Evaluation Trigger,0.46437329079767
+7,Database + Text + Data,splitInBatches.json,Split In Batches,0.45803449616666436
+7,Database + Text + Data,toolSerpApi.json,SerpApi (Google Search),0.4543190302935578
+7,Database + Text + Data,evaluation.json,Evaluation,0.45288313148714804
+7,Database + Text + Data,itemLists.json,Item Lists,0.4526949014524468
+7,Database + Text + Data,gmailTrigger.json,Gmail Trigger,0.4468097200179161
+7,Database + Text + Data,stopAndError.json,Stop and Error,0.4377422339699638
+7,Database + Text + Data,dataTableTool.json,Data Table Tool,0.43359783984475936
+7,Database + Text + Data,microsoftOutlookTrigger.json,Microsoft Outlook Trigger,0.4202928644429805
+7,Database + Text + Data,informationExtractor.json,Information Extractor,0.40490592377986473
+7,Database + Text + Data,postgresTrigger.json,Postgres Trigger,0.36603002808796775
+7,Database + Text + Data,n8n.json,n8n,0.35627051859879516
+7,Database + Text + Data,airtable.json,Airtable,0.31047102154531875
+8,_Blank + Target _Blank + App,uprocTool.json,uProc Tool,0.9999401860999162
+8,_Blank + Target _Blank + App,uproc.json,uProc,0.9999400796284305
+9,Operation + Set + Id,npmTool.json,Npm Tool,0.9959455488644561
+9,Operation + Set + Id,npm.json,Npm,0.9942300725853893
+9,Operation + Set + Id,stackbyTool.json,Stackby Tool,0.9942298300701709
+9,Operation + Set + Id,snowflakeTool.json,Snowflake Tool,0.994078154017991
+9,Operation + Set + Id,rundeckTool.json,Rundeck Tool,0.992856517205416
+9,Operation + Set + Id,googleBusinessProfileTool.json,Google Business Profile Tool,0.9891243419278024
+9,Operation + Set + Id,googleBusinessProfile.json,Google Business Profile,0.987343898208697
+9,Operation + Set + Id,elasticsearchTool.json,Elasticsearch Tool,0.9854695134225832
+9,Operation + Set + Id,rundeck.json,Rundeck,0.9852437772512165
+9,Operation + Set + Id,metabaseTool.json,Metabase Tool,0.9818259348753343
+9,Operation + Set + Id,executeCommandTool.json,Execute Command Tool,0.9749988284217302
+9,Operation + Set + Id,azureCosmosDb.json,Azure Cosmos DB,0.9743576729055017
+9,Operation + Set + Id,mongoDbTool.json,MongoDB Tool,0.9676958936375403
+9,Operation + Set + Id,crateDbTool.json,CrateDB Tool,0.9672769451036188
+9,Operation + Set + Id,metabase.json,Metabase,0.9644020566104688
+9,Operation + Set + Id,adaloTool.json,Adalo Tool,0.9606194868563167
+9,Operation + Set + Id,postBinTool.json,PostBin Tool,0.9603734464158142
+9,Operation + Set + Id,questDbTool.json,QuestDB Tool,0.9600216733753597
+9,Operation + Set + Id,elasticsearch.json,Elasticsearch,0.9528271600771717
+9,Operation + Set + Id,microsoftSqlTool.json,Microsoft SQL Tool,0.9474982543699468
+9,Operation + Set + Id,peekalinkTool.json,Peekalink Tool,0.9342578343312495
+9,Operation + Set + Id,googleCloudStorageTool.json,Google Cloud Storage Tool,0.9331295059310093
+9,Operation + Set + Id,timescaleDbTool.json,TimescaleDB Tool,0.9287964816088693
+9,Operation + Set + Id,googleCloudStorage.json,Google Cloud Storage,0.9210731071156489
+9,Operation + Set + Id,adalo.json,Adalo,0.9191447705816226
+9,Operation + Set + Id,totpTool.json,TOTP Tool,0.9012998211079573
+9,Operation + Set + Id,ouraTool.json,Oura Tool,0.9009742456436087
+9,Operation + Set + Id,dhlTool.json,DHL Tool,0.8984967851484164
+9,Operation + Set + Id,mongoDb.json,MongoDB,0.8946641495638529
+9,Operation + Set + Id,executeCommand.json,Execute Command,0.8874892534034743
+9,Operation + Set + Id,graphqlTool.json,GraphQL Tool,0.8826707935396512
+9,Operation + Set + Id,openThesaurusTool.json,OpenThesaurus Tool,0.8797660260292159
+9,Operation + Set + Id,postBin.json,PostBin,0.868550199069852
+9,Operation + Set + Id,yourlsTool.json,Yourls Tool,0.8610255436141386
+9,Operation + Set + Id,googleAdsTool.json,Google Ads Tool,0.8227299263991791
+9,Operation + Set + Id,awsTextractTool.json,AWS Textract Tool,0.8086557826819788
+9,Operation + Set + Id,questDb.json,QuestDB,0.7987573439776415
+9,Operation + Set + Id,googleCloudNaturalLanguageTool.json,Google Cloud Natural Language Tool,0.795011784945886
+9,Operation + Set + Id,circleCiTool.json,CircleCI Tool,0.7942371082460051
+9,Operation + Set + Id,redisTool.json,Redis Tool,0.791210414497426
+9,Operation + Set + Id,crateDb.json,CrateDB,0.7867045462034297
+9,Operation + Set + Id,microsoftGraphSecurityTool.json,Microsoft Graph Security Tool,0.7843343164965816
+9,Operation + Set + Id,snowflake.json,Snowflake,0.7830344446972602
+9,Operation + Set + Id,googleTranslateTool.json,Google Translate Tool,0.7826150390806319
+9,Operation + Set + Id,strapiTool.json,Strapi Tool,0.7780602455360356
+9,Operation + Set + Id,stravaTrigger.json,Strava Trigger,0.7740664811897199
+9,Operation + Set + Id,openWeatherMapTool.json,OpenWeatherMap Tool,0.758410361195432
+9,Operation + Set + Id,timescaleDb.json,TimescaleDB,0.7573296345957244
+9,Operation + Set + Id,graphql.json,GraphQL,0.7523956285151834
+9,Operation + Set + Id,awsLambdaTool.json,AWS Lambda Tool,0.7516069730136108
+9,Operation + Set + Id,mySql.json,MySQL,0.751265176881699
+9,Operation + Set + Id,azureStorage.json,Azure Storage,0.7484596181286326
+9,Operation + Set + Id,urlScanIoTool.json,urlscan.io Tool,0.7475914610946641
+9,Operation + Set + Id,mailcheckTool.json,Mailcheck Tool,0.7470307762317808
+9,Operation + Set + Id,microsoftSql.json,Microsoft SQL,0.745038407232549
+9,Operation + Set + Id,googleBooksTool.json,Google Books Tool,0.738830190249117
+9,Operation + Set + Id,profitWellTool.json,ProfitWell Tool,0.7352346275338005
+9,Operation + Set + Id,googleFirebaseRealtimeDatabaseTool.json,Google Cloud Realtime Database Tool,0.7159018382646233
+9,Operation + Set + Id,googlePerspectiveTool.json,Google Perspective Tool,0.7089593412743269
+9,Operation + Set + Id,googleAds.json,Google Ads,0.7088273841165388
+9,Operation + Set + Id,awsTranscribeTool.json,AWS Transcribe Tool,0.7048477611391197
+9,Operation + Set + Id,googleDocsTool.json,Google Docs Tool,0.7039585234621097
+9,Operation + Set + Id,jwtTool.json,JWT Tool,0.6998860124379203
+9,Operation + Set + Id,ldapTool.json,Ldap Tool,0.6974260685552948
+9,Operation + Set + Id,rssFeedReadTool.json,RSS Read Tool,0.6933382159117994
+9,Operation + Set + Id,bubbleTool.json,Bubble Tool,0.6915092415340303
+9,Operation + Set + Id,cockpitTool.json,Cockpit Tool,0.6897350865055044
+9,Operation + Set + Id,postgres.json,Postgres,0.687881657495168
+9,Operation + Set + Id,BrandfetchTool.json,Brandfetch Tool,0.6763613797343447
+9,Operation + Set + Id,contentfulTool.json,Contentful Tool,0.6703049154227778
+9,Operation + Set + Id,hackerNewsTool.json,Hacker News Tool,0.6621900270851186
+9,Operation + Set + Id,gotifyTool.json,Gotify Tool,0.6613471220049443
+9,Operation + Set + Id,profitWell.json,ProfitWell,0.6496846287305914
+9,Operation + Set + Id,stripeTrigger.json,Stripe Trigger,0.6487628339997222
+9,Operation + Set + Id,googleSlidesTool.json,Google Slides Tool,0.6472456047029831
+9,Operation + Set + Id,dropcontactTool.json,Dropcontact Tool,0.6467678400160886
+9,Operation + Set + Id,ciscoWebexTrigger.json,Webex by Cisco Trigger,0.6428376587726953
+9,Operation + Set + Id,affinityTrigger.json,Affinity Trigger,0.641930893684009
+9,Operation + Set + Id,googleFirebaseCloudFirestoreTool.json,Google Cloud Firestore Tool,0.6413265634733502
+9,Operation + Set + Id,nasaTool.json,NASA Tool,0.6409631068658216
+9,Operation + Set + Id,googleDocs.json,Google Docs,0.6385335275924874
+9,Operation + Set + Id,cloudflareTool.json,Cloudflare Tool,0.6328297926471571
+9,Operation + Set + Id,deepLTool.json,DeepL Tool,0.6314354397386169
+9,Operation + Set + Id,invoiceNinjaTrigger.json,Invoice Ninja Trigger,0.6158111884809617
+9,Operation + Set + Id,jenkinsTool.json,Jenkins Tool,0.6114864930051754
+9,Operation + Set + Id,redis.json,Redis,0.6062710266585497
+9,Operation + Set + Id,chargebeeTrigger.json,Chargebee Trigger,0.6057335129309585
+9,Operation + Set + Id,oura.json,Oura,0.6035888905539419
+9,Operation + Set + Id,theHiveTrigger.json,TheHive Trigger,0.6034036807717211
+9,Operation + Set + Id,gitlabTrigger.json,GitLab Trigger,0.6020725038970205
+9,Operation + Set + Id,awsDynamoDb.json,AWS DynamoDB,0.6009001199472254
+9,Operation + Set + Id,msg91Tool.json,MSG91 Tool,0.5966344995687177
+9,Operation + Set + Id,calendlyTrigger.json,Calendly Trigger,0.5950668215115223
+9,Operation + Set + Id,signl4Tool.json,SIGNL4 Tool,0.5917354093269926
+9,Operation + Set + Id,postHogTool.json,PostHog Tool,0.5916772381620184
+9,Operation + Set + Id,lingvaNexTool.json,LingvaNex Tool,0.5885826870987371
+9,Operation + Set + Id,amqpTool.json,AMQP Sender Tool,0.5856735850080046
+9,Operation + Set + Id,acuitySchedulingTrigger.json,Acuity Scheduling Trigger,0.5839681670797008
+9,Operation + Set + Id,jinaAiTool.json,Jina AI Tool,0.5821354411642953
+9,Operation + Set + Id,stackby.json,Stackby,0.5791228602175518
+9,Operation + Set + Id,quickbaseTool.json,Quick Base Tool,0.5782788622451128
+9,Operation + Set + Id,wooCommerceTrigger.json,WooCommerce Trigger,0.5727387014272252
+9,Operation + Set + Id,airtableTool.json,Airtable Tool,0.5723642588325393
+9,Operation + Set + Id,googleFirebaseCloudFirestore.json,Google Cloud Firestore,0.5720787462469686
+9,Operation + Set + Id,upleadTool.json,Uplead Tool,0.5699131199520474
+9,Operation + Set + Id,unleashedSoftwareTool.json,Unleashed Software Tool,0.5692696268044832
+9,Operation + Set + Id,gumroadTrigger.json,Gumroad Trigger,0.5675116087332047
+9,Operation + Set + Id,vonageTool.json,Vonage Tool,0.566562608902832
+9,Operation + Set + Id,awsS3Tool.json,AWS S3 Tool,0.5648948635480939
+9,Operation + Set + Id,mistralAiTool.json,Mistral AI Tool,0.5645476929472538
+9,Operation + Set + Id,s3Tool.json,S3 Tool,0.5584507670413882
+9,Operation + Set + Id,gristTool.json,Grist Tool,0.5553617294683989
+9,Operation + Set + Id,chargebeeTool.json,Chargebee Tool,0.5441912510164385
+9,Operation + Set + Id,moceanTool.json,Mocean Tool,0.5375140174027716
+9,Operation + Set + Id,phantombusterTool.json,Phantombuster Tool,0.5370003196368233
+9,Operation + Set + Id,jiraTrigger.json,Jira Trigger,0.5322212760602334
+9,Operation + Set + Id,twilioTool.json,Twilio Tool,0.5289090752795474
+9,Operation + Set + Id,customerIoTool.json,Customer.io Tool,0.5251421252388961
+9,Operation + Set + Id,hunterTool.json,Hunter Tool,0.520488193586062
+9,Operation + Set + Id,twakeTool.json,Twake Tool,0.5197603382924493
+9,Operation + Set + Id,quickbase.json,Quick Base,0.5187163651140507
+9,Operation + Set + Id,peekalink.json,Peekalink,0.5186739926090952
+9,Operation + Set + Id,shopifyTrigger.json,Shopify Trigger,0.5156484270369058
+9,Operation + Set + Id,s3.json,S3,0.5153575899765377
+9,Operation + Set + Id,awsS3.json,AWS S3,0.5151763116835191
+9,Operation + Set + Id,marketstackTool.json,Marketstack Tool,0.5076431893388822
+9,Operation + Set + Id,theHiveProjectTrigger.json,TheHive 5 Trigger,0.5069240356376413
+9,Operation + Set + Id,actionNetworkTool.json,Action Network Tool,0.5064589596923512
+9,Operation + Set + Id,netlifyTool.json,Netlify Tool,0.5057637425458243
+9,Operation + Set + Id,copperTrigger.json,Copper Trigger,0.4996589050080406
+9,Operation + Set + Id,humanticAiTool.json,Humantic AI Tool,0.49851199976560695
+9,Operation + Set + Id,awsTranscribe.json,AWS Transcribe,0.49116409643279585
+9,Operation + Set + Id,microsoftGraphSecurity.json,Microsoft Graph Security,0.4890771962901364
+9,Operation + Set + Id,mindee.json,Mindee,0.4863335255413055
+9,Operation + Set + Id,travisCiTool.json,TravisCI Tool,0.4823277136382447
+9,Operation + Set + Id,facebookGraphApiTool.json,Facebook Graph API Tool,0.47500663500846935
+9,Operation + Set + Id,nocoDbTool.json,NocoDB Tool,0.4715158057876502
+9,Operation + Set + Id,googleTranslate.json,Google Translate,0.47045530560018284
+9,Operation + Set + Id,ldap.json,Ldap,0.47045483836026136
+9,Operation + Set + Id,splunkTool.json,Splunk Tool,0.4688449261893353
+9,Operation + Set + Id,bubble.json,Bubble,0.4684663099975442
+9,Operation + Set + Id,loneScaleTool.json,LoneScale Tool,0.4676505713999325
+9,Operation + Set + Id,homeAssistantTool.json,Home Assistant Tool,0.4637599580348342
+9,Operation + Set + Id,gongTool.json,Gong Tool,0.4607199465916128
+9,Operation + Set + Id,contentful.json,Contentful,0.45892264130155075
+9,Operation + Set + Id,pushcutTool.json,Pushcut Tool,0.45598502935858876
+9,Operation + Set + Id,jenkins.json,Jenkins,0.45356571285260644
+9,Operation + Set + Id,actionNetwork.json,Action Network,0.4515911317687793
+9,Operation + Set + Id,cockpit.json,Cockpit,0.44702382909151855
+9,Operation + Set + Id,mailjetTrigger.json,Mailjet Trigger,0.44698746729851685
+9,Operation + Set + Id,googleBigQueryTool.json,Google BigQuery Tool,0.4464044451478065
+9,Operation + Set + Id,seaTableTool.json,SeaTable Tool,0.426651668784082
+9,Operation + Set + Id,rabbitmqTool.json,RabbitMQ Tool,0.42250783942243714
+9,Operation + Set + Id,apiTemplateIoTool.json,APITemplate.io Tool,0.41885987789953577
+9,Operation + Set + Id,linkedInTool.json,LinkedIn Tool,0.4187399410119324
+9,Operation + Set + Id,demioTool.json,Demio Tool,0.4176012372925029
+9,Operation + Set + Id,sendInBlueTool.json,Brevo Tool,0.41596935278400793
+9,Operation + Set + Id,googleSlides.json,Google Slides,0.4120995799967475
+9,Operation + Set + Id,openThesaurus.json,OpenThesaurus,0.40789071441091307
+9,Operation + Set + Id,oktaTool.json,Okta Tool,0.4040993729381614
+9,Operation + Set + Id,postmarkTrigger.json,Postmark Trigger,0.39886478041335044
+9,Operation + Set + Id,microsoftSharePointTool.json,Microsoft SharePoint Tool,0.3921141300525709
+9,Operation + Set + Id,mailchimpTrigger.json,Mailchimp Trigger,0.37008294136267306
+9,Operation + Set + Id,securityScorecardTool.json,SecurityScorecard Tool,0.3691715058509135
+9,Operation + Set + Id,nasa.json,NASA,0.3659666087091395
+9,Operation + Set + Id,spotifyTool.json,Spotify Tool,0.3560366205162577
+9,Operation + Set + Id,pushbulletTool.json,Pushbullet Tool,0.34435514017254837
+9,Operation + Set + Id,googleFirebaseRealtimeDatabase.json,Google Cloud Realtime Database,0.3436408641442856
+9,Operation + Set + Id,pipedriveTrigger.json,Pipedrive Trigger,0.33269926559630564
+9,Operation + Set + Id,facebookLeadAdsTrigger.json,Facebook Lead Ads Trigger,0.31798752459446933
+9,Operation + Set + Id,zoomTool.json,Zoom Tool,0.30166116927362213
+9,Operation + Set + Id,signl4.json,SIGNL4,0.267076874090139

@@ -1,0 +1,197 @@
+{
+  "summary": {
+    "total_files": 792,
+    "classified_files": 792,
+    "unclassified_files": 0,
+    "classification_rate": 100.0,
+    "topics_count": 10,
+    "avg_files_per_topic": 79.2
+  },
+  "metadata": {
+    "method": "LDA_Based_Taxonomy_n8n_Nodes",
+    "data_source": "n8n_node_schemas",
+    "n_topics": 10,
+    "min_probability": 0.15,
+    "total_files": 792,
+    "model_perplexity": 264.39357093235475
+  },
+  "topics": {
+    "topic_0": {
+      "label": "Contact + Id + Field",
+      "file_count": 38,
+      "top_words": [
+        "contact",
+        "id",
+        "field",
+        "dollar",
+        "email"
+      ],
+      "top_files": [
+        "agileCrm.json",
+        "clearbit.json",
+        "zohoCrm.json",
+        "zohoCrmTool.json",
+        "activeCampaign.json"
+      ]
+    },
+    "topic_1": {
+      "label": "Id + User + Create",
+      "file_count": 113,
+      "top_words": [
+        "id",
+        "user",
+        "create",
+        "update",
+        "delete"
+      ],
+      "top_files": [
+        "discourse.json",
+        "strava.json",
+        "trelloTool.json",
+        "trello.json",
+        "discourseTool.json"
+      ]
+    },
+    "topic_2": {
+      "label": "America + Utc + Asia",
+      "file_count": 6,
+      "top_words": [
+        "america",
+        "utc",
+        "asia",
+        "00",
+        "europe"
+      ],
+      "top_files": [
+        "googleCalendar.json",
+        "googleCalendarTool.json",
+        "freshworksCrm.json",
+        "freshworksCrmTool.json",
+        "hubspotTool.json"
+      ]
+    },
+    "topic_3": {
+      "label": "Field + Id + 9A",
+      "file_count": 9,
+      "top_words": [
+        "field",
+        "id",
+        "9a",
+        "case",
+        "channel"
+      ],
+      "top_files": [
+        "theHiveProject.json",
+        "theHiveProjectTool.json",
+        "notion.json",
+        "notionTool.json",
+        "stickyNote.json"
+      ]
+    },
+    "topic_4": {
+      "label": "File + Message + Send",
+      "file_count": 194,
+      "top_words": [
+        "file",
+        "message",
+        "send",
+        "options",
+        "field"
+      ],
+      "top_files": [
+        "googleGeminiTool.json",
+        "googleGemini.json",
+        "formTrigger.json",
+        "ftp.json",
+        "messageBird.json"
+      ]
+    },
+    "topic_5": {
+      "label": "Id + List + Expressions",
+      "file_count": 111,
+      "top_words": [
+        "id",
+        "list",
+        "expressions",
+        "using",
+        "specify"
+      ],
+      "top_files": [
+        "wekanTool.json",
+        "wekan.json",
+        "linear.json",
+        "zendeskTrigger.json",
+        "venafiTlsProtectCloudTrigger.json"
+      ]
+    },
+    "topic_6": {
+      "label": "Create + Id + Address",
+      "file_count": 30,
+      "top_words": [
+        "create",
+        "id",
+        "address",
+        "update",
+        "customer"
+      ],
+      "top_files": [
+        "stripeTool.json",
+        "stripe.json",
+        "wooCommerceTool.json",
+        "onfleetTool.json",
+        "onfleet.json"
+      ]
+    },
+    "topic_7": {
+      "label": "Database + Text + Data",
+      "file_count": 117,
+      "top_words": [
+        "database",
+        "text",
+        "data",
+        "value",
+        "condition"
+      ],
+      "top_files": [
+        "merge.json",
+        "scheduleTrigger.json",
+        "cron.json",
+        "togglTrigger.json",
+        "rssFeedReadTrigger.json"
+      ]
+    },
+    "topic_8": {
+      "label": "_Blank + Target _Blank + App",
+      "file_count": 2,
+      "top_words": [
+        "_blank",
+        "target _blank",
+        "app",
+        "target",
+        "https"
+      ],
+      "top_files": [
+        "uprocTool.json",
+        "uproc.json"
+      ]
+    },
+    "topic_9": {
+      "label": "Operation + Set + Id",
+      "file_count": 172,
+      "top_words": [
+        "operation",
+        "set",
+        "id",
+        "update",
+        "value"
+      ],
+      "top_files": [
+        "npmTool.json",
+        "npm.json",
+        "stackbyTool.json",
+        "snowflakeTool.json",
+        "rundeckTool.json"
+      ]
+    }
+  }
+}

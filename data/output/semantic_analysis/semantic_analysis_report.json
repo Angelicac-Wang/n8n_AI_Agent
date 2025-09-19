@@ -1,0 +1,148 @@
+{
+  "analysis_date": "2024-09-19",
+  "method": "Semantic LDA Analysis on n8n Node Descriptions",
+  "data_source": "descriptions/*.json files",
+  "key_improvements": [
+    "Focused on functional semantics rather than technical schemas",
+    "Used Chinese and English description content",
+    "Applied semantic preprocessing to filter technical noise",
+    "Generated function-oriented topic labels",
+    "Categorized nodes by actual use cases and purposes"
+  ],
+  "statistics": {
+    "total_files": 431,
+    "classified_files": 430,
+    "unclassified_files": 1,
+    "classification_rate": 99.76798143851508,
+    "categories_count": 8,
+    "avg_nodes_per_category": 53.75,
+    "functional_focus_distribution": {
+      "general": 5,
+      "communication": 1,
+      "customer_management": 1,
+      "data_management": 1
+    }
+  },
+  "functional_categories": [
+    {
+      "category_id": 0,
+      "label": "透過 + 事件",
+      "functional_focus": "general",
+      "node_count": 63,
+      "avg_probability": 0.8154811747327455,
+      "coherence": 89.91809787175032,
+      "semantic_keywords": [
+        "透過",
+        "事件",
+        "處理",
+        "webhooks",
+        "webhooks 處理"
+      ]
+    },
+    {
+      "category_id": 1,
+      "label": "Create + Get",
+      "functional_focus": "general",
+      "node_count": 74,
+      "avg_probability": 0.83032530414846,
+      "coherence": 109.20174191656788,
+      "semantic_keywords": [
+        "perform",
+        "consume",
+        "select",
+        "operations",
+        "interact"
+      ]
+    },
+    {
+      "category_id": 2,
+      "label": "Update",
+      "functional_focus": "general",
+      "node_count": 17,
+      "avg_probability": 0.7410887910871746,
+      "coherence": 24.20796257691263,
+      "semantic_keywords": [
+        "google",
+        "update",
+        "read",
+        "markdown",
+        "table"
+      ]
+    },
+    {
+      "category_id": 3,
+      "label": "中獲取 + Get",
+      "functional_focus": "general",
+      "node_count": 17,
+      "avg_probability": 0.7338650026138276,
+      "coherence": 18.09689652000814,
+      "semantic_keywords": [
+        "key",
+        "microsoft",
+        "all",
+        "graph",
+        "query"
+      ]
+    },
+    {
+      "category_id": 4,
+      "label": "Create + 刪除",
+      "functional_focus": "general",
+      "node_count": 142,
+      "avg_probability": 0.8027723030234135,
+      "coherence": 119.79429341381646,
+      "semantic_keywords": [
+        "此節點用於消費",
+        "create",
+        "此節點用於使用",
+        "刪除",
+        "如創建"
+      ]
+    },
+    {
+      "category_id": 5,
+      "label": "File + Message",
+      "functional_focus": "communication",
+      "node_count": 52,
+      "avg_probability": 0.7221554310957885,
+      "coherence": 54.768722850721815,
+      "semantic_keywords": [
+        "html",
+        "file",
+        "example",
+        "com",
+        "message"
+      ]
+    },
+    {
+      "category_id": 6,
+      "label": "事件發生時啟動工作流程 + Topic",
+      "functional_focus": "customer_management",
+      "node_count": 31,
+      "avg_probability": 0.7577626977029378,
+      "coherence": 29.19834316354769,
+      "semantic_keywords": [
+        "事件發生時啟動工作流程",
+        "topic",
+        "error",
+        "amqp",
+        "crm"
+      ]
+    },
+    {
+      "category_id": 7,
+      "label": "將數據發送到 + 將數據發送到 Aws",
+      "functional_focus": "data_management",
+      "node_count": 34,
+      "avg_probability": 0.739504733499017,
+      "coherence": 22.47028011529887,
+      "semantic_keywords": [
+        "aws",
+        "events",
+        "將數據發送到",
+        "certificate",
+        "s3"
+      ]
+    }
+  ]
+}

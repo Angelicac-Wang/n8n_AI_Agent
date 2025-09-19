@@ -1,0 +1,387 @@
+{
+  "analysis_method": "Semantic LDA on Node Descriptions",
+  "summary": {
+    "total_files": 431,
+    "classified_files": 430,
+    "unclassified_files": 1,
+    "classification_rate": 99.76798143851508,
+    "categories_count": 8,
+    "avg_nodes_per_category": 53.75,
+    "functional_focus_distribution": {
+      "general": 5,
+      "communication": 1,
+      "customer_management": 1,
+      "data_management": 1
+    }
+  },
+  "functional_categories": {
+    "category_0": {
+      "label": "透過 + 事件",
+      "description": "Nodes focused on 透過 + 事件. Includes 52 trigger, 11 regular nodes. Key concepts: 透過, 事件, 處理, webhooks, webhooks 處理",
+      "node_count": 63,
+      "functional_focus": "general",
+      "semantic_keywords": [
+        "透過",
+        "事件",
+        "處理",
+        "webhooks",
+        "webhooks 處理",
+        "透過 webhooks"
+      ],
+      "top_nodes": [
+        {
+          "name": "spotify",
+          "type": "regular",
+          "summary": "透過 Spotify API 存取公共歌曲數據",
+          "probability": 0.8792941921119924
+        },
+        {
+          "name": "sticky note",
+          "type": "regular",
+          "summary": "此節點可讓您在工作流程中添加便利的便條，以幫助更好理解流程。",
+          "probability": 0.7605079982613515
+        },
+        {
+          "name": "cron",
+          "type": "regular",
+          "summary": "在特定時間觸發工作流程",
+          "probability": 0.7499999999999948
+        },
+        {
+          "name": "wait",
+          "type": "regular",
+          "summary": "等待節點可讓工作流在執行過程中暫停一段時間，再繼續執行。",
+          "probability": 0.7499951023399283
+        },
+        {
+          "name": "venafi tls protect cloud",
+          "type": "regular",
+          "summary": "此節點用於使用 Venafi TLS Protect Cloud API。",
+          "probability": 0.7307780413117586
+        }
+      ]
+    },
+    "category_1": {
+      "label": "Create + Get",
+      "description": "Nodes focused on create + get. Includes 63 regular, 11 trigger nodes. Key concepts: perform, consume, select, operations, interact",
+      "node_count": 74,
+      "functional_focus": "general",
+      "semantic_keywords": [
+        "perform",
+        "consume",
+        "select",
+        "operations",
+        "interact",
+        "like"
+      ],
+      "top_nodes": [
+        {
+          "name": "jira software",
+          "type": "regular",
+          "summary": "Consume Jira Software API to perform various operations like creating, updating,...",
+          "probability": 0.994435268350151
+        },
+        {
+          "name": "phantombuster",
+          "type": "regular",
+          "summary": "Consume Phantombuster API to perform various operations like deleting agents, ge...",
+          "probability": 0.9936820442256199
+        },
+        {
+          "name": "grafana",
+          "type": "regular",
+          "summary": "Consume the Grafana API to perform operations like creating, deleting, updating,...",
+          "probability": 0.9932556150941448
+        },
+        {
+          "name": "slack",
+          "type": "regular",
+          "summary": "This node allows you to interact with the Slack API to perform various operation...",
+          "probability": 0.9926149872418367
+        },
+        {
+          "name": "google drive",
+          "type": "regular",
+          "summary": "Access data on Google Drive including operations like copying, deleting, downloa...",
+          "probability": 0.9922896777991432
+        }
+      ]
+    },
+    "category_2": {
+      "label": "Update",
+      "description": "Nodes focused on update. Includes 15 regular, 2 trigger nodes. Key concepts: google, update, read, markdown, table",
+      "node_count": 17,
+      "functional_focus": "general",
+      "semantic_keywords": [
+        "google",
+        "update",
+        "read",
+        "markdown",
+        "table",
+        "you"
+      ],
+      "top_nodes": [
+        {
+          "name": "totp",
+          "type": "regular",
+          "summary": "Generate a time-based one-time password.",
+          "probability": 0.9756915311853571
+        },
+        {
+          "name": "code",
+          "type": "regular",
+          "summary": "執行自定義 JavaScript 或 Python 代碼。",
+          "probability": 0.9663435024063965
+        },
+        {
+          "name": "aiTransform",
+          "type": "regular",
+          "summary": "Modify data based on instructions written in plain English.",
+          "probability": 0.9583250858282831
+        },
+        {
+          "name": "google sheets",
+          "type": "regular",
+          "summary": "This node allows you to read, update, and write data to Google Sheets.",
+          "probability": 0.91592058290484
+        },
+        {
+          "name": "sort",
+          "type": "regular",
+          "summary": "此節點用於改變項目的排序順序。",
+          "probability": 0.8970510542998477
+        }
+      ]
+    },
+    "category_3": {
+      "label": "中獲取 + Get",
+      "description": "Nodes focused on 中獲取 + get. Includes 15 regular, 2 trigger nodes. Key concepts: key, microsoft, all, graph, query",
+      "node_count": 17,
+      "functional_focus": "general",
+      "semantic_keywords": [
+        "key",
+        "microsoft",
+        "all",
+        "graph",
+        "query",
+        "sql"
+      ],
+      "top_nodes": [
+        {
+          "name": "microsoft sql",
+          "type": "regular",
+          "summary": "此節點可用於在 Microsoft SQL 中獲取、添加和更新數據。",
+          "probability": 0.9786581891979028
+        },
+        {
+          "name": "moveBinaryData",
+          "type": "regular",
+          "summary": "此節點用於在二進制和 JSON 屬性之間移動數據。",
+          "probability": 0.9717732910011566
+        },
+        {
+          "name": "mysql",
+          "type": "regular",
+          "summary": "此節點可用於在 MySQL 中獲取、添加和更新數據。",
+          "probability": 0.9692979508172307
+        },
+        {
+          "name": "redis",
+          "type": "regular",
+          "summary": "此節點可用於在 Redis 中獲取、發送和更新數據。",
+          "probability": 0.9692974863153865
+        },
+        {
+          "name": "questdb",
+          "type": "regular",
+          "summary": "此節點用於在 QuestDB 中獲取、添加和更新數據。",
+          "probability": 0.9678887040372588
+        }
+      ]
+    },
+    "category_4": {
+      "label": "Create + 刪除",
+      "description": "Nodes focused on create + 刪除. Includes 140 regular, 2 trigger nodes. Key concepts: 此節點用於消費, create, 此節點用於使用, 刪除, 如創建",
+      "node_count": 142,
+      "functional_focus": "general",
+      "semantic_keywords": [
+        "此節點用於消費",
+        "create",
+        "此節點用於使用",
+        "刪除",
+        "如創建",
+        "指定要操作的資源類型"
+      ],
+      "top_nodes": [
+        {
+          "name": "google cloud storage",
+          "type": "regular",
+          "summary": "使用 Google Cloud Storage API 進行操作。",
+          "probability": 0.9850405001394124
+        },
+        {
+          "name": "google contacts",
+          "type": "regular",
+          "summary": "此節點用於消費 Google 聯絡人 API，可執行創建、刪除、獲取、更新聯絡人等操作。",
+          "probability": 0.9819576104828345
+        },
+        {
+          "name": "wekan",
+          "type": "regular",
+          "summary": "此節點用於消費 Wekan API，可執行與 Wekan 相關的操作，如創建、刪除、獲取資料等。",
+          "probability": 0.9814813127721369
+        },
+        {
+          "name": "hubspot",
+          "type": "regular",
+          "summary": "此節點用於連接並使用 HubSpot API。",
+          "probability": 0.9798830030326324
+        },
+        {
+          "name": "woocommerce",
+          "type": "regular",
+          "summary": "此節點用於消費 WooCommerce API，可執行與顧客、訂單和產品相關的操作。",
+          "probability": 0.9792892761352252
+        }
+      ]
+    },
+    "category_5": {
+      "label": "File + Message",
+      "description": "Nodes focused on file + message. Includes 50 regular, 2 trigger nodes. Key concepts: html, file, example, com, message",
+      "node_count": 52,
+      "functional_focus": "communication",
+      "semantic_keywords": [
+        "html",
+        "file",
+        "example",
+        "com",
+        "message",
+        "text"
+      ],
+      "top_nodes": [
+        {
+          "name": "extract from file",
+          "type": "regular",
+          "summary": "Convert binary data to JSON by extracting content from various file formats such...",
+          "probability": 0.9880941364448816
+        },
+        {
+          "name": "html",
+          "type": "regular",
+          "summary": "與 HTML 相關的操作，包括生成 HTML 模板、提取 HTML 內容和將數據轉換為 HTML 表格。",
+          "probability": 0.9832532529782705
+        },
+        {
+          "name": "compression",
+          "type": "regular",
+          "summary": "Compress and decompress files.",
+          "probability": 0.9814795669493491
+        },
+        {
+          "name": "mailjet",
+          "type": "regular",
+          "summary": "這個節點用於使用 Mailjet API 來發送郵件或簡訊。",
+          "probability": 0.9772710613677457
+        },
+        {
+          "name": "one simple api",
+          "type": "regular",
+          "summary": "此節點可從不同資源中執行各種操作，如生成 PDF、取得社交媒體資料等。",
+          "probability": 0.955689247349888
+        }
+      ]
+    },
+    "category_6": {
+      "label": "事件發生時啟動工作流程 + Topic",
+      "description": "Nodes focused on 事件發生時啟動工作流程 + topic. Includes 19 trigger, 12 regular nodes. Key concepts: 事件發生時啟動工作流程, topic, error, amqp, crm",
+      "node_count": 31,
+      "functional_focus": "customer_management",
+      "semantic_keywords": [
+        "事件發生時啟動工作流程",
+        "topic",
+        "error",
+        "amqp",
+        "crm",
+        "此節點在"
+      ],
+      "top_nodes": [
+        {
+          "name": "ldap",
+          "type": "regular",
+          "summary": "與 LDAP 伺服器進行互動，可執行比較、創建、刪除、重命名、搜索和更新等操作。",
+          "probability": 0.9678863558645548
+        },
+        {
+          "name": "notion",
+          "type": "regular",
+          "summary": "此節點可用於訪問 Notion API。",
+          "probability": 0.9646352086683675
+        },
+        {
+          "name": "rabbitmq",
+          "type": "regular",
+          "summary": "將訊息發送到 RabbitMQ 主題",
+          "probability": 0.9627611428685676
+        },
+        {
+          "name": "kafka",
+          "type": "regular",
+          "summary": "將訊息發送到 Kafka 主題",
+          "probability": 0.9606709737189526
+        },
+        {
+          "name": "stop and error",
+          "type": "regular",
+          "summary": "Throw an error in the workflow.",
+          "probability": 0.9583325756765252
+        }
+      ]
+    },
+    "category_7": {
+      "label": "將數據發送到 + 將數據發送到 Aws",
+      "description": "Nodes focused on 將數據發送到 + 將數據發送到 aws. Includes 23 regular, 11 trigger nodes. Key concepts: aws, events, 將數據發送到, certificate, s3",
+      "node_count": 34,
+      "functional_focus": "data_management",
+      "semantic_keywords": [
+        "aws",
+        "events",
+        "將數據發送到",
+        "certificate",
+        "s3",
+        "將數據發送到 aws"
+      ],
+      "top_nodes": [
+        {
+          "name": "aws sns",
+          "type": "regular",
+          "summary": "將數據發送到 AWS SNS。",
+          "probability": 0.9786524285898786
+        },
+        {
+          "name": "kobotoolbox",
+          "type": "regular",
+          "summary": "與 KoBoToolbox 表單和提交進行互動。",
+          "probability": 0.9646418006119282
+        },
+        {
+          "name": "npm",
+          "type": "regular",
+          "summary": "使用 NPM 註冊 API",
+          "probability": 0.945303188705665
+        },
+        {
+          "name": "aws textract",
+          "type": "regular",
+          "summary": "將數據發送到 Amazon Textract。",
+          "probability": 0.9351833133405881
+        },
+        {
+          "name": "telegram",
+          "type": "regular",
+          "summary": "此節點用於將數據發送到 Telegram。",
+          "probability": 0.935182630579434
+        }
+      ]
+    }
+  }
+}
