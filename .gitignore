@@ -49,6 +49,9 @@ ENV/
 .DS_Store
 Thumbs.db
 
+# Backup of nested repo metadata (see n8n_workflow_generator_package)
+.n8n_workflow_generator_package.git.bak
+
 # Generated workflows (optional - you might want to keep these)
 generated_workflow_*.json
 
