@@ -46,10 +46,13 @@ class ReportGenerator:
         """
         output_dir.mkdir(parents=True, exist_ok=True)
 
-        valid_results = [r for r in results if r.get('metrics')]
+        valid_results = [
+            r for r in results 
+            if r.get('metrics') and 'node_type_f1' in r['metrics'] and 'usage' in r['metrics']
+        ]
 
         if not valid_results:
-            print("No valid results to visualize")
+            print("No valid results with full metrics to visualize")
             return
 
         print(f"\nGenerating visualizations in {output_dir}...")
@@ -68,6 +71,13 @@ class ReportGenerator:
             output_dir / "connection_accuracy_distribution.png"
         )
 
+        # 2b. Matched Connection accuracy distribution
+        self._plot_distribution(
+            [r['metrics'].get('matched_connection_f1', 0.0) for r in valid_results],
+            "Matched Connection F1 Score Distribution",
+            output_dir / "matched_connection_accuracy_distribution.png"
+        )
+
         # 3. Parameter accuracy distribution
         self._plot_distribution(
             [r['metrics']['avg_parameter_accuracy'] for r in valid_results],
@@ -84,7 +94,7 @@ class ReportGenerator:
         # 6. Metric correlations
         self._plot_correlation_matrix(valid_results, output_dir / "metric_correlations.png")
 
-        print("✓ Visualizations complete!")
+        print("[OK] Visualizations complete!")
 
     def _plot_distribution(self, values: List[float], title: str, output_path: Path):
         """
@@ -174,12 +184,13 @@ class ReportGenerator:
             data.append([
                 r['metrics']['node_type_f1'],
                 r['metrics']['connection_f1'],
+                r['metrics'].get('matched_connection_f1', 0.0),
                 r['metrics']['avg_parameter_accuracy']
             ])
 
         df = pd.DataFrame(
             data,
-            columns=['Node F1', 'Connection F1', 'Parameter Accuracy'],
+            columns=['Node F1', 'Connection F1', 'Matched Connection F1', 'Parameter Accuracy'],
             index=[f"T{r['template_id']}" for r in sample_results]
         )
 
@@ -203,6 +214,7 @@ class ReportGenerator:
             {
                 'Node F1': r['metrics']['node_type_f1'],
                 'Connection F1': r['metrics']['connection_f1'],
+                'Matched Connection F1': r['metrics'].get('matched_connection_f1', 0.0),
                 'Parameter Acc': r['metrics']['avg_parameter_accuracy'],
                 'Cost': r['metrics']['total_cost'],
                 'Prompt Tokens': r['metrics']['usage']['prompt_tokens'],

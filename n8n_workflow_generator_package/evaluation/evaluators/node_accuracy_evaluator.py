@@ -91,6 +91,60 @@ class NodeAccuracyEvaluator:
             "llm_connection_count": total_llm
         }
 
+    def evaluate_matched_connections(self, gt_workflow: Dict, llm_workflow: Dict, matching_result: Dict) -> Dict:
+        """
+        Calculate matched connection accuracy based on node types, only keeping connections
+        where both endpoints are in the matched nodes set.
+
+        Args:
+            gt_workflow: Normalized ground truth workflow
+            llm_workflow: Normalized LLM workflow
+            matching_result: Result from NodeMatcher
+
+        Returns:
+            Dictionary with matched connection metrics
+        """
+        # Create name to type mappings
+        gt_name_to_type = {node['name']: node['type'] for node in gt_workflow['nodes']}
+        llm_name_to_type = {node['name']: node['type'] for node in llm_workflow['nodes']}
+
+        # Get matched node names
+        matched_gt_names = {m['gt_node']['name'] for m in matching_result['matches']}
+        matched_llm_names = {m['llm_node']['name'] for m in matching_result['matches']}
+
+        # Filter connections to only keep those between matched nodes
+        filtered_gt_conns = [
+            conn for conn in gt_workflow['connections']
+            if conn.get('from') in matched_gt_names and conn.get('to') in matched_gt_names
+        ]
+        filtered_llm_conns = [
+            conn for conn in llm_workflow['connections']
+            if conn.get('from') in matched_llm_names and conn.get('to') in matched_llm_names
+        ]
+
+        # Convert to sets of (from_type, to_type) tuples
+        gt_conn_set = self._connections_to_type_set(filtered_gt_conns, gt_name_to_type)
+        llm_conn_set = self._connections_to_type_set(filtered_llm_conns, llm_name_to_type)
+
+        # Calculate metrics
+        correct = len(gt_conn_set & llm_conn_set)  # Intersection
+        total_gt = len(gt_conn_set)
+        total_llm = len(llm_conn_set)
+
+        precision = correct / total_llm if total_llm > 0 else 0.0
+        recall = correct / total_gt if total_gt > 0 else 0.0
+        f1 = (2 * precision * recall) / (precision + recall) if (precision + recall) > 0 else 0.0
+
+        return {
+            "matched_connection_precision": precision,
+            "matched_connection_recall": recall,
+            "matched_connection_f1": f1,
+            "matched_correct_connections": correct,
+            "matched_gt_connection_count": total_gt,
+            "matched_llm_connection_count": total_llm
+        }
+
+
     def _connections_to_type_set(self, connections: list, name_to_type: Dict[str, str]) -> Set[Tuple[str, str]]:
         """
         Convert connection list to set of (from_type, to_type) tuples

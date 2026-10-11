@@ -147,7 +147,24 @@ class EvaluationPipeline:
         print("="*60)
 
         # Load templates
-        templates = self.template_loader.load_all_templates()
+        # [Robustness & Efficiency Patch] Load ONLY templates that have generated files to avoid scanning 1000+ files!
+        generated_files = list(self.result_saver.llm_workflows_dir.glob("generated_*.json"))
+        if generated_files:
+            templates = []
+            for gf in generated_files:
+                try:
+                    # Extract template_id from generated_{template_id}.json
+                    tid = gf.stem.split("generated_")[1]
+                    t_data = self.template_loader.load_template_by_id(tid)
+                    if t_data:
+                        templates.append(t_data)
+                except Exception:
+                    pass
+            # Sort templates by ID to maintain a stable, clean order
+            templates = sorted(templates, key=lambda x: str(x.get('metadata', {}).get('id', x.get('id', ''))))
+        else:
+            templates = self.template_loader.load_all_templates()
+            
         tracker = ProgressTracker(len(templates), "Workflow Evaluation")
 
         all_results = []
@@ -202,6 +219,9 @@ class EvaluationPipeline:
             # Evaluate metrics
             node_metrics = self.node_evaluator.evaluate_node_types(matching_result)
             connection_metrics = self.node_evaluator.evaluate_connections(gt_workflow, llm_workflow)
+            matched_connection_metrics = self.node_evaluator.evaluate_matched_connections(
+                gt_workflow, llm_workflow, matching_result
+            )
             param_metrics = self._evaluate_parameters_safe(matching_result)
             cost_metrics = self.cost_tracker.calculate_cost(
                 generated_data['usage'],
@@ -216,6 +236,7 @@ class EvaluationPipeline:
                 "metrics": {
                     **node_metrics,
                     **connection_metrics,
+                    **matched_connection_metrics,
                     **param_metrics,
                     **cost_metrics,
                     **json_metrics,
@@ -339,6 +360,7 @@ class EvaluationPipeline:
                 "failed_evaluations": 0,
                 "node_accuracy": dict(zero_block),
                 "connection_accuracy": dict(zero_block),
+                "matched_connection_accuracy": dict(zero_block),
                 "parameter_accuracy": dict(zero_param),
                 "json_validity": {"mean": 0.0, "count": 0},
                 "error": "No results",
@@ -365,6 +387,7 @@ class EvaluationPipeline:
                 "failed_evaluations": len(results),
                 "node_accuracy": dict(zero_block),
                 "connection_accuracy": dict(zero_block),
+                "matched_connection_accuracy": dict(zero_block),
                 "parameter_accuracy": dict(zero_param),
                 "json_validity": json_block,
             }
@@ -379,6 +402,7 @@ class EvaluationPipeline:
 
         node_f1s = [r["metrics"]["node_type_f1"] for r in full_eval]
         conn_f1s = [r["metrics"]["connection_f1"] for r in full_eval]
+        matched_conn_f1s = [r["metrics"].get("matched_connection_f1", 0.0) for r in full_eval]
         param_accs = [r["metrics"]["avg_parameter_accuracy"] for r in full_eval]
 
         return {
@@ -398,6 +422,13 @@ class EvaluationPipeline:
                 "std_f1": float(np.std(conn_f1s)),
                 "min_f1": float(np.min(conn_f1s)),
                 "max_f1": float(np.max(conn_f1s)),
+            },
+            "matched_connection_accuracy": {
+                "mean_f1": float(np.mean(matched_conn_f1s)),
+                "median_f1": float(np.median(matched_conn_f1s)),
+                "std_f1": float(np.std(matched_conn_f1s)),
+                "min_f1": float(np.min(matched_conn_f1s)),
+                "max_f1": float(np.max(matched_conn_f1s)),
             },
             "parameter_accuracy": {
                 "mean": float(np.mean(param_accs)),
@@ -460,6 +491,10 @@ class EvaluationPipeline:
             print(f"\nConnection Accuracy (F1):")
             print(f"  Mean: {summary_stats['connection_accuracy']['mean_f1']:.3f}")
             print(f"  Median: {summary_stats['connection_accuracy']['median_f1']:.3f}")
+
+            print(f"\nMatched Connection Accuracy (F1):")
+            print(f"  Mean: {summary_stats['matched_connection_accuracy']['mean_f1']:.3f}")
+            print(f"  Median: {summary_stats['matched_connection_accuracy']['median_f1']:.3f}")
 
             print(f"\nParameter Accuracy:")
             print(f"  Mean: {summary_stats['parameter_accuracy']['mean']:.3f}")
